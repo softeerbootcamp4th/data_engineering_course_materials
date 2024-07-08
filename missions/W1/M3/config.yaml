@@ -1,0 +1,8 @@
+GDP_WIKIPEDIA_URL: "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29"
+LOAD_FILE_DESTINATION: "Countries_by_GDP.json"
+AFRICA_COUNTRY_URL: "https://en.wikipedia.org/wiki/List_of_African_countries_by_GDP_(nominal)"
+SOUTH_AMERICA_COUNTRY_URL: "https://en.wikipedia.org/wiki/List_of_South_American_countries_and_dependencies_by_GDP_(PPP)"
+NORTH_AMERICA_COUNTRY_URL: "https://en.wikipedia.org/wiki/List_of_North_American_countries_by_GDP_(nominal)"
+ASIA_COUNTRY_URL: "https://en.wikipedia.org/wiki/List_of_Asian_countries_by_GDP"
+EUROPE_COUNTRY_URL: "https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal)"
+OCEANIA_COUNTRY_URL: "https://en.wikipedia.org/wiki/List_of_Oceanian_countries_by_GDP"
