@@ -12,5 +12,5 @@ def work_log(task, cost):
 
 
 if __name__ == '__main__':
-    with Pool(4) as p:
+    with Pool(2) as p:
         p.starmap(work_log, work)
