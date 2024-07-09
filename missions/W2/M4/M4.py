@@ -1,3 +1,4 @@
+import queue
 import time
 from multiprocessing import Queue, Process, Pool
 
@@ -8,14 +9,14 @@ NUM_OF_PROCESS = 4
 
 
 def process_task(tasks, results, i):
-    task = tasks.get()
-    # check if no further values are expected
-    while task is not None:
-        print('Task no {}'.format(task))
-        time.sleep(0.5)
-        results.put((task, i))
-        task = tasks.get()
-    tasks.put(None)
+        try:
+            while True:
+                task = tasks.get_nowait()
+                print('Task no {}'.format(task))
+                time.sleep(0.5)
+                results.put((task, i))
+        except queue.Empty:
+            return
     # terminate the process
 
 
@@ -25,7 +26,6 @@ if __name__ == '__main__':
     taskers = []
     for i in range(NUM_OF_TASKS):
         tasks_to_accomplish.put(i)
-    tasks_to_accomplish.put(None)
     for i in range(NUM_OF_PROCESS):
         proc = Process(target=process_task, args=(tasks_to_accomplish, tasks_that_are_done, i))
         taskers.append(proc)
