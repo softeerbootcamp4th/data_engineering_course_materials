@@ -1,0 +1,13 @@
+{
+    "log_path": "/Users/admin/Desktop/Data_Engineering/W1/ETL/etl_project_log.txt",
+    "region_data_json_path": "/Users/admin/Desktop/Data_Engineering/W1/ETL/continent_countries.json",
+    "GDP_json_path": "/Users/admin/Desktop/Data_Engineering/W1/ETL/Countries_by_GDP.json",
+    "db_path": "/Users/admin/Desktop/Data_Engineering/W1/ETL/World_GDP.db",
+    "GDP_WIKIPEDIA_URL" : "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29",
+    "AFRICA_COUNTRY_URL": "https://en.wikipedia.org/wiki/List_of_African_countries_by_GDP_(PPP)",
+    "SOUTH_AMERICA_COUNTRY_URL": "https://en.wikipedia.org/wiki/List_of_South_American_countries_and_dependencies_by_GDP_(PPP)",
+    "NORTH_AMERICA_COUNTRY_URL": "https://en.wikipedia.org/wiki/List_of_North_American_countries_by_GDP_(nominal)",
+    "ASIA_COUNTRY_URL": "https://en.wikipedia.org/wiki/List_of_Asian_countries_by_GDP",
+    "EUROPE_COUNTRY_URL": "https://en.wikipedia.org/wiki/List_of_sovereign_states_in_Europe_by_GDP_(nominal)",
+    "OCEANIA_COUNTRY_URL": "https://en.wikipedia.org/wiki/List_of_Oceanian_countries_by_GDP"
+}
