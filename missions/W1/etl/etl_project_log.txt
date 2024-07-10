@@ -1,0 +1,210 @@
+2024-July-04-14-24-00,E : start extract
+2024-July-04-14-24-01,E : end extract
+2024-July-04-14-24-01,T : start transform (list -> json)
+2024-July-04-14-24-01,T : end transform (list -> json)
+2024-July-04-14-24-01,L : start load
+2024-July-04-14-24-01,L : end load
+2024-July-04-14-24-09,E : start extract
+2024-July-04-14-24-10,E : end extract
+2024-July-04-14-24-10,T : start transform (list -> json)
+2024-July-04-14-24-10,T : end transform (list -> json)
+2024-July-04-14-24-10,L : start load
+2024-July-04-14-24-10,L : end load
+2024-July-04-14-30-30,E : start extract
+2024-July-04-14-30-30,E : end extract
+2024-July-04-14-30-30,T : start transform (list -> json)
+2024-July-04-14-30-30,T : end transform (list -> json)
+2024-July-04-14-30-30,L : start load
+2024-July-04-14-30-30,L : end load
+2024-July-04-14-32-37,E : start extract
+2024-July-04-14-32-38,E : end extract
+2024-July-04-14-32-38,T : start transform (list -> json)
+2024-July-04-14-32-38,T : end transform (list -> json)
+2024-July-04-14-32-38,L : start load
+2024-July-04-14-32-38,L : end load
+2024-July-04-14-53-16,E : start extract
+2024-July-04-14-53-17,E : end extract
+2024-July-04-14-53-17,T : start transform (list -> json)
+2024-July-04-14-53-17,T : end transform (list -> json)
+2024-July-04-14-53-17,L : start load
+2024-July-04-14-53-17,L : end load
+2024-July-04-14-55-07,E : start extract
+2024-July-04-14-55-08,E : end extract
+2024-July-04-14-55-08,T : start transform (list -> json)
+2024-July-04-14-55-08,T : end transform (list -> json)
+2024-July-04-14-55-08,L : start load
+2024-July-04-14-55-08,L : end load
+2024-July-04-14-55-18,E : start extract
+2024-July-04-14-55-19,E : end extract
+2024-July-04-14-55-19,T : start transform (list -> json)
+2024-July-04-14-55-19,T : end transform (list -> json)
+2024-July-04-14-55-19,L : start load
+2024-July-04-14-55-19,L : end load
+2024-July-04-14-56-11,E : start extract
+2024-July-04-14-56-11,E : end extract
+2024-July-04-14-56-11,T : start transform (list -> json)
+2024-July-04-14-56-11,T : end transform (list -> json)
+2024-July-04-14-56-11,L : start load
+2024-July-04-14-56-11,L : end load
+2024-July-04-14-56-27,E : start extract
+2024-July-04-14-56-29,E : end extract
+2024-July-04-14-56-29,T : start transform (list -> json)
+2024-July-04-14-56-29,T : end transform (list -> json)
+2024-July-04-14-56-29,L : start load
+2024-July-04-14-56-29,L : end load
+2024-July-04-14-58-49,E : start extract
+2024-July-04-14-58-51,E : end extract
+2024-July-04-14-58-51,T : start transform (list -> json)
+2024-July-04-14-58-51,T : end transform (list -> json)
+2024-July-04-14-58-51,L : start load
+2024-July-04-14-58-51,L : end load
+2024-July-04-14-59-04,E : start extract
+2024-July-04-14-59-05,E : end extract
+2024-July-04-14-59-05,T : start transform (list -> json)
+2024-July-04-14-59-05,T : end transform (list -> json)
+2024-July-04-14-59-05,L : start load
+2024-July-04-14-59-05,L : end load
+2024-July-04-14-59-09,E : start extract
+2024-July-04-14-59-10,E : end extract
+2024-July-04-14-59-10,T : start transform (list -> json)
+2024-July-04-14-59-10,T : end transform (list -> json)
+2024-July-04-14-59-10,L : start load
+2024-July-04-14-59-10,L : end load
+2024-July-04-14-59-16,E : start extract
+2024-July-04-14-59-17,E : end extract
+2024-July-04-14-59-17,T : start transform (list -> json)
+2024-July-04-14-59-17,T : end transform (list -> json)
+2024-July-04-14-59-17,L : start load
+2024-July-04-14-59-17,L : end load
+2024-July-04-14-59-24,E : start extract
+2024-July-04-14-59-26,E : end extract
+2024-July-04-14-59-26,T : start transform (list -> json)
+2024-July-04-14-59-26,T : end transform (list -> json)
+2024-July-04-14-59-26,L : start load
+2024-July-04-14-59-26,L : end load
+2024-July-04-15-00-37,E : start extract
+2024-July-04-15-00-37,E : end extract
+2024-July-04-15-00-37,T : start transform (list -> json)
+2024-July-04-15-00-37,T : end transform (list -> json)
+2024-July-04-15-00-37,L : start load
+2024-July-04-15-00-37,L : end load
+2024-July-04-15-01-01,E : start extract
+2024-July-04-15-01-03,E : end extract
+2024-July-04-15-01-03,T : start transform (list -> json)
+2024-July-04-15-01-03,T : end transform (list -> json)
+2024-July-04-15-01-03,L : start load
+2024-July-04-15-01-03,L : end load
+2024-July-04-15-01-20,E : start extract
+2024-July-04-15-01-20,E : end extract
+2024-July-04-15-01-20,T : start transform (list -> json)
+2024-July-04-15-01-20,T : end transform (list -> json)
+2024-July-04-15-01-20,L : start load
+2024-July-04-15-01-20,L : end load
+2024-July-04-15-01-30,E : start extract
+2024-July-04-15-01-31,E : end extract
+2024-July-04-15-01-31,T : start transform (list -> json)
+2024-July-04-15-01-31,T : end transform (list -> json)
+2024-July-04-15-01-31,L : start load
+2024-July-04-15-01-31,L : end load
+2024-July-04-15-02-22,E : start extract
+2024-July-04-15-02-23,E : end extract
+2024-July-04-15-02-23,T : start transform (list -> json)
+2024-July-04-15-02-23,T : end transform (list -> json)
+2024-July-04-15-02-23,L : start load
+2024-July-04-15-02-23,L : end load
+2024-July-04-15-02-58,E : start extract
+2024-July-04-15-02-59,E : end extract
+2024-July-04-15-02-59,T : start transform (list -> json)
+2024-July-04-15-02-59,T : end transform (list -> json)
+2024-July-04-15-02-59,L : start load
+2024-July-04-15-02-59,L : end load
+2024-July-04-16-36-13,E : start extract
+2024-July-04-16-36-14,E : end extract
+2024-July-04-16-36-14,T : start transform (list -> json)
+2024-July-04-16-36-14,T : end transform (list -> json)
+2024-July-04-16-36-14,L : start load
+2024-July-04-16-36-14,L : end load
+2024-July-04-16-42-37,E : start extract
+2024-July-04-16-42-39,E : end extract
+2024-July-04-16-42-39,T : start transform (list -> json)
+2024-July-04-16-42-39,T : end transform (list -> json)
+2024-July-04-16-42-39,L : start load
+2024-July-04-16-42-39,L : end load
+2024-July-04-16-43-30,E : start extract
+2024-July-04-16-43-31,E : end extract
+2024-July-04-16-43-31,T : start transform (list -> json)
+2024-July-04-16-43-31,T : end transform (list -> json)
+2024-July-04-16-43-31,L : start load
+2024-July-04-16-43-31,L : end load
+2024-July-04-16-44-23,E : start extract
+2024-July-04-16-44-24,E : end extract
+2024-July-04-16-44-24,T : start transform (list -> json)
+2024-July-04-16-44-24,T : end transform (list -> json)
+2024-July-04-16-44-24,L : start load
+2024-July-04-16-44-24,L : end load
+2024-July-04-16-55-22,E : start extract
+2024-July-04-16-55-22,E : end extract
+2024-July-04-16-55-22,T : start transform (list -> json)
+2024-July-04-16-55-22,T : end transform (list -> json)
+2024-July-04-16-55-22,L : start load
+2024-July-04-16-55-22,L : end load
+2024-July-04-16-55-42,E : start extract
+2024-July-04-16-55-43,E : end extract
+2024-July-04-16-55-43,T : start transform (list -> json)
+2024-July-04-16-55-43,T : end transform (list -> json)
+2024-July-04-16-55-43,L : start load
+2024-July-04-16-55-43,L : end load
+2024-July-04-16-57-34,E : start extract
+2024-July-04-16-57-34,E : end extract
+2024-July-04-16-57-34,T : start transform (list -> json)
+2024-July-04-16-57-34,T : end transform (list -> json)
+2024-July-04-16-57-34,L : start load
+2024-July-04-16-57-34,L : end load
+2024-July-04-17-39-34,E : start extract
+2024-July-04-17-39-35,E : end extract
+2024-July-04-17-39-35,T : start transform (list -> json)
+2024-July-04-17-39-35,T : end transform (list -> json)
+2024-July-04-17-39-35,L : start load
+2024-July-04-17-39-35,L : end load
+2024-July-04-17-40-48,E : start extract
+2024-July-04-17-40-49,E : end extract
+2024-July-04-17-40-49,T : start transform (list -> json)
+2024-July-04-17-40-49,T : end transform (list -> json)
+2024-July-04-17-40-49,L : start load
+2024-July-04-17-40-49,L : end load
+2024-July-04-17-42-35,E : start extract
+2024-July-04-17-42-36,E : end extract
+2024-July-04-17-42-36,T : start transform (list -> json)
+2024-July-04-17-42-36,T : end transform (list -> json)
+2024-July-04-17-42-36,L : start load
+2024-July-04-17-42-36,L : end load
+2024-July-04-17-42-40,E : start extract
+2024-July-04-17-42-40,E : end extract
+2024-July-04-17-42-40,T : start transform (list -> json)
+2024-July-04-17-42-40,T : end transform (list -> json)
+2024-July-04-17-42-40,L : start load
+2024-July-04-17-42-40,L : end load
+2024-July-04-17-50-00,E : start extract
+2024-July-04-17-50-01,E : end extract
+2024-July-04-17-50-01,T : start transform (list -> json)
+2024-July-04-17-50-01,T : end transform (list -> json)
+2024-July-04-17-50-01,L : start load
+2024-July-04-17-50-01,L : end load
+2024-July-04-17-51-02,E : start extract
+2024-July-04-17-51-03,E : end extract
+2024-July-04-17-51-03,T : start transform (list -> json)
+2024-July-04-17-51-03,T : end transform (list -> json)
+2024-July-04-17-51-03,L : start load
+2024-July-04-17-51-03,L : end load
+2024-July-10-17-08-24,E : start extract
+2024-July-10-17-08-25,E : end extract
+2024-July-10-17-08-25,T : start transform (list -> json)
+2024-July-10-17-08-25,T : end transform (list -> json)
+2024-July-10-17-08-25,L : start load
+2024-July-10-17-08-25,L : end load
+2024-July-10-17-09-19,E : start extract
+2024-July-10-17-09-20,E : end extract
+2024-July-10-17-09-20,T : start transform (list -> json)
+2024-July-10-17-09-20,T : end transform (list -> json)
+2024-July-10-17-09-20,L : start load
+2024-July-10-17-09-20,L : end load
