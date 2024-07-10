@@ -1,0 +1,1076 @@
+ETL Project Log
+====================
+2024-07-04 15:00:17 - logger test
+2024-07-04 15:00:22 - logger test
+2024-07-04 15:22:15 - Starting ETL process for GDP data from Wiki
+2024-07-04 15:22:15 - Request to wiki for GDP data completed
+2024-07-04 15:22:16 - Request to wiki for GDP data completed
+2024-07-04 15:22:16 - GDP table found in HTML content
+2024-07-04 15:22:16 - empty GDP value - Cuba
+2024-07-04 15:22:16 - empty GDP value - North Korea
+2024-07-04 15:22:16 - empty GDP value - New Caledonia
+2024-07-04 15:22:16 - empty GDP value - Syria
+2024-07-04 15:22:16 - empty GDP value - Monaco
+2024-07-04 15:22:16 - empty GDP value - Liechtenstein
+2024-07-04 15:22:16 - empty GDP value - Bermuda
+2024-07-04 15:22:16 - empty GDP value - Cayman Islands
+2024-07-04 15:22:16 - empty GDP value - French Polynesia
+2024-07-04 15:22:16 - empty GDP value - Greenland
+2024-07-04 15:22:16 - empty GDP value - Curaçao
+2024-07-04 15:22:16 - empty GDP value - Eritrea
+2024-07-04 15:22:16 - empty GDP value - Zanzibar
+2024-07-04 15:22:16 - empty GDP value - Sint Maarten
+2024-07-04 15:22:16 - empty GDP value - British Virgin Islands
+2024-07-04 15:22:16 - empty GDP value - Turks and Caicos Islands
+2024-07-04 15:22:16 - empty GDP value - Anguilla
+2024-07-04 15:22:16 - empty GDP value - Cook Islands
+2024-07-04 15:22:16 - empty GDP value - Montserrat
+2024-07-04 15:22:16 - GDP data extraction from table rows completed
+2024-07-04 15:22:16 - DataFrame creation completed
+2024-07-04 15:22:16 - GDP values converted from million to billion USD
+2024-07-04 15:22:16 - ETL process for GDP data completed successfully
+2024-07-04 15:22:16 - Starting ETL process for region data from Wikipedia
+2024-07-04 15:22:16 - Request to wiki for region data completed
+2024-07-04 15:22:16 - HTML parsing completed
+2024-07-04 15:22:16 - Region table found in HTML content
+2024-07-04 15:22:16 - Region table rows parsed
+2024-07-04 15:22:16 - Region data extraction from table rows completed
+2024-07-04 15:22:16 - DataFrame creation for region data completed
+2024-07-04 15:22:16 - Created DataFrame for unmatched countries with their continents
+2024-07-04 15:22:16 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 15:22:16 - ETL process for region data completed successfully
+2024-07-04 15:53:36 - Starting ETL process for GDP data from Wiki
+2024-07-04 15:53:37 - Request to wiki for GDP data completed
+2024-07-04 15:53:37 - Request to wiki for GDP data completed
+2024-07-04 15:53:37 - GDP table found in HTML content
+2024-07-04 15:53:37 - empty GDP value - Cuba
+2024-07-04 15:53:37 - empty GDP value - North Korea
+2024-07-04 15:53:37 - empty GDP value - New Caledonia
+2024-07-04 15:53:37 - empty GDP value - Syria
+2024-07-04 15:53:37 - empty GDP value - Monaco
+2024-07-04 15:53:37 - empty GDP value - Liechtenstein
+2024-07-04 15:53:37 - empty GDP value - Bermuda
+2024-07-04 15:53:37 - empty GDP value - Cayman Islands
+2024-07-04 15:53:37 - empty GDP value - French Polynesia
+2024-07-04 15:53:37 - empty GDP value - Greenland
+2024-07-04 15:53:37 - empty GDP value - Curaçao
+2024-07-04 15:53:37 - empty GDP value - Eritrea
+2024-07-04 15:53:37 - empty GDP value - Zanzibar
+2024-07-04 15:53:37 - empty GDP value - Sint Maarten
+2024-07-04 15:53:37 - empty GDP value - British Virgin Islands
+2024-07-04 15:53:37 - empty GDP value - Turks and Caicos Islands
+2024-07-04 15:53:37 - empty GDP value - Anguilla
+2024-07-04 15:53:37 - empty GDP value - Cook Islands
+2024-07-04 15:53:37 - empty GDP value - Montserrat
+2024-07-04 15:53:37 - GDP data extraction from table rows completed
+2024-07-04 15:53:37 - DataFrame creation completed
+2024-07-04 15:53:37 - GDP values converted from million to billion USD
+2024-07-04 15:53:37 - ETL process for GDP data completed successfully
+2024-07-04 15:53:37 - Starting ETL process for region data from Wikipedia
+2024-07-04 15:53:38 - Request to wiki for region data completed
+2024-07-04 15:53:38 - HTML parsing completed
+2024-07-04 15:53:38 - Region table found in HTML content
+2024-07-04 15:53:38 - Region table rows parsed
+2024-07-04 15:53:38 - Region data extraction from table rows completed
+2024-07-04 15:53:38 - DataFrame creation for region data completed
+2024-07-04 15:53:38 - Created DataFrame for unmatched countries with their continents
+2024-07-04 15:53:38 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 15:53:38 - ETL process for region data completed successfully
+2024-07-04 15:53:38 - The result was printed on console
+2024-07-04 15:53:38 - gdp_region.json saved
+2024-07-04 15:53:50 - Starting ETL process for GDP data from Wiki
+2024-07-04 15:53:51 - Request to wiki for GDP data completed
+2024-07-04 15:53:51 - Request to wiki for GDP data completed
+2024-07-04 15:53:51 - GDP table found in HTML content
+2024-07-04 15:53:51 - empty GDP value - Cuba
+2024-07-04 15:53:51 - empty GDP value - North Korea
+2024-07-04 15:53:51 - empty GDP value - New Caledonia
+2024-07-04 15:53:51 - empty GDP value - Syria
+2024-07-04 15:53:51 - empty GDP value - Monaco
+2024-07-04 15:53:51 - empty GDP value - Liechtenstein
+2024-07-04 15:53:51 - empty GDP value - Bermuda
+2024-07-04 15:53:51 - empty GDP value - Cayman Islands
+2024-07-04 15:53:51 - empty GDP value - French Polynesia
+2024-07-04 15:53:51 - empty GDP value - Greenland
+2024-07-04 15:53:51 - empty GDP value - Curaçao
+2024-07-04 15:53:51 - empty GDP value - Eritrea
+2024-07-04 15:53:51 - empty GDP value - Zanzibar
+2024-07-04 15:53:51 - empty GDP value - Sint Maarten
+2024-07-04 15:53:51 - empty GDP value - British Virgin Islands
+2024-07-04 15:53:51 - empty GDP value - Turks and Caicos Islands
+2024-07-04 15:53:51 - empty GDP value - Anguilla
+2024-07-04 15:53:51 - empty GDP value - Cook Islands
+2024-07-04 15:53:51 - empty GDP value - Montserrat
+2024-07-04 15:53:51 - GDP data extraction from table rows completed
+2024-07-04 15:53:51 - DataFrame creation completed
+2024-07-04 15:53:51 - GDP values converted from million to billion USD
+2024-07-04 15:53:51 - ETL process for GDP data completed successfully
+2024-07-04 15:53:51 - Starting ETL process for region data from Wikipedia
+2024-07-04 15:53:51 - Request to wiki for region data completed
+2024-07-04 15:53:51 - HTML parsing completed
+2024-07-04 15:53:51 - Region table found in HTML content
+2024-07-04 15:53:51 - Region table rows parsed
+2024-07-04 15:53:51 - Region data extraction from table rows completed
+2024-07-04 15:53:51 - DataFrame creation for region data completed
+2024-07-04 15:53:51 - Created DataFrame for unmatched countries with their continents
+2024-07-04 15:53:51 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 15:53:51 - ETL process for region data completed successfully
+2024-07-04 15:53:51 - The result was printed on console
+2024-07-04 15:53:51 - gdp_region_1..json saved
+2024-07-04 15:54:23 - Starting ETL process for GDP data from Wiki
+2024-07-04 15:54:24 - Request to wiki for GDP data completed
+2024-07-04 15:54:24 - Request to wiki for GDP data completed
+2024-07-04 15:54:24 - GDP table found in HTML content
+2024-07-04 15:54:24 - empty GDP value - Cuba
+2024-07-04 15:54:24 - empty GDP value - North Korea
+2024-07-04 15:54:24 - empty GDP value - New Caledonia
+2024-07-04 15:54:24 - empty GDP value - Syria
+2024-07-04 15:54:24 - empty GDP value - Monaco
+2024-07-04 15:54:24 - empty GDP value - Liechtenstein
+2024-07-04 15:54:24 - empty GDP value - Bermuda
+2024-07-04 15:54:24 - empty GDP value - Cayman Islands
+2024-07-04 15:54:24 - empty GDP value - French Polynesia
+2024-07-04 15:54:24 - empty GDP value - Greenland
+2024-07-04 15:54:24 - empty GDP value - Curaçao
+2024-07-04 15:54:24 - empty GDP value - Eritrea
+2024-07-04 15:54:24 - empty GDP value - Zanzibar
+2024-07-04 15:54:24 - empty GDP value - Sint Maarten
+2024-07-04 15:54:24 - empty GDP value - British Virgin Islands
+2024-07-04 15:54:24 - empty GDP value - Turks and Caicos Islands
+2024-07-04 15:54:24 - empty GDP value - Anguilla
+2024-07-04 15:54:24 - empty GDP value - Cook Islands
+2024-07-04 15:54:24 - empty GDP value - Montserrat
+2024-07-04 15:54:24 - GDP data extraction from table rows completed
+2024-07-04 15:54:24 - DataFrame creation completed
+2024-07-04 15:54:24 - GDP values converted from million to billion USD
+2024-07-04 15:54:24 - ETL process for GDP data completed successfully
+2024-07-04 15:54:24 - Starting ETL process for region data from Wikipedia
+2024-07-04 15:54:24 - Request to wiki for region data completed
+2024-07-04 15:54:25 - HTML parsing completed
+2024-07-04 15:54:25 - Region table found in HTML content
+2024-07-04 15:54:25 - Region table rows parsed
+2024-07-04 15:54:25 - Region data extraction from table rows completed
+2024-07-04 15:54:25 - DataFrame creation for region data completed
+2024-07-04 15:54:25 - Created DataFrame for unmatched countries with their continents
+2024-07-04 15:54:25 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 15:54:25 - ETL process for region data completed successfully
+2024-07-04 15:54:25 - The result was printed on console
+2024-07-04 15:54:25 - gdp_region_1..json saved
+2024-07-04 15:57:06 - Starting ETL process for GDP data from Wiki
+2024-07-04 15:57:07 - Request to wiki for GDP data completed
+2024-07-04 15:57:07 - Request to wiki for GDP data completed
+2024-07-04 15:57:07 - GDP table found in HTML content
+2024-07-04 15:57:07 - empty GDP value - Cuba
+2024-07-04 15:57:07 - empty GDP value - North Korea
+2024-07-04 15:57:07 - empty GDP value - New Caledonia
+2024-07-04 15:57:07 - empty GDP value - Syria
+2024-07-04 15:57:07 - empty GDP value - Monaco
+2024-07-04 15:57:07 - empty GDP value - Liechtenstein
+2024-07-04 15:57:07 - empty GDP value - Bermuda
+2024-07-04 15:57:07 - empty GDP value - Cayman Islands
+2024-07-04 15:57:07 - empty GDP value - French Polynesia
+2024-07-04 15:57:07 - empty GDP value - Greenland
+2024-07-04 15:57:07 - empty GDP value - Curaçao
+2024-07-04 15:57:07 - empty GDP value - Eritrea
+2024-07-04 15:57:07 - empty GDP value - Zanzibar
+2024-07-04 15:57:07 - empty GDP value - Sint Maarten
+2024-07-04 15:57:07 - empty GDP value - British Virgin Islands
+2024-07-04 15:57:07 - empty GDP value - Turks and Caicos Islands
+2024-07-04 15:57:07 - empty GDP value - Anguilla
+2024-07-04 15:57:07 - empty GDP value - Cook Islands
+2024-07-04 15:57:07 - empty GDP value - Montserrat
+2024-07-04 15:57:07 - GDP data extraction from table rows completed
+2024-07-04 15:57:07 - DataFrame creation completed
+2024-07-04 15:57:07 - GDP values converted from million to billion USD
+2024-07-04 15:57:07 - ETL process for GDP data completed successfully
+2024-07-04 15:57:07 - Starting ETL process for region data from Wikipedia
+2024-07-04 15:57:07 - Request to wiki for region data completed
+2024-07-04 15:57:07 - HTML parsing completed
+2024-07-04 15:57:07 - Region table found in HTML content
+2024-07-04 15:57:07 - Region table rows parsed
+2024-07-04 15:57:07 - Region data extraction from table rows completed
+2024-07-04 15:57:07 - DataFrame creation for region data completed
+2024-07-04 15:57:07 - Created DataFrame for unmatched countries with their continents
+2024-07-04 15:57:07 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 15:57:07 - ETL process for region data completed successfully
+2024-07-04 15:57:07 - The result was printed on console
+2024-07-04 15:57:07 - gdp_region_1.json saved
+2024-07-04 16:16:39 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:16:39 - Request to wiki for GDP data completed
+2024-07-04 16:16:40 - Request to wiki for GDP data completed
+2024-07-04 16:16:40 - GDP table found in HTML content
+2024-07-04 16:16:40 - empty GDP value - Cuba
+2024-07-04 16:16:40 - empty GDP value - North Korea
+2024-07-04 16:16:40 - empty GDP value - New Caledonia
+2024-07-04 16:16:40 - empty GDP value - Syria
+2024-07-04 16:16:40 - empty GDP value - Monaco
+2024-07-04 16:16:40 - empty GDP value - Liechtenstein
+2024-07-04 16:16:40 - empty GDP value - Bermuda
+2024-07-04 16:16:40 - empty GDP value - Cayman Islands
+2024-07-04 16:16:40 - empty GDP value - French Polynesia
+2024-07-04 16:16:40 - empty GDP value - Greenland
+2024-07-04 16:16:40 - empty GDP value - Curaçao
+2024-07-04 16:16:40 - empty GDP value - Eritrea
+2024-07-04 16:16:40 - empty GDP value - Zanzibar
+2024-07-04 16:16:40 - empty GDP value - Sint Maarten
+2024-07-04 16:16:40 - empty GDP value - British Virgin Islands
+2024-07-04 16:16:40 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:16:40 - empty GDP value - Anguilla
+2024-07-04 16:16:40 - empty GDP value - Cook Islands
+2024-07-04 16:16:40 - empty GDP value - Montserrat
+2024-07-04 16:16:40 - GDP data extraction from table rows completed
+2024-07-04 16:16:40 - DataFrame creation completed
+2024-07-04 16:16:40 - GDP values converted from million to billion USD
+2024-07-04 16:16:40 - ETL process for GDP data completed successfully
+2024-07-04 16:16:40 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:16:40 - Request to wiki for region data completed
+2024-07-04 16:16:40 - HTML parsing completed
+2024-07-04 16:16:40 - Region table found in HTML content
+2024-07-04 16:16:40 - Region table rows parsed
+2024-07-04 16:16:40 - Region data extraction from table rows completed
+2024-07-04 16:16:40 - DataFrame creation for region data completed
+2024-07-04 16:16:40 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:16:40 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:16:40 - ETL process for region data completed successfully
+2024-07-04 16:16:40 - The result was printed on console
+2024-07-04 16:16:40 - gdp_region_2.json saved
+2024-07-04 16:16:40 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:16:41 - Request to wiki for GDP data completed
+2024-07-04 16:16:41 - Request to wiki for GDP data completed
+2024-07-04 16:16:41 - GDP table found in HTML content
+2024-07-04 16:16:41 - empty GDP value - Cuba
+2024-07-04 16:16:41 - empty GDP value - North Korea
+2024-07-04 16:16:41 - empty GDP value - New Caledonia
+2024-07-04 16:16:41 - empty GDP value - Syria
+2024-07-04 16:16:41 - empty GDP value - Monaco
+2024-07-04 16:16:41 - empty GDP value - Liechtenstein
+2024-07-04 16:16:41 - empty GDP value - Bermuda
+2024-07-04 16:16:41 - empty GDP value - Cayman Islands
+2024-07-04 16:16:41 - empty GDP value - French Polynesia
+2024-07-04 16:16:41 - empty GDP value - Greenland
+2024-07-04 16:16:41 - empty GDP value - Curaçao
+2024-07-04 16:16:41 - empty GDP value - Eritrea
+2024-07-04 16:16:41 - empty GDP value - Zanzibar
+2024-07-04 16:16:41 - empty GDP value - Sint Maarten
+2024-07-04 16:16:41 - empty GDP value - British Virgin Islands
+2024-07-04 16:16:41 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:16:41 - empty GDP value - Anguilla
+2024-07-04 16:16:41 - empty GDP value - Cook Islands
+2024-07-04 16:16:41 - empty GDP value - Montserrat
+2024-07-04 16:16:41 - GDP data extraction from table rows completed
+2024-07-04 16:16:41 - DataFrame creation completed
+2024-07-04 16:16:41 - GDP values converted from million to billion USD
+2024-07-04 16:16:41 - ETL process for GDP data completed successfully
+2024-07-04 16:16:41 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:16:41 - Request to wiki for region data completed
+2024-07-04 16:16:41 - HTML parsing completed
+2024-07-04 16:16:41 - Region table found in HTML content
+2024-07-04 16:16:41 - Region table rows parsed
+2024-07-04 16:16:41 - Region data extraction from table rows completed
+2024-07-04 16:16:41 - DataFrame creation for region data completed
+2024-07-04 16:16:41 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:16:41 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:16:41 - ETL process for region data completed successfully
+2024-07-04 16:16:41 - The result was printed on console
+2024-07-04 16:16:41 - gdp_region_3.json saved
+2024-07-04 16:17:51 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:17:52 - Request to wiki for GDP data completed
+2024-07-04 16:17:52 - Request to wiki for GDP data completed
+2024-07-04 16:17:52 - GDP table found in HTML content
+2024-07-04 16:17:52 - empty GDP value - Cuba
+2024-07-04 16:17:52 - empty GDP value - North Korea
+2024-07-04 16:17:52 - empty GDP value - New Caledonia
+2024-07-04 16:17:52 - empty GDP value - Syria
+2024-07-04 16:17:52 - empty GDP value - Monaco
+2024-07-04 16:17:52 - empty GDP value - Liechtenstein
+2024-07-04 16:17:52 - empty GDP value - Bermuda
+2024-07-04 16:17:52 - empty GDP value - Cayman Islands
+2024-07-04 16:17:52 - empty GDP value - French Polynesia
+2024-07-04 16:17:52 - empty GDP value - Greenland
+2024-07-04 16:17:52 - empty GDP value - Curaçao
+2024-07-04 16:17:52 - empty GDP value - Eritrea
+2024-07-04 16:17:52 - empty GDP value - Zanzibar
+2024-07-04 16:17:52 - empty GDP value - Sint Maarten
+2024-07-04 16:17:52 - empty GDP value - British Virgin Islands
+2024-07-04 16:17:52 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:17:52 - empty GDP value - Anguilla
+2024-07-04 16:17:52 - empty GDP value - Cook Islands
+2024-07-04 16:17:52 - empty GDP value - Montserrat
+2024-07-04 16:17:52 - GDP data extraction from table rows completed
+2024-07-04 16:17:52 - DataFrame creation completed
+2024-07-04 16:17:52 - GDP values converted from million to billion USD
+2024-07-04 16:17:52 - ETL process for GDP data completed successfully
+2024-07-04 16:17:52 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:17:52 - Request to wiki for region data completed
+2024-07-04 16:17:52 - HTML parsing completed
+2024-07-04 16:17:52 - Region table found in HTML content
+2024-07-04 16:17:52 - Region table rows parsed
+2024-07-04 16:17:52 - Region data extraction from table rows completed
+2024-07-04 16:17:52 - DataFrame creation for region data completed
+2024-07-04 16:17:52 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:17:52 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:17:52 - ETL process for region data completed successfully
+2024-07-04 16:17:52 - The result was printed on console
+2024-07-04 16:17:52 - gdp_region_4.json saved
+2024-07-04 16:31:43 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:31:43 - Request to wiki for GDP data completed
+2024-07-04 16:31:43 - Request to wiki for GDP data completed
+2024-07-04 16:31:43 - GDP table found in HTML content
+2024-07-04 16:31:43 - empty GDP value - Cuba
+2024-07-04 16:31:43 - empty GDP value - North Korea
+2024-07-04 16:31:43 - empty GDP value - New Caledonia
+2024-07-04 16:31:43 - empty GDP value - Syria
+2024-07-04 16:31:43 - empty GDP value - Monaco
+2024-07-04 16:31:43 - empty GDP value - Liechtenstein
+2024-07-04 16:31:43 - empty GDP value - Bermuda
+2024-07-04 16:31:43 - empty GDP value - Cayman Islands
+2024-07-04 16:31:43 - empty GDP value - French Polynesia
+2024-07-04 16:31:43 - empty GDP value - Greenland
+2024-07-04 16:31:43 - empty GDP value - Curaçao
+2024-07-04 16:31:43 - empty GDP value - Eritrea
+2024-07-04 16:31:43 - empty GDP value - Zanzibar
+2024-07-04 16:31:43 - empty GDP value - Sint Maarten
+2024-07-04 16:31:43 - empty GDP value - British Virgin Islands
+2024-07-04 16:31:43 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:31:43 - empty GDP value - Anguilla
+2024-07-04 16:31:43 - empty GDP value - Cook Islands
+2024-07-04 16:31:43 - empty GDP value - Montserrat
+2024-07-04 16:31:43 - GDP data extraction from table rows completed
+2024-07-04 16:31:43 - DataFrame creation completed
+2024-07-04 16:31:43 - GDP values converted from million to billion USD
+2024-07-04 16:31:43 - ETL process for GDP data completed successfully
+2024-07-04 16:31:43 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:31:44 - Request to wiki for region data completed
+2024-07-04 16:31:44 - HTML parsing completed
+2024-07-04 16:31:44 - Region table found in HTML content
+2024-07-04 16:31:44 - Region table rows parsed
+2024-07-04 16:31:44 - Region data extraction from table rows completed
+2024-07-04 16:31:44 - DataFrame creation for region data completed
+2024-07-04 16:31:44 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:31:44 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:31:44 - ETL process for region data completed successfully
+2024-07-04 16:32:06 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:32:07 - Request to wiki for GDP data completed
+2024-07-04 16:32:07 - Request to wiki for GDP data completed
+2024-07-04 16:32:07 - GDP table found in HTML content
+2024-07-04 16:32:07 - empty GDP value - Cuba
+2024-07-04 16:32:07 - empty GDP value - North Korea
+2024-07-04 16:32:07 - empty GDP value - New Caledonia
+2024-07-04 16:32:07 - empty GDP value - Syria
+2024-07-04 16:32:07 - empty GDP value - Monaco
+2024-07-04 16:32:07 - empty GDP value - Liechtenstein
+2024-07-04 16:32:07 - empty GDP value - Bermuda
+2024-07-04 16:32:07 - empty GDP value - Cayman Islands
+2024-07-04 16:32:07 - empty GDP value - French Polynesia
+2024-07-04 16:32:07 - empty GDP value - Greenland
+2024-07-04 16:32:07 - empty GDP value - Curaçao
+2024-07-04 16:32:07 - empty GDP value - Eritrea
+2024-07-04 16:32:07 - empty GDP value - Zanzibar
+2024-07-04 16:32:07 - empty GDP value - Sint Maarten
+2024-07-04 16:32:07 - empty GDP value - British Virgin Islands
+2024-07-04 16:32:07 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:32:07 - empty GDP value - Anguilla
+2024-07-04 16:32:07 - empty GDP value - Cook Islands
+2024-07-04 16:32:07 - empty GDP value - Montserrat
+2024-07-04 16:32:07 - GDP data extraction from table rows completed
+2024-07-04 16:32:07 - DataFrame creation completed
+2024-07-04 16:32:07 - GDP values converted from million to billion USD
+2024-07-04 16:32:07 - ETL process for GDP data completed successfully
+2024-07-04 16:32:07 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:32:07 - Request to wiki for region data completed
+2024-07-04 16:32:07 - HTML parsing completed
+2024-07-04 16:32:07 - Region table found in HTML content
+2024-07-04 16:32:07 - Region table rows parsed
+2024-07-04 16:32:07 - Region data extraction from table rows completed
+2024-07-04 16:32:07 - DataFrame creation for region data completed
+2024-07-04 16:32:07 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:32:07 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:32:07 - ETL process for region data completed successfully
+2024-07-04 16:36:48 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:36:48 - Request to wiki for GDP data completed
+2024-07-04 16:36:48 - Request to wiki for GDP data completed
+2024-07-04 16:36:48 - GDP table found in HTML content
+2024-07-04 16:36:48 - empty GDP value - Cuba
+2024-07-04 16:36:48 - empty GDP value - North Korea
+2024-07-04 16:36:48 - empty GDP value - New Caledonia
+2024-07-04 16:36:48 - empty GDP value - Syria
+2024-07-04 16:36:48 - empty GDP value - Monaco
+2024-07-04 16:36:48 - empty GDP value - Liechtenstein
+2024-07-04 16:36:48 - empty GDP value - Bermuda
+2024-07-04 16:36:48 - empty GDP value - Cayman Islands
+2024-07-04 16:36:48 - empty GDP value - French Polynesia
+2024-07-04 16:36:48 - empty GDP value - Greenland
+2024-07-04 16:36:48 - empty GDP value - Curaçao
+2024-07-04 16:36:48 - empty GDP value - Eritrea
+2024-07-04 16:36:48 - empty GDP value - Zanzibar
+2024-07-04 16:36:48 - empty GDP value - Sint Maarten
+2024-07-04 16:36:48 - empty GDP value - British Virgin Islands
+2024-07-04 16:36:48 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:36:48 - empty GDP value - Anguilla
+2024-07-04 16:36:48 - empty GDP value - Cook Islands
+2024-07-04 16:36:48 - empty GDP value - Montserrat
+2024-07-04 16:36:48 - GDP data extraction from table rows completed
+2024-07-04 16:36:48 - DataFrame creation completed
+2024-07-04 16:36:48 - GDP values converted from million to billion USD
+2024-07-04 16:36:48 - ETL process for GDP data completed successfully
+2024-07-04 16:36:48 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:36:49 - Request to wiki for region data completed
+2024-07-04 16:36:49 - HTML parsing completed
+2024-07-04 16:36:49 - Region table found in HTML content
+2024-07-04 16:36:49 - Region table rows parsed
+2024-07-04 16:36:49 - Region data extraction from table rows completed
+2024-07-04 16:36:49 - DataFrame creation for region data completed
+2024-07-04 16:36:49 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:36:49 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:36:49 - ETL process for region data completed successfully
+2024-07-04 16:37:13 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:37:14 - Request to wiki for GDP data completed
+2024-07-04 16:37:14 - Request to wiki for GDP data completed
+2024-07-04 16:37:14 - GDP table found in HTML content
+2024-07-04 16:37:14 - empty GDP value - Cuba
+2024-07-04 16:37:14 - empty GDP value - North Korea
+2024-07-04 16:37:14 - empty GDP value - New Caledonia
+2024-07-04 16:37:14 - empty GDP value - Syria
+2024-07-04 16:37:14 - empty GDP value - Monaco
+2024-07-04 16:37:14 - empty GDP value - Liechtenstein
+2024-07-04 16:37:14 - empty GDP value - Bermuda
+2024-07-04 16:37:14 - empty GDP value - Cayman Islands
+2024-07-04 16:37:14 - empty GDP value - French Polynesia
+2024-07-04 16:37:14 - empty GDP value - Greenland
+2024-07-04 16:37:14 - empty GDP value - Curaçao
+2024-07-04 16:37:14 - empty GDP value - Eritrea
+2024-07-04 16:37:14 - empty GDP value - Zanzibar
+2024-07-04 16:37:14 - empty GDP value - Sint Maarten
+2024-07-04 16:37:14 - empty GDP value - British Virgin Islands
+2024-07-04 16:37:14 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:37:14 - empty GDP value - Anguilla
+2024-07-04 16:37:14 - empty GDP value - Cook Islands
+2024-07-04 16:37:14 - empty GDP value - Montserrat
+2024-07-04 16:37:14 - GDP data extraction from table rows completed
+2024-07-04 16:37:14 - DataFrame creation completed
+2024-07-04 16:37:14 - GDP values converted from million to billion USD
+2024-07-04 16:37:14 - ETL process for GDP data completed successfully
+2024-07-04 16:37:14 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:37:15 - Request to wiki for region data completed
+2024-07-04 16:37:15 - HTML parsing completed
+2024-07-04 16:37:15 - Region table found in HTML content
+2024-07-04 16:37:15 - Region table rows parsed
+2024-07-04 16:37:15 - Region data extraction from table rows completed
+2024-07-04 16:37:15 - DataFrame creation for region data completed
+2024-07-04 16:37:15 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:37:15 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:37:15 - ETL process for region data completed successfully
+2024-07-04 16:38:05 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:38:06 - Request to wiki for GDP data completed
+2024-07-04 16:38:06 - Request to wiki for GDP data completed
+2024-07-04 16:38:06 - GDP table found in HTML content
+2024-07-04 16:38:06 - empty GDP value - Cuba
+2024-07-04 16:38:06 - empty GDP value - North Korea
+2024-07-04 16:38:06 - empty GDP value - New Caledonia
+2024-07-04 16:38:06 - empty GDP value - Syria
+2024-07-04 16:38:06 - empty GDP value - Monaco
+2024-07-04 16:38:06 - empty GDP value - Liechtenstein
+2024-07-04 16:38:06 - empty GDP value - Bermuda
+2024-07-04 16:38:06 - empty GDP value - Cayman Islands
+2024-07-04 16:38:06 - empty GDP value - French Polynesia
+2024-07-04 16:38:06 - empty GDP value - Greenland
+2024-07-04 16:38:06 - empty GDP value - Curaçao
+2024-07-04 16:38:06 - empty GDP value - Eritrea
+2024-07-04 16:38:06 - empty GDP value - Zanzibar
+2024-07-04 16:38:06 - empty GDP value - Sint Maarten
+2024-07-04 16:38:06 - empty GDP value - British Virgin Islands
+2024-07-04 16:38:06 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:38:06 - empty GDP value - Anguilla
+2024-07-04 16:38:06 - empty GDP value - Cook Islands
+2024-07-04 16:38:06 - empty GDP value - Montserrat
+2024-07-04 16:38:06 - GDP data extraction from table rows completed
+2024-07-04 16:38:06 - DataFrame creation completed
+2024-07-04 16:38:06 - GDP values converted from million to billion USD
+2024-07-04 16:38:06 - ETL process for GDP data completed successfully
+2024-07-04 16:38:06 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:38:06 - Request to wiki for region data completed
+2024-07-04 16:38:06 - HTML parsing completed
+2024-07-04 16:38:06 - Region table found in HTML content
+2024-07-04 16:38:06 - Region table rows parsed
+2024-07-04 16:38:06 - Region data extraction from table rows completed
+2024-07-04 16:38:06 - DataFrame creation for region data completed
+2024-07-04 16:38:06 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:38:06 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:38:06 - ETL process for region data completed successfully
+2024-07-04 16:39:06 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:39:07 - Request to wiki for GDP data completed
+2024-07-04 16:39:07 - Request to wiki for GDP data completed
+2024-07-04 16:39:07 - GDP table found in HTML content
+2024-07-04 16:39:07 - empty GDP value - Cuba
+2024-07-04 16:39:07 - empty GDP value - North Korea
+2024-07-04 16:39:07 - empty GDP value - New Caledonia
+2024-07-04 16:39:07 - empty GDP value - Syria
+2024-07-04 16:39:07 - empty GDP value - Monaco
+2024-07-04 16:39:07 - empty GDP value - Liechtenstein
+2024-07-04 16:39:07 - empty GDP value - Bermuda
+2024-07-04 16:39:07 - empty GDP value - Cayman Islands
+2024-07-04 16:39:07 - empty GDP value - French Polynesia
+2024-07-04 16:39:07 - empty GDP value - Greenland
+2024-07-04 16:39:07 - empty GDP value - Curaçao
+2024-07-04 16:39:07 - empty GDP value - Eritrea
+2024-07-04 16:39:07 - empty GDP value - Zanzibar
+2024-07-04 16:39:07 - empty GDP value - Sint Maarten
+2024-07-04 16:39:07 - empty GDP value - British Virgin Islands
+2024-07-04 16:39:07 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:39:07 - empty GDP value - Anguilla
+2024-07-04 16:39:07 - empty GDP value - Cook Islands
+2024-07-04 16:39:07 - empty GDP value - Montserrat
+2024-07-04 16:39:07 - GDP data extraction from table rows completed
+2024-07-04 16:39:07 - DataFrame creation completed
+2024-07-04 16:39:07 - GDP values converted from million to billion USD
+2024-07-04 16:39:07 - ETL process for GDP data completed successfully
+2024-07-04 16:39:07 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:39:07 - Request to wiki for region data completed
+2024-07-04 16:39:08 - HTML parsing completed
+2024-07-04 16:39:08 - Region table found in HTML content
+2024-07-04 16:39:08 - Region table rows parsed
+2024-07-04 16:39:08 - Region data extraction from table rows completed
+2024-07-04 16:39:08 - DataFrame creation for region data completed
+2024-07-04 16:39:08 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:39:08 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:39:08 - ETL process for region data completed successfully
+2024-07-04 16:39:29 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:39:30 - Request to wiki for GDP data completed
+2024-07-04 16:39:30 - Request to wiki for GDP data completed
+2024-07-04 16:39:30 - GDP table found in HTML content
+2024-07-04 16:39:30 - empty GDP value - Cuba
+2024-07-04 16:39:30 - empty GDP value - North Korea
+2024-07-04 16:39:30 - empty GDP value - New Caledonia
+2024-07-04 16:39:30 - empty GDP value - Syria
+2024-07-04 16:39:30 - empty GDP value - Monaco
+2024-07-04 16:39:30 - empty GDP value - Liechtenstein
+2024-07-04 16:39:30 - empty GDP value - Bermuda
+2024-07-04 16:39:30 - empty GDP value - Cayman Islands
+2024-07-04 16:39:30 - empty GDP value - French Polynesia
+2024-07-04 16:39:30 - empty GDP value - Greenland
+2024-07-04 16:39:30 - empty GDP value - Curaçao
+2024-07-04 16:39:30 - empty GDP value - Eritrea
+2024-07-04 16:39:30 - empty GDP value - Zanzibar
+2024-07-04 16:39:30 - empty GDP value - Sint Maarten
+2024-07-04 16:39:30 - empty GDP value - British Virgin Islands
+2024-07-04 16:39:30 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:39:30 - empty GDP value - Anguilla
+2024-07-04 16:39:30 - empty GDP value - Cook Islands
+2024-07-04 16:39:30 - empty GDP value - Montserrat
+2024-07-04 16:39:30 - GDP data extraction from table rows completed
+2024-07-04 16:39:30 - DataFrame creation completed
+2024-07-04 16:39:30 - GDP values converted from million to billion USD
+2024-07-04 16:39:30 - ETL process for GDP data completed successfully
+2024-07-04 16:39:30 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:39:30 - Request to wiki for region data completed
+2024-07-04 16:39:31 - HTML parsing completed
+2024-07-04 16:39:31 - Region table found in HTML content
+2024-07-04 16:39:31 - Region table rows parsed
+2024-07-04 16:39:31 - Region data extraction from table rows completed
+2024-07-04 16:39:31 - DataFrame creation for region data completed
+2024-07-04 16:39:31 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:39:31 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:39:31 - ETL process for region data completed successfully
+2024-07-04 16:42:05 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:42:06 - Request to wiki for GDP data completed
+2024-07-04 16:42:06 - Request to wiki for GDP data completed
+2024-07-04 16:42:06 - GDP table found in HTML content
+2024-07-04 16:42:06 - empty GDP value - Cuba
+2024-07-04 16:42:06 - empty GDP value - North Korea
+2024-07-04 16:42:06 - empty GDP value - New Caledonia
+2024-07-04 16:42:06 - empty GDP value - Syria
+2024-07-04 16:42:06 - empty GDP value - Monaco
+2024-07-04 16:42:06 - empty GDP value - Liechtenstein
+2024-07-04 16:42:06 - empty GDP value - Bermuda
+2024-07-04 16:42:06 - empty GDP value - Cayman Islands
+2024-07-04 16:42:06 - empty GDP value - French Polynesia
+2024-07-04 16:42:06 - empty GDP value - Greenland
+2024-07-04 16:42:06 - empty GDP value - Curaçao
+2024-07-04 16:42:06 - empty GDP value - Eritrea
+2024-07-04 16:42:06 - empty GDP value - Zanzibar
+2024-07-04 16:42:06 - empty GDP value - Sint Maarten
+2024-07-04 16:42:06 - empty GDP value - British Virgin Islands
+2024-07-04 16:42:06 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:42:06 - empty GDP value - Anguilla
+2024-07-04 16:42:06 - empty GDP value - Cook Islands
+2024-07-04 16:42:06 - empty GDP value - Montserrat
+2024-07-04 16:42:06 - GDP data extraction from table rows completed
+2024-07-04 16:42:06 - DataFrame creation completed
+2024-07-04 16:42:06 - GDP values converted from million to billion USD
+2024-07-04 16:42:06 - ETL process for GDP data completed successfully
+2024-07-04 16:42:06 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:42:06 - Request to wiki for region data completed
+2024-07-04 16:42:06 - HTML parsing completed
+2024-07-04 16:42:06 - Region table found in HTML content
+2024-07-04 16:42:06 - Region table rows parsed
+2024-07-04 16:42:06 - Region data extraction from table rows completed
+2024-07-04 16:42:06 - DataFrame creation for region data completed
+2024-07-04 16:42:06 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:42:06 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:42:06 - ETL process for region data completed successfully
+2024-07-04 16:54:59 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:54:59 - Request to wiki for GDP data completed
+2024-07-04 16:54:59 - Request to wiki for GDP data completed
+2024-07-04 16:54:59 - GDP table found in HTML content
+2024-07-04 16:54:59 - empty GDP value - Cuba
+2024-07-04 16:54:59 - empty GDP value - North Korea
+2024-07-04 16:54:59 - empty GDP value - New Caledonia
+2024-07-04 16:54:59 - empty GDP value - Syria
+2024-07-04 16:54:59 - empty GDP value - Monaco
+2024-07-04 16:54:59 - empty GDP value - Liechtenstein
+2024-07-04 16:54:59 - empty GDP value - Bermuda
+2024-07-04 16:54:59 - empty GDP value - Cayman Islands
+2024-07-04 16:54:59 - empty GDP value - French Polynesia
+2024-07-04 16:54:59 - empty GDP value - Greenland
+2024-07-04 16:54:59 - empty GDP value - Curaçao
+2024-07-04 16:54:59 - empty GDP value - Eritrea
+2024-07-04 16:54:59 - empty GDP value - Zanzibar
+2024-07-04 16:54:59 - empty GDP value - Sint Maarten
+2024-07-04 16:54:59 - empty GDP value - British Virgin Islands
+2024-07-04 16:54:59 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:54:59 - empty GDP value - Anguilla
+2024-07-04 16:54:59 - empty GDP value - Cook Islands
+2024-07-04 16:54:59 - empty GDP value - Montserrat
+2024-07-04 16:54:59 - GDP data extraction from table rows completed
+2024-07-04 16:54:59 - DataFrame creation completed
+2024-07-04 16:54:59 - GDP values converted from million to billion USD
+2024-07-04 16:54:59 - ETL process for GDP data completed successfully
+2024-07-04 16:54:59 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:55:03 - Request to wiki for region data completed
+2024-07-04 16:55:04 - HTML parsing completed
+2024-07-04 16:55:04 - Region table found in HTML content
+2024-07-04 16:55:04 - Region table rows parsed
+2024-07-04 16:55:04 - Region data extraction from table rows completed
+2024-07-04 16:55:04 - DataFrame creation for region data completed
+2024-07-04 16:55:04 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:55:04 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:55:04 - ETL process for region data completed successfully
+2024-07-04 16:58:32 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:58:32 - Request to wiki for GDP data completed
+2024-07-04 16:58:32 - Request to wiki for GDP data completed
+2024-07-04 16:58:32 - GDP table found in HTML content
+2024-07-04 16:58:32 - empty GDP value - Cuba
+2024-07-04 16:58:32 - empty GDP value - North Korea
+2024-07-04 16:58:32 - empty GDP value - New Caledonia
+2024-07-04 16:58:32 - empty GDP value - Syria
+2024-07-04 16:58:32 - empty GDP value - Monaco
+2024-07-04 16:58:32 - empty GDP value - Liechtenstein
+2024-07-04 16:58:32 - empty GDP value - Bermuda
+2024-07-04 16:58:32 - empty GDP value - Cayman Islands
+2024-07-04 16:58:32 - empty GDP value - French Polynesia
+2024-07-04 16:58:32 - empty GDP value - Greenland
+2024-07-04 16:58:32 - empty GDP value - Curaçao
+2024-07-04 16:58:32 - empty GDP value - Eritrea
+2024-07-04 16:58:32 - empty GDP value - Zanzibar
+2024-07-04 16:58:32 - empty GDP value - Sint Maarten
+2024-07-04 16:58:32 - empty GDP value - British Virgin Islands
+2024-07-04 16:58:32 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:58:32 - empty GDP value - Anguilla
+2024-07-04 16:58:32 - empty GDP value - Cook Islands
+2024-07-04 16:58:32 - empty GDP value - Montserrat
+2024-07-04 16:58:32 - GDP data extraction from table rows completed
+2024-07-04 16:58:32 - DataFrame creation completed
+2024-07-04 16:58:32 - GDP values converted from million to billion USD
+2024-07-04 16:58:32 - ETL process for GDP data completed successfully
+2024-07-04 16:58:32 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:58:32 - Request to wiki for region data completed
+2024-07-04 16:58:33 - HTML parsing completed
+2024-07-04 16:58:33 - Region table found in HTML content
+2024-07-04 16:58:33 - Region table rows parsed
+2024-07-04 16:58:33 - Region data extraction from table rows completed
+2024-07-04 16:58:33 - DataFrame creation for region data completed
+2024-07-04 16:58:33 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:58:33 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:58:33 - ETL process for region data completed successfully
+2024-07-04 16:59:30 - Starting ETL process for GDP data from Wiki
+2024-07-04 16:59:30 - Request to wiki for GDP data completed
+2024-07-04 16:59:30 - Request to wiki for GDP data completed
+2024-07-04 16:59:30 - GDP table found in HTML content
+2024-07-04 16:59:30 - empty GDP value - Cuba
+2024-07-04 16:59:30 - empty GDP value - North Korea
+2024-07-04 16:59:30 - empty GDP value - New Caledonia
+2024-07-04 16:59:30 - empty GDP value - Syria
+2024-07-04 16:59:30 - empty GDP value - Monaco
+2024-07-04 16:59:30 - empty GDP value - Liechtenstein
+2024-07-04 16:59:30 - empty GDP value - Bermuda
+2024-07-04 16:59:30 - empty GDP value - Cayman Islands
+2024-07-04 16:59:30 - empty GDP value - French Polynesia
+2024-07-04 16:59:30 - empty GDP value - Greenland
+2024-07-04 16:59:30 - empty GDP value - Curaçao
+2024-07-04 16:59:30 - empty GDP value - Eritrea
+2024-07-04 16:59:30 - empty GDP value - Zanzibar
+2024-07-04 16:59:30 - empty GDP value - Sint Maarten
+2024-07-04 16:59:30 - empty GDP value - British Virgin Islands
+2024-07-04 16:59:30 - empty GDP value - Turks and Caicos Islands
+2024-07-04 16:59:30 - empty GDP value - Anguilla
+2024-07-04 16:59:30 - empty GDP value - Cook Islands
+2024-07-04 16:59:30 - empty GDP value - Montserrat
+2024-07-04 16:59:30 - GDP data extraction from table rows completed
+2024-07-04 16:59:30 - DataFrame creation completed
+2024-07-04 16:59:30 - GDP values converted from million to billion USD
+2024-07-04 16:59:30 - ETL process for GDP data completed successfully
+2024-07-04 16:59:30 - Starting ETL process for region data from Wikipedia
+2024-07-04 16:59:31 - Request to wiki for region data completed
+2024-07-04 16:59:31 - HTML parsing completed
+2024-07-04 16:59:31 - Region table found in HTML content
+2024-07-04 16:59:31 - Region table rows parsed
+2024-07-04 16:59:31 - Region data extraction from table rows completed
+2024-07-04 16:59:31 - DataFrame creation for region data completed
+2024-07-04 16:59:31 - Created DataFrame for unmatched countries with their continents
+2024-07-04 16:59:31 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 16:59:31 - ETL process for region data completed successfully
+2024-07-04 17:00:26 - Starting ETL process for GDP data from Wiki
+2024-07-04 17:00:26 - Request to wiki for GDP data completed
+2024-07-04 17:00:27 - Request to wiki for GDP data completed
+2024-07-04 17:00:27 - GDP table found in HTML content
+2024-07-04 17:00:27 - empty GDP value - Cuba
+2024-07-04 17:00:27 - empty GDP value - North Korea
+2024-07-04 17:00:27 - empty GDP value - New Caledonia
+2024-07-04 17:00:27 - empty GDP value - Syria
+2024-07-04 17:00:27 - empty GDP value - Monaco
+2024-07-04 17:00:27 - empty GDP value - Liechtenstein
+2024-07-04 17:00:27 - empty GDP value - Bermuda
+2024-07-04 17:00:27 - empty GDP value - Cayman Islands
+2024-07-04 17:00:27 - empty GDP value - French Polynesia
+2024-07-04 17:00:27 - empty GDP value - Greenland
+2024-07-04 17:00:27 - empty GDP value - Curaçao
+2024-07-04 17:00:27 - empty GDP value - Eritrea
+2024-07-04 17:00:27 - empty GDP value - Zanzibar
+2024-07-04 17:00:27 - empty GDP value - Sint Maarten
+2024-07-04 17:00:27 - empty GDP value - British Virgin Islands
+2024-07-04 17:00:27 - empty GDP value - Turks and Caicos Islands
+2024-07-04 17:00:27 - empty GDP value - Anguilla
+2024-07-04 17:00:27 - empty GDP value - Cook Islands
+2024-07-04 17:00:27 - empty GDP value - Montserrat
+2024-07-04 17:00:27 - GDP data extraction from table rows completed
+2024-07-04 17:00:27 - DataFrame creation completed
+2024-07-04 17:00:27 - GDP values converted from million to billion USD
+2024-07-04 17:00:27 - ETL process for GDP data completed successfully
+2024-07-04 17:00:27 - Starting ETL process for region data from Wikipedia
+2024-07-04 17:00:27 - Request to wiki for region data completed
+2024-07-04 17:00:27 - HTML parsing completed
+2024-07-04 17:00:27 - Region table found in HTML content
+2024-07-04 17:00:27 - Region table rows parsed
+2024-07-04 17:00:27 - Region data extraction from table rows completed
+2024-07-04 17:00:27 - DataFrame creation for region data completed
+2024-07-04 17:00:27 - Created DataFrame for unmatched countries with their continents
+2024-07-04 17:00:27 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 17:00:27 - ETL process for region data completed successfully
+2024-07-04 17:02:14 - Starting ETL process for GDP data from Wiki
+2024-07-04 17:02:14 - Request to wiki for GDP data completed
+2024-07-04 17:02:14 - Request to wiki for GDP data completed
+2024-07-04 17:02:14 - GDP table found in HTML content
+2024-07-04 17:02:14 - empty GDP value - Cuba
+2024-07-04 17:02:14 - empty GDP value - North Korea
+2024-07-04 17:02:14 - empty GDP value - New Caledonia
+2024-07-04 17:02:14 - empty GDP value - Syria
+2024-07-04 17:02:14 - empty GDP value - Monaco
+2024-07-04 17:02:14 - empty GDP value - Liechtenstein
+2024-07-04 17:02:14 - empty GDP value - Bermuda
+2024-07-04 17:02:14 - empty GDP value - Cayman Islands
+2024-07-04 17:02:14 - empty GDP value - French Polynesia
+2024-07-04 17:02:14 - empty GDP value - Greenland
+2024-07-04 17:02:14 - empty GDP value - Curaçao
+2024-07-04 17:02:14 - empty GDP value - Eritrea
+2024-07-04 17:02:14 - empty GDP value - Zanzibar
+2024-07-04 17:02:14 - empty GDP value - Sint Maarten
+2024-07-04 17:02:14 - empty GDP value - British Virgin Islands
+2024-07-04 17:02:14 - empty GDP value - Turks and Caicos Islands
+2024-07-04 17:02:14 - empty GDP value - Anguilla
+2024-07-04 17:02:14 - empty GDP value - Cook Islands
+2024-07-04 17:02:14 - empty GDP value - Montserrat
+2024-07-04 17:02:14 - GDP data extraction from table rows completed
+2024-07-04 17:02:14 - DataFrame creation completed
+2024-07-04 17:02:14 - GDP values converted from million to billion USD
+2024-07-04 17:02:14 - ETL process for GDP data completed successfully
+2024-07-04 17:02:14 - Starting ETL process for region data from Wikipedia
+2024-07-04 17:02:15 - Request to wiki for region data completed
+2024-07-04 17:02:15 - HTML parsing completed
+2024-07-04 17:02:15 - Region table found in HTML content
+2024-07-04 17:02:15 - Region table rows parsed
+2024-07-04 17:02:15 - Region data extraction from table rows completed
+2024-07-04 17:02:15 - DataFrame creation for region data completed
+2024-07-04 17:02:15 - Created DataFrame for unmatched countries with their continents
+2024-07-04 17:02:15 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 17:02:15 - ETL process for region data completed successfully
+2024-07-04 17:12:13 - Connecting to the database.
+2024-07-04 17:12:13 - Starting ETL process for GDP data from Wiki
+2024-07-04 17:12:13 - Request to wiki for GDP data completed
+2024-07-04 17:12:13 - Request to wiki for GDP data completed
+2024-07-04 17:12:13 - GDP table found in HTML content
+2024-07-04 17:12:13 - empty GDP value - Cuba
+2024-07-04 17:12:13 - empty GDP value - North Korea
+2024-07-04 17:12:13 - empty GDP value - New Caledonia
+2024-07-04 17:12:13 - empty GDP value - Syria
+2024-07-04 17:12:13 - empty GDP value - Monaco
+2024-07-04 17:12:13 - empty GDP value - Liechtenstein
+2024-07-04 17:12:13 - empty GDP value - Bermuda
+2024-07-04 17:12:13 - empty GDP value - Cayman Islands
+2024-07-04 17:12:13 - empty GDP value - French Polynesia
+2024-07-04 17:12:13 - empty GDP value - Greenland
+2024-07-04 17:12:13 - empty GDP value - Curaçao
+2024-07-04 17:12:13 - empty GDP value - Eritrea
+2024-07-04 17:12:13 - empty GDP value - Zanzibar
+2024-07-04 17:12:13 - empty GDP value - Sint Maarten
+2024-07-04 17:12:13 - empty GDP value - British Virgin Islands
+2024-07-04 17:12:13 - empty GDP value - Turks and Caicos Islands
+2024-07-04 17:12:13 - empty GDP value - Anguilla
+2024-07-04 17:12:13 - empty GDP value - Cook Islands
+2024-07-04 17:12:13 - empty GDP value - Montserrat
+2024-07-04 17:12:13 - GDP data extraction from table rows completed
+2024-07-04 17:12:13 - DataFrame creation completed
+2024-07-04 17:12:13 - GDP values converted from million to billion USD
+2024-07-04 17:12:13 - ETL process for GDP data completed successfully
+2024-07-04 17:12:13 - Fetching GDP data from wiki completed
+2024-07-04 17:12:13 - Starting ETL process for region data from Wikipedia
+2024-07-04 17:12:14 - Request to wiki for region data completed
+2024-07-04 17:12:14 - HTML parsing completed
+2024-07-04 17:12:14 - Region table found in HTML content
+2024-07-04 17:12:14 - Region table rows parsed
+2024-07-04 17:12:14 - Region data extraction from table rows completed
+2024-07-04 17:12:14 - DataFrame creation for region data completed
+2024-07-04 17:12:14 - Created DataFrame for unmatched countries with their continents
+2024-07-04 17:12:14 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 17:12:14 - ETL process for region data completed successfully
+2024-07-04 17:12:14 - Fetching region data from wiki completed
+2024-07-04 17:12:14 - Saving GDP, region data to the database as GDP, Region table completed
+2024-07-04 17:12:14 - Joining GDP and region tables using str query
+2024-07-04 17:12:14 - Executing join query completed, the table was saved as 'Countries_by_GDP'
+2024-07-04 17:12:14 - Querying countries with GDP >= 100 billion USD.
+2024-07-04 17:12:14 - The result of query was printed on console.
+2024-07-04 17:12:14 - Querying top 5 countries by GDP in each region.
+2024-07-04 17:12:14 - The result of query was printed on console.
+2024-07-04 17:12:14 - The database connection was closed
+2024-07-04 17:15:29 - Starting ETL process for GDP data from Wiki
+2024-07-04 17:15:29 - Request to wiki for GDP data completed
+2024-07-04 17:15:29 - Request to wiki for GDP data completed
+2024-07-04 17:15:29 - GDP table found in HTML content
+2024-07-04 17:15:29 - empty GDP value - Cuba
+2024-07-04 17:15:29 - empty GDP value - North Korea
+2024-07-04 17:15:29 - empty GDP value - New Caledonia
+2024-07-04 17:15:29 - empty GDP value - Syria
+2024-07-04 17:15:29 - empty GDP value - Monaco
+2024-07-04 17:15:29 - empty GDP value - Liechtenstein
+2024-07-04 17:15:29 - empty GDP value - Bermuda
+2024-07-04 17:15:29 - empty GDP value - Cayman Islands
+2024-07-04 17:15:29 - empty GDP value - French Polynesia
+2024-07-04 17:15:29 - empty GDP value - Greenland
+2024-07-04 17:15:29 - empty GDP value - Curaçao
+2024-07-04 17:15:29 - empty GDP value - Eritrea
+2024-07-04 17:15:29 - empty GDP value - Zanzibar
+2024-07-04 17:15:29 - empty GDP value - Sint Maarten
+2024-07-04 17:15:29 - empty GDP value - British Virgin Islands
+2024-07-04 17:15:29 - empty GDP value - Turks and Caicos Islands
+2024-07-04 17:15:29 - empty GDP value - Anguilla
+2024-07-04 17:15:29 - empty GDP value - Cook Islands
+2024-07-04 17:15:29 - empty GDP value - Montserrat
+2024-07-04 17:15:29 - GDP data extraction from table rows completed
+2024-07-04 17:15:29 - DataFrame creation completed
+2024-07-04 17:15:29 - GDP values converted from million to billion USD
+2024-07-04 17:15:29 - ETL process for GDP data completed successfully
+2024-07-04 17:15:29 - Starting ETL process for region data from Wikipedia
+2024-07-04 17:15:30 - Request to wiki for region data completed
+2024-07-04 17:15:30 - HTML parsing completed
+2024-07-04 17:15:30 - Region table found in HTML content
+2024-07-04 17:15:30 - Region table rows parsed
+2024-07-04 17:15:30 - Region data extraction from table rows completed
+2024-07-04 17:15:30 - DataFrame creation for region data completed
+2024-07-04 17:15:30 - Created DataFrame for unmatched countries with their continents
+2024-07-04 17:15:30 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 17:15:30 - ETL process for region data completed successfully
+2024-07-04 17:15:30 - The result was printed on console
+2024-07-04 17:15:30 - gdp_region_5.json saved
+2024-07-04 17:16:01 - Connecting to the database.
+2024-07-04 17:16:01 - Starting ETL process for GDP data from Wiki
+2024-07-04 17:16:01 - Request to wiki for GDP data completed
+2024-07-04 17:16:01 - Request to wiki for GDP data completed
+2024-07-04 17:16:01 - GDP table found in HTML content
+2024-07-04 17:16:01 - empty GDP value - Cuba
+2024-07-04 17:16:01 - empty GDP value - North Korea
+2024-07-04 17:16:01 - empty GDP value - New Caledonia
+2024-07-04 17:16:01 - empty GDP value - Syria
+2024-07-04 17:16:01 - empty GDP value - Monaco
+2024-07-04 17:16:01 - empty GDP value - Liechtenstein
+2024-07-04 17:16:01 - empty GDP value - Bermuda
+2024-07-04 17:16:01 - empty GDP value - Cayman Islands
+2024-07-04 17:16:01 - empty GDP value - French Polynesia
+2024-07-04 17:16:01 - empty GDP value - Greenland
+2024-07-04 17:16:01 - empty GDP value - Curaçao
+2024-07-04 17:16:01 - empty GDP value - Eritrea
+2024-07-04 17:16:01 - empty GDP value - Zanzibar
+2024-07-04 17:16:01 - empty GDP value - Sint Maarten
+2024-07-04 17:16:01 - empty GDP value - British Virgin Islands
+2024-07-04 17:16:01 - empty GDP value - Turks and Caicos Islands
+2024-07-04 17:16:01 - empty GDP value - Anguilla
+2024-07-04 17:16:01 - empty GDP value - Cook Islands
+2024-07-04 17:16:01 - empty GDP value - Montserrat
+2024-07-04 17:16:01 - GDP data extraction from table rows completed
+2024-07-04 17:16:01 - DataFrame creation completed
+2024-07-04 17:16:01 - GDP values converted from million to billion USD
+2024-07-04 17:16:01 - ETL process for GDP data completed successfully
+2024-07-04 17:16:01 - Fetching GDP data from wiki completed
+2024-07-04 17:16:01 - Starting ETL process for region data from Wikipedia
+2024-07-04 17:16:02 - Request to wiki for region data completed
+2024-07-04 17:16:02 - HTML parsing completed
+2024-07-04 17:16:02 - Region table found in HTML content
+2024-07-04 17:16:02 - Region table rows parsed
+2024-07-04 17:16:02 - Region data extraction from table rows completed
+2024-07-04 17:16:02 - DataFrame creation for region data completed
+2024-07-04 17:16:02 - Created DataFrame for unmatched countries with their continents
+2024-07-04 17:16:02 - Concatenated unmatched countries to the region DataFrame
+2024-07-04 17:16:02 - ETL process for region data completed successfully
+2024-07-04 17:16:02 - Fetching region data from wiki completed
+2024-07-04 17:16:02 - Saving GDP, region data to the database as GDP, Region table completed
+2024-07-04 17:16:02 - Joining GDP and region tables using str query
+2024-07-04 17:16:02 - Executing join query completed, the table was saved as 'Countries_by_GDP'
+2024-07-04 17:16:02 - Querying countries with GDP >= 100 billion USD.
+2024-07-04 17:16:02 - The result of query was printed on console.
+2024-07-04 17:16:02 - Querying top 5 countries by GDP in each region.
+2024-07-04 17:16:02 - The result of query was printed on console.
+2024-07-04 17:16:02 - The database connection was closed
+2024-07-05 17:02:15 - empty GDP value - Cuba
+2024-07-05 17:02:15 - empty GDP value - North Korea
+2024-07-05 17:02:15 - empty GDP value - New Caledonia
+2024-07-05 17:02:15 - empty GDP value - Syria
+2024-07-05 17:02:15 - empty GDP value - Monaco
+2024-07-05 17:02:15 - empty GDP value - Liechtenstein
+2024-07-05 17:02:15 - empty GDP value - Bermuda
+2024-07-05 17:02:15 - empty GDP value - Cayman Islands
+2024-07-05 17:02:15 - empty GDP value - French Polynesia
+2024-07-05 17:02:15 - empty GDP value - Greenland
+2024-07-05 17:02:15 - empty GDP value - Curaçao
+2024-07-05 17:02:15 - empty GDP value - Eritrea
+2024-07-05 17:02:15 - empty GDP value - Zanzibar
+2024-07-05 17:02:15 - empty GDP value - Sint Maarten
+2024-07-05 17:02:15 - empty GDP value - British Virgin Islands
+2024-07-05 17:02:15 - empty GDP value - Turks and Caicos Islands
+2024-07-05 17:02:15 - empty GDP value - Anguilla
+2024-07-05 17:02:15 - empty GDP value - Cook Islands
+2024-07-05 17:02:15 - empty GDP value - Montserrat
+2024-07-05 17:30:09 - empty GDP value - Cuba
+2024-07-05 17:30:09 - empty GDP value - North Korea
+2024-07-05 17:30:09 - empty GDP value - New Caledonia
+2024-07-05 17:30:09 - empty GDP value - Syria
+2024-07-05 17:30:09 - empty GDP value - Monaco
+2024-07-05 17:30:09 - empty GDP value - Liechtenstein
+2024-07-05 17:30:09 - empty GDP value - Bermuda
+2024-07-05 17:30:09 - empty GDP value - Cayman Islands
+2024-07-05 17:30:09 - empty GDP value - French Polynesia
+2024-07-05 17:30:09 - empty GDP value - Greenland
+2024-07-05 17:30:09 - empty GDP value - Curaçao
+2024-07-05 17:30:09 - empty GDP value - Eritrea
+2024-07-05 17:30:09 - empty GDP value - Zanzibar
+2024-07-05 17:30:09 - empty GDP value - Sint Maarten
+2024-07-05 17:30:09 - empty GDP value - British Virgin Islands
+2024-07-05 17:30:09 - empty GDP value - Turks and Caicos Islands
+2024-07-05 17:30:09 - empty GDP value - Anguilla
+2024-07-05 17:30:09 - empty GDP value - Cook Islands
+2024-07-05 17:30:09 - empty GDP value - Montserrat
+2024-07-05 17:31:48 - empty GDP value - Cuba
+2024-07-05 17:31:48 - empty GDP value - North Korea
+2024-07-05 17:31:48 - empty GDP value - New Caledonia
+2024-07-05 17:31:48 - empty GDP value - Syria
+2024-07-05 17:31:48 - empty GDP value - Monaco
+2024-07-05 17:31:48 - empty GDP value - Liechtenstein
+2024-07-05 17:31:48 - empty GDP value - Bermuda
+2024-07-05 17:31:48 - empty GDP value - Cayman Islands
+2024-07-05 17:31:48 - empty GDP value - French Polynesia
+2024-07-05 17:31:48 - empty GDP value - Greenland
+2024-07-05 17:31:48 - empty GDP value - Curaçao
+2024-07-05 17:31:48 - empty GDP value - Eritrea
+2024-07-05 17:31:48 - empty GDP value - Zanzibar
+2024-07-05 17:31:48 - empty GDP value - Sint Maarten
+2024-07-05 17:31:48 - empty GDP value - British Virgin Islands
+2024-07-05 17:31:48 - empty GDP value - Turks and Caicos Islands
+2024-07-05 17:31:48 - empty GDP value - Anguilla
+2024-07-05 17:31:48 - empty GDP value - Cook Islands
+2024-07-05 17:31:48 - empty GDP value - Montserrat
+2024-07-05 18:12:01 - E start !
+2024-07-05 18:12:02 - E finished !
+2024-07-05 18:12:02 - T start !
+2024-07-05 18:12:02 - T finished !
+2024-07-05 18:12:02 - L start !
+2024-07-05 18:12:02 - L finished !
+2024-07-05 18:52:00 - E start !
+2024-07-05 18:52:01 - E finished !
+2024-07-05 18:52:01 - T start !
+2024-07-05 18:52:01 - T finished !
+2024-07-05 18:52:01 - L start !
+2024-07-05 18:52:22 - E start !
+2024-07-05 18:52:23 - E finished !
+2024-07-05 18:52:23 - T start !
+2024-07-05 18:52:23 - T finished !
+2024-07-05 18:52:23 - L start !
+2024-07-05 18:52:23 - L finished !
+2024-07-05 18:52:41 - E start !
+2024-07-05 18:52:42 - E finished !
+2024-07-05 18:52:42 - T start !
+2024-07-05 18:52:42 - T finished !
+2024-07-05 18:52:42 - L start !
+2024-07-05 18:52:42 - L finished !
+2024-07-05 18:52:42 - Querying top 5 countries by GDP in each region.
+2024-07-05 18:54:35 - E start !
+2024-07-05 18:54:36 - E finished !
+2024-07-05 18:54:36 - T start !
+2024-07-05 18:54:36 - T finished !
+2024-07-05 18:54:36 - L start !
+2024-07-05 18:54:36 - L finished !
+2024-07-05 18:54:36 - Querying top 5 countries by GDP in each region.
+2024-07-05 18:57:00 - E start !
+2024-07-05 18:57:01 - E finished !
+2024-07-05 18:57:01 - T start !
+2024-07-05 18:57:01 - T finished !
+2024-07-05 18:57:01 - L start !
+2024-07-05 18:57:01 - L finished !
+2024-07-05 18:57:01 - Querying top 5 countries by GDP in each region.
+2024-07-05 18:58:26 - E start !
+2024-07-05 18:58:27 - E finished !
+2024-07-05 18:58:27 - T start !
+2024-07-05 18:58:27 - T finished !
+2024-07-05 18:58:27 - L start !
+2024-07-05 18:58:27 - L finished !
+2024-07-05 18:58:27 - Querying top 5 countries by GDP in each region.
+2024-07-05 18:58:55 - E start !
+2024-07-05 18:58:56 - E finished !
+2024-07-05 18:58:56 - T start !
+2024-07-05 18:58:56 - T finished !
+2024-07-05 18:58:56 - L start !
+2024-07-05 18:58:56 - L finished !
+2024-07-05 18:58:56 - Querying top 5 countries by GDP in each region.
+2024-07-05 19:03:26 - E start !
+2024-07-05 19:03:27 - E finished !
+2024-07-05 19:03:27 - T start !
+2024-07-05 19:03:27 - T finished !
+2024-07-05 19:03:27 - L start !
+2024-07-05 19:03:27 - L finished !
+2024-07-05 19:03:27 - Querying top 5 countries by GDP in each region.
+2024-07-05 19:05:03 - E start !
+2024-07-05 19:05:04 - E finished !
+2024-07-05 19:05:04 - T start !
+2024-07-05 19:05:04 - T finished !
+2024-07-05 19:05:04 - L start !
+2024-07-05 19:05:04 - L finished !
+2024-07-05 19:05:19 - E start !
+2024-07-05 19:05:20 - E finished !
+2024-07-05 19:05:20 - T start !
+2024-07-05 19:05:20 - T finished !
+2024-07-05 19:05:20 - L start !
+2024-07-05 19:05:20 - L finished !
+2024-07-05 19:05:41 - E start !
+2024-07-05 19:05:42 - E finished !
+2024-07-05 19:05:42 - T start !
+2024-07-05 19:05:42 - T finished !
+2024-07-05 19:05:42 - L start !
+2024-07-05 19:05:42 - L finished !
+2024-07-05 19:07:16 - E start !
+2024-07-05 19:07:17 - E finished !
+2024-07-05 19:07:17 - T start !
+2024-07-05 19:07:17 - T finished !
+2024-07-05 19:07:17 - L start !
+2024-07-05 19:07:17 - L finished !
+2024-07-05 19:07:24 - E start !
+2024-07-05 19:07:24 - E finished !
+2024-07-05 19:07:24 - T start !
+2024-07-05 19:07:24 - T finished !
+2024-07-05 19:07:24 - L start !
+2024-07-05 19:07:24 - L finished !
