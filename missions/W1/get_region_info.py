@@ -19,6 +19,9 @@ PATH = "assets/"
 REGION_INFO_NAME='region_infos.json'
 TABLE_IDXS = [0, 0, 0, 1, 0, 0]
 
+def remove_bracket(x):
+    return 
+    
 def etl_region_info():
     region_infos = dict()
     region_names = ["Asia", "North America", "South America", "Europe", "Oceania", "Africa"]
@@ -35,17 +38,14 @@ def etl_region_info():
         tables_df = table_df_list[idx]
         
         if region_name=='Oceania':
-            region_infos[region_name] = list(tables_df['Location'])
+            region_infos[region_name] = tables_df['Location'].to_list()
         elif region_name=='Asia':
             country_series = tables_df[2:][1]
-            asia_list = tables_df[2:][1].to_list()
-            
-            for idx, name in enumerate(asia_list):
-                if name.find(" (SAR)") != -1:
-                    asia_list[idx] = name.replace(' (SAR)', '')
-            region_infos[region_name] = asia_list
+            condition = country_series.str.endswith(")")==True
+            country_series.loc[condition].apply(lambda x:x[:-6])
+            region_infos[region_name] = country_series.to_list()
         else:
-            region_infos[region_name] = list(tables_df['Country'])        
+            region_infos[region_name] = tables_df['Country'].to_list()
                    
     with open(PATH+REGION_INFO_NAME, "w") as json_file:
         json.dump(region_infos, json_file)
