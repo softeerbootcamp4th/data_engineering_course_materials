@@ -13,9 +13,11 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 
-# Set environment variables for AWS region and account ID
+# Set environment variable for AWS region
 AWS_REGION="ap-northeast-2"
-AWS_ACCOUNT_ID="107912327412"
+
+# Retrieve AWS account ID dynamically
+AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 
 # Login to AWS ECR
 aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
