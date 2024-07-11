@@ -1,0 +1,11 @@
+#!/bin/bash
+yum update -y
+yum install -y docker
+
+systemctl start docker
+systemctl enable docker
+
+usermod -a -G docker ec2-user
+
+docker pull public.ecr.aws/r7u4d7j6/softeer-jupyterlab:1.0.0
+docker run -d --name softeer-jupyterlab -p 8888:8888 public.ecr.aws/r7u4d7j6/softeer-jupyterlab:1.0.0
