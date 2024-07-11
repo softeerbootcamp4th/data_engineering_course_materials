@@ -19,9 +19,6 @@ PATH = "assets/"
 REGION_INFO_NAME='region_infos.json'
 TABLE_IDXS = [0, 0, 0, 1, 0, 0]
 
-def remove_bracket(x):
-    return 
-    
 def etl_region_info():
     region_infos = dict()
     region_names = ["Asia", "North America", "South America", "Europe", "Oceania", "Africa"]
