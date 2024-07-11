@@ -162,4 +162,8 @@ cython_debug/
 tempCodeRunnerFile*
 *.DS_store
 *.conda
+
+# week 2 files
 api_key
+training.1600000.processed.noemoticon.csv
+*.pem
