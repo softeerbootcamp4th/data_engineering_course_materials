@@ -108,12 +108,7 @@ def load(df, target):
 GDP(Billion Dollar)가 condition 이상인 항목을 출력한다.
 """
 def show_over(df, condition):
-    data = []
-    for country, gdp in df.values:
-        if gdp < condition:
-            break
-        data.append([country, gdp])
-    result = pd.DataFrame(data, columns=df.columns)
+    result = df[df['GDP(1B USD)'] >= condition]
     result.set_index(df.columns[0], inplace=True)
     print(result)
 
@@ -123,7 +118,7 @@ country-gdp로 구성된 데이터프레임과 region-country로 구성된 데�
 어떤 region에도 속하지 않는 country의 region은 'N/A'로 채우고,
 어떤 country도 속하지 않는 region은 결과에 포함하지 않는다.
 """
-def merge(country_gdp, region_country):
+def fill_continents(country_gdp, region_country):
     df_merged = pd.merge(country_gdp, region_country, on='Country', how='left')
     df_merged['Region'] = df_merged['Region'].fillna('N/A')
     return df_merged
@@ -165,7 +160,7 @@ def execute(n, target):
     # 'https://restcountries.com/v3.1/all' API를 호출하고 받아온 데이터를 파싱하여 ['Region', 'Country'] 컬럼을 갖는 데이터프레임을 반환한다.
     region_country = read_continents()
     # 두 데이터프레임을 병합하여 region-country-gdp 데이터프레임을 만든다.
-    df_merged = merge(country_gdp, region_country)
+    df_merged = fill_continents(country_gdp, region_country)
     # region-country-gdp 데이터프레임의 각 레코드를 Region별로 묶어, 그룹별 GDP 상위 5개 항목을 출력한다.
     show_topn_mean_region(df_merged, 5)
     # show_topn_region(df_merged, 5)

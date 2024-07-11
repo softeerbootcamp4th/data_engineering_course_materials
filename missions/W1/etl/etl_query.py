@@ -121,7 +121,7 @@ def read_continents() -> pd.DataFrame:
     return df
 
 
-def merge(country_gdp: pd.DataFrame, region_country: pd.DataFrame) -> pd.DataFrame:
+def fill_continents(country_gdp: pd.DataFrame, region_country: pd.DataFrame) -> pd.DataFrame:
     """
     country-gdp로 구성된 데이터프레임과 region-country로 구성된 데이터프레임을 병합해 country-gdp-region 데이터프레임을 만든다.
     어떤 region에도 속하지 않는 country의 region은 'N/A'로 채우고, 어떤 country도 속하지 않는 region은 결과에 포함하지 않는다.
@@ -147,7 +147,7 @@ def transform(data: list) -> pd.DataFrame:
     country_gdp.sort_values(by='GDP_USD_billion', ascending=False, inplace=True)
 
     # 두 데이터프레임을 병합하여 region-country-gdp 데이터프레임을 만든다.
-    df_merged = merge(country_gdp, region_country)
+    df_merged = fill_continents(country_gdp, region_country)
 
     log_info("Completed Transform Task: Data transformation process completed successfully.")
     return df_merged

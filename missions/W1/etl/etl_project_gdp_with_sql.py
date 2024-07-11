@@ -7,10 +7,10 @@ import logging
 import yaml
 
 
-URL = None
-LOG_FILE = None
-TABLE_NAME = None
-DB_NAME = None
+url = None
+log_file = None
+table_name = None
+db_name = None
 logger = None
 
 
@@ -165,7 +165,7 @@ def show_over(condition: int):
     print(df[df[df.columns[2]] >= condition].set_index('Country'))
 
 
-def merge(country_gdp: pd.DataFrame, region_country: pd.DataFrame) -> pd.DataFrame:
+def fill_continents(country_gdp: pd.DataFrame, region_country: pd.DataFrame) -> pd.DataFrame:
     """
     country-gdp로 구성된 데이터프레임과 region-country로 구성된 데이터프레임을 병합해 country-gdp-region 데이터프레임을 만든다.
     어떤 region에도 속하지 않는 country의 region은 'N/A'로 채우고, 어떤 country도 속하지 않는 region은 결과에 포함하지 않는다.
@@ -198,12 +198,12 @@ def show_topn_mean_region(n: int):
 
 
 def execute(n: int, condition: int):
-    # 테이블 생성
-    create_table()
     # Init Configuration
     init()
     # 로거 초기화
     init_logger(log_file)
+    # 테이블 생성
+    create_table()
 
     # 'https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29'의 표에서 IMF에서 정리한 국가-GDP 항목을 파싱하여 2차원 리스트로 반환한다.
     data = extract()
@@ -212,7 +212,7 @@ def execute(n: int, condition: int):
     # 'https://restcountries.com/v3.1/all' API를 호출하고 받아온 데이터를 파싱하여 ['Region', 'Country'] 컬럼을 갖는 데이터프레임을 반환한다.
     region_country = read_continents()
     # 두 데이터프레임을 병합하여 region-country-gdp 데이터프레임을 만든다.
-    df_merged = merge(country_gdp, region_country)
+    df_merged = fill_continents(country_gdp, region_country)
     # 테이블에 데이터 저장
     load(df_merged)
     # 인수(condition(Billion USD Dollar)) 이상의 항목만을 조회한다.
