@@ -84,17 +84,10 @@ def transform(imf_gdp):
 
 
 def get_region_column(imf_gdp):
-    region = []
     with open('country_region.json') as json_file:
         country_region = json.load(json_file)
-        for row in imf_gdp.iterrows():
-            country = row[1]['Country']
-            if country in country_region:
-                region.append(country_region[country])
-            else:
-                region.append(None)
-                logging.debug("region for {} not found".format(country))
-    return pd.DataFrame(region, columns=['Region'])
+        region = imf_gdp['Country'].map(country_region)
+        return pd.DataFrame({'Region': region})
 
 
 def load(imf_gdp_with_region):
