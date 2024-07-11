@@ -39,6 +39,7 @@ def etl_region_info():
         elif region_name=='Asia':
             country_series = tables_df[2:][1]
             asia_list = tables_df[2:][1].to_list()
+            
             for idx, name in enumerate(asia_list):
                 if name.find(" (SAR)") != -1:
                     asia_list[idx] = name.replace(' (SAR)', '')
@@ -48,7 +49,6 @@ def etl_region_info():
                    
     with open(PATH+REGION_INFO_NAME, "w") as json_file:
         json.dump(region_infos, json_file)
-
     return
 
 if __name__=="__main__":
