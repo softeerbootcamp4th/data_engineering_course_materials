@@ -1,0 +1,195 @@
+Country,GDP_USD_billions,Region
+United States,28781.08,North America
+China,18532.63,Asia
+Germany,4591.1,Europe
+Japan,4110.45,Asia
+India,3937.01,Asia
+United Kingdom,3495.26,Europe
+France,3130.01,Europe
+Brazil,2331.39,South America
+Italy,2328.03,Europe
+Canada,2242.18,
+Russia,2056.84,Europe
+Mexico,2017.02,North America
+Australia,1790.35,Oceania
+South Korea,1760.95,Asia
+Spain,1647.11,Europe
+Indonesia,1475.69,Asia
+Netherlands,1142.51,Europe
+Turkey,1113.56,Europe
+Saudi Arabia,1106.02,
+Switzerland,938.46,Europe
+Poland,844.62,Europe
+Taiwan,802.96,Asia
+Belgium,655.19,Europe
+Sweden,623.05,Europe
+Argentina,604.26,
+Ireland,564.02,Europe
+Thailand,548.89,Asia
+Austria,540.89,Europe
+Israel,530.66,Asia
+United Arab Emirates,527.8,Asia
+Norway,526.95,Europe
+Singapore,525.23,Asia
+Philippines,471.52,Asia
+Vietnam,465.81,
+Iran,464.18,Asia
+Bangladesh,455.16,Asia
+Malaysia,445.52,Asia
+Denmark,409.99,Europe
+Hong Kong,406.78,Asia
+Colombia,386.08,South America
+South Africa,373.23,Afreeca
+Romania,369.97,Europe
+Egypt,347.59,Afreeca
+Pakistan,338.24,Asia
+Chile,333.76,South America
+Czech Republic,325.88,Europe
+Finland,308.06,Europe
+Portugal,298.95,Europe
+Kazakhstan,296.74,Asia
+Peru,282.46,South America
+Algeria,266.78,Afreeca
+Iraq,265.89,Asia
+New Zealand,257.62,Oceania
+Nigeria,252.74,Afreeca
+Greece,250.28,Europe
+Qatar,244.69,Asia
+Hungary,223.41,Europe
+Ethiopia,205.13,Afreeca
+Ukraine,188.94,Europe
+Kuwait,160.4,Asia
+Morocco,152.38,Afreeca
+Slovakia,140.81,Europe
+Dominican Republic,127.36,North America
+Ecuador,121.59,South America
+Puerto Rico,117.76,South America
+Guatemala,110.04,North America
+Oman,108.93,Asia
+Bulgaria,107.93,Europe
+Kenya,104.0,Afreeca
+Venezuela,102.33,South America
+Uzbekistan,97.96,Asia
+Costa Rica,96.06,North America
+Angola,92.12,Afreeca
+Luxembourg,88.56,Europe
+Croatia,88.08,Europe
+Panama,87.35,
+Ivory Coast,86.91,Afreeca
+Uruguay,82.6,South America
+Turkmenistan,81.9,Asia
+Serbia,81.87,Europe
+Lithuania,81.17,Europe
+Tanzania,79.6,Afreeca
+Azerbaijan,78.75,Asia
+Ghana,75.24,
+Sri Lanka,74.85,Asia
+DR Congo,73.76,Afreeca
+Slovenia,72.1,Europe
+Belarus,69.05,Europe
+Myanmar,68.01,Asia
+Uganda,56.31,Afreeca
+Tunisia,54.71,Afreeca
+Macau,54.68,Asia
+Jordan,53.57,Asia
+Cameroon,53.2,Afreeca
+Bolivia,49.33,South America
+Libya,48.22,Afreeca
+Bahrain,46.79,Asia
+Paraguay,45.82,South America
+Latvia,45.47,Europe
+Cambodia,45.15,Asia
+Nepal,44.18,Asia
+Estonia,43.49,Europe
+Honduras,37.35,North America
+Senegal,35.45,Afreeca
+El Salvador,35.33,
+Zimbabwe,34.4,Afreeca
+Cyprus,34.22,Europe
+Iceland,33.34,Europe
+Georgia,32.86,Europe
+Papua New Guinea,31.72,Oceania
+Zambia,29.87,Afreeca
+Bosnia and Herzegovina,29.08,
+Trinidad and Tobago,28.36,North America
+Sudan,26.86,Afreeca
+Guinea,25.45,Afreeca
+Albania,25.43,Europe
+Armenia,25.41,Asia
+Haiti,24.05,North America
+Mozambique,22.98,Afreeca
+Malta,22.74,Europe
+Mongolia,21.94,Asia
+Burkina Faso,21.9,
+Lebanon,21.78,Asia
+Mali,21.66,Afreeca
+Botswana,21.42,
+Benin,21.37,Afreeca
+Guyana,21.18,
+Gabon,21.01,Afreeca
+Jamaica,20.1,North America
+Nicaragua,18.83,North America
+Niger,18.82,Afreeca
+Chad,18.7,Afreeca
+Palestine,18.6,Asia
+Moldova,18.36,Europe
+Yemen,16.94,Asia
+Madagascar,16.46,Afreeca
+Mauritius,16.36,Afreeca
+North Macedonia,15.87,Europe
+Brunei,15.51,Asia
+Congo,15.5,Afreeca
+Laos,15.19,Asia
+Afghanistan,14.47,Asia
+Bahamas,14.39,South America
+Rwanda,13.7,Afreeca
+Kyrgyzstan,13.6,Asia
+Tajikistan,12.95,Asia
+Somalia,12.8,Afreeca
+Namibia,12.76,
+Kosovo,11.32,Europe
+Malawi,11.24,Afreeca
+Equatorial Guinea,10.71,Afreeca
+Mauritania,10.63,Afreeca
+Togo,9.83,Afreeca
+Montenegro,8.01,Europe
+Maldives,7.2,Asia
+Barbados,6.86,North America
+South Sudan,6.52,Afreeca
+Fiji,5.8,Oceania
+Eswatini,5.08,Afreeca
+Liberia,4.75,Afreeca
+Sierra Leone,4.56,Afreeca
+Djibouti,4.36,Afreeca
+Suriname,4.34,
+Aruba,4.07,North America
+Andorra,3.9,Europe
+Belize,3.3,North America
+Bhutan,3.11,Asia
+Burundi,3.08,Afreeca
+Central African Republic,2.81,Afreeca
+Cape Verde,2.72,Afreeca
+Gambia,2.69,Afreeca
+Saint Lucia,2.58,
+Lesotho,2.4,Afreeca
+Seychelles,2.2,Afreeca
+Guinea-Bissau,2.15,
+Antigua and Barbuda,2.13,North America
+San Marino,2.03,
+East Timor,1.99,Asia
+Solomon Islands,1.71,Oceania
+Comoros,1.42,Afreeca
+Grenada,1.41,
+Vanuatu,1.29,Oceania
+Saint Kitts and Nevis,1.13,
+Saint Vincent and the Grenadines,1.13,
+Samoa,1.02,
+São Tomé and Príncipe,0.75,
+Dominica,0.71,North America
+Tonga,0.58,Oceania
+Micronesia,0.48,Oceania
+Kiribati,0.31,Oceania
+Palau,0.31,Oceania
+Marshall Islands,0.3,Oceania
+Nauru,0.16,Oceania
+Tuvalu,0.07,Oceania
