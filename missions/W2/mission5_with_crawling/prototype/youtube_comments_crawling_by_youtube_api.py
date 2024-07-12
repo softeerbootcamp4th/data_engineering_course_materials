@@ -6,7 +6,7 @@ from textblob import TextBlob
 warnings.filterwarnings('ignore')
 
 CAR_TYPE='i30'
-API_KEY = 'AIzaSyB7v8vlf_3XcTjF0Eiq4Ii8E7Ckw7HR0GU'
+API_KEY = 'YOUTUBE API KEY'
 VIDEO_ID = "EOCDIzUKRwc"
  
 if __name__ == "__main__":
