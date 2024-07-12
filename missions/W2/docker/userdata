@@ -1,0 +1,14 @@
+#! /bin/sh
+sudo yum update -y
+sudo yum update -y amazon-linux-extras install docker
+sudo yum remove -y awscli
+sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo unzip awscliv2.zip
+sudo ./aws/install
+sudo yum install -y docker
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -a -G docker ec2-user
+aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 851725312436.dkr.ecr.ap-southeast-2.amazonaws.com
+docker pull 851725312436.dkr.ecr.ap-southeast-2.amazonaws.com/99sphere:latest
+docker run -p 8888:8888 --name jupyter 851725312436.dkr.ecr.ap-southeast-2.amazonaws.com/99sphere:latest
