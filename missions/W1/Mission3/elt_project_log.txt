@@ -1,0 +1,394 @@
+2024-Jul-04-15-26-55, Hello
+2024-Jul-04-15-27-08, Hello
+2024-Jul-04-15-31-36, Hello
+2024-Jul-04-15-42-05, Extract
+2024-Jul-04-15-42-05, Transform start
+2024-Jul-04-15-42-05, Transform end
+2024-Jul-04-15-42-05, Load
+2024-Jul-04-15-42-42, Extract
+2024-Jul-04-15-42-42, Transform Start
+2024-Jul-04-15-42-42, Transform End
+2024-Jul-04-15-42-42, Load
+2024-Jul-04-15-46-12, Extract
+2024-Jul-04-15-46-12, Transform Start
+2024-Jul-04-15-46-12, Transform End
+2024-Jul-04-15-46-12, Load
+2024-Jul-04-16-08-47, Extract
+2024-Jul-04-16-08-47, Transform Start
+2024-Jul-04-16-08-47, Transform End
+2024-Jul-04-16-08-47, Load
+2024-Jul-04-16-09-42, Extract
+2024-Jul-04-16-09-42, Transform Start
+2024-Jul-04-16-09-43, Transform End
+2024-Jul-04-16-09-43, Load
+2024-Jul-04-18-01-28, Extract
+2024-Jul-04-18-01-28, Transform Start
+2024-Jul-04-18-01-28, Transform End
+2024-Jul-04-18-01-28, Load
+2024-Jul-04-18-01-46, Extract
+2024-Jul-04-18-01-46, Transform Start
+2024-Jul-04-18-01-46, Transform End
+2024-Jul-04-18-01-46, Load
+2024-Jul-04-18-03-54, Extract
+2024-Jul-04-18-03-54, Transform Start
+2024-Jul-04-18-03-54, Transform End
+2024-Jul-04-18-03-54, Load
+2024-Jul-04-22-58-03, Extract:GDP
+2024-Jul-04-22-58-03, Transform Start : GDP
+2024-Jul-04-22-58-03, Transform End GDP
+2024-Jul-04-22-58-04, Extract:Region
+2024-Jul-04-22-58-30, Extract:GDP
+2024-Jul-04-22-58-30, Transform Start : GDP
+2024-Jul-04-22-58-30, Transform End GDP
+2024-Jul-04-22-58-31, Extract:Region
+2024-Jul-04-23-14-42, Extract:GDP
+2024-Jul-04-23-14-42, Transform Start : GDP
+2024-Jul-04-23-14-42, Transform End GDP
+2024-Jul-04-23-14-43, Extract:Region
+2024-Jul-04-23-29-48, Extract:GDP
+2024-Jul-04-23-29-48, Transform Start : GDP
+2024-Jul-04-23-29-48, Transform End GDP
+2024-Jul-04-23-29-48, Extract:Region
+2024-Jul-04-23-35-20, Extract:GDP
+2024-Jul-04-23-35-20, Transform Start : GDP
+2024-Jul-04-23-35-20, Transform End GDP
+2024-Jul-04-23-35-20, Extract:Region
+2024-Jul-04-23-37-55, Extract:GDP
+2024-Jul-04-23-37-56, Transform Start : GDP
+2024-Jul-04-23-37-56, Transform End GDP
+2024-Jul-04-23-37-56, Extract:Region
+2024-Jul-04-23-37-56, Transform Start Region
+2024-Jul-04-23-37-56, Transform End Region
+2024-Jul-04-23-37-56, Load
+2024-Jul-04-23-38-13, Extract:GDP
+2024-Jul-04-23-38-13, Transform Start : GDP
+2024-Jul-04-23-38-13, Transform End GDP
+2024-Jul-04-23-38-14, Extract:Region
+2024-Jul-04-23-38-14, Transform Start Region
+2024-Jul-04-23-38-14, Transform End Region
+2024-Jul-04-23-38-14, Load
+2024-Jul-04-23-41-42, Extract:GDP
+2024-Jul-04-23-41-42, Transform Start : GDP
+2024-Jul-04-23-41-42, Transform End GDP
+2024-Jul-04-23-41-43, Extract:Region
+2024-Jul-04-23-41-43, Transform Start Region
+2024-Jul-04-23-41-43, Transform End Region
+2024-Jul-04-23-44-20, Extract:GDP
+2024-Jul-04-23-44-20, Transform Start : GDP
+2024-Jul-04-23-44-20, Transform End GDP
+2024-Jul-04-23-44-24, Extract:Region
+2024-Jul-04-23-44-25, Transform Start Region
+2024-Jul-04-23-44-25, Transform End Region
+2024-Jul-04-23-44-25, Load
+2024-Jul-04-23-46-07, Extract:GDP
+2024-Jul-04-23-46-07, Transform Start : GDP
+2024-Jul-04-23-46-08, Transform End GDP
+2024-Jul-04-23-46-08, Extract:Region
+2024-Jul-04-23-46-08, Transform Start Region
+2024-Jul-04-23-46-08, Transform End Region
+2024-Jul-04-23-46-08, Load
+2024-Jul-04-23-47-04, Extract:GDP
+2024-Jul-04-23-47-04, Transform Start : GDP
+2024-Jul-04-23-47-04, Transform End GDP
+2024-Jul-04-23-47-04, Extract:Region
+2024-Jul-04-23-47-05, Transform Start Region
+2024-Jul-04-23-47-05, Transform End Region
+2024-Jul-04-23-47-05, Load
+2024-Jul-04-23-47-21, Extract:GDP
+2024-Jul-04-23-47-21, Transform Start : GDP
+2024-Jul-04-23-47-21, Transform End GDP
+2024-Jul-04-23-47-22, Extract:Region
+2024-Jul-04-23-47-22, Transform Start Region
+2024-Jul-04-23-47-22, Transform End Region
+2024-Jul-04-23-47-22, Load
+2024-Jul-04-23-47-45, Extract:GDP
+2024-Jul-04-23-47-45, Transform Start : GDP
+2024-Jul-04-23-47-45, Transform End GDP
+2024-Jul-04-23-47-45, Extract:Region
+2024-Jul-04-23-47-45, Transform Start Region
+2024-Jul-04-23-47-45, Transform End Region
+2024-Jul-04-23-47-45, Load
+2024-Jul-05-00-03-41, Extract:GDP
+2024-Jul-05-00-03-41, Transform Start : GDP
+2024-Jul-05-00-03-41, Transform End GDP
+2024-Jul-05-00-03-41, Extract:Region
+2024-Jul-05-00-03-42, Transform Start Region
+2024-Jul-05-00-03-42, Transform End Region
+2024-Jul-05-00-03-42, Load
+2024-Jul-05-00-03-42, Load to World_Economies.db
+2024-Jul-05-00-04-24, Extract:GDP
+2024-Jul-05-00-04-24, Transform Start : GDP
+2024-Jul-05-00-04-24, Transform End GDP
+2024-Jul-05-00-04-25, Extract:Region
+2024-Jul-05-00-04-25, Transform Start Region
+2024-Jul-05-00-04-25, Transform End Region
+2024-Jul-05-00-04-25, Load
+2024-Jul-05-00-04-25, Load to World_Economies.db
+2024-Jul-05-00-04-40, Extract:GDP
+2024-Jul-05-00-04-40, Transform Start : GDP
+2024-Jul-05-00-04-40, Transform End GDP
+2024-Jul-05-00-04-40, Extract:Region
+2024-Jul-05-00-04-41, Transform Start Region
+2024-Jul-05-00-04-41, Transform End Region
+2024-Jul-05-00-04-41, Load
+2024-Jul-05-00-04-41, Load to World_Economies.db
+2024-Jul-05-00-05-45, Extract:GDP
+2024-Jul-05-00-05-45, Transform Start : GDP
+2024-Jul-05-00-05-45, Transform End GDP
+2024-Jul-05-00-05-45, Extract:Region
+2024-Jul-05-00-05-46, Transform Start Region
+2024-Jul-05-00-05-46, Transform End Region
+2024-Jul-05-00-05-46, Load
+2024-Jul-05-00-05-46, Load to World_Economies.db
+2024-Jul-05-00-07-36, Extract:GDP
+2024-Jul-05-00-07-36, Transform Start : GDP
+2024-Jul-05-00-07-37, Transform End GDP
+2024-Jul-05-00-07-37, Extract:Region
+2024-Jul-05-00-07-37, Transform Start Region
+2024-Jul-05-00-07-37, Transform End Region
+2024-Jul-05-00-07-37, Load
+2024-Jul-05-00-07-37, Load to World_Economies.db
+2024-Jul-05-00-11-16, Extract:GDP
+2024-Jul-05-00-11-16, Transform Start : GDP
+2024-Jul-05-00-11-16, Transform End GDP
+2024-Jul-05-00-11-17, Extract:Region
+2024-Jul-05-00-11-17, Transform Start Region
+2024-Jul-05-00-11-17, Transform End Region
+2024-Jul-05-00-11-17, Load to World_Economies.db
+2024-Jul-05-00-13-14, Extract:GDP
+2024-Jul-05-00-13-14, Transform Start : GDP
+2024-Jul-05-00-13-14, Transform End GDP
+2024-Jul-05-00-13-14, Extract:Region
+2024-Jul-05-00-13-14, Transform Start Region
+2024-Jul-05-00-13-14, Transform End Region
+2024-Jul-05-00-13-14, Load to World_Economies.db
+2024-Jul-05-00-36-26, Extract:GDP
+2024-Jul-05-00-36-26, Transform Start : GDP
+2024-Jul-05-00-36-26, Transform End GDP
+2024-Jul-05-00-36-26, Extract:Region
+2024-Jul-05-00-36-26, Transform Start Region
+2024-Jul-05-00-36-26, Transform End Region
+2024-Jul-05-00-36-26, Load to World_Economies.db
+2024-Jul-05-00-37-30, Extract:GDP
+2024-Jul-05-00-37-30, Transform Start : GDP
+2024-Jul-05-00-37-30, Transform End GDP
+2024-Jul-05-00-37-31, Extract:Region
+2024-Jul-05-00-37-31, Transform Start Region
+2024-Jul-05-00-37-31, Transform End Region
+2024-Jul-05-00-37-31, Load to World_Economies.db
+2024-Jul-05-00-38-02, Extract:GDP
+2024-Jul-05-00-38-02, Transform Start : GDP
+2024-Jul-05-00-38-02, Transform End GDP
+2024-Jul-05-00-38-02, Extract:Region
+2024-Jul-05-00-38-02, Transform Start Region
+2024-Jul-05-00-38-02, Transform End Region
+2024-Jul-05-00-38-02, Load to World_Economies.db
+2024-Jul-05-00-40-02, Extract:GDP
+2024-Jul-05-00-40-02, Transform Start : GDP
+2024-Jul-05-00-40-02, Transform End GDP
+2024-Jul-05-00-40-03, Extract:Region
+2024-Jul-05-00-40-03, Transform Start Region
+2024-Jul-05-00-40-03, Transform End Region
+2024-Jul-05-00-40-03, Load to World_Economies.db
+2024-Jul-05-00-40-46, Extract:GDP
+2024-Jul-05-00-40-46, Transform Start : GDP
+2024-Jul-05-00-40-46, Transform End GDP
+2024-Jul-05-00-40-46, Extract:Region
+2024-Jul-05-00-40-46, Transform Start Region
+2024-Jul-05-00-40-46, Transform End Region
+2024-Jul-05-00-40-46, Load to World_Economies.db
+2024-Jul-05-00-41-21, Extract:GDP
+2024-Jul-05-00-41-21, Transform Start : GDP
+2024-Jul-05-00-41-21, Transform End GDP
+2024-Jul-05-00-41-21, Extract:Region
+2024-Jul-05-00-41-22, Transform Start Region
+2024-Jul-05-00-41-22, Transform End Region
+2024-Jul-05-00-41-22, Load to World_Economies.db
+2024-Jul-05-00-41-51, Extract:GDP
+2024-Jul-05-00-41-51, Transform Start : GDP
+2024-Jul-05-00-41-51, Transform End GDP
+2024-Jul-05-00-41-52, Extract:Region
+2024-Jul-05-00-41-52, Transform Start Region
+2024-Jul-05-00-41-52, Transform End Region
+2024-Jul-05-00-41-52, Load to World_Economies.db
+2024-Jul-05-00-49-41, Extract:GDP
+2024-Jul-05-00-49-41, Transform Start : GDP
+2024-Jul-05-00-49-41, Transform End GDP
+2024-Jul-05-00-49-42, Extract:Region
+2024-Jul-05-00-49-42, Transform Start Region
+2024-Jul-05-00-49-42, Transform End Region
+2024-Jul-05-00-49-42, Load to World_Economies.db
+2024-Jul-05-00-49-47, Extract:GDP
+2024-Jul-05-00-49-47, Transform Start : GDP
+2024-Jul-05-00-49-47, Transform End GDP
+2024-Jul-05-00-49-48, Extract:Region
+2024-Jul-05-00-49-48, Transform Start Region
+2024-Jul-05-00-49-48, Transform End Region
+2024-Jul-05-00-49-48, Load to World_Economies.db
+2024-Jul-09-22-00-38, Extract start
+2024-Jul-09-22-00-38, Transform Start : GDP
+2024-Jul-09-22-00-38, Extract end
+2024-Jul-09-22-00-38, Transform start
+2024-Jul-09-22-00-39, Extract:Region
+2024-Jul-09-22-00-39, saved_json_file
+2024-Jul-09-22-00-39, Load to DB start
+2024-Jul-09-22-00-39, Load to DB end
+2024-Jul-09-22-00-39, Load to World_Economies.db
+2024-Jul-10-21-48-43, Extract start
+2024-Jul-10-21-48-44, Transform Start : GDP
+2024-Jul-10-21-48-44, Extract end
+2024-Jul-10-21-48-44, Transform start
+2024-Jul-10-21-48-44, Extract:Region
+2024-Jul-10-21-48-44, saved_json_file
+2024-Jul-10-21-48-44, Load to DB start
+2024-Jul-10-21-48-44, Load to DB end
+2024-Jul-10-21-48-44, Load to World_Economies.db
+2024-Jul-10-21-49-10, Extract start
+2024-Jul-10-21-49-10, Transform Start : GDP
+2024-Jul-10-21-49-10, Extract end
+2024-Jul-10-21-49-10, Transform start
+2024-Jul-10-21-49-11, Extract:Region
+2024-Jul-10-21-49-11, saved_json_file
+2024-Jul-10-21-49-11, Load to DB start
+2024-Jul-10-21-49-11, Load to DB end
+2024-Jul-10-21-49-11, Load to World_Economies.db
+2024-Jul-10-21-54-12, Extract start
+2024-Jul-10-21-54-12, Transform Start : GDP
+2024-Jul-10-21-54-12, Extract end
+2024-Jul-10-21-54-12, Transform start
+2024-Jul-10-21-54-13, Extract:Region
+2024-Jul-10-21-54-13, saved_json_file
+2024-Jul-10-21-54-13, Load to DB start
+2024-Jul-10-21-54-13, Load to World_Economies.db
+2024-Jul-13-19-36-25, Extract start
+2024-Jul-13-19-36-25, Transform Start : GDP
+2024-Jul-13-19-36-25, Extract end
+2024-Jul-13-19-36-25, Transform start
+2024-Jul-13-19-41-25, Extract start
+2024-Jul-13-19-41-25, Transform Start : GDP
+2024-Jul-13-19-41-25, Extract end
+2024-Jul-13-19-41-25, Transform start
+2024-Jul-13-19-42-39, Extract start
+2024-Jul-13-19-42-39, Transform Start : GDP
+2024-Jul-13-19-42-39, Extract end
+2024-Jul-13-19-42-39, Transform start
+2024-Jul-13-19-43-42, Extract start
+2024-Jul-13-19-43-42, Transform Start : GDP
+2024-Jul-13-19-43-42, Extract end
+2024-Jul-13-19-43-42, Transform start
+2024-Jul-13-19-45-32, Extract start
+2024-Jul-13-19-45-32, Transform Start : GDP
+2024-Jul-13-19-45-32, Extract end
+2024-Jul-13-19-45-32, Transform start
+2024-Jul-13-19-51-47, Extract start
+2024-Jul-13-19-51-47, Transform Start : GDP
+2024-Jul-13-19-51-47, Extract end
+2024-Jul-13-19-51-47, Transform start
+2024-Jul-13-19-52-05, Extract start
+2024-Jul-13-19-52-05, Transform Start : GDP
+2024-Jul-13-19-52-05, Extract end
+2024-Jul-13-19-52-05, Transform start
+2024-Jul-13-19-53-24, Extract start
+2024-Jul-13-19-53-24, Transform Start : GDP
+2024-Jul-13-19-54-32, Extract start
+2024-Jul-13-19-54-33, Transform Start : GDP
+2024-Jul-13-19-54-33, Extract end
+2024-Jul-13-19-54-33, Transform start
+2024-Jul-13-19-56-22, Extract start
+2024-Jul-13-19-56-22, Transform Start : GDP
+2024-Jul-13-19-56-22, Extract end
+2024-Jul-13-19-56-22, Transform start
+2024-Jul-13-19-58-08, Extract start
+2024-Jul-13-19-58-08, Transform Start : GDP
+2024-Jul-13-19-58-08, Extract end
+2024-Jul-13-19-58-08, Transform start
+2024-Jul-13-19-58-28, Extract start
+2024-Jul-13-19-58-28, Transform Start : GDP
+2024-Jul-13-19-58-28, Extract end
+2024-Jul-13-19-58-28, Transform start
+2024-Jul-13-20-14-21, Extract Country - GDP table start
+2024-Jul-13-20-14-21, Transform Start : GDP
+2024-Jul-13-20-14-21, Extract Country - GDP table end
+2024-Jul-13-20-14-21, Transform start
+2024-Jul-13-20-14-21, Transform : Get Country-Region Table from csv
+2024-Jul-13-20-14-21, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-13-20-14-21, Transform : Update the Exception (country name is different)
+2024-Jul-13-20-14-21, Transform : saved json file
+2024-Jul-13-20-14-21, Transform end
+2024-Jul-13-20-15-54, Extract Country - GDP table start
+2024-Jul-13-20-15-54, Transform Start : GDP
+2024-Jul-13-20-15-54, Extract Country - GDP table end
+2024-Jul-13-20-15-54, Transform start
+2024-Jul-13-20-15-54, Transform : Get Country-Region Table from csv
+2024-Jul-13-20-15-54, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-13-20-15-54, Transform : Update the Exception (country name is different)
+2024-Jul-13-20-15-54, Transform : saved json file
+2024-Jul-13-20-15-54, Transform end
+2024-Jul-13-20-15-54, Load to DB start
+2024-Jul-13-20-15-54, Load to World_Economies.db
+2024-Jul-13-20-16-15, Extract Country - GDP table start
+2024-Jul-13-20-16-15, Transform Start : GDP
+2024-Jul-13-20-16-15, Extract Country - GDP table end
+2024-Jul-13-20-16-15, Transform start
+2024-Jul-13-20-16-15, Transform : Get Country-Region Table from csv
+2024-Jul-13-20-16-15, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-13-20-16-15, Transform : Update the Exception (country name is different)
+2024-Jul-13-20-16-15, Transform : saved json file
+2024-Jul-13-20-16-15, Transform end
+2024-Jul-13-20-16-15, Load to DB start
+2024-Jul-13-20-16-15, Load to World_Economies.db
+2024-Jul-13-20-18-42, Extract Country - GDP table start
+2024-Jul-13-20-18-42, Transform Start : GDP
+2024-Jul-13-20-18-42, Extract Country - GDP table end
+2024-Jul-13-20-18-42, Transform start
+2024-Jul-13-20-18-42, Transform : Get Country-Region Table from csv
+2024-Jul-13-20-18-42, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-13-20-18-42, Transform : Update the Exception (country name is different)
+2024-Jul-13-20-18-42, Transform : saved json file
+2024-Jul-13-20-18-42, Transform end
+2024-Jul-13-20-18-42, Load to DB start
+2024-Jul-13-20-18-42, Load to World_Economies.db
+2024-Jul-13-20-24-25, Extract Country - GDP table start
+2024-Jul-13-20-24-25, Transform Start : GDP
+2024-Jul-13-20-24-25, Extract Country - GDP table end
+2024-Jul-13-20-24-25, Transform start
+2024-Jul-13-20-24-25, Transform : Get Country-Region Table from csv
+2024-Jul-13-20-24-25, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-13-20-24-25, Transform : Update the Exception (country name is different)
+2024-Jul-13-20-24-25, Transform : saved json file
+2024-Jul-13-20-24-25, Transform end
+2024-Jul-13-20-24-25, Load to DB start
+2024-Jul-13-20-24-25, Load to World_Economies.db
+2024-Jul-13-20-26-35, Extract Country - GDP table start
+2024-Jul-13-20-26-36, Transform Start : GDP
+2024-Jul-13-20-26-36, Extract Country - GDP table end
+2024-Jul-13-20-26-36, Transform start
+2024-Jul-13-20-26-36, Transform : Get Country-Region Table from csv
+2024-Jul-13-20-26-36, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-13-20-26-36, Transform : Update the Exception (country name is different)
+2024-Jul-13-20-26-36, Transform : saved json file
+2024-Jul-13-20-26-36, Transform end
+2024-Jul-13-20-26-36, Load to DB start
+2024-Jul-13-20-26-36, Load to World_Economies.db
+2024-Jul-13-20-29-07, Extract Country - GDP table start
+2024-Jul-13-20-29-07, Transform Start : GDP
+2024-Jul-13-20-29-07, Extract Country - GDP table end
+2024-Jul-13-20-29-07, Transform start
+2024-Jul-13-20-29-07, Transform : Get Country-Region Table from csv
+2024-Jul-13-20-29-07, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-13-20-29-07, Transform : Update the Exception (country name is different)
+2024-Jul-13-20-29-07, Transform : saved json file
+2024-Jul-13-20-29-07, Transform end
+2024-Jul-13-20-29-07, Load to DB start
+2024-Jul-13-20-29-07, Load to World_Economies.db end
+2024-Jul-13-20-31-00, Extract Country-GDP table start
+2024-Jul-13-20-31-01, Transform Start : GDP
+2024-Jul-13-20-31-01, Extract Country-GDP table end
+2024-Jul-13-20-31-01, Transform start
+2024-Jul-13-20-31-01, Transform : Get Country-Region Table from csv
+2024-Jul-13-20-31-01, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-13-20-31-01, Transform : Update the Exception (country name is different)
+2024-Jul-13-20-31-01, Transform : saved json file
+2024-Jul-13-20-31-01, Transform end
+2024-Jul-13-20-31-01, Load to DB start
+2024-Jul-13-20-31-01, Load to World_Economies.db end
