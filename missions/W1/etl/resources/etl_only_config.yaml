@@ -1,0 +1,6 @@
+default:
+  url: 'https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29'
+  log_file_path: 'generated/etl_project_log.txt'
+  table_name: 'Countries_by_GDP'
+  db_name: 'World_Economies.db'
+  continents_path: 'generated/continents.json'
