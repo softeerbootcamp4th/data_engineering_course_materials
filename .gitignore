@@ -1,3 +1,7 @@
+####### 미션에서 큰 파일
+w2/sentiment_analysis/tweets.csv
+w2/sentiment_analysis/webtoon_analysis/webtoon_comments.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
