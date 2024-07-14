@@ -41,9 +41,8 @@ if __name__ == '__main__':
 
     processes = []
     for i in range(4):
-        processes.append(Process(target=work, args=(tasks_to_accomplish, tasks_that_are_done, i)))
-
-    for process in processes:
+        process = Process(target=work, args=(tasks_to_accomplish, tasks_that_are_done, i))
+        processes.append(process)
         process.start()
 
     # Tell child processes to stop
