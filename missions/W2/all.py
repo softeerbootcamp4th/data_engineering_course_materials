@@ -20,19 +20,17 @@ class Task:
 def work(start_queue: Queue, end_queue: Queue, process_no: int):
 
     while True:
-        while not start_queue.empty():
-            try:
-                task = start_queue.get_nowait()
-                if task == 'STOP':
-                    return
-                time.sleep(0.5)
-                print(task)
-                task.set_process(process_no)
-
-                end_queue.put(task)
-            except:
-                continue
-
+        try:
+            task = start_queue.get_nowait()
+        except:
+            continue
+        else:
+            if task == 'STOP':
+                return True
+            time.sleep(0.5)
+            print(task)
+            task.set_process(process_no)
+            end_queue.put(task)
 
 
 if __name__ == '__main__':
