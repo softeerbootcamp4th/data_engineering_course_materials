@@ -8,6 +8,10 @@ from multiprocessing import Process
 from multiprocessing import Manager
 from collections import Counter
 
+"""
+preprocess 함수를 apply 함수 대신 multiprocessing을 사용하여 구현하기 위해 주피터 노트북 대신 파이썬 스크립트로 작성
+"""
+
 # 데이터셋 불러오기 (csv 파일 경로를 지정)
 df = pd.read_csv('training.1600000.processed.noemoticon.csv', encoding='latin1')
 
