@@ -1,6 +1,7 @@
 import time
 from multiprocessing import Queue, Process
 
+
 class Task:
     def __init__(self, task_no: int):
         self.process = None
@@ -17,16 +18,18 @@ class Task:
 
 
 def work(start_queue: Queue, end_queue: Queue, process_no: int):
-    while not start_queue.empty():
-    # for task in iter(start_queue.get, 'STOP'):
-        while True:
+
+    while True:
+        while not start_queue.empty():
             try:
                 task = start_queue.get_nowait()
-                print(task)
-                end_queue.put_nowait(task)
-                task.set_process(process_no)
+                if task == 'STOP':
+                    return
                 time.sleep(0.5)
-                break
+                print(task)
+                task.set_process(process_no)
+
+                end_queue.put(task)
             except:
                 continue
 
@@ -39,6 +42,7 @@ if __name__ == '__main__':
     for i in range(10):
         tasks_to_accomplish.put(Task(i))
 
+
     processes = []
     for i in range(4):
         process = Process(target=work, args=(tasks_to_accomplish, tasks_that_are_done, i))
@@ -46,8 +50,8 @@ if __name__ == '__main__':
         process.start()
 
     # Tell child processes to stop
-    # for i in range(4):
-    #     tasks_to_accomplish.put('STOP')
+    for i in range(4):
+        tasks_to_accomplish.put('STOP')
 
     for process in processes:
         process.join()
