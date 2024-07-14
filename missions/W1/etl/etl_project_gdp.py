@@ -61,46 +61,73 @@ def open_json() -> pd.DataFrame:
 
 """
 데이터프레임으로서 load한 내용을 요구사항에 맞게 정리하여 출력하는 함수
+GDP가 100B USD를 초고화는 국가들을 출력
 """
-def analyze(df):
+def analyze_1(df):
+    # 컬럼 이름 수정
     df.rename(columns={0: 'Nation', 1: 'GDP'}, inplace=True)
-    # GDP가 100 이상인 행들을 추출하여 출력
-    filtered_df = df[df['GDP'].str.len()>=7][['Nation','GDP']]
-    filtered_df = filtered_df[1:]
-    print('\n[Nations with GDP exceeding 100B USD (Unit:Billion $)]')
-    for idx, row in filtered_df.iterrows():
-        float_gdp = float(row['GDP'].replace(',',''))
-        float_gdp /= 1000
-        print(f'{idx:<4}{row['Nation']:<25}{float_gdp:<12.2f}')
-        
-    nation_continent_dict, continent_GDP_dict = trans_region_data()
-    df_sorted = df.sort_values(by='GDP')
-    for index, row in df_sorted.iterrows():
-        nation, gdp = row['Nation'], row['GDP']
-        if nation_continent_dict.get(nation):
-            continent_GDP_dict[nation_continent_dict[nation]].append(gdp)
     
-    print('\n[Top 5 GDP averages in each region (Unit:Billion $)]')
-    for key, value in continent_GDP_dict.items():
-        value_int = [int(num.replace(',','')) for num in value]
-        value_int.sort()
-        avg = 0
-        if len(value_int) > 4:
-            avg = sum(value_int[-5:])//5
-        else:
-            avg = sum(value_int)//len(value_int)
-        avg = float(avg)/1000
-        print(f'{key:15} : {avg:.2f}')
-        
+    # GDP가 100 이상인 행들을 추출
+    filtered_df = df[df['GDP'].str.len()>=7][['Nation','GDP']]
+    filtered_df = filtered_df.drop(0).reset_index(drop=True)
+    
+    # 분석을 위해 문자열 형태를 float형태로 변환
+    filtered_df['GDP'] = filtered_df['GDP'].str.replace(',', '').astype(float)
+    filtered_df['GDP'] = (filtered_df['GDP'] / 1000).round(2)
+    
+    # 분석 내용 출력
+    print('\n[Nations with GDP exceeding 100B USD (Unit:Billion $)]')
+    print(filtered_df)
+
+
 
 """
+데이터프레임으로서 load한 내용을 요구사항에 맞게 정리하여 출력하는 함수
+대륙별 상위 5개의 GDP 평균을 출력
+"""
+def analyze_2(df):
+    # 미리 준비된 국가별 대륙 정보 "region.csv"
+    df_nation_conti = pd.read_csv('region.csv')
+    
+    # 컬럼 이름 수정
+    df.rename(columns={0: 'Nation', 1: 'GDP'}, inplace=True)
+    
+    # 0번째 row 제거
+    df = df.drop(0).reset_index(drop=True)
+    
+    # 분석을 위해 문자열 형태를 float형태로 변환
+    df['GDP'] = df['GDP'].str.replace(',', '').astype(float)
+    df['GDP'] = (df['GDP'] / 1000).round(2)
+    
+    # 'GDP' 열의 값이 0 인 행을 제외
+    df = df[df['GDP'] > 0]
+    
+    # 분석을 위해 df와 df_nation_conti를 left join
+    df_joined = pd.merge(df, df_nation_conti, on='Nation', how='left')
+    
+    # df_joined에서 대륙 정보가 없는 국가 필터링
+    df_joined['Continent'] = df_joined['Continent'].fillna('Unknown')
+    df_unknown = df_joined[df_joined['Continent'] == 'Unknown']
+    df_joined = df_joined[df_joined['Continent'] != 'Unknown']
+    
+    # 대륙별 상위 5개 국가 GDP 평균 추출
+    top_5_gdp_per_continent = df_joined.sort_values(['Continent', 'GDP'], ascending=[True, False]).groupby('Continent').head(5)
+    average_gdp_per_conitinent = top_5_gdp_per_continent.groupby('Continent')['GDP'].mean().round(2)
+    
+    # 대륙별 상위 5개 국가 GDP 평균 출력
+    print('\n[Top 5 GDP averages in each region (Unit:Billion $)]')
+    print(average_gdp_per_conitinent)
+    
+
+"""
+* Deprecated *
 국가,대륙 정보가 담긴 파일을 이용하여 딕셔너리 자료를 구성
 중복되지 않는 대륙 정보를 사용하여 딕셔너리 자료를 구성
 {키 = 대륙 : 값 = GDP 값 리스트} 
 """
 def trans_region_data() -> tuple[dict, dict]:
     # 텍스트 파일 경로
-    txt_file = 'region.txt'
+    txt_file = 'region.csv'
 
     # 빈 dictionary 생성
     nation_continent_dict = dict()
@@ -172,4 +199,6 @@ nation_gdp_df = open_json()
 #L : end load
 log('L : end load')
 
-analyze(nation_gdp_df)
+# analze : there are two methods of analzation
+analyze_1(nation_gdp_df)
+analyze_2(nation_gdp_df)
