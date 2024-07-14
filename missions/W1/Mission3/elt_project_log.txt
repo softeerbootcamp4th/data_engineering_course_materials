@@ -392,3 +392,156 @@
 2024-Jul-13-20-31-01, Transform end
 2024-Jul-13-20-31-01, Load to DB start
 2024-Jul-13-20-31-01, Load to World_Economies.db end
+2024-Jul-14-12-09-04, Extract Country-GDP table start
+2024-Jul-14-12-09-04, Transform Start : GDP
+2024-Jul-14-12-09-04, Extract Country-GDP table end
+2024-Jul-14-12-09-04, Transform start
+2024-Jul-14-12-09-04, Transform : Add column Million to Bilion about GDP Value
+2024-Jul-14-12-09-04, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-09-04, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-09-04, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-09-04, Transform end
+2024-Jul-14-12-09-04, Load : saved json file
+2024-Jul-14-12-10-27, Extract Country-GDP table start
+2024-Jul-14-12-10-27, Transform Start : GDP
+2024-Jul-14-12-10-27, Extract Country-GDP table end
+2024-Jul-14-12-10-27, Transform start
+2024-Jul-14-12-10-27, Transform : Add column Million to Bilion about GDP Value
+2024-Jul-14-12-10-27, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-10-27, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-10-27, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-10-27, Transform end
+2024-Jul-14-12-10-27, Load : saved json file
+2024-Jul-14-12-11-27, Extract Country-GDP table start
+2024-Jul-14-12-11-27, Transform Start : GDP
+2024-Jul-14-12-11-27, Extract Country-GDP table end
+2024-Jul-14-12-11-27, Transform start
+2024-Jul-14-12-11-27, Transform : Add column Million to Bilion about GDP Value
+2024-Jul-14-12-11-27, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-11-27, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-11-27, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-11-27, Transform end
+2024-Jul-14-12-11-27, Load : saved json file
+2024-Jul-14-12-12-50, Extract Country-GDP table start
+2024-Jul-14-12-12-50, Transform Start : GDP
+2024-Jul-14-12-12-50, Extract Country-GDP table end
+2024-Jul-14-12-12-50, Transform start
+2024-Jul-14-12-12-50, Transform : Add column Million to Bilion about GDP Value
+2024-Jul-14-12-12-50, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-12-50, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-12-50, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-12-50, Transform end
+2024-Jul-14-12-12-50, Load : saved json file
+2024-Jul-14-12-13-26, Extract Country-GDP table start
+2024-Jul-14-12-13-26, Transform Start : GDP
+2024-Jul-14-12-13-26, Extract Country-GDP table end
+2024-Jul-14-12-13-26, Transform start
+2024-Jul-14-12-13-26, Transform : Add column Million to Bilion about GDP Value
+2024-Jul-14-12-13-26, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-13-26, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-13-26, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-13-26, Transform end
+2024-Jul-14-12-13-26, Load : saved json file
+2024-Jul-14-12-14-22, Extract Country-GDP table start
+2024-Jul-14-12-14-22, Transform Start : GDP
+2024-Jul-14-12-14-22, Extract Country-GDP table end
+2024-Jul-14-12-14-22, Transform start
+2024-Jul-14-12-14-22, Transform : Add column Million to Bilion about GDP Value
+2024-Jul-14-12-14-22, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-14-22, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-14-22, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-14-22, Transform end
+2024-Jul-14-12-14-22, Load : saved json file
+2024-Jul-14-12-14-37, Extract Country-GDP table start
+2024-Jul-14-12-14-37, Transform Start : GDP
+2024-Jul-14-12-14-37, Extract Country-GDP table end
+2024-Jul-14-12-14-37, Transform start
+2024-Jul-14-12-14-37, Transform : Add column Million to Bilion about GDP Value
+2024-Jul-14-12-14-37, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-14-37, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-14-37, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-14-37, Transform end
+2024-Jul-14-12-14-37, Load : saved json file
+2024-Jul-14-12-14-45, Extract Country-GDP table start
+2024-Jul-14-12-14-46, Transform Start : GDP
+2024-Jul-14-12-14-46, Extract Country-GDP table end
+2024-Jul-14-12-14-46, Transform start
+2024-Jul-14-12-14-46, Transform : Add column Million to Bilion about GDP Value
+2024-Jul-14-12-14-46, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-14-46, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-14-46, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-14-46, Transform end
+2024-Jul-14-12-14-46, Load : saved json file
+2024-Jul-14-12-21-34, Extract Country-GDP table start
+2024-Jul-14-12-21-34, Transform Start : GDP
+2024-Jul-14-12-21-34, Extract Country-GDP table end
+2024-Jul-14-12-21-34, Transform start
+2024-Jul-14-12-21-34, Transform : converting GDP value from millions to billions
+2024-Jul-14-12-21-34, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-21-34, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-21-34, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-21-34, Transform end
+2024-Jul-14-12-21-34, Load : saved json file
+2024-Jul-14-12-25-29, Extract Country-GDP table start
+2024-Jul-14-12-25-30, Transform Start : GDP
+2024-Jul-14-12-25-30, Extract Country-GDP table end
+2024-Jul-14-12-25-30, Transform start
+2024-Jul-14-12-25-30, Transform : Add colums about converting GDP value from millions to billions
+2024-Jul-14-12-25-30, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-25-30, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-25-30, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-25-30, Transform end
+2024-Jul-14-12-25-30, Load : saved json file
+2024-Jul-14-12-26-55, Extract Country-GDP table start
+2024-Jul-14-12-26-55, Transform Start : GDP
+2024-Jul-14-12-26-55, Extract Country-GDP table end
+2024-Jul-14-12-26-55, Transform start
+2024-Jul-14-12-26-55, Transform : Add colums about converting GDP value from millions to billions
+2024-Jul-14-12-26-55, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-26-55, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-26-55, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-26-55, Transform end
+2024-Jul-14-12-26-55, Load : saved json file
+2024-Jul-14-12-27-20, Extract Country-GDP table start
+2024-Jul-14-12-27-20, Transform Start : GDP
+2024-Jul-14-12-27-20, Extract Country-GDP table end
+2024-Jul-14-12-27-20, Transform start
+2024-Jul-14-12-27-20, Transform : Add colums about converting GDP value from millions to billions
+2024-Jul-14-12-27-20, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-27-20, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-27-20, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-27-20, Transform end
+2024-Jul-14-12-27-20, Load to DB start
+2024-Jul-14-12-27-20, Load to World_Economies.db end
+2024-Jul-14-12-28-14, Extract Country-GDP table start
+2024-Jul-14-12-28-14, Transform Start : GDP
+2024-Jul-14-12-28-14, Extract Country-GDP table end
+2024-Jul-14-12-28-14, Transform start
+2024-Jul-14-12-28-14, Transform : Add colums about converting GDP value from millions to billions
+2024-Jul-14-12-28-14, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-28-14, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-28-14, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-28-14, Transform end
+2024-Jul-14-12-28-14, Load to DB start
+2024-Jul-14-12-28-14, Load to World_Economies.db end
+2024-Jul-14-12-30-03, Extract Country-GDP table start
+2024-Jul-14-12-30-03, Transform Start : GDP
+2024-Jul-14-12-30-03, Extract Country-GDP table end
+2024-Jul-14-12-30-03, Transform start
+2024-Jul-14-12-30-03, Transform : Add colums about converting GDP value from millions to billions
+2024-Jul-14-12-30-03, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-30-03, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-30-03, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-30-03, Transform end
+2024-Jul-14-12-30-03, Load to DB start
+2024-Jul-14-12-30-03, Load to World_Economies.db end
+2024-Jul-14-12-38-28, Extract Country-GDP table start
+2024-Jul-14-12-38-28, Transform Start : GDP
+2024-Jul-14-12-38-28, Extract Country-GDP table end
+2024-Jul-14-12-38-28, Transform start
+2024-Jul-14-12-38-28, Transform : Add colums about converting GDP value from millions to billions
+2024-Jul-14-12-38-28, Transform : Get Country-Region Table from csv
+2024-Jul-14-12-38-28, Transform : Merge Contry-GDP_B and Country-Region Table
+2024-Jul-14-12-38-28, Transform : Update the Exception (country name is different)
+2024-Jul-14-12-38-28, Transform end
+2024-Jul-14-12-38-28, Load : saved json file
