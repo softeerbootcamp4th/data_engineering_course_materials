@@ -29,7 +29,14 @@ usermod -aG docker ubuntu
 ###################
 
 # data product 클론
-git clone --branch w1/m1-mtcars https://github.com/Neogr1/softeer_data_engineering.git /root/softeer_w1m1
+git clone --branch w1/m1-mtcars https://github.com/Neogr1/softeer_data_engineering.git /home/ubuntu/w1m1
+git clone --branch w2/m5-word-cloud https://github.com/Neogr1/softeer_data_engineering.git /home/ubuntu/w2m5
+mv /home/ubuntu/w1m1/missions/W1/mtcars.csv /home/ubuntu/mtcars.csv
+mv /home/ubuntu/w1m1/missions/W1/mtcars.ipynb /home/ubuntu/w1m1_mtcars.ipynb
+mv /home/ubuntu/w2m5/missions/W2/m5_sentiment_analysis.ipynb /home/ubuntu/w2m5_sentiment_analysis.ipynb
+mv /home/ubuntu/w2m5/missions/W2/training.1600000.processed.noemoticon.csv /home/ubuntu/training.1600000.processed.noemoticon.csv
+rm -rf /home/ubuntu/w1m1
+rm -rf /home/ubuntu/w2m5
 
 # Install AWS CLI
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -51,6 +58,6 @@ docker pull {MY_AWS_ID}.dkr.ecr.ap-northeast-2.amazonaws.com/softeer-jupyter:lat
 docker run -d --name softeer-jupyter \
   --platform linux/amd64 \
   -p 8888:8888 \
-  -v /root/softeer_w1m1/missions/W1:/app \
+  -v /home/ubuntu:/app \
   {MY_AWS_ID}.dkr.ecr.ap-northeast-2.amazonaws.com/softeer-jupyter:latest \
   /bin/bash -c "cd /app && jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''"
