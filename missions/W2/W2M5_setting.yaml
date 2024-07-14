@@ -1,0 +1,7 @@
+paths:
+  input_folder: '/Users/admin/Desktop/Data_Engineering/Youtube_Comment'
+  output_folder: '/Users/admin/Desktop/Data_Engineering/Youtube_Comment_Sentiment_Analysis'
+  wordcloud_folder: '/Users/admin/Desktop/Data_Engineering/Word_Cloud'
+  
+key:
+  api_key: 'AIzaSyAdvPhDbu2Rf4eJXoTL7pc3z5I-XR_t1TA'
