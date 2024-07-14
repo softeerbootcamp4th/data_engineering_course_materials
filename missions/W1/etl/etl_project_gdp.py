@@ -107,7 +107,6 @@ def analyze_2(df):
     
     # df_joined에서 대륙 정보가 없는 국가 필터링
     df_joined['Continent'] = df_joined['Continent'].fillna('Unknown')
-    df_unknown = df_joined[df_joined['Continent'] == 'Unknown']
     df_joined = df_joined[df_joined['Continent'] != 'Unknown']
     
     # 대륙별 상위 5개 국가 GDP 평균 추출
