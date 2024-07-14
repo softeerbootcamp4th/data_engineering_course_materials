@@ -68,64 +68,32 @@ def transform_data(df): # Data 전처리 및 변환
     log("Data transformation completed")
     return df
 
-def load_data(df, db_path): # Data를 DB에 Load
+def load_data(df): # Data를 파일에 저장
     log("Data load started") # Load log 기록
     
     df.to_json(GDP_json_file, orient='records', lines=True)
     
-    # SQLite에 연결
-    conn = sqlite3.connect(db_path)
-    # 전체 데이터(Total_Countries_by_GDP) 저장
-    df.to_sql('Total_Countries_by_GDP', conn, if_exists='append', index=False)
-    
-    conn.commit()
-    conn.close()
     log("Data load completed")
 
-# query 실행 함수
-def get_sql(query, db_name=db_file):
-    try:
-        with sqlite3.connect(db_name) as conn:
-            cur = conn.cursor()
-            cur.execute(query)
-            return cur.fetchall()
-    except Exception as e:
-        print(e)
+# 100 Billion USD 이상의 Country 추출
+def get_OVER_100b(df):
+    return df[df['GDP_USD_billion'] >= 100]
 
-# 100 Billion USD 이상의 Country SELECT
-def get_OVER_100b():
-    query = """
-        SELECT * 
-        FROM Total_Countries_by_GDP
-        WHERE GDP_USD_billion >= 100
-        """
-    return get_sql(query, db_file)
-
-# 각 Region 별 상위 5개의 Country GDP Average SELECT
-def get_average_gdp_by_region():
-    query = """
-        SELECT Region, ROUND(AVG(GDP_USD_billion),2)
-        FROM
-            (
-            SELECT Region, GDP_USD_billion, RANK() OVER (PARTITION BY Region ORDER BY GDP_USD_billion DESC) AS RANKING
-            FROM Total_Countries_by_GDP
-            )
-        WHERE RANKING <= 5 AND Region IS NOT NULL
-        GROUP BY Region
-        """
-    return get_sql(query, db_file)
-
-# 디렉토리가 존재하지 않는 경우 생성 및 파일 생성
-if not os.path.exists(db_file):
-    open(db_file, 'w').close()
+# 각 Region 별 상위 5개의 Country의 평균 GDP 추출
+def get_average_gdp_by_region(df):
+    df['Ranking'] = df.groupby('Region')['GDP_USD_billion'].rank(method='first', ascending=False)
+    top5_by_region = df[df['Ranking'] <= 5]
+    avg_gdp_by_region = top5_by_region.groupby('Region')['GDP_USD_billion'].mean().round(2)
+    return avg_gdp_by_region
 
 # ETL 을 합친 함수
 def etl_process():
     log("ETL process started")
     df = extract_data(GDP_WIKIPEDIA_URL) # Extract process 실행
     df = transform_data(df) # Transform process 실행
-    load_data(df, db_file) # Load process 실행
+    load_data(df) # Load process 실행
     log("ETL process completed")
+    return df
 
 def wait_until_next_hour(): # 지금은 정각마다 DB에 저장하는 코드를 작성했다.
                             # 정각마다 DB에 잘 저장하는 것을 확인했으므로 주기를 분기 또는 반기 단위로 하여 GDP를 update하면 된다.
@@ -137,30 +105,29 @@ def wait_until_next_hour(): # 지금은 정각마다 DB에 저장하는 코드�
     time.sleep(wait_seconds)
 
 # 받은 query를 출력
-def Print_get_100B():
-    over_100b = get_OVER_100b()
+def Print_get_100B(df):
+    over_100b = get_OVER_100b(df)
     print("Countries with GDP over 100B:")
-    for row in over_100b:
-        print(row)
+    print(over_100b[['Country', 'GDP_USD_billion']])
     print()
-def Print_get_TOP5_by_region():
-    avg_gdp_by_region = get_average_gdp_by_region()
+
+def Print_get_TOP5_by_region(df):
+    avg_gdp_by_region = get_average_gdp_by_region(df)
     print("\nAverage GDP by region for top 5 countries:")
-    for row in avg_gdp_by_region:
-        print(row)
+    print(avg_gdp_by_region)
     print()
 
 if __name__ == "__main__":
     # ETL 프로세스를 첫 실행
-    etl_process()
+    df = etl_process()
     # 데이터베이스 쿼리 결과 출력
-    Print_get_100B()
-    Print_get_TOP5_by_region()
+    Print_get_100B(df)
+    Print_get_TOP5_by_region(df)
     
     # 정각마다 ETL 프로세스를 실행
     while True:
         wait_until_next_hour() # 다음 정각을 계산하고 남는 시간만큼 sleep한다.
-        etl_process() # ETL process를 진행한다.
+        df = etl_process() # ETL process를 진행한다.
         # 데이터베이스 쿼리 결과 출력
-        Print_get_100B()
-        Print_get_TOP5_by_region()
+        Print_get_100B(df)
+        Print_get_TOP5_by_region(df)

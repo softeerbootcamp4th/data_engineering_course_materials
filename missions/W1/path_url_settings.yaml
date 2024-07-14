@@ -1,8 +1,8 @@
-file_path:
-  log_path: '/Users/admin/Desktop/Data_Engineering/W1/ETL/etl_project_log.txt'
-  region_data_json_path: '/Users/admin/Desktop/Data_Engineering/W1/ETL/continent_countries.json'
-  GDP_json_path: '/Users/admin/Desktop/Data_Engineering/W1/ETL/Countries_by_GDP.json'
-  db_path: '/Users/admin/Desktop/Data_Engineering/W1/ETL/World_GDP.db'
+file_name:
+  log_file: 'etl_project_log.txt'
+  region_data_json_file: 'continent_countries.json'
+  GDP_json_file: 'Countries_by_GDP.json'
+  db_file: 'World_GDP.db'
 
 URL:
   REGION_UPDATE_URL: 'https://raw.githubusercontent.com/jefftune/pycountry-convert/master/data/Continents_to_CountryNames.csv'

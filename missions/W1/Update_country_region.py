@@ -5,11 +5,11 @@ from io import StringIO
 import yaml
 
 # yaml Data config로 가져오기
-with open('/Users/admin/Desktop/Data_Engineering/W1/ETL/path_url_settings.yaml', 'r') as file:
+with open('path_url_settings.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
 # 저장하고 다음부터 load할 Region별 국가 Data JSON file
-json_path = config['file_path']['region_data_json_path']
+json_path = config['file_name']['region_data_json_file']
 # Region을 Update할 URL
 csv_url = config['URL']['REGION_UPDATE_URL']
 
