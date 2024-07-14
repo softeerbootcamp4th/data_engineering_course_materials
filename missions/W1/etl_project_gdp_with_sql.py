@@ -40,7 +40,7 @@ class SqlRunner:
                 INSERT OR REPLACE INTO {table}(Country, GDP_USD_billion, Region)
                 VALUES(?, ?, ?);
             """
-            data = [tuple(x) for x in df[['Country', 'GDP', 'Region']].to_numpy()]
+            data = [tuple(x) for x in df[['Country', 'GDP_USD_billion', 'Region']].to_numpy()]
             cur = self.con.cursor()
             cur.executemany(sql, data)
             self.con.commit()
@@ -79,8 +79,8 @@ def logger(msg: str):
 
 
 @logger("Extracting raw GDP data from Wikipedia")
-def extract_from_wikipedia() -> list:
-    gdp_list = []
+def extract_from_wikipedia() -> pd.DataFrame:
+    gdp_df = pd.DataFrame()
     try:
         page = requests.get(gdp_data_url)
         soup = bs(page.text, "html.parser")
@@ -88,27 +88,27 @@ def extract_from_wikipedia() -> list:
         for count,row in enumerate(rows):
             items = row.select('td')
             if count >= 3:
-                gdp_list.append((items[0].text, items[1].text))
+                new_row = pd.DataFrame({'Country': [items[0].text], 'GDP': [items[1].text]})
+                gdp_df = pd.concat([gdp_df, new_row] ,ignore_index=True)
     except Exception as e:
         write_log("Extracting Failed")
         print(e)
         exit(1)
 
-    return gdp_list
+    return gdp_df
 
 @logger("Transforming gdp data")
-def transform_to_dataframe(gdp_list: list) -> pd.DataFrame:
+def transform_to_dataframe(gdp_df: pd.DataFrame) -> pd.DataFrame:
     region_df = pd.read_csv(countries_by_region_path, skiprows=[0])
     region_dict = {row['Entity']:row['Continent'] for _,row in region_df.iterrows()}
 
-    gdp_df = pd.DataFrame(gdp_list, columns=('Country', 'GDP'))
-    gdp_df['Country'] = gdp_df['Country'].apply(lambda x: x.strip())
-    gdp_df['GDP'] = gdp_df['GDP'].apply(lambda x: None if x == '—' else int(x.replace(',','')) / 1000)
-    gdp_df['Region'] = gdp_df['Region'] = gdp_df['Country'].map(region_dict)
-    gdp_df = gdp_df.sort_values(by='GDP', ascending=False, ignore_index=True)
+    gdp_df['Country'] = gdp_df['Country'].str.strip()
+    gdp_df['GDP_USD_billion'] = pd.to_numeric(gdp_df['GDP'].str.replace(',',''), errors='coerce') / 1000
+    gdp_df['Region'] = gdp_df['Country'].map(region_dict)
+    gdp_df = gdp_df.drop('GDP', axis=1).sort_values(by='GDP_USD_billion', ascending=False, ignore_index=True)
     return gdp_df
 
-@logger("Loading data in json file")
+@logger("Loading data in database")
 def load_in_db(gdp_df: pd.DataFrame) -> None:
     gdp_db = SqlRunner(db_path)
     sql = f"""
@@ -127,7 +127,7 @@ def get_gdp_upper_100_db() -> list:
     sql = f"""
         SELECT * FROM {table_name}
         WHERE GDP_USD_billion >= 100
-        ORDER BY GDP`_USD_billion DESC
+        ORDER BY GDP_USD_billion DESC
     """
     gdp_upper_100_list = gdp_db.select_data(sql)
     return gdp_upper_100_list
@@ -153,9 +153,9 @@ def print_data(data: list, header='keys') -> None:
 
 
 if __name__ == "__main__":
-    gdp_list = extract_from_wikipedia()
-    gdp_df = transform_to_dataframe(gdp_list)
-    load_in_db(gdp_df)
+    gdp_df = extract_from_wikipedia()
+    gdp_df_transformed = transform_to_dataframe(gdp_df)
+    load_in_db(gdp_df_transformed)
 
     gdp_upper_100_list = get_gdp_upper_100_db()
     print("\n\n[ Countries whose GDP is upper than 100B USD ]")

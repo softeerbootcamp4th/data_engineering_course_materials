@@ -1040,27 +1040,7 @@
         "Region":"North America"
     },
     {
-        "Country":"British Virgin Islands",
-        "GDP_USD_billion":null,
-        "Region":"North America"
-    },
-    {
         "Country":"Turks and Caicos Islands",
-        "GDP_USD_billion":null,
-        "Region":"North America"
-    },
-    {
-        "Country":"Anguilla",
-        "GDP_USD_billion":null,
-        "Region":"North America"
-    },
-    {
-        "Country":"Cook Islands",
-        "GDP_USD_billion":null,
-        "Region":"Oceania"
-    },
-    {
-        "Country":"Montserrat",
         "GDP_USD_billion":null,
         "Region":"North America"
     }
