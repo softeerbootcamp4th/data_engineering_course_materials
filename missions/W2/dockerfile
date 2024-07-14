@@ -1,0 +1,15 @@
+# Use the official Python image from the Docker Hub
+FROM python:3.9-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Install the necessary Python packages
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir jupyter pandas numpy seaborn matplotlib nltk wordcloud
+
+# Expose port 8888 to allow for external connections to Jupyter
+EXPOSE 8888
+
+# Default command to keep the container running
+CMD ["tail", "-f", "/dev/null"]
