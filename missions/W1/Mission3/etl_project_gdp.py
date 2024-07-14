@@ -98,7 +98,10 @@ def Avg_gdp_top5_by_region():
     df_Total = pd.read_json('Countries_by_GDP.json')
     print(' ')
     print('#화면 출력 예제 2 : 각 Region별로 상위 5개 국가의 GDP 평균')
-    region_top5_avg = df_Total.groupby('Region',group_keys=False).apply(lambda x: x.nlargest(5, 'GDP_B')['GDP_B'].mean()) #각 Region별로 상위 5개 국가의 GDP 평균 계산
+    #region_top5_avg= df_Total.groupby('Region',group_keys=False).apply(lambda x: x.nlargest(5, 'GDP_B')['GDP_B'].mean()) #각 Region별로 상위 5개 국가의 GDP 평균 계산
+    #apply를 사용하지 않고 대륙별로 그룹을 묶어서 테이블 하나 더 만들기
+    top5_per_region = df_Total.sort_values(['Region', 'GDP_B'], ascending=[True, False]).groupby('Region').head(5)
+    region_top5_avg = top5_per_region.groupby('Region', as_index=False)['GDP_B'].mean()
     print(region_top5_avg)
 
 if __name__ == '__main__':
