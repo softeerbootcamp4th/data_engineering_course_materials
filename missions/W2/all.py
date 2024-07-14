@@ -1,3 +1,4 @@
+import queue
 import time
 from multiprocessing import Queue, Process
 
@@ -22,7 +23,7 @@ def work(start_queue: Queue, end_queue: Queue, process_no: int):
     while True:
         try:
             task = start_queue.get_nowait()
-        except:
+        except queue.Empty:
             continue
         else:
             if task == 'STOP':
@@ -61,5 +62,5 @@ if __name__ == '__main__':
             N -= 1
             if N == 0:
                 break
-        except:
+        except queue.Empty:
             continue
