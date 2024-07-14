@@ -1,0 +1,9 @@
+# requirements.txt
+jupyter
+pandas
+numpy
+matplotlib
+wordcloud
+selenium
+konlpy
+nltk
