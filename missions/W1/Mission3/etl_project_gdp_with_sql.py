@@ -25,7 +25,6 @@ def web_scrapping(GDP_url):
     soup = BeautifulSoup(r.content,'html.parser')
     data = soup.find_all('table',class_ = 'wikitable sortable sticky-header-multi static-row-numbers jquery-tablesorter'.split())
     lst = []
-    logging.info('Transform Start : GDP')
     for table in data:
         rows = table.find_all('tr')
         for row in rows:
