@@ -1,4 +1,5 @@
 from multiprocessing import Process, Queue
+import queue
 
 def push_data(items: list, q: Queue):
     print("pushing items to queue:")
@@ -9,10 +10,13 @@ def push_data(items: list, q: Queue):
 def pop_data(q: Queue):
     print("popping items from queue:")
     idx=1
-    while not q.empty():
-        item=q.get()
-        print(f"item no: {idx} {item}")
-        idx+=1
+    while True:
+        try:
+            item=q.get_nowait()
+            print(f"item no: {idx} {item}")
+            idx+=1
+        except queue.Empty:
+            break
 
 if __name__ == "__main__":
     q = Queue()
