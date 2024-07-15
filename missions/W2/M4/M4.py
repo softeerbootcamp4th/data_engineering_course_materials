@@ -2,20 +2,21 @@ import queue
 import time
 from multiprocessing import Queue, Process, Pool, current_process
 
-NUM = 10
-NUM_OF_TASKS = NUM
+NUM_OF_TASKS = 10
 NUM_OF_PROCESS = 4
 
 
 def process_task(tasks, results):
-    try:
-        while True:
+    while True:
+        try:
             task = tasks.get_nowait()
+        except queue.Empty:
+            print("no more tasks")
+            return
+        else:
             print('Task no {}'.format(task))
             time.sleep(0.5)
             results.put((task, current_process().name))
-    except queue.Empty:
-        return
 
 
 # terminate the process
