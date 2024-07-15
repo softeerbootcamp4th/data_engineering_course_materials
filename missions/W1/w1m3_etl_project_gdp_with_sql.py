@@ -225,7 +225,7 @@ def query_top5_mean_per_region(
 
 if __name__ == '__main__':
     logger = Logger(LOGGER_PATH)
-    logger.log("ETL Process is Started", "INFO")
+    logger.log("ETL Process has Started", "INFO")
 
     extract_data = extract(WIKI_URL, logger)
     transform_data = transform(extract_data, REGION_DF_PATH, logger)
@@ -233,4 +233,4 @@ if __name__ == '__main__':
     query_gdp_over_usd_100b(DB_PATH, logger)
     query_top5_mean_per_region(DB_PATH, logger)
 
-    logger.log("ETL Process is Finished", "INFO")
+    logger.log("ETL Process has Finished", "INFO")
