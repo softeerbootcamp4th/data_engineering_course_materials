@@ -50,7 +50,7 @@ class Logger:
 def extract(
     url: str,
     logger: Logger
-) -> dict:
+) -> pd.DataFrame:
     """Extract Table Data from Wikipedia
 
     Args:
@@ -81,7 +81,7 @@ def extract(
             data['GDP(US$MM)'].append(cols[1])
 
         logger.log(f"Extracting Finished !!", "INFO")
-        return data
+        return pd.DataFrame(data)
 
     except Exception as e:
         logger.log("Extracting Failed", "ERROR")
@@ -90,7 +90,7 @@ def extract(
 
 
 def transform(
-    json_data: dict,
+    df: pd.DataFrame,
     region_df_path: pd.DataFrame,
     logger: Logger,
 ) -> pd.DataFrame:
@@ -106,11 +106,10 @@ def transform(
 
     logger.log("Transforming Start !!")
     try:
-        df = pd.DataFrame(json_data)
+        # df = pd.DataFrame(json_data)
         region_df = pd.read_csv(region_df_path)
-
-        df['GDP_USD_B'] = df['GDP(US$MM)'].apply(
-            lambda x: x.replace(',', '') if x != '—' else '0')
+        df['GDP_USD_B'] = df['GDP(US$MM)'].str.replace(
+            ',', '').where(df['GDP(US$MM)'] != '—', '0')
         df['GDP_USD_B'] = df['GDP_USD_B'].astype(float) / 1000
         df['GDP_USD_B'] = df['GDP_USD_B'].round(2)
 
@@ -225,7 +224,7 @@ def query_top5_mean_per_region(
 
 if __name__ == '__main__':
     logger = Logger(LOGGER_PATH)
-    logger.log("ETL Process is Started", "INFO")
+    logger.log("ETL Process has Started", "INFO")
 
     extract_data = extract(WIKI_URL, logger)
     transform_data = transform(extract_data, REGION_DF_PATH, logger)
@@ -233,4 +232,4 @@ if __name__ == '__main__':
     query_gdp_over_usd_100b(JSON_PATH, logger)
     query_top5_mean_per_region(JSON_PATH, logger)
 
-    logger.log("ETL Process is Finished", "INFO")
+    logger.log("ETL Process has Finished", "INFO")
