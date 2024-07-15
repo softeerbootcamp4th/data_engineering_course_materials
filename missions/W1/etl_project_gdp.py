@@ -25,24 +25,28 @@ def log(message): # log message를 etl_project_log.txt 파일에 기록
         current_time = datetime.now().strftime('%Y-%b-%d %H:%M:%S')
         f.write(f"{current_time}, {message}\n") # 현재 날짜 및 시간, message를 write
 
-def extract_data(url): # url에서 Data를 extraction
-    log("Data extraction started") # Extract log 기록
+# url에서 Data를 extraction
+def extract_data(url):
+    # Extract log 기록
+    log("Data extraction started")
     
+    # url request
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     
-    # 데이터프레임 리스트로 가져오기
+    # DataFrame 리스트로 가져오기
     tables = pd.read_html(StringIO(str(soup)), match='Forecast')
-    df = tables[0][['Country/Territory', 'IMF[1][13]']] # Table을 DataFrame에 담는다.
+    # Table을 DataFrame에 담는다.
+    df = tables[0][['Country/Territory', 'IMF[1][13]']]
     
-    df.columns = df.columns.droplevel() # 2중 column droplevel
+    # 2중 column droplevel
+    df.columns = df.columns.droplevel()
     # 숫자가 아닌 값은 제외
     df['Forecast'] = pd.to_numeric(df['Forecast'], errors='coerce')
     df = df.dropna(subset=['Forecast'])
-    
-    # column name 변경후 Billion 단위로 수정
-    df = df.rename(columns={'Country/Territory': 'Country', 'Forecast': 'GDP_USD_billion', 'Year': 'Extracion_Date'})
-    df['GDP_USD_billion'] = (df['GDP_USD_billion'] / 1000).round(2)
+   
+    # Transform으로 넘길 DataFramedml column name 변경.
+    df = df.rename(columns={'Country/Territory': 'Country', 'Forecast': 'GDP_USD_million'})
     
     log("Data extraction completed")
     return df
@@ -50,15 +54,19 @@ def extract_data(url): # url에서 Data를 extraction
 def transform_data(df): # Data 전처리 및 변환
     log("Data transformation started") # Transform log 기록
     
-    df = ( # 필요없는 행 제외, GDP가 높은 순서로 sorting
+    # billion 단위로 Data 추가
+    df['GDP_USD_billion'] = (df['GDP_USD_million'] / 1000).round(2)
+    # 현재 날짜와 시간으로 수정
+    df['Year'] = datetime.now().strftime("%Y-%b-%d %H:%M")
+    # column name 변경
+    df = df.rename(columns={'Year': 'Extracion_Date'})
+    # 필요없는 행 제외, GDP가 높은 순서로 sorting
+    df = (
         df.query('Country != "World"')
         .sort_values('GDP_USD_billion', ascending=False)
         .reset_index(drop=True)
     )
 
-    # 현재 날짜와 시간 추가
-    df['Extracion_Date'] = datetime.now().strftime("%Y-%b-%d %H:%M")
-    
     # Region 정보를 file에서 읽어와서 Region column 추가
     with open(region_data_json_file) as Country_Region:
         Country_Region = json.load(Country_Region)

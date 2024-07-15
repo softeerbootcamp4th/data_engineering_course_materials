@@ -25,24 +25,28 @@ def log(message): # log message를 etl_project_log.txt 파일에 기록
         current_time = datetime.now().strftime('%Y-%b-%d %H:%M:%S')
         f.write(f"{current_time}, {message}\n") # 현재 날짜 및 시간, message를 write
 
-def extract_data(url): # url에서 Data를 extraction
-    log("Data extraction started") # Extract log 기록
+# url에서 Data를 extraction
+def extract_data(url):
+    # Extract log 기록
+    log("Data extraction started")
     
+    # url request
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     
-    # 데이터프레임 리스트로 가져오기
+    # DataFrame 리스트로 가져오기
     tables = pd.read_html(StringIO(str(soup)), match='Forecast')
-    df = tables[0][['Country/Territory', 'IMF[1][13]']] # Table을 DataFrame에 담는다.
+    # Table을 DataFrame에 담는다.
+    df = tables[0][['Country/Territory', 'IMF[1][13]']]
     
-    df.columns = df.columns.droplevel() # 2중 column droplevel
+    # 2중 column droplevel
+    df.columns = df.columns.droplevel()
     # 숫자가 아닌 값은 제외
     df['Forecast'] = pd.to_numeric(df['Forecast'], errors='coerce')
     df = df.dropna(subset=['Forecast'])
-    
-    # column name 변경후 Billion 단위로 수정
-    df = df.rename(columns={'Country/Territory': 'Country', 'Forecast': 'GDP_USD_billion', 'Year': 'Extracion_Date'})
-    df['GDP_USD_billion'] = (df['GDP_USD_billion'] / 1000).round(2)
+   
+    # Transform으로 넘길 DataFramedml column name 변경.
+    df = df.rename(columns={'Country/Territory': 'Country', 'Forecast': 'GDP_USD_million'})
     
     log("Data extraction completed")
     return df
@@ -50,15 +54,19 @@ def extract_data(url): # url에서 Data를 extraction
 def transform_data(df): # Data 전처리 및 변환
     log("Data transformation started") # Transform log 기록
     
-    df = ( # 필요없는 행 제외, GDP가 높은 순서로 sorting
+    # billion 단위로 Data 추가
+    df['GDP_USD_billion'] = (df['GDP_USD_million'] / 1000).round(2)
+    # 현재 날짜와 시간으로 수정
+    df['Year'] = datetime.now().strftime("%Y-%b-%d %H:%M")
+    # column name 변경
+    df = df.rename(columns={'Year': 'Extracion_Date'})
+    # 필요없는 행 제외, GDP가 높은 순서로 sorting
+    df = (
         df.query('Country != "World"')
         .sort_values('GDP_USD_billion', ascending=False)
         .reset_index(drop=True)
     )
 
-    # 현재 날짜와 시간 추가
-    df['Extracion_Date'] = datetime.now().strftime("%Y-%b-%d %H:%M")
-    
     # Region 정보를 file에서 읽어와서 Region column 추가
     with open(region_data_json_file) as Country_Region:
         Country_Region = json.load(Country_Region)
@@ -68,9 +76,12 @@ def transform_data(df): # Data 전처리 및 변환
     log("Data transformation completed")
     return df
 
-def load_data(df, db_path): # Data를 DB에 Load
-    log("Data load started") # Load log 기록
+# Data를 DB에 Load
+def load_data(df, db_path):
+    # Load log 기록
+    log("Data load started")
     
+    # GDP 정보를 json file로 저장
     df.to_json(GDP_json_file, orient='records', lines=True)
     
     # SQLite에 연결
@@ -115,20 +126,24 @@ def get_average_gdp_by_region():
         """
     return get_sql(query, db_file)
 
-# 디렉토리가 존재하지 않는 경우 생성 및 파일 생성
-if not os.path.exists(db_file):
-    open(db_file, 'w').close()
-
 # ETL 을 합친 함수
 def etl_process():
     log("ETL process started")
-    df = extract_data(GDP_WIKIPEDIA_URL) # Extract process 실행
-    df = transform_data(df) # Transform process 실행
-    load_data(df, db_file) # Load process 실행
+    
+    # Extract process 실행
+    df = extract_data(GDP_WIKIPEDIA_URL)
+    # Transform process 실행
+    df = transform_data(df)
+    # Load process 실행
+    load_data(df, db_file)
+
     log("ETL process completed")
 
-def wait_until_next_hour(): # 지금은 정각마다 DB에 저장하는 코드를 작성했다.
-                            # 정각마다 DB에 잘 저장하는 것을 확인했으므로 주기를 분기 또는 반기 단위로 하여 GDP를 update하면 된다.
+'''
+지금은 정각마다 DB에 저장하는 코드를 작성했다.
+정각마다 DB에 잘 저장하는 것을 확인했으므로 주기를 분기 또는 반기 단위로 하여 GDP를 update하면 된다. '''
+def wait_until_next_hour():
+    # 현재 날짜-시각 구함
     now = datetime.now()
     # 다음 정각 계산
     next_hour = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
@@ -136,19 +151,26 @@ def wait_until_next_hour(): # 지금은 정각마다 DB에 저장하는 코드�
     wait_seconds = (next_hour - now).total_seconds()
     time.sleep(wait_seconds)
 
-# 받은 query를 출력
+# 100 Billions가 넘는 Country SELECT query를 출력
 def Print_get_100B():
     over_100b = get_OVER_100b()
     print("Countries with GDP over 100B:")
     for row in over_100b:
         print(row)
     print()
+
+# 각 Region 별 상위 5 Country의 Average SELECT query를 출력
 def Print_get_TOP5_by_region():
     avg_gdp_by_region = get_average_gdp_by_region()
     print("\nAverage GDP by region for top 5 countries:")
     for row in avg_gdp_by_region:
         print(row)
     print()
+
+
+# 디렉토리가 존재하지 않는 경우 생성 및 파일 생성
+if not os.path.exists(db_file):
+    open(db_file, 'w').close()
 
 if __name__ == "__main__":
     # ETL 프로세스를 첫 실행
@@ -159,8 +181,11 @@ if __name__ == "__main__":
     
     # 정각마다 ETL 프로세스를 실행
     while True:
-        wait_until_next_hour() # 다음 정각을 계산하고 남는 시간만큼 sleep한다.
-        etl_process() # ETL process를 진행한다.
+        # 다음 정각을 계산하고 남는 시간만큼 sleep한다.
+        wait_until_next_hour()
+        
+        # ETL process를 진행한다.
+        etl_process()
         # 데이터베이스 쿼리 결과 출력
         Print_get_100B()
         Print_get_TOP5_by_region()
