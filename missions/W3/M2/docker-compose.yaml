@@ -1,0 +1,41 @@
+services:
+  master:
+    image: master
+    container_name: master-container
+    hostname: master
+    ports:
+      - "9870:9870"
+      - "8088:8088"
+    volumes:
+      - ./master0/dfs/:/tmp/hadoop-root/dfs/
+    networks:
+      - bridge
+  worker1:
+    image: worker
+    container_name: worker1-container
+    hostname: worker1
+    volumes:
+      - ./worker1/dfs/:/tmp/hadoop-root/dfs/
+      - ./worker1/yarn/:/tmp/hadoop-root/yarn/
+    networks:
+      - bridge
+  worker2:
+    image: worker
+    container_name: worker2-container
+    hostname: worker2
+    volumes:
+      - ./worker2/dfs/:/tmp/hadoop-root/dfs/
+      - ./worker2/yarn/:/tmp/hadoop-root/yarn/
+    networks:
+      - bridge
+  worker3:
+    image: worker
+    container_name: worker3-container
+    hostname: worker3
+    volumes:
+      - ./worker3/dfs/:/tmp/hadoop-root/dfs/
+      - ./worker3/yarn/:/tmp/hadoop-root/yarn/
+    networks:
+      - bridge
+networks:
+  bridge:
