@@ -1,0 +1,19 @@
+<configuration>
+    <!-- <HDFS default filesystem URI> -->
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://0.0.0.0:9000</value>
+    </property>
+
+    <!-- <Temporary directory for Hadoop> -->
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/tmp/hadoop-${user.name}</value>
+    </property>
+
+    <!-- Configuration for trash feature -->
+    <property>
+        <name>fs.trash.interval</name>
+        <value>360</value>
+    </property>
+</configuration>

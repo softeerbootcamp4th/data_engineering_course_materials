@@ -1,0 +1,56 @@
+<configuration>
+    <!-- <Resource Manager address> -->
+    <property>
+        <name>yarn.resourcemanager.address</name>
+        <value>0.0.0.0:8032</value>
+    </property>
+
+    <!-- <Resource Manager Scheduler address> -->
+    <property>
+        <name>yarn.resourcemanager.scheduler.address</name>
+        <value>0.0.0.0:8030</value>
+    </property>
+
+    <!-- <Resource Manager Web URI> -->
+    <property>
+        <name>yarn.resourcemanager.webapp.address</name>
+        <value>0.0.0.0:8088</value>
+    </property>
+
+    <!-- <Node Manager address> -->
+    <property>
+        <name>yarn.nodemanager.localizer.address</name>
+        <value>0.0.0.0:8040</value>
+    </property>
+
+    <!-- <Node Manager Web URI> -->
+    <property>
+        <name>yarn.nodemanager.webapp.address</name>
+        <value>0.0.0.0:8042</value>
+    </property>
+
+    <!-- <Enable Log Aggregation> -->
+    <property>
+        <name>yarn.log-aggregation-enable</name>
+        <value>true</value>
+    </property>
+
+    <!-- Log aggregation retention policy -->
+    <property>
+        <name>yarn.log-aggregation.retain-seconds</name>
+        <value>604800</value>
+    </property>
+
+    <!-- Container log directory -->
+    <property>
+        <name>yarn.nodemanager.log-dirs</name>
+        <value>/opt/hadoop/logs/userlogs</value>
+    </property>
+
+    <!-- Local directories for YARN container logs -->
+    <property>
+        <name>yarn.nodemanager.local-dirs</name>
+        <value>/opt/hadoop/local</value>
+    </property>
+
+</configuration>
