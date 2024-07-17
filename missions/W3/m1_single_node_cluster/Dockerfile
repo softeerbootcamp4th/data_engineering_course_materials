@@ -36,7 +36,7 @@ RUN ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa \
 COPY --chown=hadoopuser:hadoopuser config/* $HADOOP_HOME/etc/hadoop/
 
 # 포트 노출
-EXPOSE 9870 8088 50070 50075 50010 50020 50030
+EXPOSE 9870 8088 9864
 
 # HDFS 포맷
 RUN $HADOOP_HOME/bin/hdfs namenode -format

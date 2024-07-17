@@ -17,7 +17,7 @@
 
 # Run Container
 ```bash
-(local)% docker run -it -p 9870:9870 -p 8088:8088 --name hadoop-single-node hadoop-single-node
+(local)% docker run -it -p 9870:9870 -p 8088:8088 -p 9864:9864 --name hadoop-single-node hadoop-single-node
 ```
 
 # Working on HDFS
