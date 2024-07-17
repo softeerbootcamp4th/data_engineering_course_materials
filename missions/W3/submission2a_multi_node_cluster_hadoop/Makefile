@@ -1,0 +1,11 @@
+
+clean:
+	docker rmi submission2_multi_node_cluster_hadoop-hadoop-master:latest
+	docker rmi submission2_multi_node_cluster_hadoop-hadoop-slave1:latest
+	docker rmi submission2_multi_node_cluster_hadoop-hadoop-slave2:latest
+	docker rmi submission2_multi_node_cluster_hadoop-hadoop-slave3:latest
+	docker volume rm submission2_multi_node_cluster_hadoop_hadoop-master
+	docker volume rm submission2_multi_node_cluster_hadoop_hadoop-slave1
+	docker volume rm submission2_multi_node_cluster_hadoop_hadoop-slave2
+	docker volume rm submission2_multi_node_cluster_hadoop_hadoop-slave3
+	docker buildx prune

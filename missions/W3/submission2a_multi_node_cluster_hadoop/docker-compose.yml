@@ -1,0 +1,73 @@
+version: '3'
+services:
+  hadoop-master:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hadoop-master
+    hostname: hadoop-master
+    ports:
+      - "8088:8088"
+      - "9870:9870"
+    volumes:
+      - hadoop-master:/opt/hadoop
+    networks:
+      - hadoop
+
+  hadoop-slave1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hadoop-slave1
+    hostname: hadoop-slave1
+    ports:
+      - "9901:9864"
+      - "8041:8042"
+    depends_on:
+      - hadoop-master
+    volumes:
+      - hadoop-slave1:/opt/hadoop
+    networks:
+      - hadoop
+
+  hadoop-slave2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hadoop-slave2
+    hostname: hadoop-slave2
+    ports:
+      - "9902:9864"
+      - "8042:8042"
+    depends_on:
+      - hadoop-master
+    volumes:
+      - hadoop-slave2:/opt/hadoop
+    networks:
+      - hadoop
+
+  hadoop-slave3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hadoop-slave3
+    hostname: hadoop-slave3
+    ports:
+      - "9903:9864"
+      - "8043:8042"
+    depends_on:
+      - hadoop-master
+    volumes:
+      - hadoop-slave3:/opt/hadoop
+    networks:
+      - hadoop
+
+networks:
+  hadoop:
+    driver: bridge
+
+volumes:
+  hadoop-master:
+  hadoop-slave1:
+  hadoop-slave2:
+  hadoop-slave3:
