@@ -12,10 +12,22 @@ docker build -t hadoop-single-node .
 docker run -d -p 9870:9870 -p 8088:8088 -p 9000:9000 -p 9864:9864 --name hadoop-single-node -v hadoop-volume:/hadoop/dfs hadoop-single-node
 ```
 
+or
+
+```bash
+docker compose up -d
+```
+
 ## Connect to Docker container
 
 ```bash
 docker exec -it hadoop-single-node /bin/bash
+```
+
+## End
+
+```bash
+docker compose down
 ```
 
 # HDFS operation
