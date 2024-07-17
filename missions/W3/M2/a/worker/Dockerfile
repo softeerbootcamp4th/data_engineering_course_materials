@@ -2,9 +2,6 @@ FROM base
 
 HEALTHCHECK CMD curl -f http://localhost:9864/ || exit 1
 
-# copy config file
-ADD hdfs-site.xml $HADOOP_CONF_DIR
-
 # datanode data directory
 RUN mkdir $HADOOP_HOME/dfs/data
 
@@ -20,4 +17,4 @@ EXPOSE 9864 9866 8042
 ADD start.sh /start.sh
 RUN chmod a+x /start.sh
 
-CMD ["/start.sh"]
+CMD ["/bin/sh", "/start.sh"]

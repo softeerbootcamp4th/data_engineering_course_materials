@@ -1,5 +1,6 @@
 FROM ubuntu:22.04
 
+RUN sed -i 's/ports.ubuntu.com/ftp.kaist.ac.kr/g' /etc/apt/sources.list
 RUN apt-get update\
     && apt-get install -y openjdk-8-jdk\
     && apt-get install -y ssh\
@@ -15,14 +16,13 @@ ENV HADOOP_CONF_DIR=/etc/hadoop
 RUN mkdir $HADOOP_HOME/dfs
 # RUN rm -rf $HADOOP_HOME/share/doc
 ENV PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
-ENV YARN_CONF_DIR=$HADOOP_CONF_DIR
-## TODO:  cpu 아키텍처에 따라 arm64, amd64
-RUN echo export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64 >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
-RUN echo export export HDFS_NAMENODE_USER="root" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
-RUN echo export export HDFS_DATANODE_USER="root" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
-RUN echo export export HDFS_SECONDARYNAMENODE_USER="root" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
-RUN echo export export YARN_RESOURCEMANAGER_USER="root" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
-RUN echo export export YARN_NODEMANAGER_USER="root" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
+
+RUN echo export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java)))) >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
+ENV HDFS_NAMENODE_USER="root"
+ENV HDFS_DATANODE_USER="root"
+ENV HDFS_SECONDARYNAMENODE_USER="root"
+ENV YARN_RESOURCEMANAGER_USER="root"
+ENV YARN_NODEMANAGER_USER="root"
 
 COPY ./config/core-site.xml $HADOOP_CONF_DIR/core-site.xml
 COPY ./config/mapred-site.xml $HADOOP_CONF_DIR/mapred-site.xml

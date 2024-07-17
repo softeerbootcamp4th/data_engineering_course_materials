@@ -6,6 +6,7 @@ services:
     ports:
       - "9870:9870"
       - "8088:8088"
+      - "8020:8020"
     volumes:
       - ./master0/dfs/:/tmp/hadoop-root/dfs/
     networks:
