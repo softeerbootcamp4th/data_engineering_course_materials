@@ -1,0 +1,15 @@
+pandas==2.2.2
+numpy==2.0.0
+matplotlib==3.9.0
+beautifulsoup4==4.12.3
+requests==2.32.3
+datetime==5.5
+openpyxl==3.1.5
+seaborn==0.13.2
+streamlit==1.36.0
+wordcloud==1.9.3
+nltk==3.8.1
+selenium==4.22.0
+konlpy==0.6.0
+mecab-python3==1.0.9
+jupyter
