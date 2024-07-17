@@ -23,7 +23,7 @@ docker exec -it hadoop-single-node /bin/bash
 ## Creating directories
 
 ```bash
-hdfs dfs -mkdir /w3/m1/
+hdfs dfs -mkdir -p /w3/m1/
 ```
 
 ## Upload file from local to HDFS
@@ -41,5 +41,9 @@ hdfs dfs -ls /w3/m1
 ## Retrieve from HDFS to local
 
 ```bash
-hdfs dfs -get /w3m1/samplefile.txt /softeer/w3/samplefile_copy.txt
+mkdir -p /softeer/w3/
+```
+
+```bash
+hdfs dfs -get /w3/m1/samplefile.txt /softeer/w3/samplefile_copy.txt
 ```
