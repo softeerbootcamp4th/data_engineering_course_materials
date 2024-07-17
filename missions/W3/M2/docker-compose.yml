@@ -1,0 +1,34 @@
+version: '3'
+services:
+  namenode:
+    image: hadoop-namenode
+    container_name: namenode
+    ports:
+      - "2222:22"
+      - "8088:8088"
+      - "9870:9870"
+      - "9000:9000"
+      - "9864:9864"
+    volumes:
+      - namenode-data:/usr/local/hadoop/data/namenode
+
+  datanode1:
+    image: hadoop-datanode
+    container_name: datanode1
+    volumes:
+      - datanode1-data:/usr/local/hadoop/data/datanode
+    depends_on:
+      - namenode
+
+  datanode2:
+    image: hadoop-datanode
+    container_name: datanode2
+    volumes:
+      - datanode2-data:/usr/local/hadoop/data/datanode
+    depends_on:
+      - namenode
+
+volumes:
+  namenode-data:
+  datanode1-data:
+  datanode2-data:
