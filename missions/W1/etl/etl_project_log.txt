@@ -370,3 +370,91 @@
 2024-July-14-17-50-20,T : end transform (list -> json)
 2024-July-14-17-50-20,L : start load
 2024-July-14-17-50-20,L : end load
+2024-July-18-01-07-19,Data inserted into NATION_CONTI table.
+2024-July-18-01-08-53,Data inserted into NATION_CONTI table.
+2024-July-18-01-09-30,Data inserted into NATION_CONTI table.
+2024-July-18-01-10-10,Data inserted into NATION_CONTI table.
+2024-July-18-01-11-53,NATION_CONTI table exists in the database.
+2024-July-18-01-11-53,Data inserted into NATION_CONTI table.
+2024-July-18-01-13-47,NATION_CONTI table exists in the database.
+2024-July-18-01-13-47,Data inserted into NATION_CONTI table.
+2024-July-18-01-14-11,NATION_CONTI table exists in the database.
+2024-July-18-01-14-11,Data inserted into NATION_CONTI table.
+2024-July-18-01-15-42,NATION_CONTI table exists in the database.
+2024-July-18-01-15-42,Data inserted into NATION_CONTI table.
+2024-July-18-01-15-55,NATION_CONTI table exists in the database.
+2024-July-18-01-15-55,Data inserted into NATION_CONTI table.
+2024-July-18-01-17-12,NATION_CONTI table exists in the database.
+2024-July-18-01-17-12,Data inserted into NATION_CONTI table.
+2024-July-18-01-19-10,NATION_CONTI table exists in the database.
+2024-July-18-01-19-10,Data inserted into NATION_CONTI table.
+2024-July-18-01-21-58,NATION_CONTI table exists in the database.
+2024-July-18-01-21-58,Data inserted into NATION_CONTI table.
+2024-July-18-01-22-08,NATION_CONTI table exists in the database.
+2024-July-18-01-22-08,Data inserted into NATION_CONTI table.
+2024-July-18-01-22-43,NATION_CONTI table exists in the database.
+2024-July-18-01-22-43,Data inserted into NATION_CONTI table.
+2024-July-18-01-23-01,NATION_CONTI table exists in the database.
+2024-July-18-01-23-01,Data inserted into NATION_CONTI table.
+2024-July-18-01-30-00,NATION_CONTI table exists in the database.
+2024-July-18-01-30-00,Data inserted into NATION_CONTI table.
+2024-July-18-01-30-49,NATION_CONTI table exists in the database.
+2024-July-18-01-30-49,Data inserted into NATION_CONTI table.
+2024-July-18-01-31-02,NATION_CONTI table exists in the database.
+2024-July-18-01-31-02,Data inserted into NATION_CONTI table.
+2024-July-18-01-31-20,NATION_CONTI table exists in the database.
+2024-July-18-01-31-20,Data inserted into NATION_CONTI table.
+2024-July-18-01-33-31,NATION_CONTI table exists in the database.
+2024-July-18-01-33-31,Data inserted into NATION_CONTI table.
+2024-July-18-01-34-29,NATION_CONTI table exists in the database.
+2024-July-18-01-34-29,Data inserted into NATION_CONTI table.
+2024-July-18-01-34-41,NATION_CONTI table exists in the database.
+2024-July-18-01-34-41,Data inserted into NATION_CONTI table.
+2024-July-18-01-35-45,NATION_CONTI table exists in the database.
+2024-July-18-01-35-45,Data inserted into NATION_CONTI table.
+2024-July-18-01-37-23,NATION_CONTI table exists in the database.
+2024-July-18-01-37-23,Data inserted into NATION_CONTI table.
+2024-July-18-01-39-24,NATION_CONTI table exists in the database.
+2024-July-18-01-39-24,Data inserted into NATION_CONTI table.
+2024-July-18-01-39-56,NATION_CONTI table exists in the database.
+2024-July-18-01-39-56,Data inserted into NATION_CONTI table.
+2024-July-18-01-41-59,NATION_CONTI table exists in the database.
+2024-July-18-01-41-59,Data inserted into NATION_CONTI table.
+2024-July-18-01-42-48,NATION_CONTI table exists in the database.
+2024-July-18-01-42-48,Data inserted into NATION_CONTI table.
+2024-July-18-01-42-57,NATION_CONTI table exists in the database.
+2024-July-18-01-42-57,Data inserted into NATION_CONTI table.
+2024-July-18-01-47-29,NATION_CONTI table exists in the database.
+2024-July-18-01-47-29,Data inserted into NATION_CONTI table.
+2024-July-18-02-15-49,E : start extract
+2024-July-18-02-15-50,E : end extract
+2024-July-18-02-15-50,T : start transform
+2024-July-18-02-15-50,T : end transform (list -> json)
+2024-July-18-02-15-50,L : start load
+2024-July-18-02-15-50,NATION_CONTI table exists in the database.
+2024-July-18-02-15-50,Data inserted into NATION_CONTI table.
+2024-July-18-02-15-50,L : end load
+2024-July-18-02-16-21,E : start extract
+2024-July-18-02-16-21,E : end extract
+2024-July-18-02-16-21,T : start transform
+2024-July-18-02-16-21,T : end transform (list -> json)
+2024-July-18-02-16-21,L : start load
+2024-July-18-02-16-21,NATION_CONTI table exists in the database.
+2024-July-18-02-16-21,Data inserted into NATION_CONTI table.
+2024-July-18-02-16-21,L : end load
+2024-July-18-02-16-37,E : start extract
+2024-July-18-02-16-38,E : end extract
+2024-July-18-02-16-38,T : start transform
+2024-July-18-02-16-38,T : end transform (list -> json)
+2024-July-18-02-16-38,L : start load
+2024-July-18-02-16-38,NATION_CONTI table exists in the database.
+2024-July-18-02-16-38,Data inserted into NATION_CONTI table.
+2024-July-18-02-16-38,L : end load
+2024-July-18-02-17-34,E : start extract
+2024-July-18-02-17-35,E : end extract
+2024-July-18-02-17-35,T : start transform
+2024-July-18-02-17-35,T : end transform (list -> json)
+2024-July-18-02-17-35,L : start load
+2024-July-18-02-17-35,NATION_CONTI table exists in the database.
+2024-July-18-02-17-35,Data inserted into NATION_CONTI table.
+2024-July-18-02-17-35,L : end load
