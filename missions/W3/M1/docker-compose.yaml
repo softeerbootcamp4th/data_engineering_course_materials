@@ -1,0 +1,12 @@
+services:
+  hadoop-single-node:
+    image: hadoop
+    container_name: hadoop-container
+    hostname: localhost
+    ports:
+      - "8088:8088"
+      - "9870:9870"
+    volumes:
+      - ./hadoop-data/namenode/:/tmp/hadoop-root/dfs/name # namenode data mount
+      - ./hadoop-data/datanode/:/tmp/hadoop-root/dfs/data # namenode data mount
+
