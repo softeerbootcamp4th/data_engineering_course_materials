@@ -1,4 +1,4 @@
-# Use the official Ubuntu image as a parent image
+# Ubuntu 24.04 with Hadoop 3.3.6
 FROM ubuntu:24.04
 
 # Set environment variables
@@ -6,14 +6,14 @@ ENV HADOOP_VERSION=3.3.6
 ENV HADOOP_HOME=/opt/hadoop
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64
 ENV PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
-
+# Set Hadoop users
 ENV HDFS_NAMENODE_USER=root
 ENV HDFS_DATANODE_USER=root
 ENV HDFS_SECONDARYNAMENODE_USER=root
 ENV YARN_RESOURCEMANAGER_USER=root
 ENV YARN_NODEMANAGER_USER=root
 
-# Update the repository sources list and install dependencies
+# Update and install necessary packages
 RUN apt-get update && \
     apt-get install -y openjdk-8-jdk wget ssh pdsh vim rsync sudo && \
     apt-get clean
@@ -24,6 +24,7 @@ RUN wget https://downloads.apache.org/hadoop/common/hadoop-$HADOOP_VERSION/hadoo
     mv /opt/hadoop-$HADOOP_VERSION /opt/hadoop && \
     rm /tmp/hadoop-$HADOOP_VERSION.tar.gz
 
+# Set JAVA_HOME in Hadoop configuration
 RUN echo "export JAVA_HOME="$(jrunscript -e 'java.lang.System.out.println(java.lang.System.getProperty("java.home"));')"" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 
 # Configure SSH
@@ -36,6 +37,7 @@ COPY core-site.xml $HADOOP_HOME/etc/hadoop/core-site.xml
 COPY hdfs-site.xml $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 COPY mapred-site.xml $HADOOP_HOME/etc/hadoop/mapred-site.xml
 COPY yarn-site.xml $HADOOP_HOME/etc/hadoop/yarn-site.xml
+COPY workers $HADOOP_HOME/etc/hadoop/workers
 COPY start-hadoop.sh /usr/local/bin/start-hadoop.sh
 RUN chmod +x /usr/local/bin/start-hadoop.sh
 
