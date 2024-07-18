@@ -33,13 +33,10 @@ RUN ssh-keygen -t rsa -f ~/.ssh/id_rsa -P '' && \
     chmod 600 ~/.ssh/authorized_keys
 
 # Copy Hadoop configuration files
-COPY core-site.xml $HADOOP_HOME/etc/hadoop/core-site.xml
-COPY hdfs-site.xml $HADOOP_HOME/etc/hadoop/hdfs-site.xml
-COPY mapred-site.xml $HADOOP_HOME/etc/hadoop/mapred-site.xml
-COPY yarn-site.xml $HADOOP_HOME/etc/hadoop/yarn-site.xml
-COPY workers $HADOOP_HOME/etc/hadoop/workers
-COPY start-hadoop.sh /usr/local/bin/start-hadoop.sh
-RUN chmod +x /usr/local/bin/start-hadoop.sh
+COPY configs/* $HADOOP_HOME/etc/hadoop/
+# Copy scripts
+COPY scripts/* /usr/local/bin/
+RUN chmod +x /usr/local/bin/*.sh
 
 # Expose necessary ports
 EXPOSE 50070 50075 50010 50020 50090 8020 9000 9864 9870 10020 19888 8088 8030 8031 8032 8033 8040 8042 22
