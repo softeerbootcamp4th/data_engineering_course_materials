@@ -265,10 +265,10 @@ log('E : end extract')
 
 #T : start transform 
 log('T : start transform')
-df_transformed = transform()
+df_transformed = transform() # scrolled data(df) 를 받아도 되지만, json으로 저장하였으므로 transform에서는 input으로서 json을 받아 처리함
 
 #T : end transform 
-log('T : end transform (list -> json)')
+log('T : end transform')
 
 
 ################################
