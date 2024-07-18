@@ -1,0 +1,1 @@
+docker run -it -p 9870:9870 -p 8088:8088 -p 9864:9864 --hostname localhost --name hadoop hadoop-softeer:latest
