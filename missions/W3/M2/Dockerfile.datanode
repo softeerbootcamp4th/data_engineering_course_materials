@@ -32,6 +32,9 @@ RUN ssh-keygen -t rsa -P '' -f /home/hadoop/.ssh/id_rsa && \
     cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys && \
     chmod 600 ~/.ssh/authorized_keys
 
+# Start SSH service as root
+RUN sudo service ssh start
+
 # Set environment variables in .bashrc
 RUN echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-arm64" >> ~/.bashrc && \
     echo "export HADOOP_VERSION=3.3.6" >> ~/.bashrc && \
@@ -53,14 +56,12 @@ COPY ./config/yarn-site.xml $HADOOP_HOME/etc/hadoop/yarn-site.xml
 # Configure JAVA_HOME in Hadoop environment
 RUN echo "export JAVA_HOME=$JAVA_HOME" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 
-# Format HDFS namenode
-RUN sudo mkdir -p $HADOOP_HOME/data/namenode && \
-    sudo mkdir -p $HADOOP_HOME/data/datanode && \
-    sudo chown -R hadoop:hadoop $HADOOP_HOME/data && \
-    $HADOOP_HOME/bin/hdfs namenode -format
-
 # Expose ports
 EXPOSE 9864
 
-# Start Hadoop DataNode
-CMD ["hdfs", "datanode"]
+# Start Hadoop datanode
+COPY /start_script/start_datanode.sh /usr/local/bin/start_datanode.sh
+RUN sudo chmod +x /usr/local/bin/start_datanode.sh
+
+# 시작 명령어 설정
+CMD ["/usr/local/bin/start_datanode.sh"]

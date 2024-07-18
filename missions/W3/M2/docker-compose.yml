@@ -3,9 +3,9 @@ services:
   namenode:
     image: hadoop-namenode
     container_name: namenode
+    hostname: namenode
     ports:
       - "2222:22"
-      - "8088:8088"
       - "9870:9870"
       - "9000:9000"
       - "9864:9864"
@@ -15,6 +15,7 @@ services:
   datanode1:
     image: hadoop-datanode
     container_name: datanode1
+    hostname: datanode1
     volumes:
       - datanode1-data:/usr/local/hadoop/data/datanode
     depends_on:
@@ -23,10 +24,32 @@ services:
   datanode2:
     image: hadoop-datanode
     container_name: datanode2
+    hostname: datanode2
     volumes:
       - datanode2-data:/usr/local/hadoop/data/datanode
     depends_on:
       - namenode
+
+  resourcemanager:
+    image: hadoop-resourcemanager
+    container_name: resourcemanager
+    hostname: resourcemanager
+    ports:
+      - "8088:8088"
+
+  nodemanager1:
+    image: hadoop-nodemanager
+    container_name: nodemanager1
+    hostname: nodemanager1
+    depends_on:
+      - resourcemanager
+
+  nodemanager2:
+    image: hadoop-nodemanager
+    container_name: nodemanager2
+    hostname: nodemanager2
+    depends_on:
+      - resourcemanager
 
 volumes:
   namenode-data:

@@ -56,18 +56,12 @@ COPY ./config/yarn-site.xml $HADOOP_HOME/etc/hadoop/yarn-site.xml
 # Configure JAVA_HOME in Hadoop environment
 RUN echo "export JAVA_HOME=$JAVA_HOME" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 
-# Format HDFS namenode
-RUN sudo mkdir -p $HADOOP_HOME/data/namenode && \
-    sudo mkdir -p $HADOOP_HOME/data/datanode && \
-    sudo chown -R hadoop:hadoop $HADOOP_HOME/data && \
-    $HADOOP_HOME/bin/hdfs namenode -format
-
 # Expose ports
-EXPOSE 22 9870
+EXPOSE 8042
 
-# Start Hadoop namenode
-COPY /start_script/start_namenode.sh /usr/local/bin/start_namenode.sh
-RUN sudo chmod +x /usr/local/bin/start_namenode.sh
+# Start Hadoop node manager
+COPY /start_script/start_nodemanager.sh /usr/local/bin/start_nodemanager.sh
+RUN sudo chmod +x /usr/local/bin/start_nodemanager.sh
 
 # 시작 명령어 설정
-CMD ["/usr/local/bin/start_namenode.sh"]
+CMD ["/usr/local/bin/start_nodemanager.sh"]
