@@ -12,6 +12,7 @@ services:
       - "9000:9000" # fs.DefaultFS
     volumes:
       - hadoop-master-data:/usr/local/hadoop/hdfs
+      - hadoop-master-data:/usr/local/mapreduce
     networks:
       - hadoop
 
@@ -23,6 +24,7 @@ services:
       - hadoop-master
     volumes:
       - hadoop-slave1-data:/usr/local/hadoop/hdfs
+      - hadoop-slave1-data:/usr/local/mapreduce
     networks:
       - hadoop
 
@@ -34,6 +36,7 @@ services:
       - hadoop-master
     volumes:
       - hadoop-slave2-data:/usr/local/hadoop/hdfs
+      - hadoop-slave2-data:/usr/local/mapreduce
     networks:
       - hadoop
 
@@ -45,6 +48,7 @@ services:
       - hadoop-master
     volumes:
       - hadoop-slave3-data:/usr/local/hadoop/hdfs
+      - hadoop-slave3-data:/usr/local/mapreduce
     networks:
       - hadoop
 
