@@ -1,4 +1,4 @@
-# Cluster Setup
+# M2-a: Cluster Setup
 
 ## Docker Build and Run
 
@@ -167,3 +167,41 @@ with    2
 ```bash
 hdfs dfs -get /w3/m2/output/part-r-00000 /root/softeer/w3/m2/
 ```
+
+# M2-b: Configuration
+
+```bash
+docker compose up -d
+```
+
+## Container access
+
+```bash
+docker exec -it hadoop-master /bin/bash
+```
+
+## Modify Configuration
+
+```bash
+cd /usr/local/bin
+```
+
+```bash
+./modify_hadoop_config.sh /opt/hadoop/etc/hadoop/
+```
+
+- config 파일 설정을 바꾸면 hadoop의 구성요소들이 정상적으로 돌아가지 않는다.
+
+## Verify Configuration
+
+```bash
+./verify_hadoop_config.sh
+```
+
+## Rollback
+
+```bash
+./rollback.sh /opt/hadoop/etc/hadoop/
+```
+
+- hadoop의 정상적인 동작을 위해서 롤백
