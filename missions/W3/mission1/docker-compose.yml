@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  single_node_hadoop_cluster:
+    build: "./single_node_hadoop_cluster"
+    container_name: "single_node_hadoop_cluster"
+    volumes:
+      - hdfs-data:/home/hduser/hdfs-data # docker volume(hdfs-data)를 container 내부에 mount 
+    ports:
+      - "9870:9870"
+      - "9864:9864"
+      - "8042:8042"
+      - "8088:8088"
+      - "22:22"
+      - "9866:9866"
+      - "9867:9867"
+      - "9871:9871"
+      - "10020:10020"
+      - "8020:8020"
+volumes:
+  hdfs-data:  # docker volume (hdfs-data) 선언
