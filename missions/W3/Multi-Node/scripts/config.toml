@@ -1,0 +1,27 @@
+[core-site]
+fs.defaultFS = "hdfs://namenode:9000"
+hadoop.tmp.dir = "/hadoop/tmp"
+hadoop.http.staticuser.user = "hdoop"
+io.file.buffer.size = 131072
+
+[hdfs-site]
+dfs.replication = 2
+dfs.blocksize = 134217728
+dfs.namenode.name.dir = "/hadoop/dfs/name"
+dfs.datanode.data.dir = "/hadoop/dfs/data"
+dfs.datanode.http.address = "0.0.0.0:9864"
+
+[mapred-site]
+mapreduce.framework.name = "yarn"
+mapreduce.jobhistory.address = "namenode:10020"
+mapreduce.jobtracker.address = "namenode:9001"
+mapreduce.task.io.sort.mb = 256
+mapreduce.application.classpath = "$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*"
+
+[yarn-site]
+yarn.nodemanager.aux-services = "mapreduce_shuffle"
+yarn.nodemanager.env-whitelist = "AVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_HOME,PATH,LANG,TZ,HADOOP_MAPRED_HOME"
+yarn.resourcemanager.hostname = "namenode"
+yarn.resourcemanager.address = "namenode:8032"
+yarn.nodemanager.resource.memory-mb = 8192
+yarn.scheduler.minimum-allocation-mb = 1024
