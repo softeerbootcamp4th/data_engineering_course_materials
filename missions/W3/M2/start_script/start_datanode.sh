@@ -4,5 +4,7 @@
 sudo service ssh start
 
 # Hadoop Datanode 실행
-hdfs datanode
+$HADOOP_HOME/bin/hdfs --daemon start datanode
 
+# Keep the shell open
+tail -f /dev/null

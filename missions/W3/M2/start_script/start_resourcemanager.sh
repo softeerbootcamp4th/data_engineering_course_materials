@@ -4,6 +4,7 @@
 sudo service ssh start
 
 # Hadoop resourcemanager 실행
-yarn resourcemanager
+$HADOOP_HOME/bin/yarn --daemon start resourcemanager
 
-
+# Keep the shell open
+tail -f /dev/null

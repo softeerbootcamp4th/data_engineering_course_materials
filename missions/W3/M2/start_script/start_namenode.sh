@@ -4,5 +4,7 @@
 sudo service ssh start
 
 # Hadoop namenode 실행
-hdfs namenode
+$HADOOP_HOME/bin/hdfs --daemon start namenode
 
+# Keep the shell open
+tail -f /dev/null
