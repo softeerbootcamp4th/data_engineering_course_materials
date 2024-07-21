@@ -1,0 +1,12 @@
+<configuration>
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>hadoop-master</value>
+        <!-- Host Location Where Resource Manager Daemon is Running -->
+    </property>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+        <!-- Letting MapReduce to know how shuffle should be acted -->
+    </property>
+</configuration>
