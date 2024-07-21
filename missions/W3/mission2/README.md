@@ -39,3 +39,17 @@ localhost:9870 -> Utilities -> Browse the file system에서, 앞서 생성한 wo
 - 나는 dockerfile을 고치지 않았고, shell script만 고친 상태이니 docker compose를 이용해서 실행할 때 이미지를 다시 빌드하지 않는다.
 - 그렇게 만들어진 container에는 당연히 shell script가 수정되어 있지 않다.
 - 이걸 몰라서 2시간 정도를 날렸다~
+
+### Mission 2-b
+#### Verify Config & Check Modified Config 
+- Verify Config
+``` 
+(in the docker container)
+./missions/mission2-b/script_verify.sh 
+```
+
+- Modify Config
+``` 
+(in the docker container)
+./missions/mission2-b/script_config_modify.sh
+```
