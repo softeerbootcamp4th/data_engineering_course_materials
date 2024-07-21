@@ -1,5 +1,9 @@
 <configuration>
     <property>
+        <name>yarn.nodemanager.local-dirs</name>
+        <value>file:///opt/hadoop/yarn/data</value>
+    </property>
+    <property>
         <name>yarn.nodemanager.aux-services</name>
         <value>mapreduce_shuffle</value>
     </property>

@@ -1,16 +1,8 @@
 FROM base
 
-# TODO: Multiple healthcheck
-HEALTHCHECK CMD curl -f http://master:9870/ || exit 1
-#HEALTHCHECK CMD curl -f http://master:8088/ || exit 1
+RUN mkdir -p $HADOOP_HOME/dfs/name
 
-# FsImage, EditLog 파일 경로
-# FsImage : block replication 개수를 mapping 시켜놓은 정보
-RUN mkdir $HADOOP_HOME/dfs/name
-
-ADD start.sh /start.sh
-RUN chmod a+x /start.sh
-
+ADD --chown=hadoop:users ./start.sh ./start.sh
 
 # 8088 : yarn resource manager Web UI
 # 8030 : yarn scheduler interface
@@ -21,4 +13,4 @@ RUN chmod a+x /start.sh
 # 8020 : cleint request
 EXPOSE 9000 9870 8088 8032 8030 8020
 
-CMD ["/bin/sh", "/start.sh", "/tmp/hadoop-root/dfs/name"]
+CMD ["/bin/sh", "./start.sh", "/opt/hadoop/dfs/name"]
