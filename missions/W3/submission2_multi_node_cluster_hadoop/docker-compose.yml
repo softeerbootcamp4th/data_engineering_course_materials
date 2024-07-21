@@ -1,0 +1,74 @@
+version: '3'
+
+services:
+  hadoop-master: # docker compose up hadoop=master
+    build:
+      context: ./master
+      dockerfile: Dockerfile
+    container_name: hadoop-master # docker exec -it hadoop-master bash
+    hostname: namenode # localhost -> namenode
+    ports:
+      - "8088:8088" # Cluster Web UI
+      - "9870:9870" # NameNode Web UI
+    volumes:
+      - hadoop-master:/usr/local/hadoop
+    networks:
+      - hadoop
+
+  hadoop-slave1: # docker compose up hadoop-slave1
+    build:
+      context: ./slave
+      dockerfile: Dockerfile
+    container_name: hadoop-slave1 # docker exec -it hadoop-slave1 bash
+    hostname: datanode1 # localhost -> datanode1
+    ports:
+      - "9901:9864" # DataNode Web UI
+      - "8041:8042" # DataNode Web UI
+    depends_on:
+      - hadoop-master
+    volumes:
+      - hadoop-slave1:/usr/local/hadoop
+    networks:
+      - hadoop
+  
+  hadoop-slave2: # docker compose up hadoop-slave2
+    build:
+      context: ./slave
+      dockerfile: Dockerfile
+    container_name: hadoop-slave2 # docker exec -it hadoop-slave2 bash
+    hostname: datanode2 # localhost -> datanode2
+    ports:
+      - "9902:9864" # DataNode Web UI
+      - "8042:8042" # DataNode Web UI
+    depends_on:
+      - hadoop-master
+    volumes:
+      - hadoop-slave2:/usr/local/hadoop
+    networks:
+      - hadoop
+
+  hadoop-slave3: # docker compose up hadoop-slave3
+    build:
+      context: ./slave
+      dockerfile: Dockerfile
+    container_name: hadoop-slave3 # docker exec -it hadoop-slave3 bash
+    hostname: datanode3 # localhost -> datanode3
+    ports:
+      - "9903:9864" # DataNode Web UI
+      - "8043:8042" # DataNode Web UI
+    depends_on:
+      - hadoop-master
+    volumes:
+      - hadoop-slave3:/usr/local/hadoop
+    networks:
+      - hadoop
+
+networks:
+  hadoop:
+    driver: bridge # communicate between containers
+
+volumes:
+  hadoop-master:
+  hadoop-slave1:
+  hadoop-slave2:
+  hadoop-slave3:
