@@ -1,0 +1,55 @@
+version: '3'
+services:
+  master:
+    image: masternode_image
+    container_name: hadoop-master
+    networks:
+      - hadoop_net
+    ports:
+      - "2222:22"
+      - "9870:9870"
+      - "8088:8088"
+    volumes:
+      - master-data:/usr/local/hadoop/dlawork9888
+    environment:
+      - HADOOP_MASTER=true
+
+  worker1:
+    image: workernode_image
+    container_name: hadoop-worker1
+    networks:
+      - hadoop_net
+    volumes:
+      - worker1-data:/usr/local/hadoop/dlawork9888
+    environment:
+      - HADOOP_MASTER=false
+
+  worker2:
+    image: workernode_image
+    container_name: hadoop-worker2
+    networks:
+      - hadoop_net
+    volumes:
+      - worker2-data:/usr/local/hadoop/dlawork9888
+    environment:
+      - HADOOP_MASTER=false
+
+  worker3:
+    image: workernode_image
+    container_name: hadoop-worker3
+    networks:
+      - hadoop_net
+    volumes:
+      - worker3-data:/usr/local/hadoop/dlawork9888
+    environment:
+      - HADOOP_MASTER=false
+
+networks:
+  hadoop_net:
+    driver: bridge
+
+volumes:
+  master-data:
+  worker1-data:
+  worker2-data:
+  worker3-data:

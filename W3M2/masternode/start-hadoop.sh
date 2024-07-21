@@ -10,8 +10,10 @@ if [ ! "$(ls -A /usr/local/hadoop/data/namenode)" ]; then
 fi
 
 # Start Hadoop services as hadoopuser
-start-dfs.sh
-start-yarn.sh
+hdfs --daemon start namenode
+hdfs --daemon start secondarynamenode
+yarn --daemon start resourcemanager
+
 
 # Keep the container running
 tail -f /dev/null
