@@ -1,6 +1,8 @@
 ####### 미션에서 큰 파일
 *.tar.gz
 *tweets.csv
+*/ml-20m
+*ratings.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
