@@ -1,5 +1,3 @@
-# INIT 
-
 ## Build initial hadoop cluster
 * step 1 : run "build_and_run_hadoop_services.sh"
 instruction | ./build_and_run_hadoop_services.sh
@@ -20,12 +18,12 @@ instruction | ./build_and_run_hadoop_services.sh
 
 When changing as above, /hadoop/dfs/name and /hadoop/dfs/data paths must be added inside the container.
 
-* step 3 : 변경 사항을 적용할 컨테이너를 apply_all.sh에 추가합니다
-./configuration_modify.sh $HADOOP_HOME $CONTAINER_NAME $ROLE 오 같은 명령행을 추가합니다.
+* step 3 : Add the container to apply the changes to apply_all.sh
+Add a command line like ./configuration_modify.sh $HADOOP_HOME $CONTAINER_NAME $ROLE.
 
 * step 4 : run "apply_all.sh"
 instruction | ./apply_all.sh
-변경사항이 적용됩니다.
+As a result, the changes are applied.
 
 
 ## Verification
@@ -48,12 +46,15 @@ instruction : ./test_mapreduce.sh <HADOOP_HOME> <CONTAINER_NAME>
 
 
 ## TEST
-* if you only want to test, not customise then, just follow instructions below
+* if you only want to test, not customise, then just follow instructions below
+* You should execute the command from the directory where the script is located.
 instruction | ./build_and_run_hadoop_services.sh
 instruction | ./apply_all.sh
 instruction | python3 run build-verify-scrips.py
 instruction : ./configuration_verify.sh usr/local/hadoop namenode
 instruction : ./test_mapreduce.sh usr/local/hadoop namenode
+
+or you can run one click script "test.sh"
 
 
 ## Troble Shooting
