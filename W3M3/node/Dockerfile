@@ -6,8 +6,12 @@
 FROM ubuntu:20.04
 
 RUN apt-get update && apt-get install -y \
-    wget curl net-tools vim openssh-server openssh-client sudo rsync && \
+    wget curl net-tools vim openssh-server openssh-client sudo rsync -y && \
     mkdir /var/run/sshd
+
+# Python 설치
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y python3 python3-pip
 
 # JAVA 설치 및 환경변수 설정
 RUN apt-get install -y openjdk-11-jdk
@@ -24,7 +28,7 @@ RUN tar -xzvf /temp/hadoop-3.3.6.tar.gz -C /usr/local/ && \
 
 # 하둡 설정 파일 COPY
 # usr/local/hadoop/etc/hadoop
-COPY workernode_config/* /usr/local/hadoop/etc/hadoop/
+COPY config/* /usr/local/hadoop/etc/hadoop/
 
 # 하둡 환경 변수 설정
 ENV HADOOP_HOME=/usr/local/hadoop
