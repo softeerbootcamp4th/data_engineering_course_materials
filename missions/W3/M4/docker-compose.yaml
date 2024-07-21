@@ -1,0 +1,41 @@
+services:
+  master:
+    image: master
+    container_name: master-container
+    hostname: master
+    ports:
+      - "9870:9870"
+      - "8088:8088"
+    volumes:
+      - ./master0/dfs/:/opt/hadoop/dfs/
+    networks:
+      - hadoop-cluster
+  worker1:
+    image: worker
+    container_name: worker1-container
+    hostname: worker1
+    volumes:
+      - ./worker1/dfs/:/opt/hadoop/dfs/
+      - ./worker1/yarn/:/opt/hadoop/yarn/
+    networks:
+      - hadoop-cluster
+  worker2:
+    image: worker
+    container_name: worker2-container
+    hostname: worker2
+    volumes:
+      - ./worker2/dfs/:/opt/hadoop/dfs/
+      - ./worker2/yarn/:/opt/hadoop/yarn/
+    networks:
+      - hadoop-cluster
+  worker3:
+    image: worker
+    container_name: worker3-container
+    hostname: worker3
+    volumes:
+      - ./worker3/dfs/:/opt/hadoop/dfs/
+      - ./worker3/yarn/:/opt/hadoop/yarn/
+    networks:
+      - hadoop-cluster
+networks:
+  hadoop-cluster:
