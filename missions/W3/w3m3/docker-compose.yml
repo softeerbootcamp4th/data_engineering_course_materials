@@ -1,0 +1,46 @@
+version: '3'
+services:
+  master:
+    build: .
+    container_name: master
+    hostname: master
+    environment:
+      - YARNSTART=1
+    volumes:
+      - master_data:/home/hduser/hadoop-3.3.3/data
+      - ./core-site.xml:/home/hduser/hadoop-3.3.3/etc/hadoop/core-site.xml
+      - ./hdfs-site.xml:/home/hduser/hadoop-3.3.3/etc/hadoop/hdfs-site.xml
+      - ./yarn-site.xml:/home/hduser/hadoop-3.3.3/etc/hadoop/yarn-site.xml
+      - ./mapred-site.xml:/home/hduser/hadoop-3.3.3/etc/hadoop/mapred-site.xml
+      - ./docker-entrypoint.sh:/usr/local/bin/docker-entrypoint.sh
+    ports:
+      - "9870:9870"
+      - "8088:8088"
+    networks:
+      - hadoop
+    command: ["namenode"]
+
+  worker:
+    build: .
+    container_name: worker
+    hostname: worker
+    volumes:
+      - worker_data:/home/hduser/hadoop-3.3.3/data
+      - ./core-site.xml:/home/hduser/hadoop-3.3.3/etc/hadoop/core-site.xml
+      - ./hdfs-site.xml:/home/hduser/hadoop-3.3.3/etc/hadoop/hdfs-site.xml
+      - ./yarn-site.xml:/home/hduser/hadoop-3.3.3/etc/hadoop/yarn-site.xml
+      - ./mapred-site.xml:/home/hduser/hadoop-3.3.3/etc/hadoop/mapred-site.xml
+      - ./docker-entrypoint.sh:/usr/local/bin/docker-entrypoint.sh
+    ports:
+     - "9864:9864"
+    networks:
+      - hadoop
+    command: ["datanode"]
+
+volumes:
+  master_data:
+  worker_data:
+
+networks:
+  hadoop:
+    driver: bridge
