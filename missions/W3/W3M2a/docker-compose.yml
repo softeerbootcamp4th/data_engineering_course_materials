@@ -1,0 +1,58 @@
+version: "3"
+services:
+  master:
+    build:
+      context: ./hadoop_master
+      args:
+        - platform=linux/amd64
+    platform: linux/amd64
+    container_name: master
+    hostname: master
+    networks:
+      - hadoop-net
+    ports:
+      - "9870:9870"
+      - "8088:8088"
+    volumes:
+      - master-data:/usr/local/hadoop/hdfs
+    environment:
+      - HADOOP_HOME=/usr/local/hadoop
+
+  worker1:
+    build:
+      context: ./hadoop_worker
+      args:
+        - platform=linux/amd64
+    platform: linux/amd64
+    container_name: worker1
+    hostname: worker1
+    networks:
+      - hadoop-net
+    volumes:
+      - worker1-data:/usr/local/hadoop/hdfs
+    environment:
+      - HADOOP_HOME=/usr/local/hadoop
+
+  worker2:
+    build:
+      context: ./hadoop_worker
+      args:
+        - platform=linux/amd64
+    platform: linux/amd64
+    container_name: worker2
+    hostname: worker2
+    networks:
+      - hadoop-net
+    volumes:
+      - worker2-data:/usr/local/hadoop/hdfs
+    environment:
+      - HADOOP_HOME=/usr/local/hadoop
+
+networks:
+  hadoop-net:
+    driver: bridge
+
+volumes:
+  master-data:
+  worker1-data:
+  worker2-data:
