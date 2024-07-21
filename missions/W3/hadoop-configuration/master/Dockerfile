@@ -15,7 +15,6 @@ ENV PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 RUN apt update && \
     apt install -y openjdk-8-jdk ssh pdsh wget vim sudo
 
-#ADD /Users/admin/data-engineering-course/missions/W3/hadoop-multi-node/hadoop-$HADOOP_VERSION.tar.gz /opt
 # Download and extract Hadoop to /opt
 RUN wget https://dlcdn.apache.org/hadoop/common/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz -P /opt && \
     tar -xzvf /opt/hadoop-$HADOOP_VERSION.tar.gz -C /opt && \
@@ -35,7 +34,16 @@ RUN groupadd hadoop && \
     useradd -m -g hadoop yarn && \
     mkdir $HADOOP_HOME/logs && \
     chown -R :hadoop $HADOOP_HOME/ && \
-    chmod -R 775 $HADOOP_HOME/
+    chmod -R 775 $HADOOP_HOME/ && \
+    mkdir -p /hadoop/dfs/name && \
+    chown -R hdfs:hadoop /hadoop/dfs/name/ && \
+    chmod -R 775 /hadoop/dfs/name && \
+    mkdir -p /hadoop/dfs/data && \
+    chown -R hdfs:hadoop /hadoop/dfs/data/ && \
+    chmod -R 775 /hadoop/dfs/data && \
+    mkdir -p /hadoop/tmp/dfs/data && \
+    chown -R hdfs:hadoop /hadoop/tmp/dfs/data && \
+    chmod -R 775 /hadoop/tmp/dfs/data
 
 COPY start.sh start.sh
 RUN chmod +x start.sh

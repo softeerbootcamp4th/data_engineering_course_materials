@@ -33,8 +33,8 @@ RUN groupadd hadoop && \
     useradd -m -g hadoop hdfs && \
     useradd -m -g hadoop yarn && \
     mkdir $HADOOP_HOME/logs && \
-    chown -R :hadoop $HADOOP_HOME/ && \
-    chmod -R 775 $HADOOP_HOME/
+    chown -R hdfs:hadoop /hadoop/dfs/ && \
+    chmod -R 770 /hadoop/dfs/
 
 COPY start.sh start.sh
 RUN chmod +x start.sh
