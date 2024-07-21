@@ -1,0 +1,17 @@
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+        <!-- Number of Block Replication -->
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>/usr/local/hadoop/hdfs/namenode</value>
+        <!-- Local File Path for NameNode to save namespace and transaction log -->
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/usr/local/hadoop/hdfs/datanode</value>
+        <!-- Local File Path for DataNode to save actuall data -->
+    </property>
+</configuration>
