@@ -47,6 +47,7 @@ verify_setting "yarn.scheduler.minimum-allocation-mb" "1024"
 hdfs dfs -rm -f /tmp/testfile
 echo "Creating test file in HDFS..."
 echo "Hello Hadoop" > /tmp/testfile_local
+hdfs dfs -mkdir /tmp/testfile
 hdfs dfs -put /tmp/testfile_local /tmp/testfile
 
 replication_factor=$(hdfs fsck /tmp/testfile -files -blocks -racks | grep 'Total blocks' | awk '{print $8}')
