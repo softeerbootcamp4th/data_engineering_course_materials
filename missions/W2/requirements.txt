@@ -1,0 +1,8 @@
+jupyter
+matplotlib
+pandas
+numpy
+selenium
+wordcloud
+konlpy
+nltk
