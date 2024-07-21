@@ -1,18 +1,17 @@
-```markdown
 # Hadoop Docker Setup
 
 This project provides a setup to run Apache Hadoop in Docker containers. This README file explains how to run the containers, perform HDFS operations, and execute cluster tasks.
 
 ## Project Components
 
-- **Dockerfile**: Sets up a container image with Hadoop and Java on Ubuntu 20.04.
-- **docker-entrypoint.sh**: Initializes and starts NameNode and DataNode services when the container starts.
-- **docker-compose.yml**: Defines Docker containers for NameNode and DataNode.
+1. **Dockerfile**: Contains instructions for building the Docker image.
+2. **core-site.xml**: Hadoop core configuration file.
+3. **hdfs-site.xml**: Hadoop HDFS configuration file.
+4. **mapred-site.xml**: Hadoop MapReduce configuration file.
+5. **yarn-site.xml**: Hadoop YARN configuration file.
+6. **docker-entrypoint.sh**: Initializes and starts NameNode and DataNode services when the container starts.
+7. **docker-compose.yml**: Defines Docker containers for NameNode and DataNode.
 
-## Requirements
-
-- Docker
-- Docker Compose
 
 ## Running the Containers
 
@@ -96,4 +95,3 @@ This project provides a setup to run Apache Hadoop in Docker containers. This RE
       docker exec -it master hdfs dfs -ls /user/hduser/test/output
       docker exec -it master hdfs dfs -cat /user/hduser/test/output/part-r-00000
       ```
-```
