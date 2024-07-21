@@ -1,6 +1,5 @@
 ####### 미션에서 큰 파일
-w2/sentiment_analysis/tweets.csv
-w2/sentiment_analysis/webtoon_analysis/webtoon_comments.db
+*.tar.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
