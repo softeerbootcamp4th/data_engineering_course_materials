@@ -53,7 +53,7 @@ hdfs fsck /w3/m2/input.txt -files -blocks -locations
 ## MapReduce Job
 
 ```bash
-hadoop jar /opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar wordcount /w3/m2/input.txt /w3/m2/output
+hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar wordcount /w3/m2/input.txt /w3/m2/output
 ```
 
 ## Result

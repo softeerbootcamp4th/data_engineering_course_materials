@@ -11,8 +11,7 @@ services:
       - "8042:8042" # YARN NodeManager Web UI
       - "9000:9000" # fs.DefaultFS
     volumes:
-      - hadoop-master-data:/usr/local/hadoop/hdfs
-      - hadoop-master-data:/usr/local/mapreduce
+      - hadoop-master-data:/usr/local/hadoop
     networks:
       - hadoop
 
@@ -23,8 +22,7 @@ services:
     depends_on:
       - hadoop-master
     volumes:
-      - hadoop-slave1-data:/usr/local/hadoop/hdfs
-      - hadoop-slave1-data:/usr/local/mapreduce
+      - hadoop-slave1-data:/usr/local/hadoop
     networks:
       - hadoop
 
@@ -35,8 +33,7 @@ services:
     depends_on:
       - hadoop-master
     volumes:
-      - hadoop-slave2-data:/usr/local/hadoop/hdfs
-      - hadoop-slave2-data:/usr/local/mapreduce
+      - hadoop-slave2-data:/usr/local/hadoop
     networks:
       - hadoop
 
@@ -47,8 +44,7 @@ services:
     depends_on:
       - hadoop-master
     volumes:
-      - hadoop-slave3-data:/usr/local/hadoop/hdfs
-      - hadoop-slave3-data:/usr/local/mapreduce
+      - hadoop-slave3-data:/usr/local/hadoop
     networks:
       - hadoop
 
