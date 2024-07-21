@@ -28,7 +28,7 @@
 # container directory - 컨테이너 로컬에선 temp 폴더만 사용
 
 + temp
-    - The_Southern_Literary_Messenger.txt
+    - tweets.csv
     - tweets_mapper.py
     - tweets_reducer.py
     + tweets_output (mapreduce 작업 이후 생성된 디렉터리를 컨테이너 로컬 파일 시스템으로 가져옴)
@@ -40,7 +40,7 @@
 # hdfs directory 
 
 + tweets_dir
-    - The_Southern_Literary_Messenger.txt
+    - tweets.csv
 + tweets_output (mapred 작업 후 생성 - 미리 존재하면 안됨 !)
     - _SUCCESS
     - part-00000
