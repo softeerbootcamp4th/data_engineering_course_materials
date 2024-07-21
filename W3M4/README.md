@@ -89,7 +89,7 @@ if __name__ == "__main__":
 - mapper에서 에러 발생을 확인 (yarn 8088 웹 인터페이스 참고, application 확인)
 - `cat tweets.csv | python3 tweets_mapper.py | sort | python3 tweets_reducer.py`
     - 모든 라인 전수조사했지만 로직에는 문제가 없음을 확인
-- `#!/usr/bin/env python3` <= 필수 !!!!!!!!!!
+- `#!/usr/bin/env python3` <= 필수 !!!!!!!!!!(3시간은 소중합니다)
     - #! 은 주석이 아니라 이 자체가 하나의 기호(SheBang)
     - #! 은 2 Byte 의 매직 넘버 (Magic Number) 로 스크립트의 맨 앞에서 이 파일이 어떤 명령어 해석기의 명령어 집합인지를 시스템에 알려주는 역할
 
