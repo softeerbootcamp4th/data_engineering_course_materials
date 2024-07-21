@@ -66,26 +66,31 @@ Inside the container, create directories in HDFS:
 
 ```sh
 hdfs dfs -mkdir -p /user/hduser/mission1
+```
 
 ### 4.2 Upload Files to HDFS
 
 Copy the local file to the Docker container
-'''sh
+```sh
 docker cp ~/Desktop/Mission1/mtcars.csv <container_id>:/home/hduser/
+```
 
 Inside the container, upload the file to HDFS
-'''sh
+```sh
 hdfs dfs -put /home/hduser/mtcars.csv /user/hduser/mission1/
+```
 
 ### 4.3 Verify File Upload
 
 List the files in the HDFS directory to verify the upload
-'''sh
+```sh
 hdfs dfs -ls /user/hduser/mission1/
+```
 
 Display the contents of the uploaded file
-'''sh
+```sh
 hdfs dfs -cat /user/hduser/mission1/mtcars.csv
+```
 
 ### Step 5: Access HDFS Web UI
 
