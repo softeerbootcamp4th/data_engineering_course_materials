@@ -63,11 +63,13 @@ hadoop fs -cat /user/hadoop/output/part-r-00000
 <br>
 
 - `localhost:8088`에서 master node, worker node 확인
+<img width="1728" alt="스크린샷 2024-07-18 오후 3 18 14" src="https://github.com/user-attachments/assets/4b9d107a-98db-45ca-9d3e-3e374e333d39">
 
 
 <br>
 
 - `localhost:9870`에서 master node, worker node 확인
+<img width="1728" alt="스크린샷 2024-07-18 오후 3 18 29" src="https://github.com/user-attachments/assets/e0aaa87f-73a3-4319-9d43-5876dd762f58">
 
 
 <br>
