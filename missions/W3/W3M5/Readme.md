@@ -60,3 +60,6 @@ hdfs dfs -rm /ratings/output/part-00000
 hdfs dfs -rmdir /ratings/output
 ```
 <br>
+
+
+<img width="582" alt="스크린샷 2024-07-22 오후 5 28 45" src="https://github.com/user-attachments/assets/c99d4e17-64a3-4ce3-a7cb-bc3e1d6a9ca7">
