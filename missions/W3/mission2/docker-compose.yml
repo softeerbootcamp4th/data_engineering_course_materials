@@ -1,0 +1,46 @@
+services:
+  namenode:
+    build: "./multi_node_hadoop_cluster"
+    container_name: namenode
+    hostname: namenode
+    volumes:
+      - namenode:/root/data
+    ports:
+      - "9870:9870"
+      - "8088:8088"
+    networks:
+      - hadoop
+
+  datanode1:
+    build: "./multi_node_hadoop_cluster"
+    container_name: datanode1
+    hostname: datanode1
+    volumes:
+      - datanode1:/root/data
+    ports:
+      - "11111:8042"
+    networks:
+      - hadoop
+
+  datanode2:
+    build: ./multi_node_hadoop_cluster
+    container_name: datanode2
+    hostname: datanode2
+    volumes:
+      - datanode2:/root/data 
+    ports:
+      - "22222:8042"
+    networks:
+      - hadoop
+
+
+volumes:
+  namenode: 
+  datanode1:
+  datanode2:
+  # datanode3:
+  # datanode4:
+
+networks:
+  hadoop:
+    driver: bridge
