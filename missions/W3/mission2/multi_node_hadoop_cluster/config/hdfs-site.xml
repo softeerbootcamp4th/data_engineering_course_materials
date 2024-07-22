@@ -2,11 +2,11 @@
 <configuration>
     <property>
         <name>dfs.namenode.name.dir</name>
-        <value>file:///root/data/namenode</value>
+        <value>/root/data/namenode</value>
     </property>
     <property>
         <name>dfs.datanode.data.dir</name>
-        <value>file:///root/data/datanode</value>
+        <value>/root/data/datanode</value>
         <description>DataNode directory</description>
     </property>
     <property>

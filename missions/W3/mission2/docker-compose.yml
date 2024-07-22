@@ -1,5 +1,5 @@
 services:
-  hadoop-master:
+  namenode:
     build: "./multi_node_hadoop_cluster"
     container_name: namenode
     hostname: namenode
@@ -11,21 +11,25 @@ services:
     networks:
       - hadoop
 
-  hadoop-slave1:
+  datanode1:
     build: "./multi_node_hadoop_cluster"
     container_name: datanode1
     hostname: datanode1
     volumes:
       - datanode1:/root/data
+    ports:
+      - "11111:8042"
     networks:
       - hadoop
 
-  hadoop-slave2:
+  datanode2:
     build: ./multi_node_hadoop_cluster
     container_name: datanode2
     hostname: datanode2
     volumes:
       - datanode2:/root/data 
+    ports:
+      - "22222:8042"
     networks:
       - hadoop
 

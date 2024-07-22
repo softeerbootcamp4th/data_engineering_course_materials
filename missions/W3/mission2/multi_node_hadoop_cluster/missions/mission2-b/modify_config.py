@@ -17,7 +17,8 @@ predefined_mapred_dict = {'mapreduce.framework.name': 'yarn',
                            'mapreduce.task.io.sort.mb': '256',
                            }
 
-predefined_yarn_dict = {'yarn.resourcemanager.address': 'namenode:8032',
+predefined_yarn_dict = { 
+                        'yarn.resourcemanager.address': 'namenode:8032',
                          'yarn.nodemanager.resource.memory-mb': '8192',
                          'yarn.scheduler.minimum-allocation-mb': '1024',
                          }

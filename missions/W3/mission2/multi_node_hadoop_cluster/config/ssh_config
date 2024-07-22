@@ -12,6 +12,10 @@ Host namenode
    StrictHostKeyChecking no
    UserKnownHostsFile=/dev/null
 
-Host datanode*
+Host datanode1
+  StrictHostKeyChecking no
+  UserKnownHostsFile=/dev/null
+
+Host datanode2
   StrictHostKeyChecking no
   UserKnownHostsFile=/dev/null
