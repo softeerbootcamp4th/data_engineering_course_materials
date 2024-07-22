@@ -60,3 +60,6 @@ hdfs dfs -rm /tweets/output/part-00000
 hdfs dfs -rmdir /tweets/output
 ```
 <br>
+
+
+<img width="597" alt="스크린샷 2024-07-22 오후 3 55 17" src="https://github.com/user-attachments/assets/08eb3bf1-ed19-491d-9140-1829df91376d">
