@@ -3,6 +3,7 @@
 *tweets.csv
 */ml-20m
 *ratings.csv
+*amazon_reviews
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
