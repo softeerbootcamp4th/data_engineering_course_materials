@@ -1,0 +1,6 @@
+Hello Hadoop
+Goodbye Hadoop
+Hello MapReduce
+Goodbye MapReduce
+Hello Big Data
+Goodbye Big Data
