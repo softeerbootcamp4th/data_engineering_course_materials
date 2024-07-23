@@ -164,7 +164,13 @@ cython_debug/
 **/.DS_Store
 **/._.DS_Store
 
-.vscode
+.viscid
 vscode
 .vscode/
 vscode/
+
+
+.untracked
+._untracked
+**/untracked
+**/._untracked
