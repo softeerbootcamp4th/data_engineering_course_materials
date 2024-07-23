@@ -1,0 +1,56 @@
+services:
+  master:
+    build:
+      context: .
+    image: hadoop-cluster
+    container_name: master
+    hostname: master
+    ports:
+      - "9870:9870"
+      - "8088:8088"
+      - "9864:9864"
+    environment:
+      - NODE_TYPE=master
+    volumes:
+      - master-data:/usr/local/hadoop/data/namenode
+    networks:
+      - hadoop
+
+  worker1:
+    build:
+      context: .
+    image: hadoop-cluster
+    container_name: worker1
+    hostname: worker1
+    environment:
+      - NODE_TYPE=worker
+    volumes:
+      - worker1-data:/usr/local/hadoop/data/datanode
+    depends_on:
+      - master
+    networks:
+      - hadoop
+
+  worker2:
+    build:
+      context: .
+    image: hadoop-cluster
+    container_name: worker2
+    hostname: worker2
+    environment:
+      - NODE_TYPE=worker
+    volumes:
+      - worker2-data:/usr/local/hadoop/data/datanode
+    depends_on:
+      - master
+    networks:
+      - hadoop
+
+volumes:
+  master-data:
+  worker1-data:
+  worker2-data:
+
+networks:
+  hadoop:
+    driver: bridge
