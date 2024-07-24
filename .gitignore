@@ -170,5 +170,6 @@ training.1600000.processed.noemoticon.csv
 rootkey.csv
 
 # week 4
-*_SUCCESS*
-*part-*.csv*
+**/W4/**/*_SUCCESS*
+**/W4/**/*.csv*
+**/W4/**/*.parquet
