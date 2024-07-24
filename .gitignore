@@ -168,3 +168,7 @@ api_key
 training.1600000.processed.noemoticon.csv
 *.pem
 rootkey.csv
+
+# week 4
+*_SUCCESS*
+*part-*.csv*
