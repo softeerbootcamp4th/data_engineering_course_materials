@@ -1,0 +1,55 @@
+version: "3"
+
+services:
+  spark-master:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spark-master
+    hostname: spark-master
+    ports:
+      - "8080:8080" # Spark Web UI
+      - "7077:7077" # Spark Master port
+    volumes:
+      - spark-master:/opt/spark
+    networks:
+      - spark-network
+
+  spark-worker-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spark-worker-1
+    hostname: spark-worker-1
+    ports:
+      - "8081:8081"
+    depends_on:
+      - spark-master
+    volumes:
+      - spark-worker1:/opt/spark
+    networks:
+      - spark-network
+
+  spark-worker-2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spark-worker-2
+    hostname: spark-worker-2
+    ports:
+      - "8082:8082"
+    depends_on:
+      - spark-master
+    volumes:
+      - spark-worker2:/opt/spark
+    networks:
+      - spark-network
+
+volumes:
+  spark-master:
+  spark-worker1:
+  spark-worker2:
+
+networks:
+  spark-network:
+    driver: bridge
