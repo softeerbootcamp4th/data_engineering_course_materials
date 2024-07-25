@@ -46,12 +46,17 @@ RUN ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa && \
 USER root
 RUN mkdir -p $HADOOP_HOME/logs && \
     chown -R :hadoop $HADOOP_HOME/ && \
-    chmod -R 775 $HADOOP_HOME/
+    chmod -R 775 $HADOOP_HOME/ && \
+    mkdir -p $HADOOP_HOME/data && \
+    chown -R hdfs:hadoop $HADOOP_HOME/data && \
+    chmod -R 775 $HADOOP_HOME/data
 
 RUN echo "export JAVA_HOME="$(jrunscript -e 'java.lang.System.out.println(java.lang.System.getProperty("java.home"));')"" >> $HADOOP_CONF_DIR/hadoop-env.sh
 
 COPY configs/* $HADOOP_CONF_DIR/
-COPY start.sh /usr/local/bin/start.sh
-RUN chmod +x /usr/local/bin/start.sh
+COPY scripts/* /usr/local/bin/
+RUN chmod +x /usr/local/bin/*.sh
+
+WORKDIR $HADOOP_HOME
 
 ENTRYPOINT ["/usr/local/bin/start.sh"]
