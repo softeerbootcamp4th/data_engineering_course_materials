@@ -1,0 +1,91 @@
+version: "3.8"
+services:
+  spark-master:
+    build:
+      context: spark_master
+      dockerfile: Dockerfile
+    container_name: spark-master
+    hostname: spark-master
+    ports:
+      - "8080:8080" # Spark Master
+      - "7077:7077" # Spark Master
+      - "8888:8888" # Jupyter Notebook
+    volumes:
+      - spark-master:/opt/spark
+      - spark-logs:/opt/spark/logs
+    networks:
+      - spark-network
+
+  spark-worker1:
+    build:
+      context: spark_worker
+      dockerfile: Dockerfile
+    container_name: spark-worker1
+    hostname: spark-worker1
+    ports:
+      - "8081:8081" # Spark Worker
+    volumes:
+      - spark-worker1:/opt/spark
+      - spark-logs:/opt/spark/logs
+    networks:
+      - spark-network
+    depends_on:
+      - spark-master
+    
+  spark-worker2:
+    build:
+      context: spark_worker
+      dockerfile: Dockerfile
+    container_name: spark-worker2
+    hostname: spark-worker2
+    ports:
+      - "8082:8081" # Spark Worker
+    volumes:
+      - spark-worker2:/opt/spark
+      - spark-logs:/opt/spark/logs
+    networks:
+      - spark-network
+    depends_on:
+      - spark-master
+  
+  spark-history:
+    build:
+      context: spark_history
+      dockerfile: Dockerfile
+    container_name: spark-history
+    hostname: spark-history
+    ports:
+      - "18080:18080" # Spark History Server
+    volumes:
+      - spark-logs:/opt/spark/logs
+    networks:
+      - spark-network
+    depends_on:
+      - spark-master
+
+  hadoop-single:
+    build:
+      context: hadoop_single_cluster
+      dockerfile: Dockerfile
+    container_name: hadoop-single
+    hostname: hadoop-single
+    ports:
+      - "9870:9870" # Namenode
+      - "9864:9864" # Datanode
+      - "8088:8088" # ResourceManager
+      - "9000:9000" # HDFS
+    volumes:
+      - hadoop-single:/opt/hadoop
+    networks:
+      - spark-network
+
+networks:
+  spark-network:
+    driver: bridge
+
+volumes:
+  spark-master:
+  spark-worker1:
+  spark-worker2:
+  spark-logs:
+  hadoop-single:
