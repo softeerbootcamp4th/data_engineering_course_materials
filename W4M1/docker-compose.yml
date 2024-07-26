@@ -1,0 +1,35 @@
+# docker-compose.yml
+
+
+version: '3.7'
+services:
+  spark-master:
+    image: spark_image 
+    container_name: spark-master
+    environment:
+      - SPARK_MASTER=true
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    networks:
+      - spark_net
+
+  spark-worker-1:
+    image: spark_image 
+    container_name: spark-worker-1
+    depends_on:
+      - spark-master
+    networks:
+      - spark_net
+
+  spark-worker-2:
+    image: spark_image 
+    container_name: spark-worker-2
+    depends_on:
+      - spark-master
+    networks:
+      - spark_net
+
+networks:
+  spark_net:
+    driver: bridge
