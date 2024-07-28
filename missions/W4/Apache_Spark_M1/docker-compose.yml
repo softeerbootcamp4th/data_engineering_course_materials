@@ -1,0 +1,34 @@
+services:
+  spark-master:
+    container_name: Spark_TLC-master
+    build: .
+    command: ["master"]
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    volumes:
+      - ./data:/data
+    networks:
+      - Spark_TLC-network
+
+  spark-worker-1:
+    container_name: Spark_TLC-worker-1
+    build: .
+    command: ["worker"]
+    depends_on:
+      - spark-master
+    networks:
+      - Spark_TLC-network
+
+  spark-worker-2:
+    container_name: Spark_TLC-worker-2
+    build: .
+    command: ["worker"]
+    depends_on:
+      - spark-master
+    networks:
+      - Spark_TLC-network
+
+networks:
+  Spark_TLC-network:
+    driver: bridge
