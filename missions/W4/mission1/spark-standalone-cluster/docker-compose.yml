@@ -1,0 +1,63 @@
+services:
+  spark-master:
+    container_name: spark-master
+    hostname: spark-master
+    build: .
+    image: spark-standalone-cluster
+    entrypoint: ['./entrypoint.sh', 'master']
+    volumes:  
+      - spark-logs:/home/spark_user/spark/spark-events
+    ports:
+      - '8080:8080'
+      - '7077:7077'
+    networks:
+      - spark
+
+  spark-history-server:
+    container_name: spark-history
+    hostname: spark-history-server
+    build: .
+    entrypoint: ['./entrypoint.sh', 'history']
+    depends_on:
+      - spark-master
+    volumes:
+      - spark-logs:/home/spark_user/spark/spark-events
+    ports:
+      - '18080:18080'
+    networks:
+      - spark
+
+  spark-worker1:
+    container_name: spark-worker1
+    hostname: spark-worker1
+    build: .
+    entrypoint: ['./entrypoint.sh', 'worker']
+    depends_on:
+      - spark-master
+    volumes:
+      - spark-logs:/home/spark_user/spark/spark-events
+    ports:
+      - '11111:8081'
+    networks:
+      - spark
+
+  spark-worker2:
+    container_name: spark-worker2
+    hostname: spark-worker2
+    build: .
+    entrypoint: ['./entrypoint.sh', 'worker']
+    depends_on:
+      - spark-master
+    volumes:
+      - spark-logs:/home/spark_user/spark/spark-events
+    ports:
+      - '22222:8081'
+    networks:
+      - spark
+
+volumes:
+  spark-logs:
+
+networks:
+  spark:
+    driver: bridge
