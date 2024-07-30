@@ -1,0 +1,39 @@
+services:
+  spark-master:
+    image: 'spark-base'
+    container_name: 'spark-master'   
+    tty: true   
+    ports:
+      - '8080:8080' # master node UI
+      - '4040:4040' # 상세 페이지 UI
+      - '7077:7077' # spark core
+    volumes:
+      - ./scripts:/opt/spark/scripts
+      - ./data:/opt/spark/data
+    command: 'bash -c "/opt/spark/sbin/start-master.sh && tail -f /dev/null"'
+  
+  spark-worker-1:
+    image: 'spark-base'
+    container_name: 'spark-worker-1'
+    tty: true
+    ports:
+      - '8081:8081'
+    depends_on:
+      - 'spark-master'
+    volumes:
+      - ./scripts:/opt/spark/scripts
+      - ./data:/opt/spark/data
+    command: 'bash -c "/opt/spark/sbin/start-worker.sh spark://spark-master:7077 -c 1 -m 3g && tail -f /dev/null"' # 1 core, 3GB memory
+  
+  spark-worker-2:
+    image: 'spark-base'
+    container_name: 'spark-worker-2'
+    tty: true
+    ports:
+      - '8082:8081'
+    depends_on:
+      - 'spark-master'
+    volumes:
+      - ./scripts:/opt/spark/scripts
+      - ./data:/opt/spark/data
+    command: 'bash -c "/opt/spark/sbin/start-worker.sh spark://spark-master:7077 -c 1 -m 3g && tail -f /dev/null"'
