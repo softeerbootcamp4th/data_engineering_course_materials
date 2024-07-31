@@ -1,0 +1,21 @@
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+        <!-- Number of Block Replication -->
+    </property>
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>/hadoop/dfs/name</value>
+        <!-- Local File Path for NameNode to save namespace and transaction log -->
+    </property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/hadoop/dfs/data</value>
+        <!-- Local File Path for DataNode to save actuall data -->
+    </property>
+    <property>
+        <name>dfs.blocksize</name>
+        <value>134217728</value>
+    </property>
+</configuration>

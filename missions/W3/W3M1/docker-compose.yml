@@ -1,0 +1,27 @@
+services:
+  hadoop-single-node:
+    build: .
+    image: single-node-hadoop
+    container_name: single-node-hadoop
+    ports:
+      - "50070:50070"
+      - "9870:9870"  # NameNode web UI
+      - "8088:8088"  # ResourceManager web UI
+      - "9000:9000"  # NameNode RPC
+      - "9864:9864"  # DataNode web UI
+    volumes:
+      - hadoop-volume:/hadoop/dfs
+    command: ["/usr/local/bin/start-hadoop.sh"]
+    environment:
+      - JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64
+      - HADOOP_HOME=/opt/hadoop
+      - PATH=$PATH:/opt/hadoop/bin:/opt/hadoop/sbin
+      - HDFS_NAMENODE_USER=hdfs
+      - HDFS_DATANODE_USER=hdfs
+      - HDFS_SECONDARYNAMENODE_USER=hdfs
+      - YARN_RESOURCEMANAGER_USER=yarn
+      - YARN_NODEMANAGER_USER=yarn
+
+volumes:
+  hadoop-volume:
+    driver: local
