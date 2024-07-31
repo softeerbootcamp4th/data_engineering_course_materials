@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  spark-master:
+    image: jnamu/spark-node:latest
+    container_name: spark-master
+    hostname: spark-master
+    ports:
+      - "8080:8080"
+      - "4040:4040"
+      - "7077:7077"
+      - "7777:7777"
+    command: ["/opt/spark/sbin/start-master.sh"]
+
+  spark-worker-1:
+    image: jnamu/spark-node:latest
+    container_name: spark-worker-1
+    hostname: spark-worker-1
+    depends_on:
+      - spark-master
+    ports:
+      - "8081:8081"
+    command: ["/opt/spark/sbin/start-worker.sh", "spark://spark-master:7077"]
+
+  spark-worker-2:
+    image: jnamu/spark-node:latest
+    container_name: spark-worker-2
+    hostname: spark-worker-2
+    depends_on:
+      - spark-master
+    ports:
+      - "8082:8081"
+    command: ["/opt/spark/sbin/start-worker.sh", "spark://spark-master:7077"]
+
