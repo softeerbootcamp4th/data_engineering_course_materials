@@ -1,0 +1,40 @@
+services:
+  master:
+    image: spark
+    container_name: master-container
+    hostname: master
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.master.Master
+    ports:
+      - "8080:8080"
+    networks:
+      - bridge
+  worker1:
+    image: spark
+    container_name: worker1-container
+    hostname: worker1
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.worker.Worker
+      - spark://master:7077
+    depends_on:
+      - master
+    ports:
+      - "8081:8081"
+    networks:
+      - bridge
+  worker2:
+    image: spark
+    container_name: worker2-container
+    hostname: worker2
+    command:
+      - /opt/spark/bin/spark-class
+      - org.apache.spark.deploy.worker.Worker
+      - spark://master:7077
+    depends_on:
+      - master
+    networks:
+      - bridge
+networks:
+  bridge:
