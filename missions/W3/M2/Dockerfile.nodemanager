@@ -1,0 +1,70 @@
+# Base image
+FROM ubuntu:22.04
+
+# Install necessary packages
+RUN apt-get update && \
+    apt-get install -y openjdk-11-jdk wget ssh rsync sudo && \
+    apt-get clean
+
+# Create Hadoop user
+RUN useradd -ms /bin/bash hadoop
+RUN echo "hadoop ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+# Set environment variables
+ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-arm64
+ENV HADOOP_VERSION 3.3.6
+ENV HADOOP_HOME /usr/local/hadoop
+ENV HADOOP_COMMON_LIB_NATIVE_DIR $HADOOP_HOME/lib/native
+ENV PATH $PATH:$HADOOP_HOME/bin
+
+# Download and install Hadoop
+RUN wget https://downloads.apache.org/hadoop/common/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz && \
+    tar -xzvf hadoop-$HADOOP_VERSION.tar.gz && \
+    mv hadoop-$HADOOP_VERSION $HADOOP_HOME && \
+    rm hadoop-$HADOOP_VERSION.tar.gz && \
+    chown -R hadoop:hadoop $HADOOP_HOME
+
+# Change user
+USER hadoop
+
+# Configure SSH
+RUN ssh-keygen -t rsa -P '' -f /home/hadoop/.ssh/id_rsa && \
+    cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys && \
+    chmod 600 ~/.ssh/authorized_keys
+
+# Start SSH service as root
+RUN sudo service ssh start
+
+# Set environment variables in .bashrc
+RUN echo "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-arm64" >> ~/.bashrc && \
+    echo "export HADOOP_VERSION=3.3.6" >> ~/.bashrc && \
+    echo "export HADOOP_HOME=/usr/local/hadoop" >> ~/.bashrc && \
+    echo "export HADOOP_INSTALL=\$HADOOP_HOME" >> ~/.bashrc && \
+    echo "export HADOOP_MAPRED_HOME=\$HADOOP_HOME" ~/.bashrc && \
+    echo "export HADOOP_COMMON_HOME=\$HADOOP_HOME" ~/.bashrc && \
+    echo "export HADOOP_HDFS_HOME=\$HADOOP_HOME" ~/.bashrc && \
+    echo "export HADOOP_YARN_HOME=\$HADOOP_HOME" ~/.bashrc && \
+    echo "export HADOOP_COMMON_LIB_NATIVE_DIR=\$HADOOP_HOME/lib/native" >> ~/.bashrc && \
+    echo "export PATH=\$PATH:\$HADOOP_HOME/bin" >> ~/.bashrc
+
+# Add Hadoop configuration files
+COPY ./config/core-site.xml $HADOOP_HOME/etc/hadoop/core-site.xml
+COPY ./config/hdfs-site.xml $HADOOP_HOME/etc/hadoop/hdfs-site.xml
+COPY ./config/mapred-site.xml $HADOOP_HOME/etc/hadoop/mapred-site.xml
+COPY ./config/yarn-site.xml $HADOOP_HOME/etc/hadoop/yarn-site.xml
+
+# chown Hadoop configuration files
+RUN sudo chown -R hadoop:hadoop $HADOOP_HOME
+
+# Configure JAVA_HOME in Hadoop environment
+RUN echo "export JAVA_HOME=$JAVA_HOME" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
+
+# Expose ports
+EXPOSE 8042
+
+# Start Hadoop node manager
+COPY /start_script/start_nodemanager.sh /usr/local/bin/start_nodemanager.sh
+RUN sudo chmod +x /usr/local/bin/start_nodemanager.sh
+
+# 시작 명령어 설정
+CMD ["/usr/local/bin/start_nodemanager.sh"]
