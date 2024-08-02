@@ -1,0 +1,89 @@
+version: "3"
+
+services:
+  spark-master:
+    build:
+      context: spark-master
+      dockerfile: Dockerfile
+    container_name: spark-master
+    hostname: spark-master
+    ports:
+      - "8080:8080" # Spark Web UI
+      - "7077:7077" # Spark Master port
+      - "8888:8888" # Jupyter Notebook 포트
+    volumes:
+      - spark-master:/opt/spark
+    networks:
+      - spark-network
+
+  spark-worker-1:
+    build:
+      context: spark-worker
+      dockerfile: Dockerfile
+    container_name: spark-worker-1
+    hostname: spark-worker-1
+    ports:
+      - "8081:8081"
+    depends_on:
+      - spark-master
+    volumes:
+      - spark-worker1:/opt/spark
+    networks:
+      - spark-network
+
+  spark-worker-2:
+    build:
+      context: spark-worker
+      dockerfile: Dockerfile
+    container_name: spark-worker-2
+    hostname: spark-worker-2
+    ports:
+      - "8082:8082"
+    depends_on:
+      - spark-master
+    volumes:
+      - spark-worker2:/opt/spark
+    networks:
+      - spark-network
+
+  spark-worker-3:
+    build:
+      context: spark-worker
+      dockerfile: Dockerfile
+    container_name: spark-worker-3
+    hostname: spark-worker-3
+    ports:
+      - "8083:8083"
+    depends_on:
+      - spark-master
+    volumes:
+      - spark-worker3:/opt/spark
+    networks:
+      - spark-network
+  
+  hadoop-single:
+    build:
+      context: hadoop
+      dockerfile: Dockerfile
+    container_name: hadoop-single
+    hostname: hadoop-single
+    ports:
+      - "9870:9870" # Namenode
+      - "9864:9864" # Datanode
+      - "8088:8088" # ResourceManager
+      - "9000:9000" # HDFS
+    volumes:
+      - hadoop-single:/opt/hadoop
+    networks:
+      - spark-network
+
+volumes:
+  spark-master:
+  spark-worker1:
+  spark-worker2:
+  spark-worker3:
+  hadoop-single:
+
+networks:
+  spark-network:
+    driver: bridge
