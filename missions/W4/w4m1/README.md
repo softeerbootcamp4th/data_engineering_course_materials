@@ -27,15 +27,15 @@ docker exec -it spark-master /bin/bash
 ```
 
 4. **결과 확인**
-    ### 작업 실행 후, 마스터 노드의 로그를 통해 결과를 확인할 수 있습니다:
+    - 작업 실행 후, 마스터 노드의 로그를 통해 결과를 확인할 수 있습니다:
 ```bash
 docker logs spark-master
 ```
-    ### 로그에서 "Pi is roughly 3.141320"와 같은 메시지를 찾아 파이(π) 값을 확인합니다.
+    로그에서 "Pi is roughly 3.141320"와 같은 메시지를 찾아 파이(π) 값을 확인합니다.
 
 5. **Web UI 접속해 확인**
     - 마스터 UI: `http://localhost:8080`
-    - 작업 UI: `http://localhost:4040` (작업 실행 중에만 접근 가능)
+    - 작업 UI: `http://localhost:4040` 
 
 6. **클러스터 종료**
 
