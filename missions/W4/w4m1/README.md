@@ -31,7 +31,7 @@ docker exec -it spark-master /bin/bash
 ```bash
 docker logs spark-master
 ```
-    로그에서 "Pi is roughly 3.141320"와 같은 메시지를 찾아 파이(π) 값을 확인합니다.
+로그에서 "Pi is roughly 3.141320"와 같은 메시지를 찾아 파이(π) 값을 확인합니다.
 
 5. **Web UI 접속해 확인**
     - 마스터 UI: `http://localhost:8080`
