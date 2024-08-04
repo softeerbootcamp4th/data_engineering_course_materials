@@ -28,15 +28,15 @@ check_value() {
 verify_hadoop_config() {
     local configs=(
         "hdfs getconf -confKey fs.defaultFS|hdfs://hadoop-master:9000"
-        "hdfs getconf -confKey hadoop.tmp.dir|/hadoop/tmp"
+        "hdfs getconf -confKey hadoop.tmp.dir|/opt/hadoop/tmp"
         "hdfs getconf -confKey io.file.buffer.size|131072"
         "hdfs getconf -confKey dfs.replication|2"
         "hdfs getconf -confKey dfs.blocksize|134217728"
-        "hdfs getconf -confKey dfs.namenode.name.dir|/hadoop/dfs/name"
+        "hdfs getconf -confKey dfs.namenode.name.dir|file:///opt/hadoop/dfs/name"
         "hdfs getconf -confKey mapreduce.framework.name|yarn"
         "hdfs getconf -confKey mapreduce.jobhistory.address|hadoop-master:10020"
         "hdfs getconf -confKey mapreduce.task.io.sort.mb|256"
-        "hdfs getconf -confKey yarn.resourcemanager.hostname|resourcemanager"
+        "hdfs getconf -confKey yarn.resourcemanager.hostname|hadoop-master"
         "hdfs getconf -confKey yarn.nodemanager.resource.memory-mb|8192"
         "hdfs getconf -confKey yarn.scheduler.minimum-allocation-mb|1024"
     )
@@ -52,11 +52,12 @@ verify_hadoop_config() {
 verify_hdfs_replication() {
     local test_file="/tmp/testfile"
     echo "Hello Hadoop" > "$test_file"
-    hdfs dfs -rm -f "$test_file"
-    hdfs dfs -mkdir -p /tmp
-    hdfs dfs -put "$test_file" "$test_file"
+    sudo -E -u hdfs $HADOOP_HOME/bin/hdfs dfs -mkdir -p /tmp
+    sudo -E -u hdfs $HADOOP_HOME/bin/hdfs dfs -rm -f "$test_file"
+    sudo -E -u hdfs $HADOOP_HOME/bin/hdfs dfs -put "$test_file" "$test_file"
 
-    local actual_replication=$(hdfs fsck "$test_file" -files -blocks -racks | grep -o 'Default replication factor:[0-9]*' | cut -d':' -f2 | xargs)
+    local actual_replication=$(sudo -E -u hdfs $HADOOP_HOME/bin/hdfs dfs -stat %r /tmp/testfile)
+
     local expected_replication="2"
 
     if [[ "$actual_replication" == "$expected_replication" ]]; then
@@ -68,7 +69,7 @@ verify_hdfs_replication() {
 
 # Run MapReduce job
 verify_mapreduce_job() {
-    hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar pi 2 2
+    sudo -E -u hdfs $HADOOP_HOME/bin/hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar pi 2 2
     if [ $? -eq 0 ]; then
         echo "PASS: MapReduce job ran successfully."
     else

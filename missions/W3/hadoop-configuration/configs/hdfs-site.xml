@@ -5,14 +5,14 @@
     </property>
     <property>
         <name>dfs.namenode.name.dir</name>
-        <value>file:///opt/hadoop/data/name</value>
+        <value>file:///opt/hadoop/dfs/namenode</value>
     </property>
     <property>
         <name>dfs.datanode.data.dir</name>
-        <value>file:///opt/hadoop/data/data</value>
+        <value>file:///opt/hadoop/dfs/datanode</value>
     </property>
     <property>
         <name>dfs.namenode.checkpoint.dir</name>
-        <value>file:///opt/hadoop/data/namesecondary/</value>
+        <value>file:///opt/hadoop/dfs/namesecondary</value>
     </property>
 </configuration>

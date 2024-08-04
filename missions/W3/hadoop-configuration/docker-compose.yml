@@ -9,7 +9,7 @@ services:
       - "8088:8088" # YARN ResourceManager Web UI
       - "9000:9000" # fs.DefaultFS
     volumes:
-      - hadoop-master-data:/opt/hadoop/data
+      - hdfs-master:/opt/hadoop/dfs
     networks:
       - hadoop
 
@@ -23,7 +23,7 @@ services:
       - "9864:9864" # HDFS DataNode Web UI
       - "8042:8042" # YARN NodeManager Web UI
     volumes:
-      - hadoop-slave1-data:/opt/hadoop/data
+      - hdfs-slave-1:/opt/hadoop/dfs
     networks:
       - hadoop
 
@@ -37,7 +37,7 @@ services:
       - "9865:9864" # HDFS DataNode Web UI
       - "8043:8042" # YARN NodeManager Web UI
     volumes:
-      - hadoop-slave2-data:/opt/hadoop/data
+      - hdfs-slave-2:/opt/hadoop/dfs
     networks:
       - hadoop
 
@@ -46,6 +46,6 @@ networks:
     driver: bridge
 
 volumes:
-  hadoop-master-data:
-  hadoop-slave1-data:
-  hadoop-slave2-data:
+  hdfs-master:
+  hdfs-slave-1:
+  hdfs-slave-2:
