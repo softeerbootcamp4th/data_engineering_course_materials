@@ -1,0 +1,45 @@
+version: '3'
+services:
+  spark-master:
+    image: spark_jupyter_image
+    container_name: spark-master
+    hostname: spark-master
+    environment:
+      - SPARK_MODE=master
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+      - "8888:8888"
+    command: bash -c "/opt/spark/sbin/start-master.sh && jupyter notebook --notebook-dir='/' --allow-root --ip=0.0.0.0 --no-browser --port=8888 --NotebookApp.token=''"
+    networks:
+      - spark_net
+
+  spark-worker-1:
+    image: spark_jupyter_image
+    container_name: spark-worker-1
+    hostname: spark-worker-1
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+    depends_on:
+      - spark-master
+    command: /opt/spark/sbin/start-slave.sh spark://spark-master:7077
+    networks:
+      - spark_net
+
+  spark-worker-2:
+    image: spark_jupyter_image
+    container_name: spark-worker-2
+    hostname: spark-worker-2
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+    depends_on:
+      - spark-master
+    command: /opt/spark/sbin/start-slave.sh spark://spark-master:7077
+    networks:
+      - spark_net
+
+networks:
+  spark_net:
+    driver: bridge
