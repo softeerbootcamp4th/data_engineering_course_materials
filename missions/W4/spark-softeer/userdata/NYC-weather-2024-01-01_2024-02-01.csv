@@ -1,0 +1,939 @@
+Datetime,Temperature,Dew Point,Humidity,Wind,Wind Speed,Wind Gust,Pressure,Precip.,Condition
+2024-01-01 01:51:00,43 °F,27 °F,53 °%,SW,7 °mph,0 °mph,29.98 °in,0.0 °in,Cloudy
+2024-01-01 02:51:00,43 °F,27 °F,53 °%,W,9 °mph,0 °mph,29.97 °in,0.0 °in,Cloudy
+2024-01-01 03:51:00,42 °F,28 °F,58 °%,W,9 °mph,0 °mph,29.97 °in,0.0 °in,Cloudy
+2024-01-01 04:51:00,42 °F,29 °F,60 °%,W,7 °mph,0 °mph,29.96 °in,0.0 °in,Cloudy
+2024-01-01 05:51:00,42 °F,29 °F,60 °%,WSW,5 °mph,0 °mph,29.96 °in,0.0 °in,Cloudy
+2024-01-01 06:51:00,42 °F,30 °F,62 °%,WNW,8 °mph,0 °mph,29.97 °in,0.0 °in,Cloudy
+2024-01-01 07:13:00,42 °F,30 °F,62 °%,WNW,6 °mph,0 °mph,29.98 °in,0.0 °in,Light Rain
+2024-01-01 07:51:00,41 °F,31 °F,67 °%,NW,8 °mph,0 °mph,29.99 °in,0.0 °in,Light Rain
+2024-01-01 08:51:00,40 °F,32 °F,73 °%,WSW,3 °mph,0 °mph,30.00 °in,0.0 °in,Light Rain
+2024-01-01 09:51:00,40 °F,33 °F,77 °%,NNW,5 °mph,0 °mph,30.02 °in,0.0 °in,Light Rain
+2024-01-01 10:34:00,41 °F,33 °F,73 °%,N,6 °mph,0 °mph,30.01 °in,0.0 °in,Mostly Cloudy
+2024-01-01 10:51:00,41 °F,33 °F,73 °%,N,7 °mph,0 °mph,30.02 °in,0.0 °in,Mostly Cloudy
+2024-01-01 11:51:00,44 °F,34 °F,68 °%,CALM,0 °mph,0 °mph,30.01 °in,0.0 °in,Mostly Cloudy
+2024-01-01 12:51:00,45 °F,34 °F,65 °%,CALM,0 °mph,0 °mph,29.99 °in,0.0 °in,Mostly Cloudy
+2024-01-01 13:51:00,45 °F,31 °F,58 °%,WNW,3 °mph,0 °mph,29.98 °in,0.0 °in,Mostly Cloudy
+2024-01-01 14:51:00,45 °F,30 °F,56 °%,NW,7 °mph,0 °mph,29.98 °in,0.0 °in,Mostly Cloudy
+2024-01-01 15:51:00,45 °F,30 °F,56 °%,NE,5 °mph,0 °mph,29.99 °in,0.0 °in,Mostly Cloudy
+2024-01-01 16:51:00,45 °F,30 °F,56 °%,NNW,7 °mph,0 °mph,30.00 °in,0.0 °in,Mostly Cloudy
+2024-01-01 17:51:00,45 °F,30 °F,56 °%,N,6 °mph,0 °mph,30.00 °in,0.0 °in,Mostly Cloudy
+2024-01-01 18:51:00,44 °F,29 °F,55 °%,NNW,7 °mph,0 °mph,30.02 °in,0.0 °in,Mostly Cloudy
+2024-01-01 19:51:00,43 °F,28 °F,56 °%,NNW,9 °mph,0 °mph,30.03 °in,0.0 °in,Partly Cloudy
+2024-01-01 20:51:00,42 °F,28 °F,58 °%,NNW,9 °mph,0 °mph,30.04 °in,0.0 °in,Partly Cloudy
+2024-01-01 21:51:00,41 °F,29 °F,62 °%,N,8 °mph,0 °mph,30.04 °in,0.0 °in,Fair
+2024-01-01 22:51:00,40 °F,27 °F,60 °%,N,10 °mph,0 °mph,30.06 °in,0.0 °in,Fair
+2024-01-01 23:51:00,38 °F,27 °F,65 °%,NNW,12 °mph,0 °mph,30.06 °in,0.0 °in,Fair
+2024-01-01 00:51:00,36 °F,25 °F,64 °%,N,8 °mph,0 °mph,30.06 °in,0.0 °in,Fair
+2024-01-02 01:51:00,35 °F,24 °F,64 °%,NNW,9 °mph,0 °mph,30.06 °in,0.0 °in,Fair
+2024-01-02 02:51:00,34 °F,23 °F,64 °%,NNW,9 °mph,0 °mph,30.06 °in,0.0 °in,Fair
+2024-01-02 03:51:00,33 °F,21 °F,61 °%,N,8 °mph,0 °mph,30.06 °in,0.0 °in,Fair
+2024-01-02 04:51:00,32 °F,21 °F,64 °%,N,10 °mph,0 °mph,30.07 °in,0.0 °in,Fair
+2024-01-02 05:51:00,31 °F,20 °F,64 °%,N,10 °mph,0 °mph,30.07 °in,0.0 °in,Fair
+2024-01-02 06:51:00,30 °F,20 °F,66 °%,N,8 °mph,0 °mph,30.08 °in,0.0 °in,Fair
+2024-01-02 07:51:00,30 °F,20 °F,66 °%,N,9 °mph,0 °mph,30.10 °in,0.0 °in,Fair
+2024-01-02 08:51:00,30 °F,19 °F,64 °%,N,8 °mph,0 °mph,30.10 °in,0.0 °in,Fair
+2024-01-02 09:51:00,31 °F,19 °F,61 °%,NNW,9 °mph,0 °mph,30.11 °in,0.0 °in,Fair
+2024-01-02 10:51:00,33 °F,20 °F,59 °%,NW,10 °mph,0 °mph,30.11 °in,0.0 °in,Fair
+2024-01-02 11:51:00,35 °F,21 °F,57 °%,WNW,8 °mph,0 °mph,30.09 °in,0.0 °in,Fair
+2024-01-02 12:51:00,37 °F,20 °F,50 °%,NW,10 °mph,0 °mph,30.05 °in,0.0 °in,Fair
+2024-01-02 13:51:00,39 °F,20 °F,46 °%,NW,10 °mph,0 °mph,30.02 °in,0.0 °in,Fair
+2024-01-02 14:51:00,41 °F,21 °F,45 °%,NW,7 °mph,0 °mph,29.99 °in,0.0 °in,Fair
+2024-01-02 15:51:00,43 °F,22 °F,43 °%,NW,10 °mph,0 °mph,29.99 °in,0.0 °in,Fair
+2024-01-02 16:51:00,43 °F,21 °F,42 °%,NW,10 °mph,0 °mph,29.97 °in,0.0 °in,Fair
+2024-01-02 17:51:00,42 °F,22 °F,45 °%,NNW,8 °mph,0 °mph,29.98 °in,0.0 °in,Fair
+2024-01-02 18:51:00,42 °F,23 °F,47 °%,WNW,6 °mph,0 °mph,29.99 °in,0.0 °in,Fair
+2024-01-02 19:51:00,42 °F,22 °F,45 °%,WNW,13 °mph,0 °mph,30.00 °in,0.0 °in,Fair
+2024-01-02 20:51:00,42 °F,22 °F,45 °%,NW,12 °mph,0 °mph,29.99 °in,0.0 °in,Fair
+2024-01-02 21:51:00,41 °F,22 °F,47 °%,WNW,10 °mph,0 °mph,29.99 °in,0.0 °in,Fair
+2024-01-02 22:51:00,41 °F,23 °F,49 °%,NW,10 °mph,0 °mph,30.00 °in,0.0 °in,Fair
+2024-01-02 23:51:00,40 °F,22 °F,49 °%,NW,8 °mph,0 °mph,29.99 °in,0.0 °in,Fair
+2024-01-02 00:51:00,39 °F,23 °F,53 °%,NW,8 °mph,0 °mph,29.97 °in,0.0 °in,Fair
+2024-01-03 01:51:00,38 °F,24 °F,57 °%,WNW,10 °mph,0 °mph,29.98 °in,0.0 °in,Fair
+2024-01-03 02:51:00,37 °F,24 °F,59 °%,WNW,12 °mph,0 °mph,29.98 °in,0.0 °in,Fair
+2024-01-03 03:51:00,36 °F,24 °F,62 °%,WNW,14 °mph,0 °mph,29.98 °in,0.0 °in,Fair
+2024-01-03 04:51:00,36 °F,24 °F,62 °%,NW,12 °mph,0 °mph,29.98 °in,0.0 °in,Partly Cloudy
+2024-01-03 05:51:00,35 °F,24 °F,64 °%,NW,13 °mph,0 °mph,29.98 °in,0.0 °in,Mostly Cloudy
+2024-01-03 06:51:00,35 °F,24 °F,64 °%,NNW,7 °mph,0 °mph,29.99 °in,0.0 °in,Mostly Cloudy
+2024-01-03 07:51:00,36 °F,24 °F,62 °%,WNW,7 °mph,0 °mph,30.00 °in,0.0 °in,Mostly Cloudy
+2024-01-03 08:51:00,36 °F,23 °F,59 °%,NW,9 °mph,0 °mph,30.02 °in,0.0 °in,Mostly Cloudy
+2024-01-03 09:51:00,38 °F,24 °F,57 °%,WNW,7 °mph,0 °mph,30.03 °in,0.0 °in,Partly Cloudy
+2024-01-03 10:51:00,39 °F,24 °F,55 °%,WNW,12 °mph,0 °mph,30.04 °in,0.0 °in,Partly Cloudy
+2024-01-03 11:51:00,40 °F,25 °F,55 °%,WNW,8 °mph,0 °mph,30.02 °in,0.0 °in,Partly Cloudy
+2024-01-03 12:51:00,42 °F,25 °F,51 °%,NNW,10 °mph,0 °mph,29.99 °in,0.0 °in,Partly Cloudy
+2024-01-03 13:51:00,42 °F,25 °F,51 °%,NW,10 °mph,0 °mph,29.98 °in,0.0 °in,Mostly Cloudy
+2024-01-03 14:51:00,43 °F,26 °F,51 °%,NNW,10 °mph,0 °mph,29.97 °in,0.0 °in,Mostly Cloudy
+2024-01-03 15:51:00,42 °F,26 °F,53 °%,NW,9 °mph,0 °mph,29.97 °in,0.0 °in,Mostly Cloudy
+2024-01-03 16:51:00,41 °F,25 °F,53 °%,NNW,9 °mph,0 °mph,29.96 °in,0.0 °in,Mostly Cloudy
+2024-01-03 17:51:00,41 °F,25 °F,53 °%,NNW,10 °mph,0 °mph,29.98 °in,0.0 °in,Mostly Cloudy
+2024-01-03 18:51:00,41 °F,25 °F,53 °%,W,6 °mph,0 °mph,29.99 °in,0.0 °in,Mostly Cloudy
+2024-01-03 19:51:00,41 °F,25 °F,53 °%,W,5 °mph,0 °mph,30.00 °in,0.0 °in,Mostly Cloudy
+2024-01-03 20:51:00,41 °F,26 °F,55 °%,WNW,10 °mph,0 °mph,29.98 °in,0.0 °in,Cloudy
+2024-01-03 21:51:00,40 °F,25 °F,55 °%,NNW,7 °mph,0 °mph,29.98 °in,0.0 °in,Cloudy
+2024-01-03 22:51:00,40 °F,25 °F,55 °%,NNW,5 °mph,0 °mph,29.97 °in,0.0 °in,Cloudy
+2024-01-03 23:51:00,40 °F,25 °F,55 °%,NNW,9 °mph,0 °mph,29.97 °in,0.0 °in,Cloudy
+2024-01-03 00:51:00,40 °F,25 °F,55 °%,WNW,8 °mph,0 °mph,29.97 °in,0.0 °in,Cloudy
+2024-01-04 01:51:00,40 °F,25 °F,55 °%,NW,6 °mph,0 °mph,29.95 °in,0.0 °in,Cloudy
+2024-01-04 02:51:00,40 °F,25 °F,55 °%,W,3 °mph,0 °mph,29.95 °in,0.0 °in,Cloudy
+2024-01-04 03:51:00,40 °F,25 °F,55 °%,WSW,6 °mph,0 °mph,29.94 °in,0.0 °in,Cloudy
+2024-01-04 04:51:00,40 °F,25 °F,55 °%,W,5 °mph,0 °mph,29.92 °in,0.0 °in,Cloudy
+2024-01-04 05:51:00,40 °F,25 °F,55 °%,WSW,9 °mph,0 °mph,29.90 °in,0.0 °in,Mostly Cloudy
+2024-01-04 06:51:00,41 °F,26 °F,55 °%,W,7 °mph,0 °mph,29.91 °in,0.0 °in,Cloudy
+2024-01-04 07:51:00,39 °F,27 °F,62 °%,NW,10 °mph,0 °mph,29.91 °in,0.0 °in,Cloudy
+2024-01-04 08:51:00,39 °F,28 °F,65 °%,WNW,8 °mph,0 °mph,29.92 °in,0.0 °in,Cloudy
+2024-01-04 09:51:00,40 °F,28 °F,63 °%,NW,8 °mph,0 °mph,29.93 °in,0.0 °in,Cloudy
+2024-01-04 10:51:00,40 °F,27 °F,60 °%,NW,13 °mph,0 °mph,29.94 °in,0.0 °in,Cloudy
+2024-01-04 11:51:00,41 °F,28 °F,60 °%,NW,15 °mph,0 °mph,29.94 °in,0.0 °in,Cloudy
+2024-01-04 12:51:00,42 °F,28 °F,58 °%,NW,15 °mph,0 °mph,29.93 °in,0.0 °in,Cloudy
+2024-01-04 13:51:00,44 °F,27 °F,51 °%,NW,22 °mph,26 °mph,29.91 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-04 14:51:00,44 °F,24 °F,45 °%,NW,16 °mph,25 °mph,29.91 °in,0.0 °in,Mostly Cloudy
+2024-01-04 15:51:00,44 °F,24 °F,45 °%,NW,29 °mph,33 °mph,29.93 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-04 16:51:00,43 °F,24 °F,47 °%,NW,22 °mph,26 °mph,29.96 °in,0.0 °in,Partly Cloudy / Windy
+2024-01-04 17:51:00,40 °F,20 °F,45 °%,NW,24 °mph,31 °mph,30.00 °in,0.0 °in,Fair / Windy
+2024-01-04 18:51:00,38 °F,19 °F,47 °%,NW,21 °mph,29 °mph,30.04 °in,0.0 °in,Fair / Windy
+2024-01-04 19:51:00,36 °F,16 °F,44 °%,NW,21 °mph,30 °mph,30.07 °in,0.0 °in,Fair / Windy
+2024-01-04 20:51:00,35 °F,12 °F,39 °%,NNW,20 °mph,26 °mph,30.10 °in,0.0 °in,Fair
+2024-01-04 21:51:00,33 °F,15 °F,48 °%,NW,20 °mph,25 °mph,30.13 °in,0.0 °in,Fair
+2024-01-04 22:51:00,31 °F,12 °F,46 °%,NNW,18 °mph,0 °mph,30.14 °in,0.0 °in,Fair
+2024-01-04 23:51:00,30 °F,13 °F,49 °%,NW,23 °mph,33 °mph,30.17 °in,0.0 °in,Fair / Windy
+2024-01-04 00:51:00,29 °F,13 °F,51 °%,NW,18 °mph,30 °mph,30.17 °in,0.0 °in,Fair
+2024-01-05 01:51:00,29 °F,13 °F,51 °%,NW,21 °mph,29 °mph,30.19 °in,0.0 °in,Fair / Windy
+2024-01-05 02:51:00,28 °F,13 °F,53 °%,NW,25 °mph,0 °mph,30.20 °in,0.0 °in,Fair / Windy
+2024-01-05 03:51:00,28 °F,13 °F,53 °%,NW,18 °mph,28 °mph,30.22 °in,0.0 °in,Fair
+2024-01-05 04:51:00,28 °F,14 °F,56 °%,NW,14 °mph,0 °mph,30.23 °in,0.0 °in,Partly Cloudy
+2024-01-05 05:51:00,28 °F,14 °F,56 °%,NW,10 °mph,0 °mph,30.23 °in,0.0 °in,Mostly Cloudy
+2024-01-05 06:51:00,28 °F,14 °F,56 °%,WNW,13 °mph,0 °mph,30.25 °in,0.0 °in,Partly Cloudy
+2024-01-05 07:51:00,28 °F,13 °F,53 °%,WNW,15 °mph,0 °mph,30.27 °in,0.0 °in,Fair
+2024-01-05 08:51:00,28 °F,13 °F,53 °%,WNW,12 °mph,0 °mph,30.28 °in,0.0 °in,Fair
+2024-01-05 09:51:00,30 °F,14 °F,51 °%,WNW,13 °mph,0 °mph,30.30 °in,0.0 °in,Fair
+2024-01-05 10:51:00,31 °F,13 °F,47 °%,NW,8 °mph,0 °mph,30.31 °in,0.0 °in,Fair
+2024-01-05 11:51:00,33 °F,15 °F,48 °%,NNW,9 °mph,0 °mph,30.29 °in,0.0 °in,Fair
+2024-01-05 12:51:00,34 °F,14 °F,44 °%,NW,12 °mph,0 °mph,30.25 °in,0.0 °in,Fair
+2024-01-05 13:51:00,36 °F,16 °F,44 °%,NW,13 °mph,0 °mph,30.23 °in,0.0 °in,Fair
+2024-01-05 14:51:00,37 °F,16 °F,42 °%,WNW,10 °mph,0 °mph,30.22 °in,0.0 °in,Fair
+2024-01-05 15:51:00,38 °F,15 °F,39 °%,WNW,14 °mph,0 °mph,30.20 °in,0.0 °in,Partly Cloudy
+2024-01-05 16:51:00,38 °F,15 °F,39 °%,W,13 °mph,0 °mph,30.21 °in,0.0 °in,Partly Cloudy
+2024-01-05 17:51:00,37 °F,16 °F,42 °%,NW,12 °mph,0 °mph,30.20 °in,0.0 °in,Mostly Cloudy
+2024-01-05 18:51:00,37 °F,15 °F,41 °%,W,6 °mph,0 °mph,30.21 °in,0.0 °in,Mostly Cloudy
+2024-01-05 19:51:00,37 °F,15 °F,41 °%,W,8 °mph,0 °mph,30.23 °in,0.0 °in,Mostly Cloudy
+2024-01-05 20:51:00,37 °F,16 °F,42 °%,WSW,7 °mph,0 °mph,30.22 °in,0.0 °in,Mostly Cloudy
+2024-01-05 21:51:00,36 °F,17 °F,46 °%,SW,9 °mph,0 °mph,30.21 °in,0.0 °in,Partly Cloudy
+2024-01-05 22:51:00,36 °F,18 °F,48 °%,WSW,8 °mph,0 °mph,30.21 °in,0.0 °in,Partly Cloudy
+2024-01-05 23:51:00,35 °F,17 °F,48 °%,W,8 °mph,0 °mph,30.19 °in,0.0 °in,Fair
+2024-01-05 00:51:00,35 °F,17 °F,48 °%,W,7 °mph,0 °mph,30.19 °in,0.0 °in,Partly Cloudy
+2024-01-06 01:51:00,34 °F,18 °F,52 °%,W,7 °mph,0 °mph,30.19 °in,0.0 °in,Partly Cloudy
+2024-01-06 02:51:00,34 °F,17 °F,50 °%,WSW,6 °mph,0 °mph,30.21 °in,0.0 °in,Partly Cloudy
+2024-01-06 03:51:00,33 °F,18 °F,54 °%,S,3 °mph,0 °mph,30.19 °in,0.0 °in,Partly Cloudy
+2024-01-06 04:51:00,32 °F,18 °F,56 °%,CALM,0 °mph,0 °mph,30.18 °in,0.0 °in,Partly Cloudy
+2024-01-06 05:51:00,33 °F,19 °F,56 °%,NNE,3 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-06 06:51:00,32 °F,18 °F,56 °%,ENE,3 °mph,0 °mph,30.18 °in,0.0 °in,Mostly Cloudy
+2024-01-06 07:51:00,32 °F,19 °F,59 °%,E,3 °mph,0 °mph,30.19 °in,0.0 °in,Mostly Cloudy
+2024-01-06 08:51:00,34 °F,20 °F,56 °%,ENE,7 °mph,0 °mph,30.18 °in,0.0 °in,Mostly Cloudy
+2024-01-06 09:51:00,33 °F,21 °F,61 °%,E,8 °mph,0 °mph,30.19 °in,0.0 °in,Fair
+2024-01-06 10:51:00,34 °F,21 °F,59 °%,E,8 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-06 11:51:00,35 °F,22 °F,59 °%,E,10 °mph,0 °mph,30.15 °in,0.0 °in,Cloudy
+2024-01-06 12:51:00,37 °F,22 °F,54 °%,ENE,9 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-06 13:51:00,37 °F,23 °F,57 °%,ENE,12 °mph,0 °mph,30.06 °in,0.0 °in,Cloudy
+2024-01-06 14:51:00,37 °F,23 °F,57 °%,ENE,13 °mph,0 °mph,30.02 °in,0.0 °in,Cloudy
+2024-01-06 15:17:00,37 °F,24 °F,59 °%,E,9 °mph,0 °mph,30.02 °in,0.0 °in,Cloudy
+2024-01-06 15:51:00,38 °F,25 °F,60 °%,ENE,14 °mph,0 °mph,30.00 °in,0.0 °in,Cloudy
+2024-01-06 15:58:00,37 °F,25 °F,62 °%,ENE,15 °mph,0 °mph,30.00 °in,0.0 °in,Light Snow
+2024-01-06 16:36:00,36 °F,26 °F,67 °%,ENE,14 °mph,0 °mph,29.98 °in,0.0 °in,Light Snow
+2024-01-06 16:51:00,36 °F,27 °F,70 °%,ENE,14 °mph,0 °mph,29.97 °in,0.0 °in,Light Snow
+2024-01-06 17:07:00,35 °F,27 °F,72 °%,ENE,15 °mph,0 °mph,29.97 °in,0.0 °in,Light Snow
+2024-01-06 17:35:00,35 °F,29 °F,78 °%,ENE,14 °mph,0 °mph,29.96 °in,0.0 °in,Light Snow
+2024-01-06 17:51:00,34 °F,29 °F,82 °%,ENE,16 °mph,0 °mph,29.95 °in,0.0 °in,Light Snow
+2024-01-06 18:13:00,34 °F,29 °F,82 °%,ENE,15 °mph,0 °mph,29.92 °in,0.0 °in,Light Snow
+2024-01-06 18:30:00,34 °F,30 °F,85 °%,ENE,17 °mph,0 °mph,29.91 °in,0.0 °in,Light Snow
+2024-01-06 18:40:00,35 °F,31 °F,85 °%,ENE,15 °mph,0 °mph,29.90 °in,0.0 °in,Light Snow
+2024-01-06 18:51:00,35 °F,30 °F,82 °%,ENE,16 °mph,0 °mph,29.90 °in,0.1 °in,Light Snow
+2024-01-06 19:18:00,35 °F,31 °F,85 °%,ENE,15 °mph,0 °mph,29.89 °in,0.0 °in,Light Snow
+2024-01-06 19:51:00,35 °F,31 °F,85 °%,ENE,15 °mph,0 °mph,29.88 °in,0.1 °in,Light Snow
+2024-01-06 20:29:00,34 °F,30 °F,85 °%,ENE,16 °mph,25 °mph,29.82 °in,0.1 °in,Light Snow
+2024-01-06 20:51:00,35 °F,31 °F,85 °%,ENE,20 °mph,0 °mph,29.80 °in,0.1 °in,Light Snow
+2024-01-06 21:09:00,35 °F,32 °F,89 °%,ENE,21 °mph,0 °mph,29.78 °in,0.0 °in,Light Rain / Windy
+2024-01-06 21:51:00,36 °F,32 °F,86 °%,ENE,24 °mph,29 °mph,29.73 °in,0.0 °in,Rain / Windy
+2024-01-06 22:51:00,37 °F,33 °F,86 °%,NE,29 °mph,36 °mph,29.69 °in,0.1 °in,Rain / Windy
+2024-01-06 23:51:00,37 °F,34 °F,89 °%,ENE,26 °mph,33 °mph,29.66 °in,0.1 °in,Light Rain / Windy
+2024-01-06 00:47:00,37 °F,34 °F,87 °%,NE,25 °mph,35 °mph,29.66 °in,0.0 °in,Light Rain / Windy
+2024-01-06 00:51:00,37 °F,33 °F,86 °%,NE,23 °mph,35 °mph,29.67 °in,0.0 °in,Light Rain / Windy
+2024-01-07 01:51:00,37 °F,33 °F,86 °%,NE,25 °mph,33 °mph,29.65 °in,0.0 °in,Light Rain / Windy
+2024-01-07 02:51:00,37 °F,33 °F,86 °%,NE,21 °mph,0 °mph,29.63 °in,0.0 °in,Light Rain / Windy
+2024-01-07 03:51:00,37 °F,34 °F,89 °%,NE,21 °mph,29 °mph,29.62 °in,0.0 °in,Light Rain / Windy
+2024-01-07 04:51:00,38 °F,35 °F,89 °%,NE,24 °mph,33 °mph,29.59 °in,0.0 °in,Light Rain / Windy
+2024-01-07 05:51:00,38 °F,35 °F,89 °%,NE,23 °mph,31 °mph,29.58 °in,0.0 °in,Light Rain / Windy
+2024-01-07 06:48:00,39 °F,36 °F,87 °%,NE,23 °mph,0 °mph,29.58 °in,0.0 °in,Light Rain / Windy
+2024-01-07 06:51:00,38 °F,35 °F,89 °%,NE,22 °mph,0 °mph,29.58 °in,0.0 °in,Light Rain / Windy
+2024-01-07 07:51:00,38 °F,35 °F,89 °%,NE,16 °mph,25 °mph,29.58 °in,0.0 °in,Light Rain
+2024-01-07 08:18:00,37 °F,35 °F,93 °%,NNE,13 °mph,22 °mph,29.57 °in,0.0 °in,Light Rain
+2024-01-07 08:51:00,37 °F,34 °F,89 °%,N,13 °mph,0 °mph,29.57 °in,0.0 °in,Light Rain
+2024-01-07 09:51:00,37 °F,34 °F,89 °%,N,10 °mph,17 °mph,29.58 °in,0.0 °in,Light Rain
+2024-01-07 10:00:00,37 °F,34 °F,89 °%,N,12 °mph,0 °mph,29.58 °in,0.0 °in,Wintry Mix
+2024-01-07 10:20:00,37 °F,34 °F,89 °%,N,9 °mph,0 °mph,29.58 °in,0.0 °in,Light Rain
+2024-01-07 10:51:00,37 °F,34 °F,89 °%,NNE,13 °mph,0 °mph,29.56 °in,0.0 °in,Light Rain
+2024-01-07 11:34:00,37 °F,33 °F,86 °%,NNE,13 °mph,20 °mph,29.56 °in,0.0 °in,Wintry Mix
+2024-01-07 11:51:00,37 °F,34 °F,89 °%,N,10 °mph,0 °mph,29.56 °in,0.0 °in,Wintry Mix
+2024-01-07 12:19:00,36 °F,32 °F,86 °%,WNW,14 °mph,0 °mph,29.58 °in,0.0 °in,Wintry Mix
+2024-01-07 12:51:00,36 °F,32 °F,86 °%,NW,16 °mph,0 °mph,29.58 °in,0.0 °in,Light Snow
+2024-01-07 13:31:00,36 °F,32 °F,86 °%,NW,18 °mph,0 °mph,29.57 °in,0.0 °in,Wintry Mix
+2024-01-07 13:51:00,36 °F,32 °F,86 °%,NNW,17 °mph,0 °mph,29.57 °in,0.0 °in,Wintry Mix
+2024-01-07 14:06:00,36 °F,32 °F,86 °%,NNW,16 °mph,0 °mph,29.57 °in,0.0 °in,Wintry Mix
+2024-01-07 14:14:00,36 °F,32 °F,86 °%,NNW,16 °mph,0 °mph,29.57 °in,0.0 °in,Mostly Cloudy
+2024-01-07 14:51:00,37 °F,32 °F,82 °%,NNW,10 °mph,22 °mph,29.58 °in,0.0 °in,Mostly Cloudy
+2024-01-07 15:51:00,37 °F,31 °F,79 °%,N,10 °mph,0 °mph,29.61 °in,0.0 °in,Cloudy
+2024-01-07 16:51:00,37 °F,31 °F,79 °%,NNW,12 °mph,0 °mph,29.65 °in,0.0 °in,Mostly Cloudy
+2024-01-07 17:51:00,37 °F,29 °F,73 °%,N,12 °mph,0 °mph,29.69 °in,0.0 °in,Cloudy
+2024-01-07 18:51:00,36 °F,28 °F,73 °%,NNW,12 °mph,0 °mph,29.74 °in,0.0 °in,Cloudy
+2024-01-07 19:51:00,36 °F,29 °F,76 °%,NNW,8 °mph,0 °mph,29.79 °in,0.0 °in,Cloudy
+2024-01-07 20:37:00,37 °F,29 °F,73 °%,NW,15 °mph,0 °mph,29.82 °in,0.0 °in,Cloudy
+2024-01-07 20:51:00,37 °F,29 °F,73 °%,WNW,15 °mph,0 °mph,29.84 °in,0.0 °in,Partly Cloudy
+2024-01-07 21:51:00,38 °F,27 °F,65 °%,WNW,17 °mph,0 °mph,29.87 °in,0.0 °in,Partly Cloudy
+2024-01-07 22:51:00,37 °F,25 °F,62 °%,WNW,21 °mph,26 °mph,29.91 °in,0.0 °in,Fair / Windy
+2024-01-07 23:51:00,37 °F,25 °F,62 °%,NW,15 °mph,0 °mph,29.94 °in,0.0 °in,Mostly Cloudy
+2024-01-07 00:51:00,37 °F,26 °F,65 °%,WNW,17 °mph,0 °mph,29.98 °in,0.0 °in,Mostly Cloudy
+2024-01-08 01:51:00,37 °F,26 °F,65 °%,NW,21 °mph,0 °mph,30.00 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-08 02:51:00,37 °F,25 °F,62 °%,NW,13 °mph,0 °mph,30.04 °in,0.0 °in,Mostly Cloudy
+2024-01-08 03:51:00,38 °F,26 °F,62 °%,WNW,12 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-08 04:51:00,38 °F,25 °F,60 °%,NW,14 °mph,0 °mph,30.11 °in,0.0 °in,Mostly Cloudy
+2024-01-08 05:51:00,38 °F,23 °F,55 °%,NNW,17 °mph,31 °mph,30.14 °in,0.0 °in,Mostly Cloudy
+2024-01-08 06:51:00,37 °F,24 °F,59 °%,NW,16 °mph,21 °mph,30.18 °in,0.0 °in,Mostly Cloudy
+2024-01-08 07:51:00,38 °F,23 °F,55 °%,NW,16 °mph,0 °mph,30.21 °in,0.0 °in,Partly Cloudy
+2024-01-08 08:51:00,38 °F,24 °F,57 °%,NW,17 °mph,24 °mph,30.24 °in,0.0 °in,Fair
+2024-01-08 09:51:00,38 °F,24 °F,57 °%,NW,17 °mph,23 °mph,30.29 °in,0.0 °in,Partly Cloudy
+2024-01-08 10:51:00,40 °F,25 °F,55 °%,NNW,12 °mph,0 °mph,30.33 °in,0.0 °in,Fair
+2024-01-08 11:51:00,41 °F,23 °F,49 °%,NNW,13 °mph,0 °mph,30.34 °in,0.0 °in,Fair
+2024-01-08 12:51:00,42 °F,22 °F,45 °%,NNW,13 °mph,0 °mph,30.34 °in,0.0 °in,Fair
+2024-01-08 13:51:00,43 °F,23 °F,45 °%,NNW,13 °mph,0 °mph,30.34 °in,0.0 °in,Fair
+2024-01-08 14:51:00,44 °F,23 °F,43 °%,NNW,12 °mph,20 °mph,30.35 °in,0.0 °in,Fair
+2024-01-08 15:51:00,44 °F,24 °F,45 °%,NNW,12 °mph,0 °mph,30.34 °in,0.0 °in,Fair
+2024-01-08 16:51:00,44 °F,23 °F,43 °%,NW,10 °mph,0 °mph,30.38 °in,0.0 °in,Partly Cloudy
+2024-01-08 17:51:00,42 °F,24 °F,49 °%,NNW,9 °mph,0 °mph,30.38 °in,0.0 °in,Partly Cloudy
+2024-01-08 18:51:00,42 °F,24 °F,49 °%,NW,10 °mph,0 °mph,30.42 °in,0.0 °in,Partly Cloudy
+2024-01-08 19:51:00,42 °F,24 °F,49 °%,NNW,7 °mph,0 °mph,30.42 °in,0.0 °in,Partly Cloudy
+2024-01-08 20:51:00,41 °F,24 °F,51 °%,NNW,7 °mph,0 °mph,30.42 °in,0.0 °in,Fair
+2024-01-08 21:51:00,41 °F,24 °F,51 °%,NW,3 °mph,0 °mph,30.42 °in,0.0 °in,Fair
+2024-01-08 22:51:00,40 °F,23 °F,51 °%,CALM,0 °mph,0 °mph,30.40 °in,0.0 °in,Fair
+2024-01-08 23:51:00,39 °F,23 °F,53 °%,CALM,0 °mph,0 °mph,30.40 °in,0.0 °in,Fair
+2024-01-08 00:51:00,38 °F,23 °F,55 °%,CALM,0 °mph,0 °mph,30.39 °in,0.0 °in,Fair
+2024-01-09 01:51:00,38 °F,25 °F,60 °%,S,5 °mph,0 °mph,30.41 °in,0.0 °in,Partly Cloudy
+2024-01-09 02:51:00,37 °F,27 °F,67 °%,ENE,6 °mph,0 °mph,30.39 °in,0.0 °in,Fair
+2024-01-09 03:51:00,35 °F,26 °F,70 °%,E,3 °mph,0 °mph,30.40 °in,0.0 °in,Partly Cloudy
+2024-01-09 04:51:00,35 °F,27 °F,72 °%,E,5 °mph,0 °mph,30.37 °in,0.0 °in,Cloudy
+2024-01-09 05:51:00,35 °F,26 °F,70 °%,E,3 °mph,0 °mph,30.36 °in,0.0 °in,Fair
+2024-01-09 06:51:00,35 °F,24 °F,64 °%,E,5 °mph,0 °mph,30.36 °in,0.0 °in,Cloudy
+2024-01-09 07:51:00,37 °F,26 °F,65 °%,ENE,7 °mph,0 °mph,30.34 °in,0.0 °in,Cloudy
+2024-01-09 08:51:00,40 °F,29 °F,65 °%,ENE,8 °mph,0 °mph,30.30 °in,0.0 °in,Cloudy
+2024-01-09 09:51:00,42 °F,30 °F,62 °%,E,9 °mph,0 °mph,30.29 °in,0.0 °in,Cloudy
+2024-01-09 10:51:00,43 °F,31 °F,62 °%,SE,9 °mph,0 °mph,30.28 °in,0.0 °in,Cloudy
+2024-01-09 11:51:00,44 °F,31 °F,60 °%,ESE,9 °mph,0 °mph,30.25 °in,0.0 °in,Cloudy
+2024-01-09 12:51:00,43 °F,34 °F,71 °%,ESE,16 °mph,0 °mph,30.17 °in,0.0 °in,Light Rain
+2024-01-09 13:51:00,43 °F,36 °F,76 °%,ESE,17 °mph,29 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-09 14:51:00,44 °F,37 °F,76 °%,ESE,18 °mph,28 °mph,30.03 °in,0.0 °in,Rain
+2024-01-09 15:10:00,44 °F,37 °F,76 °%,ESE,18 °mph,25 °mph,30.02 °in,0.0 °in,Light Rain
+2024-01-09 15:51:00,44 °F,38 °F,79 °%,ESE,18 °mph,0 °mph,29.97 °in,0.1 °in,Light Rain
+2024-01-09 16:51:00,46 °F,41 °F,83 °%,ESE,23 °mph,31 °mph,29.89 °in,0.1 °in,Light Rain / Windy
+2024-01-09 17:51:00,47 °F,42 °F,83 °%,ESE,25 °mph,32 °mph,29.81 °in,0.1 °in,Light Rain / Windy
+2024-01-09 18:51:00,49 °F,44 °F,83 °%,ESE,23 °mph,36 °mph,29.73 °in,0.1 °in,Rain / Windy
+2024-01-09 19:51:00,51 °F,47 °F,86 °%,SE,30 °mph,39 °mph,29.63 °in,0.1 °in,Light Rain / Windy
+2024-01-09 20:51:00,52 °F,48 °F,86 °%,SE,24 °mph,38 °mph,29.53 °in,0.2 °in,Heavy Rain / Windy
+2024-01-09 21:51:00,55 °F,50 °F,83 °%,SE,17 °mph,29 °mph,29.42 °in,0.3 °in,Heavy Rain
+2024-01-09 22:02:00,54 °F,50 °F,86 °%,SE,25 °mph,38 °mph,29.40 °in,0.1 °in,Heavy Rain / Windy
+2024-01-09 22:51:00,55 °F,51 °F,86 °%,SE,26 °mph,45 °mph,29.30 °in,0.4 °in,Heavy Rain / Windy
+2024-01-09 23:16:00,56 °F,53 °F,90 °%,SSE,31 °mph,49 °mph,29.27 °in,0.1 °in,Rain / Windy
+2024-01-09 23:51:00,57 °F,53 °F,87 °%,SSE,36 °mph,52 °mph,29.22 °in,0.2 °in,Heavy Rain / Windy
+2024-01-09 00:17:00,56 °F,53 °F,90 °%,S,17 °mph,41 °mph,29.25 °in,0.2 °in,Heavy Rain
+2024-01-09 00:30:00,56 °F,53 °F,90 °%,S,17 °mph,29 °mph,29.23 °in,0.3 °in,Rain
+2024-01-09 00:51:00,57 °F,54 °F,89 °%,SSW,12 °mph,21 °mph,29.22 °in,0.4 °in,Rain
+2024-01-10 01:51:00,55 °F,52 °F,89 °%,SE,17 °mph,0 °mph,29.11 °in,0.2 °in,Rain
+2024-01-10 02:41:00,54 °F,52 °F,93 °%,SSE,20 °mph,29 °mph,29.06 °in,0.1 °in,Cloudy
+2024-01-10 02:51:00,54 °F,52 °F,93 °%,SSE,18 °mph,26 °mph,29.06 °in,0.1 °in,Light Rain
+2024-01-10 03:06:00,55 °F,53 °F,93 °%,SSE,22 °mph,37 °mph,29.05 °in,0.0 °in,Rain / Windy
+2024-01-10 03:22:00,55 °F,53 °F,93 °%,S,18 °mph,30 °mph,29.03 °in,0.1 °in,Light Rain
+2024-01-10 03:36:00,54 °F,52 °F,93 °%,S,20 °mph,33 °mph,29.02 °in,0.1 °in,Cloudy
+2024-01-10 03:51:00,54 °F,52 °F,93 °%,S,15 °mph,26 °mph,29.00 °in,0.1 °in,Cloudy
+2024-01-10 04:29:00,54 °F,53 °F,97 °%,S,13 °mph,0 °mph,28.98 °in,0.0 °in,Cloudy
+2024-01-10 04:44:00,54 °F,52 °F,93 °%,S,15 °mph,22 °mph,28.99 °in,0.0 °in,Cloudy
+2024-01-10 04:51:00,54 °F,52 °F,93 °%,S,12 °mph,23 °mph,28.99 °in,0.0 °in,Cloudy
+2024-01-10 05:41:00,55 °F,52 °F,89 °%,SW,8 °mph,0 °mph,28.98 °in,0.0 °in,Mostly Cloudy
+2024-01-10 05:46:00,55 °F,52 °F,88 °%,SW,10 °mph,0 °mph,28.98 °in,0.0 °in,Mostly Cloudy
+2024-01-10 05:51:00,55 °F,52 °F,89 °%,SW,8 °mph,0 °mph,28.98 °in,0.0 °in,Mostly Cloudy
+2024-01-10 06:51:00,53 °F,40 °F,61 °%,W,18 °mph,28 °mph,29.03 °in,0.0 °in,Mostly Cloudy
+2024-01-10 07:51:00,51 °F,37 °F,59 °%,W,16 °mph,24 °mph,29.07 °in,0.0 °in,Mostly Cloudy
+2024-01-10 08:51:00,50 °F,35 °F,57 °%,W,22 °mph,33 °mph,29.11 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-10 09:51:00,50 °F,33 °F,52 °%,W,21 °mph,26 °mph,29.17 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-10 10:51:00,49 °F,28 °F,44 °%,W,24 °mph,38 °mph,29.21 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-10 11:51:00,49 °F,29 °F,46 °%,W,14 °mph,29 °mph,29.25 °in,0.0 °in,Mostly Cloudy
+2024-01-10 12:51:00,50 °F,25 °F,38 °%,W,17 °mph,32 °mph,29.25 °in,0.0 °in,Mostly Cloudy
+2024-01-10 13:51:00,49 °F,25 °F,39 °%,W,24 °mph,39 °mph,29.28 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-10 14:51:00,49 °F,26 °F,41 °%,W,26 °mph,39 °mph,29.32 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-10 15:51:00,48 °F,26 °F,42 °%,W,22 °mph,35 °mph,29.37 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-10 16:51:00,48 °F,26 °F,42 °%,W,18 °mph,35 °mph,29.42 °in,0.0 °in,Mostly Cloudy
+2024-01-10 17:51:00,48 °F,27 °F,44 °%,W,20 °mph,29 °mph,29.46 °in,0.0 °in,Mostly Cloudy
+2024-01-10 18:51:00,48 °F,26 °F,42 °%,W,20 °mph,36 °mph,29.49 °in,0.0 °in,Mostly Cloudy
+2024-01-10 19:51:00,48 °F,27 °F,44 °%,W,16 °mph,30 °mph,29.55 °in,0.0 °in,Mostly Cloudy
+2024-01-10 20:51:00,47 °F,27 °F,46 °%,W,16 °mph,29 °mph,29.58 °in,0.0 °in,Mostly Cloudy
+2024-01-10 21:51:00,47 °F,26 °F,44 °%,W,17 °mph,26 °mph,29.60 °in,0.0 °in,Mostly Cloudy
+2024-01-10 22:51:00,46 °F,26 °F,46 °%,W,17 °mph,24 °mph,29.62 °in,0.0 °in,Mostly Cloudy
+2024-01-10 23:51:00,45 °F,26 °F,48 °%,W,21 °mph,26 °mph,29.64 °in,0.0 °in,Cloudy / Windy
+2024-01-10 00:51:00,45 °F,26 °F,48 °%,W,22 °mph,29 °mph,29.66 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-11 01:51:00,44 °F,26 °F,49 °%,W,17 °mph,28 °mph,29.68 °in,0.0 °in,Cloudy
+2024-01-11 02:51:00,44 °F,26 °F,49 °%,WSW,18 °mph,24 °mph,29.70 °in,0.0 °in,Cloudy
+2024-01-11 03:51:00,44 °F,25 °F,47 °%,W,14 °mph,24 °mph,29.73 °in,0.0 °in,Cloudy
+2024-01-11 04:51:00,44 °F,25 °F,47 °%,W,15 °mph,25 °mph,29.74 °in,0.0 °in,Cloudy
+2024-01-11 05:51:00,43 °F,24 °F,47 °%,W,13 °mph,23 °mph,29.75 °in,0.0 °in,Mostly Cloudy
+2024-01-11 06:51:00,43 °F,24 °F,47 °%,WSW,13 °mph,0 °mph,29.77 °in,0.0 °in,Mostly Cloudy
+2024-01-11 07:51:00,42 °F,24 °F,49 °%,WSW,14 °mph,0 °mph,29.80 °in,0.0 °in,Mostly Cloudy
+2024-01-11 08:51:00,42 °F,23 °F,47 °%,W,13 °mph,0 °mph,29.82 °in,0.0 °in,Mostly Cloudy
+2024-01-11 09:51:00,43 °F,23 °F,45 °%,WSW,14 °mph,0 °mph,29.84 °in,0.0 °in,Partly Cloudy
+2024-01-11 10:51:00,44 °F,22 °F,42 °%,W,13 °mph,0 °mph,29.84 °in,0.0 °in,Partly Cloudy
+2024-01-11 11:51:00,45 °F,23 °F,42 °%,SW,16 °mph,25 °mph,29.84 °in,0.0 °in,Partly Cloudy
+2024-01-11 12:51:00,43 °F,23 °F,45 °%,W,13 °mph,23 °mph,29.83 °in,0.0 °in,Mostly Cloudy
+2024-01-11 13:51:00,43 °F,24 °F,47 °%,W,16 °mph,20 °mph,29.81 °in,0.0 °in,Mostly Cloudy
+2024-01-11 14:51:00,45 °F,24 °F,44 °%,W,10 °mph,0 °mph,29.79 °in,0.0 °in,Mostly Cloudy
+2024-01-11 15:51:00,46 °F,24 °F,42 °%,SW,9 °mph,0 °mph,29.80 °in,0.0 °in,Partly Cloudy
+2024-01-11 16:51:00,46 °F,24 °F,42 °%,SSW,10 °mph,0 °mph,29.82 °in,0.0 °in,Fair
+2024-01-11 17:51:00,46 °F,24 °F,42 °%,SW,13 °mph,18 °mph,29.84 °in,0.0 °in,Fair
+2024-01-11 18:51:00,46 °F,25 °F,44 °%,SW,8 °mph,0 °mph,29.85 °in,0.0 °in,Fair
+2024-01-11 19:51:00,46 °F,26 °F,46 °%,SW,9 °mph,0 °mph,29.88 °in,0.0 °in,Mostly Cloudy
+2024-01-11 20:51:00,46 °F,27 °F,47 °%,SW,13 °mph,20 °mph,29.89 °in,0.0 °in,Mostly Cloudy
+2024-01-11 21:51:00,46 °F,28 °F,50 °%,SW,13 °mph,0 °mph,29.92 °in,0.0 °in,Mostly Cloudy
+2024-01-11 22:51:00,46 °F,28 °F,50 °%,SW,10 °mph,0 °mph,29.94 °in,0.0 °in,Mostly Cloudy
+2024-01-11 23:51:00,45 °F,28 °F,52 °%,WSW,12 °mph,0 °mph,29.96 °in,0.0 °in,Mostly Cloudy
+2024-01-11 00:51:00,44 °F,28 °F,53 °%,SW,9 °mph,0 °mph,29.98 °in,0.0 °in,Fair
+2024-01-12 01:51:00,44 °F,28 °F,53 °%,WSW,9 °mph,0 °mph,30.01 °in,0.0 °in,Fair
+2024-01-12 02:51:00,45 °F,28 °F,52 °%,W,12 °mph,18 °mph,30.04 °in,0.0 °in,Fair
+2024-01-12 03:51:00,44 °F,28 °F,53 °%,W,12 °mph,0 °mph,30.08 °in,0.0 °in,Fair
+2024-01-12 04:51:00,44 °F,28 °F,53 °%,WNW,10 °mph,0 °mph,30.08 °in,0.0 °in,Fair
+2024-01-12 05:51:00,43 °F,28 °F,56 °%,VAR,7 °mph,0 °mph,30.10 °in,0.0 °in,Fair
+2024-01-12 06:51:00,43 °F,27 °F,53 °%,NW,13 °mph,0 °mph,30.11 °in,0.0 °in,Fair
+2024-01-12 07:51:00,43 °F,26 °F,51 °%,WNW,10 °mph,0 °mph,30.13 °in,0.0 °in,Fair
+2024-01-12 08:51:00,43 °F,27 °F,53 °%,WNW,12 °mph,0 °mph,30.16 °in,0.0 °in,Fair
+2024-01-12 09:51:00,43 °F,28 °F,56 °%,NNW,6 °mph,0 °mph,30.17 °in,0.0 °in,Partly Cloudy
+2024-01-12 10:51:00,44 °F,27 °F,51 °%,NNW,6 °mph,0 °mph,30.18 °in,0.0 °in,Mostly Cloudy
+2024-01-12 11:51:00,46 °F,28 °F,50 °%,NE,3 °mph,0 °mph,30.19 °in,0.0 °in,Mostly Cloudy
+2024-01-12 12:51:00,46 °F,26 °F,46 °%,ENE,7 °mph,0 °mph,30.18 °in,0.0 °in,Mostly Cloudy
+2024-01-12 13:51:00,46 °F,27 °F,47 °%,NE,9 °mph,0 °mph,30.13 °in,0.0 °in,Mostly Cloudy
+2024-01-12 14:51:00,49 °F,25 °F,39 °%,ESE,12 °mph,0 °mph,30.10 °in,0.0 °in,Mostly Cloudy
+2024-01-12 15:51:00,48 °F,26 °F,42 °%,SE,15 °mph,0 °mph,30.10 °in,0.0 °in,Mostly Cloudy
+2024-01-12 16:51:00,46 °F,28 °F,50 °%,SE,13 °mph,0 °mph,30.08 °in,0.0 °in,Mostly Cloudy
+2024-01-12 17:51:00,45 °F,31 °F,58 °%,SE,13 °mph,20 °mph,30.05 °in,0.0 °in,Mostly Cloudy
+2024-01-12 18:51:00,44 °F,33 °F,65 °%,ESE,14 °mph,0 °mph,30.00 °in,0.0 °in,Mostly Cloudy
+2024-01-12 19:51:00,45 °F,34 °F,65 °%,SE,12 °mph,0 °mph,29.96 °in,0.0 °in,Cloudy
+2024-01-12 20:51:00,46 °F,36 °F,68 °%,E,14 °mph,0 °mph,29.91 °in,0.0 °in,Cloudy
+2024-01-12 21:51:00,47 °F,37 °F,68 °%,E,18 °mph,0 °mph,29.84 °in,0.0 °in,Cloudy
+2024-01-12 22:51:00,47 °F,37 °F,68 °%,E,20 °mph,0 °mph,29.82 °in,0.0 °in,Cloudy
+2024-01-12 23:51:00,47 °F,39 °F,74 °%,ESE,22 °mph,30 °mph,29.77 °in,0.0 °in,Light Rain / Windy
+2024-01-12 00:31:00,47 °F,41 °F,80 °%,E,26 °mph,35 °mph,29.69 °in,0.1 °in,Light Rain / Windy
+2024-01-12 00:51:00,47 °F,42 °F,83 °%,ESE,24 °mph,37 °mph,29.68 °in,0.1 °in,Light Rain / Windy
+2024-01-13 01:13:00,48 °F,43 °F,83 °%,ESE,24 °mph,31 °mph,29.66 °in,0.0 °in,Light Rain / Windy
+2024-01-13 01:51:00,49 °F,44 °F,83 °%,ESE,28 °mph,36 °mph,29.58 °in,0.1 °in,Light Rain / Windy
+2024-01-13 02:51:00,50 °F,46 °F,86 °%,ESE,23 °mph,32 °mph,29.51 °in,0.2 °in,Heavy Rain / Windy
+2024-01-13 03:26:00,50 °F,47 °F,89 °%,E,22 °mph,30 °mph,29.48 °in,0.2 °in,Heavy Rain / Windy
+2024-01-13 03:51:00,51 °F,48 °F,89 °%,E,18 °mph,25 °mph,29.44 °in,0.4 °in,Heavy Rain
+2024-01-13 04:51:00,53 °F,50 °F,89 °%,ESE,16 °mph,0 °mph,29.37 °in,0.3 °in,Rain
+2024-01-13 05:42:00,53 °F,50 °F,89 °%,SE,14 °mph,0 °mph,29.29 °in,0.0 °in,Cloudy
+2024-01-13 05:51:00,53 °F,51 °F,93 °%,SE,10 °mph,0 °mph,29.28 °in,0.0 °in,Cloudy
+2024-01-13 06:07:00,54 °F,52 °F,93 °%,SSE,10 °mph,0 °mph,29.27 °in,0.0 °in,Cloudy
+2024-01-13 06:51:00,55 °F,53 °F,93 °%,S,18 °mph,25 °mph,29.24 °in,0.0 °in,Cloudy
+2024-01-13 07:33:00,54 °F,52 °F,93 °%,S,16 °mph,0 °mph,29.22 °in,0.0 °in,Fog
+2024-01-13 07:51:00,54 °F,52 °F,93 °%,S,12 °mph,0 °mph,29.21 °in,0.0 °in,Fog
+2024-01-13 08:51:00,54 °F,53 °F,97 °%,S,14 °mph,0 °mph,29.18 °in,0.0 °in,Fog
+2024-01-13 09:51:00,55 °F,54 °F,96 °%,S,9 °mph,0 °mph,29.16 °in,0.0 °in,Fog
+2024-01-13 10:25:00,56 °F,54 °F,93 °%,SSW,10 °mph,0 °mph,29.17 °in,0.0 °in,Light Rain
+2024-01-13 10:48:00,59 °F,55 °F,88 °%,SW,21 °mph,32 °mph,29.17 °in,0.0 °in,Partly Cloudy / Windy
+2024-01-13 10:51:00,59 °F,54 °F,83 °%,SW,20 °mph,32 °mph,29.17 °in,0.0 °in,Partly Cloudy
+2024-01-13 11:51:00,59 °F,44 °F,58 °%,WSW,16 °mph,31 °mph,29.17 °in,0.0 °in,Mostly Cloudy
+2024-01-13 12:51:00,57 °F,42 °F,57 °%,WSW,20 °mph,26 °mph,29.16 °in,0.0 °in,Mostly Cloudy
+2024-01-13 13:51:00,50 °F,38 °F,63 °%,W,25 °mph,41 °mph,29.21 °in,0.0 °in,Light Rain / Windy
+2024-01-13 14:51:00,50 °F,35 °F,57 °%,W,22 °mph,38 °mph,29.23 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-13 15:51:00,49 °F,29 °F,46 °%,W,29 °mph,39 °mph,29.28 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-13 16:51:00,48 °F,23 °F,37 °%,W,28 °mph,39 °mph,29.34 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-13 17:51:00,46 °F,20 °F,35 °%,W,23 °mph,39 °mph,29.39 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-13 18:51:00,44 °F,19 °F,37 °%,W,25 °mph,40 °mph,29.45 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-13 19:51:00,43 °F,18 °F,37 °%,W,25 °mph,39 °mph,29.50 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-13 20:51:00,40 °F,19 °F,43 °%,W,23 °mph,36 °mph,29.56 °in,0.0 °in,Partly Cloudy / Windy
+2024-01-13 21:51:00,39 °F,17 °F,41 °%,W,26 °mph,39 °mph,29.61 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-13 22:51:00,38 °F,17 °F,43 °%,W,22 °mph,31 °mph,29.64 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-13 23:51:00,37 °F,15 °F,41 °%,W,22 °mph,31 °mph,29.69 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-13 00:51:00,36 °F,15 °F,43 °%,W,16 °mph,26 °mph,29.72 °in,0.0 °in,Partly Cloudy
+2024-01-14 01:51:00,36 °F,15 °F,43 °%,W,28 °mph,40 °mph,29.75 °in,0.0 °in,Fair / Windy
+2024-01-14 02:51:00,35 °F,16 °F,46 °%,W,21 °mph,31 °mph,29.78 °in,0.0 °in,Fair / Windy
+2024-01-14 03:51:00,35 °F,14 °F,42 °%,WSW,20 °mph,31 °mph,29.80 °in,0.0 °in,Fair
+2024-01-14 04:51:00,35 °F,15 °F,44 °%,W,22 °mph,31 °mph,29.81 °in,0.0 °in,Fair / Windy
+2024-01-14 05:51:00,34 °F,16 °F,48 °%,SW,13 °mph,20 °mph,29.82 °in,0.0 °in,Fair
+2024-01-14 06:51:00,34 °F,17 °F,50 °%,WSW,14 °mph,0 °mph,29.85 °in,0.0 °in,Fair
+2024-01-14 07:51:00,33 °F,18 °F,54 °%,SSW,15 °mph,21 °mph,29.86 °in,0.0 °in,Fair
+2024-01-14 08:51:00,34 °F,18 °F,52 °%,SW,14 °mph,0 °mph,29.85 °in,0.0 °in,Fair
+2024-01-14 09:51:00,35 °F,19 °F,52 °%,SW,15 °mph,23 °mph,29.84 °in,0.0 °in,Partly Cloudy
+2024-01-14 10:51:00,38 °F,19 °F,47 °%,SSW,15 °mph,26 °mph,29.84 °in,0.0 °in,Partly Cloudy
+2024-01-14 11:51:00,41 °F,18 °F,40 °%,SSW,17 °mph,26 °mph,29.78 °in,0.0 °in,Partly Cloudy
+2024-01-14 12:51:00,43 °F,18 °F,37 °%,SSW,16 °mph,28 °mph,29.74 °in,0.0 °in,Mostly Cloudy
+2024-01-14 13:51:00,43 °F,21 °F,42 °%,WSW,21 °mph,30 °mph,29.72 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-14 13:58:00,43 °F,21 °F,42 °%,W,23 °mph,31 °mph,29.73 °in,0.0 °in,Light Snow / Windy
+2024-01-14 14:18:00,37 °F,25 °F,62 °%,W,20 °mph,33 °mph,29.77 °in,0.0 °in,Light Snow
+2024-01-14 14:38:00,37 °F,26 °F,65 °%,W,23 °mph,36 °mph,29.78 °in,0.0 °in,Light Snow / Windy
+2024-01-14 14:51:00,39 °F,24 °F,55 °%,W,25 °mph,37 °mph,29.77 °in,0.0 °in,Light Snow / Windy
+2024-01-14 15:04:00,39 °F,23 °F,53 °%,WSW,16 °mph,37 °mph,29.77 °in,0.0 °in,Light Snow
+2024-01-14 15:36:00,39 °F,20 °F,46 °%,W,13 °mph,29 °mph,29.79 °in,0.0 °in,Mostly Cloudy
+2024-01-14 15:51:00,39 °F,18 °F,43 °%,W,25 °mph,37 °mph,29.79 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-14 16:51:00,39 °F,4 °F,23 °%,W,35 °mph,48 °mph,29.84 °in,0.0 °in,Partly Cloudy / Windy
+2024-01-14 17:51:00,36 °F,2 °F,24 °%,W,32 °mph,47 °mph,29.92 °in,0.0 °in,Fair / Windy
+2024-01-14 18:51:00,34 °F,3 °F,27 °%,W,25 °mph,36 °mph,30.00 °in,0.0 °in,Fair / Windy
+2024-01-14 19:51:00,33 °F,3 °F,28 °%,W,21 °mph,31 °mph,30.04 °in,0.0 °in,Fair / Windy
+2024-01-14 20:51:00,31 °F,4 °F,32 °%,WNW,15 °mph,26 °mph,30.08 °in,0.0 °in,Fair
+2024-01-14 21:51:00,30 °F,5 °F,35 °%,W,15 °mph,23 °mph,30.09 °in,0.0 °in,Fair
+2024-01-14 22:51:00,29 °F,3 °F,33 °%,WNW,13 °mph,0 °mph,30.11 °in,0.0 °in,Fair
+2024-01-14 23:51:00,28 °F,3 °F,34 °%,W,15 °mph,21 °mph,30.12 °in,0.0 °in,Fair
+2024-01-14 00:51:00,28 °F,5 °F,38 °%,WNW,16 °mph,22 °mph,30.13 °in,0.0 °in,Fair
+2024-01-15 01:51:00,27 °F,4 °F,37 °%,W,13 °mph,22 °mph,30.15 °in,0.0 °in,Fair
+2024-01-15 02:51:00,26 °F,3 °F,37 °%,W,12 °mph,0 °mph,30.17 °in,0.0 °in,Mostly Cloudy
+2024-01-15 03:51:00,26 °F,5 °F,41 °%,W,13 °mph,0 °mph,30.18 °in,0.0 °in,Mostly Cloudy
+2024-01-15 04:51:00,25 °F,6 °F,45 °%,WNW,14 °mph,0 °mph,30.17 °in,0.0 °in,Mostly Cloudy
+2024-01-15 05:51:00,25 °F,4 °F,41 °%,WNW,10 °mph,0 °mph,30.19 °in,0.0 °in,Mostly Cloudy
+2024-01-15 06:51:00,24 °F,2 °F,38 °%,W,12 °mph,0 °mph,30.22 °in,0.0 °in,Fair
+2024-01-15 07:51:00,24 °F,4 °F,42 °%,W,9 °mph,0 °mph,30.23 °in,0.0 °in,Mostly Cloudy
+2024-01-15 08:51:00,25 °F,5 °F,43 °%,W,7 °mph,0 °mph,30.24 °in,0.0 °in,Mostly Cloudy
+2024-01-15 09:51:00,26 °F,6 °F,43 °%,WNW,8 °mph,0 °mph,30.24 °in,0.0 °in,Partly Cloudy
+2024-01-15 10:51:00,26 °F,5 °F,41 °%,WNW,9 °mph,0 °mph,30.26 °in,0.0 °in,Partly Cloudy
+2024-01-15 11:51:00,27 °F,4 °F,37 °%,W,8 °mph,0 °mph,30.26 °in,0.0 °in,Cloudy
+2024-01-15 12:51:00,28 °F,4 °F,36 °%,W,8 °mph,0 °mph,30.23 °in,0.0 °in,Cloudy
+2024-01-15 13:51:00,28 °F,3 °F,34 °%,WSW,8 °mph,0 °mph,30.21 °in,0.0 °in,Cloudy
+2024-01-15 14:51:00,29 °F,0 °F,29 °%,SSW,9 °mph,0 °mph,30.20 °in,0.0 °in,Cloudy
+2024-01-15 15:51:00,29 °F,-1 °F,28 °%,W,8 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-15 16:51:00,29 °F,2 °F,32 °%,VAR,3 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-15 17:51:00,29 °F,3 °F,33 °%,WSW,3 °mph,0 °mph,30.19 °in,0.0 °in,Mostly Cloudy
+2024-01-15 18:51:00,29 °F,6 °F,38 °%,SSW,8 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-15 19:51:00,29 °F,7 °F,40 °%,SSW,9 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-15 20:51:00,29 °F,8 °F,41 °%,SSW,9 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-15 21:42:00,29 °F,12 °F,49 °%,S,6 °mph,0 °mph,30.19 °in,0.0 °in,Light Snow
+2024-01-15 21:51:00,28 °F,14 °F,56 °%,SSW,9 °mph,0 °mph,30.19 °in,0.0 °in,Light Snow
+2024-01-15 22:38:00,26 °F,17 °F,69 °%,SSW,3 °mph,0 °mph,30.18 °in,0.0 °in,Light Snow
+2024-01-15 22:51:00,26 °F,17 °F,69 °%,VAR,3 °mph,0 °mph,30.18 °in,0.0 °in,Light Snow
+2024-01-15 23:03:00,27 °F,18 °F,69 °%,WNW,6 °mph,0 °mph,30.18 °in,0.0 °in,Light Snow
+2024-01-15 23:17:00,26 °F,18 °F,71 °%,NW,5 °mph,0 °mph,30.18 °in,0.0 °in,Light Snow
+2024-01-15 23:48:00,27 °F,19 °F,74 °%,WNW,6 °mph,0 °mph,30.17 °in,0.0 °in,Light Snow
+2024-01-15 23:51:00,26 °F,19 °F,75 °%,W,6 °mph,0 °mph,30.17 °in,0.0 °in,Light Snow
+2024-01-15 00:10:00,26 °F,19 °F,75 °%,WNW,6 °mph,0 °mph,30.17 °in,0.0 °in,Light Snow
+2024-01-15 00:30:00,25 °F,19 °F,78 °%,NNW,5 °mph,0 °mph,30.15 °in,0.0 °in,Light Snow
+2024-01-15 00:47:00,25 °F,19 °F,80 °%,CALM,0 °mph,0 °mph,30.14 °in,0.0 °in,Light Snow
+2024-01-15 00:51:00,25 °F,20 °F,81 °%,CALM,0 °mph,0 °mph,30.14 °in,0.0 °in,Light Snow
+2024-01-16 01:51:00,26 °F,21 °F,81 °%,NNW,3 °mph,0 °mph,30.12 °in,0.0 °in,Light Snow
+2024-01-16 02:07:00,26 °F,21 °F,81 °%,NNW,3 °mph,0 °mph,30.11 °in,0.0 °in,Light Snow
+2024-01-16 02:22:00,26 °F,21 °F,81 °%,NNE,5 °mph,0 °mph,30.11 °in,0.0 °in,Light Snow
+2024-01-16 02:41:00,26 °F,21 °F,81 °%,N,5 °mph,0 °mph,30.10 °in,0.0 °in,Light Snow
+2024-01-16 02:51:00,26 °F,21 °F,81 °%,NNE,6 °mph,0 °mph,30.09 °in,0.0 °in,Light Snow
+2024-01-16 03:36:00,26 °F,21 °F,81 °%,NNE,7 °mph,0 °mph,30.08 °in,0.0 °in,Light Snow
+2024-01-16 03:51:00,26 °F,21 °F,81 °%,NE,7 °mph,0 °mph,30.07 °in,0.0 °in,Light Snow
+2024-01-16 04:51:00,26 °F,21 °F,81 °%,NNE,9 °mph,0 °mph,30.03 °in,0.0 °in,Light Snow
+2024-01-16 05:17:00,26 °F,21 °F,81 °%,NNE,8 °mph,0 °mph,30.03 °in,0.0 °in,Light Snow
+2024-01-16 05:43:00,26 °F,21 °F,81 °%,NNE,8 °mph,0 °mph,30.02 °in,0.0 °in,Light Snow
+2024-01-16 05:46:00,27 °F,21 °F,80 °%,NNE,7 °mph,0 °mph,30.02 °in,0.0 °in,Light Snow
+2024-01-16 05:51:00,26 °F,21 °F,81 °%,NNE,9 °mph,0 °mph,30.01 °in,0.0 °in,Light Snow
+2024-01-16 06:07:00,26 °F,21 °F,81 °%,NNE,7 °mph,0 °mph,30.01 °in,0.0 °in,Light Snow
+2024-01-16 06:31:00,26 °F,22 °F,84 °%,NE,7 °mph,0 °mph,30.00 °in,0.0 °in,Light Snow
+2024-01-16 06:46:00,27 °F,21 °F,80 °%,NE,7 °mph,0 °mph,30.00 °in,0.0 °in,Light Snow
+2024-01-16 06:51:00,27 °F,22 °F,81 °%,NE,8 °mph,0 °mph,29.99 °in,0.0 °in,Light Snow
+2024-01-16 07:47:00,28 °F,23 °F,80 °%,NNE,8 °mph,0 °mph,29.95 °in,0.0 °in,Light Snow
+2024-01-16 07:51:00,28 °F,23 °F,81 °%,NNE,10 °mph,0 °mph,29.95 °in,0.0 °in,Light Snow
+2024-01-16 08:51:00,27 °F,23 °F,85 °%,NNE,10 °mph,0 °mph,29.92 °in,0.0 °in,Light Snow
+2024-01-16 09:26:00,28 °F,24 °F,85 °%,NNE,12 °mph,0 °mph,29.90 °in,0.0 °in,Light Snow
+2024-01-16 09:51:00,28 °F,23 °F,81 °%,NNE,10 °mph,0 °mph,29.89 °in,0.0 °in,Light Snow and Sleet
+2024-01-16 10:51:00,30 °F,25 °F,82 °%,NNE,9 °mph,0 °mph,29.85 °in,0.0 °in,Wintry Mix
+2024-01-16 11:51:00,30 °F,25 °F,82 °%,N,10 °mph,0 °mph,29.80 °in,0.0 °in,Wintry Mix
+2024-01-16 11:59:00,30 °F,26 °F,85 °%,NNE,9 °mph,0 °mph,29.79 °in,0.0 °in,Wintry Mix
+2024-01-16 12:48:00,30 °F,27 °F,86 °%,NNE,12 °mph,0 °mph,29.72 °in,0.1 °in,Wintry Mix
+2024-01-16 12:51:00,31 °F,27 °F,85 °%,NE,10 °mph,0 °mph,29.72 °in,0.1 °in,Wintry Mix
+2024-01-16 13:51:00,31 °F,27 °F,85 °%,NNE,10 °mph,0 °mph,29.66 °in,0.0 °in,Wintry Mix
+2024-01-16 14:02:00,31 °F,27 °F,85 °%,NE,13 °mph,0 °mph,29.65 °in,0.0 °in,Light Freezing Rain
+2024-01-16 14:46:00,32 °F,27 °F,80 °%,NNW,9 °mph,0 °mph,29.66 °in,0.0 °in,Wintry Mix
+2024-01-16 14:51:00,32 °F,27 °F,82 °%,NW,13 °mph,0 °mph,29.66 °in,0.0 °in,Wintry Mix
+2024-01-16 15:14:00,30 °F,26 °F,85 °%,NW,15 °mph,0 °mph,29.66 °in,0.0 °in,Wintry Mix
+2024-01-16 15:51:00,31 °F,26 °F,82 °%,NW,17 °mph,0 °mph,29.68 °in,0.0 °in,Light Freezing Rain
+2024-01-16 16:33:00,29 °F,24 °F,82 °%,NW,17 °mph,0 °mph,29.69 °in,0.0 °in,Wintry Mix
+2024-01-16 16:38:00,29 °F,24 °F,82 °%,NNW,13 °mph,0 °mph,29.70 °in,0.0 °in,Light Snow
+2024-01-16 16:51:00,29 °F,24 °F,82 °%,NW,20 °mph,0 °mph,29.70 °in,0.0 °in,Light Snow
+2024-01-16 17:51:00,29 °F,24 °F,82 °%,NW,14 °mph,0 °mph,29.70 °in,0.0 °in,Light Snow
+2024-01-16 18:11:00,29 °F,24 °F,82 °%,NW,16 °mph,0 °mph,29.70 °in,0.0 °in,Light Snow
+2024-01-16 18:19:00,30 °F,24 °F,79 °%,NW,17 °mph,24 °mph,29.70 °in,0.0 °in,Mostly Cloudy
+2024-01-16 18:51:00,30 °F,23 °F,75 °%,WNW,16 °mph,0 °mph,29.73 °in,0.0 °in,Mostly Cloudy
+2024-01-16 19:51:00,29 °F,18 °F,64 °%,NW,20 °mph,31 °mph,29.74 °in,0.0 °in,Mostly Cloudy
+2024-01-16 20:51:00,28 °F,17 °F,63 °%,NW,18 °mph,0 °mph,29.75 °in,0.0 °in,Mostly Cloudy
+2024-01-16 21:51:00,27 °F,15 °F,61 °%,WNW,22 °mph,26 °mph,29.77 °in,0.0 °in,Partly Cloudy / Windy
+2024-01-16 22:51:00,26 °F,13 °F,58 °%,NW,25 °mph,31 °mph,29.80 °in,0.0 °in,Fair / Windy
+2024-01-16 23:51:00,24 °F,11 °F,57 °%,WNW,18 °mph,0 °mph,29.83 °in,0.0 °in,Fair
+2024-01-16 00:51:00,24 °F,10 °F,55 °%,NW,21 °mph,29 °mph,29.85 °in,0.0 °in,Fair / Windy
+2024-01-17 01:51:00,23 °F,10 °F,58 °%,NW,17 °mph,24 °mph,29.86 °in,0.0 °in,Fair
+2024-01-17 02:51:00,23 °F,10 °F,58 °%,WNW,15 °mph,0 °mph,29.87 °in,0.0 °in,Fair
+2024-01-17 03:51:00,22 °F,10 °F,60 °%,WNW,16 °mph,25 °mph,29.88 °in,0.0 °in,Fair
+2024-01-17 04:51:00,21 °F,9 °F,60 °%,WNW,18 °mph,24 °mph,29.87 °in,0.0 °in,Fair
+2024-01-17 05:51:00,21 °F,9 °F,60 °%,NW,21 °mph,25 °mph,29.89 °in,0.0 °in,Fair / Windy
+2024-01-17 06:51:00,20 °F,7 °F,57 °%,WNW,16 °mph,0 °mph,29.92 °in,0.0 °in,Fair
+2024-01-17 07:51:00,19 °F,5 °F,54 °%,W,14 °mph,22 °mph,29.94 °in,0.0 °in,Fair
+2024-01-17 08:51:00,19 °F,5 °F,54 °%,W,14 °mph,26 °mph,29.96 °in,0.0 °in,Fair
+2024-01-17 09:51:00,19 °F,5 °F,54 °%,W,18 °mph,24 °mph,29.98 °in,0.0 °in,Fair
+2024-01-17 10:51:00,20 °F,5 °F,52 °%,W,15 °mph,24 °mph,29.99 °in,0.0 °in,Fair
+2024-01-17 11:51:00,20 °F,3 °F,48 °%,W,16 °mph,28 °mph,29.99 °in,0.0 °in,Fair
+2024-01-17 12:51:00,22 °F,1 °F,40 °%,W,20 °mph,25 °mph,29.97 °in,0.0 °in,Fair
+2024-01-17 13:51:00,24 °F,1 °F,37 °%,W,15 °mph,32 °mph,29.95 °in,0.0 °in,Fair
+2024-01-17 14:51:00,24 °F,-1 °F,34 °%,W,12 °mph,29 °mph,29.94 °in,0.0 °in,Fair
+2024-01-17 15:51:00,25 °F,-3 °F,30 °%,W,20 °mph,26 °mph,29.96 °in,0.0 °in,Fair
+2024-01-17 16:51:00,25 °F,-2 °F,31 °%,WSW,17 °mph,25 °mph,29.98 °in,0.0 °in,Fair
+2024-01-17 17:51:00,24 °F,-3 °F,31 °%,W,17 °mph,0 °mph,29.99 °in,0.0 °in,Fair
+2024-01-17 18:51:00,24 °F,-2 °F,32 °%,WSW,12 °mph,0 °mph,30.02 °in,0.0 °in,Fair
+2024-01-17 19:51:00,24 °F,-1 °F,34 °%,WSW,14 °mph,0 °mph,30.05 °in,0.0 °in,Fair
+2024-01-17 20:51:00,24 °F,-1 °F,34 °%,SW,15 °mph,21 °mph,30.05 °in,0.0 °in,Fair
+2024-01-17 21:51:00,24 °F,-1 °F,34 °%,W,18 °mph,26 °mph,30.06 °in,0.0 °in,Fair
+2024-01-17 22:51:00,24 °F,-1 °F,34 °%,WSW,17 °mph,22 °mph,30.09 °in,0.0 °in,Fair
+2024-01-17 23:51:00,24 °F,-1 °F,34 °%,W,17 °mph,23 °mph,30.12 °in,0.0 °in,Fair
+2024-01-17 00:51:00,24 °F,-1 °F,34 °%,W,12 °mph,0 °mph,30.12 °in,0.0 °in,Fair
+2024-01-18 01:51:00,23 °F,0 °F,37 °%,WSW,12 °mph,0 °mph,30.12 °in,0.0 °in,Fair
+2024-01-18 02:51:00,24 °F,0 °F,35 °%,SW,12 °mph,0 °mph,30.14 °in,0.0 °in,Fair
+2024-01-18 03:51:00,24 °F,0 °F,35 °%,WSW,12 °mph,0 °mph,30.14 °in,0.0 °in,Fair
+2024-01-18 04:51:00,24 °F,0 °F,35 °%,WSW,12 °mph,0 °mph,30.15 °in,0.0 °in,Mostly Cloudy
+2024-01-18 05:51:00,25 °F,0 °F,34 °%,W,17 °mph,23 °mph,30.13 °in,0.0 °in,Cloudy
+2024-01-18 06:51:00,25 °F,0 °F,34 °%,W,12 °mph,17 °mph,30.15 °in,0.0 °in,Mostly Cloudy
+2024-01-18 07:51:00,25 °F,0 °F,34 °%,W,16 °mph,0 °mph,30.15 °in,0.0 °in,Mostly Cloudy
+2024-01-18 08:51:00,25 °F,4 °F,41 °%,W,12 °mph,0 °mph,30.16 °in,0.0 °in,Mostly Cloudy
+2024-01-18 09:51:00,26 °F,4 °F,39 °%,SW,13 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-18 10:51:00,28 °F,3 °F,34 °%,SW,13 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-18 11:51:00,30 °F,4 °F,33 °%,W,9 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-18 12:47:00,28 °F,10 °F,47 °%,W,21 °mph,26 °mph,30.17 °in,0.0 °in,Light Snow / Windy
+2024-01-18 12:51:00,28 °F,11 °F,49 °%,W,17 °mph,26 °mph,30.17 °in,0.0 °in,Light Snow
+2024-01-18 13:51:00,28 °F,16 °F,61 °%,WSW,6 °mph,0 °mph,30.13 °in,0.0 °in,Light Snow
+2024-01-18 14:02:00,29 °F,15 °F,56 °%,WSW,6 °mph,0 °mph,30.11 °in,0.0 °in,Cloudy
+2024-01-18 14:51:00,31 °F,12 °F,46 °%,WSW,8 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-18 15:51:00,31 °F,9 °F,40 °%,SW,10 °mph,0 °mph,30.07 °in,0.0 °in,Mostly Cloudy
+2024-01-18 16:51:00,32 °F,12 °F,44 °%,SSW,10 °mph,0 °mph,30.05 °in,0.0 °in,Mostly Cloudy
+2024-01-18 17:51:00,33 °F,13 °F,43 °%,SSW,10 °mph,0 °mph,30.03 °in,0.0 °in,Cloudy
+2024-01-18 18:51:00,33 °F,13 °F,43 °%,SW,7 °mph,0 °mph,30.05 °in,0.0 °in,Cloudy
+2024-01-18 19:51:00,33 °F,13 °F,43 °%,SW,6 °mph,0 °mph,30.06 °in,0.0 °in,Cloudy
+2024-01-18 20:51:00,33 °F,13 °F,43 °%,SW,7 °mph,0 °mph,30.06 °in,0.0 °in,Cloudy
+2024-01-18 21:51:00,33 °F,12 °F,42 °%,SW,6 °mph,0 °mph,30.05 °in,0.0 °in,Cloudy
+2024-01-18 22:51:00,33 °F,12 °F,42 °%,S,7 °mph,0 °mph,30.02 °in,0.0 °in,Cloudy
+2024-01-18 23:51:00,34 °F,14 °F,44 °%,CALM,0 °mph,0 °mph,30.01 °in,0.0 °in,Cloudy
+2024-01-18 00:51:00,33 °F,14 °F,46 °%,N,6 °mph,0 °mph,29.99 °in,0.0 °in,Mostly Cloudy
+2024-01-19 01:51:00,32 °F,14 °F,48 °%,NNE,3 °mph,0 °mph,29.96 °in,0.0 °in,Cloudy
+2024-01-19 02:51:00,32 °F,15 °F,50 °%,NE,6 °mph,0 °mph,29.95 °in,0.0 °in,Cloudy
+2024-01-19 03:51:00,32 °F,15 °F,50 °%,NNE,6 °mph,0 °mph,29.94 °in,0.0 °in,Cloudy
+2024-01-19 04:51:00,32 °F,12 °F,44 °%,NNE,7 °mph,0 °mph,29.91 °in,0.0 °in,Cloudy
+2024-01-19 05:51:00,31 °F,15 °F,52 °%,NE,7 °mph,0 °mph,29.90 °in,0.0 °in,Cloudy
+2024-01-19 06:51:00,31 °F,15 °F,52 °%,NE,7 °mph,0 °mph,29.89 °in,0.0 °in,Cloudy
+2024-01-19 07:51:00,30 °F,14 °F,51 °%,NE,12 °mph,0 °mph,29.86 °in,0.0 °in,Cloudy
+2024-01-19 08:51:00,31 °F,18 °F,59 °%,NE,12 °mph,0 °mph,29.84 °in,0.0 °in,Cloudy
+2024-01-19 09:51:00,31 °F,19 °F,61 °%,E,15 °mph,0 °mph,29.85 °in,0.0 °in,Light Snow
+2024-01-19 10:30:00,30 °F,19 °F,64 °%,ENE,10 °mph,0 °mph,29.84 °in,0.0 °in,Light Snow
+2024-01-19 10:34:00,30 °F,19 °F,64 °%,ENE,12 °mph,0 °mph,29.84 °in,0.0 °in,Light Snow
+2024-01-19 10:51:00,30 °F,20 °F,66 °%,ENE,14 °mph,0 °mph,29.83 °in,0.0 °in,Light Snow
+2024-01-19 11:51:00,29 °F,22 °F,75 °%,NE,16 °mph,0 °mph,29.81 °in,0.0 °in,Light Snow
+2024-01-19 12:31:00,28 °F,22 °F,78 °%,NE,13 °mph,0 °mph,29.77 °in,0.0 °in,Light Snow
+2024-01-19 12:38:00,28 °F,22 °F,78 °%,NNE,10 °mph,0 °mph,29.77 °in,0.0 °in,Light Snow
+2024-01-19 12:51:00,28 °F,23 °F,81 °%,NNE,13 °mph,0 °mph,29.76 °in,0.0 °in,Light Snow
+2024-01-19 13:29:00,29 °F,23 °F,78 °%,NNE,14 °mph,0 °mph,29.74 °in,0.0 °in,Light Snow
+2024-01-19 13:48:00,28 °F,21 °F,74 °%,NNE,13 °mph,0 °mph,29.73 °in,0.0 °in,Light Snow
+2024-01-19 13:51:00,29 °F,22 °F,75 °%,NE,12 °mph,0 °mph,29.73 °in,0.0 °in,Light Snow
+2024-01-19 14:51:00,29 °F,23 °F,78 °%,NNE,13 °mph,0 °mph,29.72 °in,0.0 °in,Light Snow
+2024-01-19 15:51:00,29 °F,21 °F,72 °%,NNE,12 °mph,0 °mph,29.72 °in,0.0 °in,Light Snow
+2024-01-19 16:39:00,30 °F,22 °F,72 °%,N,14 °mph,18 °mph,29.72 °in,0.0 °in,Light Snow
+2024-01-19 16:51:00,30 °F,21 °F,69 °%,N,10 °mph,0 °mph,29.73 °in,0.0 °in,Light Snow
+2024-01-19 17:06:00,30 °F,21 °F,69 °%,N,14 °mph,0 °mph,29.73 °in,0.0 °in,Light Snow
+2024-01-19 17:51:00,29 °F,21 °F,72 °%,N,10 °mph,0 °mph,29.75 °in,0.0 °in,Light Snow
+2024-01-19 18:51:00,29 °F,21 °F,72 °%,NNW,15 °mph,0 °mph,29.78 °in,0.0 °in,Light Snow
+2024-01-19 19:17:00,29 °F,19 °F,67 °%,N,13 °mph,0 °mph,29.79 °in,0.0 °in,Mostly Cloudy
+2024-01-19 19:51:00,28 °F,18 °F,66 °%,NNW,13 °mph,0 °mph,29.80 °in,0.0 °in,Mostly Cloudy
+2024-01-19 20:51:00,27 °F,17 °F,66 °%,NNW,10 °mph,0 °mph,29.81 °in,0.0 °in,Mostly Cloudy
+2024-01-19 21:51:00,27 °F,17 °F,66 °%,NW,12 °mph,0 °mph,29.82 °in,0.0 °in,Mostly Cloudy
+2024-01-19 22:51:00,27 °F,18 °F,69 °%,NW,13 °mph,0 °mph,29.82 °in,0.0 °in,Mostly Cloudy
+2024-01-19 23:51:00,27 °F,16 °F,63 °%,WNW,15 °mph,0 °mph,29.83 °in,0.0 °in,Mostly Cloudy
+2024-01-19 00:51:00,27 °F,14 °F,58 °%,WNW,17 °mph,25 °mph,29.85 °in,0.0 °in,Cloudy
+2024-01-20 01:51:00,26 °F,11 °F,53 °%,NW,16 °mph,0 °mph,29.86 °in,0.0 °in,Mostly Cloudy
+2024-01-20 02:51:00,24 °F,9 °F,53 °%,WNW,21 °mph,0 °mph,29.88 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-20 03:51:00,22 °F,7 °F,53 °%,NW,21 °mph,29 °mph,29.89 °in,0.0 °in,Fair / Windy
+2024-01-20 04:51:00,20 °F,6 °F,55 °%,NW,18 °mph,29 °mph,29.89 °in,0.0 °in,Fair
+2024-01-20 05:51:00,20 °F,7 °F,57 °%,WNW,18 °mph,30 °mph,29.91 °in,0.0 °in,Fair
+2024-01-20 06:51:00,20 °F,7 °F,57 °%,WNW,21 °mph,29 °mph,29.93 °in,0.0 °in,Fair / Windy
+2024-01-20 07:51:00,19 °F,7 °F,59 °%,NW,18 °mph,0 °mph,29.95 °in,0.0 °in,Fair
+2024-01-20 08:51:00,20 °F,7 °F,57 °%,NW,23 °mph,30 °mph,29.94 °in,0.0 °in,Fair / Windy
+2024-01-20 09:51:00,21 °F,7 °F,55 °%,NW,20 °mph,29 °mph,29.96 °in,0.0 °in,Fair
+2024-01-20 10:51:00,22 °F,7 °F,53 °%,NW,16 °mph,30 °mph,29.95 °in,0.0 °in,Fair
+2024-01-20 11:51:00,23 °F,7 °F,50 °%,NW,20 °mph,0 °mph,29.95 °in,0.0 °in,Fair
+2024-01-20 12:51:00,23 °F,6 °F,48 °%,NW,15 °mph,0 °mph,29.93 °in,0.0 °in,Partly Cloudy
+2024-01-20 13:51:00,24 °F,6 °F,46 °%,NW,14 °mph,25 °mph,29.91 °in,0.0 °in,Mostly Cloudy
+2024-01-20 14:51:00,25 °F,6 °F,45 °%,NW,24 °mph,28 °mph,29.91 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-20 15:51:00,24 °F,5 °F,44 °%,WNW,21 °mph,25 °mph,29.92 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-20 16:51:00,24 °F,6 °F,46 °%,WNW,20 °mph,33 °mph,29.95 °in,0.0 °in,Mostly Cloudy
+2024-01-20 17:51:00,23 °F,7 °F,50 °%,WNW,28 °mph,33 °mph,29.98 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-20 18:51:00,22 °F,7 °F,53 °%,NW,17 °mph,30 °mph,30.00 °in,0.0 °in,Mostly Cloudy
+2024-01-20 19:51:00,22 °F,7 °F,53 °%,WNW,22 °mph,33 °mph,30.01 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-20 20:51:00,21 °F,7 °F,55 °%,NW,23 °mph,32 °mph,30.02 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-20 21:51:00,22 °F,8 °F,55 °%,NW,23 °mph,35 °mph,30.04 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-20 22:51:00,21 °F,8 °F,57 °%,NW,23 °mph,33 °mph,30.06 °in,0.0 °in,Cloudy / Windy
+2024-01-20 23:51:00,21 °F,8 °F,57 °%,WNW,22 °mph,30 °mph,30.07 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-20 00:51:00,22 °F,9 °F,58 °%,NW,25 °mph,30 °mph,30.08 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-21 01:51:00,22 °F,9 °F,58 °%,NW,16 °mph,28 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-21 02:51:00,22 °F,9 °F,58 °%,NW,22 °mph,28 °mph,30.11 °in,0.0 °in,Mostly Cloudy / Windy
+2024-01-21 03:51:00,23 °F,10 °F,58 °%,NW,17 °mph,0 °mph,30.13 °in,0.0 °in,Mostly Cloudy
+2024-01-21 04:51:00,23 °F,9 °F,55 °%,NW,16 °mph,29 °mph,30.14 °in,0.0 °in,Fair
+2024-01-21 05:51:00,23 °F,8 °F,53 °%,NW,21 °mph,31 °mph,30.17 °in,0.0 °in,Fair / Windy
+2024-01-21 06:51:00,22 °F,9 °F,58 °%,NW,24 °mph,31 °mph,30.20 °in,0.0 °in,Fair / Windy
+2024-01-21 07:51:00,22 °F,8 °F,55 °%,NW,22 °mph,32 °mph,30.25 °in,0.0 °in,Fair / Windy
+2024-01-21 08:51:00,22 °F,7 °F,53 °%,NW,20 °mph,31 °mph,30.27 °in,0.0 °in,Fair
+2024-01-21 09:51:00,22 °F,6 °F,51 °%,NW,18 °mph,29 °mph,30.30 °in,0.0 °in,Fair
+2024-01-21 10:51:00,23 °F,6 °F,48 °%,NW,24 °mph,31 °mph,30.32 °in,0.0 °in,Fair / Windy
+2024-01-21 11:51:00,25 °F,7 °F,46 °%,WNW,21 °mph,31 °mph,30.33 °in,0.0 °in,Fair / Windy
+2024-01-21 12:51:00,26 °F,8 °F,47 °%,NNW,18 °mph,30 °mph,30.31 °in,0.0 °in,Fair
+2024-01-21 13:51:00,28 °F,8 °F,43 °%,NW,18 °mph,28 °mph,30.30 °in,0.0 °in,Fair
+2024-01-21 14:51:00,30 °F,9 °F,41 °%,WNW,21 °mph,0 °mph,30.30 °in,0.0 °in,Fair / Windy
+2024-01-21 15:51:00,31 °F,10 °F,42 °%,WNW,22 °mph,28 °mph,30.30 °in,0.0 °in,Fair / Windy
+2024-01-21 16:51:00,31 °F,9 °F,40 °%,WNW,23 °mph,30 °mph,30.33 °in,0.0 °in,Fair / Windy
+2024-01-21 17:51:00,30 °F,10 °F,43 °%,NW,23 °mph,0 °mph,30.36 °in,0.0 °in,Fair / Windy
+2024-01-21 18:51:00,30 °F,10 °F,43 °%,NW,22 °mph,30 °mph,30.39 °in,0.0 °in,Fair / Windy
+2024-01-21 19:51:00,29 °F,10 °F,45 °%,NW,16 °mph,25 °mph,30.42 °in,0.0 °in,Fair
+2024-01-21 20:51:00,29 °F,10 °F,45 °%,NW,17 °mph,29 °mph,30.42 °in,0.0 °in,Fair
+2024-01-21 21:51:00,28 °F,9 °F,45 °%,NW,14 °mph,0 °mph,30.45 °in,0.0 °in,Fair
+2024-01-21 22:51:00,27 °F,9 °F,47 °%,NW,16 °mph,0 °mph,30.47 °in,0.0 °in,Fair
+2024-01-21 23:51:00,26 °F,10 °F,51 °%,NW,20 °mph,26 °mph,30.48 °in,0.0 °in,Fair
+2024-01-21 00:51:00,26 °F,11 °F,53 °%,NW,13 °mph,0 °mph,30.50 °in,0.0 °in,Fair
+2024-01-22 01:51:00,26 °F,11 °F,53 °%,WNW,15 °mph,0 °mph,30.50 °in,0.0 °in,Fair
+2024-01-22 02:51:00,27 °F,12 °F,53 °%,WNW,17 °mph,0 °mph,30.49 °in,0.0 °in,Fair
+2024-01-22 03:51:00,26 °F,11 °F,53 °%,WNW,9 °mph,0 °mph,30.51 °in,0.0 °in,Fair
+2024-01-22 04:51:00,27 °F,13 °F,56 °%,WNW,13 °mph,0 °mph,30.52 °in,0.0 °in,Fair
+2024-01-22 05:51:00,27 °F,13 °F,56 °%,NW,14 °mph,0 °mph,30.50 °in,0.0 °in,Fair
+2024-01-22 06:51:00,26 °F,12 °F,55 °%,NW,8 °mph,0 °mph,30.51 °in,0.0 °in,Fair
+2024-01-22 07:51:00,26 °F,12 °F,55 °%,WNW,9 °mph,0 °mph,30.54 °in,0.0 °in,Fair
+2024-01-22 08:51:00,27 °F,13 °F,56 °%,WNW,10 °mph,0 °mph,30.54 °in,0.0 °in,Fair
+2024-01-22 09:51:00,28 °F,13 °F,53 °%,NW,9 °mph,0 °mph,30.54 °in,0.0 °in,Fair
+2024-01-22 10:51:00,30 °F,13 °F,49 °%,WNW,6 °mph,0 °mph,30.55 °in,0.0 °in,Fair
+2024-01-22 11:51:00,32 °F,14 °F,48 °%,NW,5 °mph,0 °mph,30.53 °in,0.0 °in,Fair
+2024-01-22 12:51:00,32 °F,14 °F,48 °%,SSW,8 °mph,0 °mph,30.51 °in,0.0 °in,Mostly Cloudy
+2024-01-22 13:51:00,34 °F,13 °F,42 °%,SW,9 °mph,0 °mph,30.47 °in,0.0 °in,Mostly Cloudy
+2024-01-22 14:51:00,35 °F,10 °F,35 °%,SW,10 °mph,0 °mph,30.46 °in,0.0 °in,Mostly Cloudy
+2024-01-22 15:51:00,37 °F,9 °F,31 °%,SW,9 °mph,0 °mph,30.45 °in,0.0 °in,Mostly Cloudy
+2024-01-22 16:51:00,37 °F,10 °F,33 °%,WSW,13 °mph,0 °mph,30.45 °in,0.0 °in,Mostly Cloudy
+2024-01-22 17:51:00,37 °F,11 °F,34 °%,SW,10 °mph,0 °mph,30.45 °in,0.0 °in,Mostly Cloudy
+2024-01-22 18:51:00,37 °F,10 °F,33 °%,WSW,13 °mph,17 °mph,30.44 °in,0.0 °in,Mostly Cloudy
+2024-01-22 19:51:00,36 °F,14 °F,41 °%,SW,12 °mph,0 °mph,30.45 °in,0.0 °in,Mostly Cloudy
+2024-01-22 20:51:00,35 °F,15 °F,44 °%,SW,13 °mph,0 °mph,30.45 °in,0.0 °in,Mostly Cloudy
+2024-01-22 21:51:00,34 °F,16 °F,48 °%,SW,13 °mph,0 °mph,30.44 °in,0.0 °in,Mostly Cloudy
+2024-01-22 22:51:00,35 °F,16 °F,46 °%,WSW,14 °mph,0 °mph,30.44 °in,0.0 °in,Mostly Cloudy
+2024-01-22 23:51:00,35 °F,15 °F,44 °%,WSW,15 °mph,26 °mph,30.45 °in,0.0 °in,Cloudy
+2024-01-22 00:51:00,35 °F,15 °F,44 °%,SW,12 °mph,0 °mph,30.42 °in,0.0 °in,Cloudy
+2024-01-23 01:51:00,36 °F,15 °F,43 °%,SW,12 °mph,0 °mph,30.42 °in,0.0 °in,Cloudy
+2024-01-23 02:51:00,36 °F,16 °F,44 °%,SW,10 °mph,0 °mph,30.42 °in,0.0 °in,Cloudy
+2024-01-23 03:51:00,36 °F,16 °F,44 °%,W,9 °mph,0 °mph,30.41 °in,0.0 °in,Cloudy
+2024-01-23 04:51:00,36 °F,16 °F,44 °%,SSW,9 °mph,0 °mph,30.39 °in,0.0 °in,Mostly Cloudy
+2024-01-23 05:51:00,36 °F,16 °F,44 °%,SW,8 °mph,0 °mph,30.39 °in,0.0 °in,Mostly Cloudy
+2024-01-23 06:51:00,36 °F,16 °F,44 °%,SW,6 °mph,0 °mph,30.40 °in,0.0 °in,Mostly Cloudy
+2024-01-23 07:51:00,38 °F,15 °F,39 °%,WSW,8 °mph,0 °mph,30.41 °in,0.0 °in,Mostly Cloudy
+2024-01-23 08:51:00,39 °F,15 °F,38 °%,W,7 °mph,0 °mph,30.42 °in,0.0 °in,Cloudy
+2024-01-23 09:51:00,40 °F,16 °F,38 °%,W,8 °mph,0 °mph,30.43 °in,0.0 °in,Cloudy
+2024-01-23 10:51:00,40 °F,17 °F,40 °%,WNW,8 °mph,0 °mph,30.46 °in,0.0 °in,Mostly Cloudy
+2024-01-23 11:51:00,40 °F,20 °F,45 °%,NW,7 °mph,0 °mph,30.48 °in,0.0 °in,Light Rain
+2024-01-23 12:51:00,38 °F,25 °F,60 °%,NW,8 °mph,0 °mph,30.48 °in,0.0 °in,Light Rain
+2024-01-23 13:51:00,38 °F,26 °F,62 °%,WNW,6 °mph,0 °mph,30.46 °in,0.0 °in,Cloudy
+2024-01-23 14:51:00,38 °F,29 °F,70 °%,NW,8 °mph,0 °mph,30.45 °in,0.0 °in,Cloudy
+2024-01-23 15:51:00,39 °F,30 °F,70 °%,WNW,3 °mph,0 °mph,30.47 °in,0.0 °in,Cloudy
+2024-01-23 16:51:00,39 °F,30 °F,70 °%,NW,7 °mph,0 °mph,30.49 °in,0.0 °in,Cloudy
+2024-01-23 17:51:00,39 °F,30 °F,70 °%,WNW,3 °mph,0 °mph,30.50 °in,0.0 °in,Cloudy
+2024-01-23 18:16:00,39 °F,30 °F,70 °%,CALM,0 °mph,0 °mph,30.51 °in,0.0 °in,Cloudy
+2024-01-23 18:51:00,39 °F,30 °F,70 °%,N,5 °mph,0 °mph,30.51 °in,0.0 °in,Cloudy
+2024-01-23 19:51:00,39 °F,30 °F,70 °%,CALM,0 °mph,0 °mph,30.52 °in,0.0 °in,Mostly Cloudy
+2024-01-23 20:51:00,39 °F,30 °F,70 °%,ENE,6 °mph,0 °mph,30.52 °in,0.0 °in,Mostly Cloudy
+2024-01-23 21:51:00,40 °F,31 °F,70 °%,ENE,6 °mph,0 °mph,30.52 °in,0.0 °in,Mostly Cloudy
+2024-01-23 22:51:00,39 °F,30 °F,70 °%,ENE,5 °mph,0 °mph,30.52 °in,0.0 °in,Mostly Cloudy
+2024-01-23 23:51:00,38 °F,31 °F,76 °%,NE,5 °mph,0 °mph,30.53 °in,0.0 °in,Cloudy
+2024-01-23 00:51:00,38 °F,31 °F,76 °%,E,5 °mph,0 °mph,30.52 °in,0.0 °in,Light Rain
+2024-01-24 01:51:00,37 °F,31 °F,79 °%,ENE,6 °mph,0 °mph,30.52 °in,0.0 °in,Cloudy
+2024-01-24 02:51:00,37 °F,30 °F,76 °%,ENE,6 °mph,0 °mph,30.52 °in,0.0 °in,Cloudy
+2024-01-24 03:51:00,37 °F,30 °F,76 °%,E,7 °mph,0 °mph,30.53 °in,0.0 °in,Cloudy
+2024-01-24 04:51:00,37 °F,30 °F,76 °%,E,5 °mph,0 °mph,30.52 °in,0.0 °in,Light Rain
+2024-01-24 05:51:00,37 °F,31 °F,79 °%,ENE,6 °mph,0 °mph,30.52 °in,0.0 °in,Cloudy
+2024-01-24 06:33:00,37 °F,32 °F,82 °%,E,8 °mph,0 °mph,30.50 °in,0.0 °in,Cloudy
+2024-01-24 06:51:00,38 °F,32 °F,79 °%,E,8 °mph,0 °mph,30.50 °in,0.0 °in,Cloudy
+2024-01-24 07:51:00,39 °F,33 °F,79 °%,ESE,6 °mph,0 °mph,30.50 °in,0.0 °in,Cloudy
+2024-01-24 07:58:00,39 °F,33 °F,79 °%,E,7 °mph,0 °mph,30.51 °in,0.0 °in,Light Rain
+2024-01-24 08:51:00,38 °F,33 °F,83 °%,NE,9 °mph,0 °mph,30.51 °in,0.0 °in,Light Rain
+2024-01-24 09:00:00,38 °F,33 °F,83 °%,NE,10 °mph,0 °mph,30.50 °in,0.0 °in,Light Rain
+2024-01-24 09:51:00,38 °F,34 °F,86 °%,ENE,7 °mph,0 °mph,30.49 °in,0.0 °in,Cloudy
+2024-01-24 10:51:00,39 °F,35 °F,86 °%,NE,9 °mph,0 °mph,30.49 °in,0.0 °in,Cloudy
+2024-01-24 11:51:00,39 °F,35 °F,86 °%,NE,10 °mph,0 °mph,30.49 °in,0.0 °in,Cloudy
+2024-01-24 12:01:00,39 °F,35 °F,86 °%,NE,8 °mph,0 °mph,30.48 °in,0.0 °in,Mist
+2024-01-24 12:15:00,39 °F,35 °F,86 °%,NE,8 °mph,0 °mph,30.48 °in,0.0 °in,Light Drizzle
+2024-01-24 12:34:00,39 °F,35 °F,86 °%,NE,7 °mph,0 °mph,30.47 °in,0.0 °in,Light Drizzle
+2024-01-24 12:51:00,39 °F,36 °F,89 °%,NE,7 °mph,0 °mph,30.46 °in,0.0 °in,Light Drizzle
+2024-01-24 12:58:00,39 °F,36 °F,89 °%,NE,8 °mph,0 °mph,30.46 °in,0.0 °in,Light Drizzle
+2024-01-24 13:36:00,39 °F,36 °F,89 °%,NE,9 °mph,0 °mph,30.44 °in,0.0 °in,Light Drizzle
+2024-01-24 13:51:00,39 °F,36 °F,89 °%,NE,7 °mph,0 °mph,30.44 °in,0.0 °in,Light Drizzle
+2024-01-24 14:26:00,40 °F,37 °F,89 °%,ENE,9 °mph,0 °mph,30.41 °in,0.0 °in,Drizzle and Fog
+2024-01-24 14:46:00,39 °F,37 °F,93 °%,NE,7 °mph,0 °mph,30.41 °in,0.0 °in,Light Drizzle
+2024-01-24 14:51:00,40 °F,37 °F,89 °%,NE,8 °mph,0 °mph,30.41 °in,0.0 °in,Light Drizzle
+2024-01-24 15:51:00,40 °F,37 °F,89 °%,NE,6 °mph,0 °mph,30.40 °in,0.0 °in,Light Drizzle
+2024-01-24 16:02:00,40 °F,38 °F,93 °%,ENE,6 °mph,0 °mph,30.39 °in,0.0 °in,Light Rain
+2024-01-24 16:39:00,41 °F,38 °F,89 °%,ENE,7 °mph,0 °mph,30.37 °in,0.0 °in,Light Rain
+2024-01-24 16:51:00,41 °F,38 °F,89 °%,ENE,6 °mph,0 °mph,30.37 °in,0.0 °in,Light Rain
+2024-01-24 17:27:00,41 °F,38 °F,89 °%,NE,7 °mph,0 °mph,30.36 °in,0.0 °in,Light Drizzle
+2024-01-24 17:51:00,41 °F,38 °F,89 °%,NE,7 °mph,0 °mph,30.35 °in,0.0 °in,Light Drizzle
+2024-01-24 18:35:00,41 °F,38 °F,89 °%,NE,6 °mph,0 °mph,30.34 °in,0.0 °in,Light Drizzle
+2024-01-24 18:42:00,40 °F,37 °F,89 °%,NE,6 °mph,0 °mph,30.34 °in,0.0 °in,Light Drizzle
+2024-01-24 18:51:00,40 °F,38 °F,93 °%,NE,7 °mph,0 °mph,30.34 °in,0.0 °in,Light Drizzle
+2024-01-24 19:51:00,42 °F,39 °F,89 °%,ENE,6 °mph,0 °mph,30.33 °in,0.0 °in,Light Drizzle
+2024-01-24 20:51:00,42 °F,40 °F,92 °%,VAR,3 °mph,0 °mph,30.30 °in,0.0 °in,Light Rain
+2024-01-24 21:18:00,42 °F,39 °F,89 °%,ENE,6 °mph,0 °mph,30.28 °in,0.0 °in,Light Rain
+2024-01-24 21:51:00,43 °F,40 °F,89 °%,E,3 °mph,0 °mph,30.27 °in,0.0 °in,Light Rain
+2024-01-24 22:51:00,42 °F,39 °F,89 °%,ENE,6 °mph,0 °mph,30.24 °in,0.0 °in,Light Drizzle
+2024-01-24 23:02:00,42 °F,39 °F,89 °%,NE,3 °mph,0 °mph,30.24 °in,0.0 °in,Light Drizzle
+2024-01-24 23:30:00,43 °F,41 °F,93 °%,CALM,0 °mph,0 °mph,30.23 °in,0.0 °in,Mist
+2024-01-24 23:51:00,42 °F,39 °F,89 °%,NNE,3 °mph,0 °mph,30.23 °in,0.0 °in,Mist
+2024-01-24 00:51:00,42 °F,40 °F,92 °%,CALM,0 °mph,0 °mph,30.20 °in,0.0 °in,Light Rain
+2024-01-25 01:51:00,42 °F,40 °F,92 °%,ENE,5 °mph,0 °mph,30.15 °in,0.0 °in,Light Rain
+2024-01-25 02:51:00,48 °F,45 °F,89 °%,S,6 °mph,0 °mph,30.13 °in,0.0 °in,Light Rain
+2024-01-25 03:28:00,49 °F,46 °F,90 °%,S,6 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-25 03:51:00,49 °F,46 °F,90 °%,SSW,5 °mph,0 °mph,30.12 °in,0.0 °in,Light Rain
+2024-01-25 04:44:00,50 °F,47 °F,89 °%,VAR,5 °mph,0 °mph,30.10 °in,0.0 °in,Light Rain
+2024-01-25 04:51:00,50 °F,47 °F,89 °%,VAR,3 °mph,0 °mph,30.10 °in,0.0 °in,Light Rain
+2024-01-25 05:28:00,50 °F,47 °F,89 °%,S,6 °mph,0 °mph,30.08 °in,0.0 °in,Light Rain
+2024-01-25 05:51:00,50 °F,47 °F,89 °%,S,5 °mph,0 °mph,30.09 °in,0.0 °in,Light Rain
+2024-01-25 06:06:00,50 °F,47 °F,89 °%,S,5 °mph,0 °mph,30.09 °in,0.0 °in,Light Rain
+2024-01-25 06:43:00,51 °F,48 °F,89 °%,S,3 °mph,0 °mph,30.09 °in,0.0 °in,Rain
+2024-01-25 06:51:00,51 °F,48 °F,89 °%,SW,13 °mph,22 °mph,30.09 °in,0.0 °in,Rain
+2024-01-25 07:12:00,52 °F,48 °F,86 °%,WSW,9 °mph,0 °mph,30.10 °in,0.0 °in,Rain
+2024-01-25 07:51:00,51 °F,48 °F,89 °%,SW,7 °mph,0 °mph,30.10 °in,0.1 °in,Light Rain
+2024-01-25 08:51:00,53 °F,49 °F,86 °%,WSW,5 °mph,0 °mph,30.11 °in,0.0 °in,Light Rain
+2024-01-25 09:51:00,53 °F,49 °F,86 °%,WSW,9 °mph,0 °mph,30.10 °in,0.0 °in,Light Rain
+2024-01-25 10:51:00,53 °F,50 °F,89 °%,WSW,8 °mph,0 °mph,30.11 °in,0.0 °in,Light Rain
+2024-01-25 11:28:00,54 °F,51 °F,90 °%,SSW,5 °mph,0 °mph,30.11 °in,0.0 °in,Light Rain
+2024-01-25 11:51:00,54 °F,51 °F,90 °%,NW,3 °mph,0 °mph,30.10 °in,0.0 °in,Mist
+2024-01-25 12:51:00,56 °F,51 °F,84 °%,WNW,5 °mph,0 °mph,30.08 °in,0.0 °in,Cloudy
+2024-01-25 13:05:00,55 °F,50 °F,83 °%,NW,3 °mph,0 °mph,30.08 °in,0.0 °in,Cloudy
+2024-01-25 13:51:00,53 °F,49 °F,86 °%,NW,7 °mph,0 °mph,30.08 °in,0.0 °in,Cloudy
+2024-01-25 14:51:00,55 °F,51 °F,86 °%,CALM,0 °mph,0 °mph,30.07 °in,0.0 °in,Light Rain
+2024-01-25 15:51:00,55 °F,51 °F,86 °%,NNE,5 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-25 16:51:00,54 °F,51 °F,90 °%,E,7 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-25 17:49:00,54 °F,50 °F,88 °%,ENE,6 °mph,0 °mph,30.10 °in,0.0 °in,Cloudy
+2024-01-25 17:51:00,54 °F,50 °F,86 °%,ENE,6 °mph,0 °mph,30.10 °in,0.0 °in,Cloudy
+2024-01-25 18:12:00,54 °F,50 °F,86 °%,ENE,6 °mph,0 °mph,30.10 °in,0.0 °in,Cloudy
+2024-01-25 18:51:00,53 °F,49 °F,86 °%,NE,7 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-25 19:51:00,52 °F,49 °F,89 °%,ENE,6 °mph,0 °mph,30.14 °in,0.0 °in,Cloudy
+2024-01-25 20:51:00,51 °F,49 °F,92 °%,ENE,5 °mph,0 °mph,30.16 °in,0.0 °in,Cloudy
+2024-01-25 21:51:00,50 °F,48 °F,93 °%,NE,9 °mph,0 °mph,30.16 °in,0.0 °in,Mist
+2024-01-25 21:59:00,50 °F,48 °F,93 °%,NE,9 °mph,0 °mph,30.16 °in,0.0 °in,Cloudy
+2024-01-25 22:51:00,48 °F,46 °F,93 °%,NNE,7 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-25 23:23:00,48 °F,46 °F,93 °%,NE,8 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-25 23:49:00,45 °F,41 °F,87 °%,NE,14 °mph,0 °mph,30.18 °in,0.0 °in,Light Rain
+2024-01-25 23:51:00,44 °F,41 °F,89 °%,ENE,13 °mph,0 °mph,30.18 °in,0.0 °in,Light Rain
+2024-01-25 00:02:00,43 °F,40 °F,89 °%,NE,13 °mph,0 °mph,30.18 °in,0.0 °in,Light Rain
+2024-01-25 00:31:00,42 °F,39 °F,89 °%,NE,13 °mph,0 °mph,30.18 °in,0.0 °in,Mist
+2024-01-25 00:40:00,42 °F,39 °F,89 °%,NE,13 °mph,0 °mph,30.18 °in,0.0 °in,Light Drizzle
+2024-01-25 00:42:00,42 °F,39 °F,89 °%,NE,12 °mph,0 °mph,30.18 °in,0.0 °in,Light Drizzle
+2024-01-25 00:51:00,42 °F,39 °F,89 °%,NE,12 °mph,0 °mph,30.18 °in,0.0 °in,Light Drizzle
+2024-01-26 01:02:00,42 °F,39 °F,89 °%,NE,12 °mph,0 °mph,30.17 °in,0.0 °in,Light Rain
+2024-01-26 01:42:00,42 °F,39 °F,89 °%,NE,10 °mph,0 °mph,30.17 °in,0.0 °in,Light Rain
+2024-01-26 01:51:00,42 °F,39 °F,89 °%,NE,12 °mph,0 °mph,30.16 °in,0.0 °in,Light Rain
+2024-01-26 02:10:00,42 °F,39 °F,89 °%,ENE,9 °mph,0 °mph,30.14 °in,0.0 °in,Light Rain
+2024-01-26 02:44:00,42 °F,39 °F,89 °%,NE,9 °mph,0 °mph,30.13 °in,0.0 °in,Cloudy
+2024-01-26 02:51:00,42 °F,39 °F,89 °%,NE,8 °mph,0 °mph,30.13 °in,0.0 °in,Cloudy
+2024-01-26 03:51:00,41 °F,38 °F,89 °%,NE,12 °mph,0 °mph,30.11 °in,0.0 °in,Light Rain
+2024-01-26 04:42:00,41 °F,38 °F,89 °%,NE,12 °mph,0 °mph,30.10 °in,0.0 °in,Light Rain
+2024-01-26 04:51:00,41 °F,38 °F,89 °%,NE,12 °mph,0 °mph,30.10 °in,0.0 °in,Light Rain
+2024-01-26 05:18:00,40 °F,38 °F,93 °%,ENE,13 °mph,0 °mph,30.09 °in,0.0 °in,Light Rain
+2024-01-26 05:35:00,40 °F,38 °F,93 °%,NE,9 °mph,0 °mph,30.10 °in,0.0 °in,Light Rain
+2024-01-26 05:43:00,40 °F,38 °F,93 °%,NE,10 °mph,0 °mph,30.09 °in,0.0 °in,Light Rain
+2024-01-26 05:51:00,40 °F,38 °F,93 °%,NE,9 °mph,0 °mph,30.08 °in,0.1 °in,Light Rain
+2024-01-26 06:51:00,40 °F,38 °F,93 °%,NE,10 °mph,0 °mph,30.07 °in,0.0 °in,Light Rain
+2024-01-26 07:51:00,41 °F,38 °F,89 °%,NE,12 °mph,0 °mph,30.06 °in,0.0 °in,Mist
+2024-01-26 07:54:00,41 °F,38 °F,89 °%,NE,12 °mph,0 °mph,30.06 °in,0.0 °in,Mist
+2024-01-26 08:28:00,41 °F,38 °F,89 °%,NE,10 °mph,0 °mph,30.06 °in,0.0 °in,Light Rain
+2024-01-26 08:51:00,42 °F,38 °F,85 °%,NE,14 °mph,0 °mph,30.05 °in,0.0 °in,Light Rain
+2024-01-26 09:51:00,41 °F,38 °F,89 °%,NE,14 °mph,0 °mph,30.04 °in,0.0 °in,Mist
+2024-01-26 10:51:00,41 °F,38 °F,89 °%,NE,15 °mph,0 °mph,30.04 °in,0.0 °in,Light Drizzle
+2024-01-26 11:51:00,42 °F,39 °F,89 °%,NE,20 °mph,0 °mph,30.05 °in,0.0 °in,Light Rain
+2024-01-26 12:26:00,42 °F,39 °F,89 °%,NE,17 °mph,26 °mph,30.02 °in,0.0 °in,Light Drizzle
+2024-01-26 12:51:00,42 °F,39 °F,89 °%,NE,12 °mph,0 °mph,30.00 °in,0.0 °in,Light Drizzle
+2024-01-26 13:51:00,42 °F,39 °F,89 °%,NE,13 °mph,0 °mph,29.97 °in,0.0 °in,Cloudy
+2024-01-26 14:51:00,41 °F,38 °F,89 °%,NE,14 °mph,0 °mph,29.97 °in,0.0 °in,Cloudy
+2024-01-26 14:58:00,42 °F,38 °F,85 °%,NE,12 °mph,0 °mph,29.97 °in,0.0 °in,Mist
+2024-01-26 15:17:00,41 °F,39 °F,93 °%,NE,12 °mph,0 °mph,29.97 °in,0.0 °in,Light Drizzle
+2024-01-26 15:51:00,41 °F,39 °F,93 °%,NE,8 °mph,0 °mph,29.98 °in,0.0 °in,Light Drizzle
+2024-01-26 16:39:00,42 °F,39 °F,89 °%,ENE,9 °mph,0 °mph,29.99 °in,0.0 °in,Mist
+2024-01-26 16:51:00,42 °F,39 °F,89 °%,ENE,7 °mph,0 °mph,29.98 °in,0.0 °in,Mist
+2024-01-26 17:22:00,42 °F,39 °F,89 °%,NE,8 °mph,0 °mph,29.97 °in,0.0 °in,Mist
+2024-01-26 17:32:00,42 °F,39 °F,89 °%,NE,7 °mph,0 °mph,29.97 °in,0.0 °in,Mist
+2024-01-26 17:51:00,43 °F,40 °F,89 °%,NE,5 °mph,0 °mph,29.98 °in,0.0 °in,Mist
+2024-01-26 18:51:00,43 °F,40 °F,89 °%,CALM,0 °mph,0 °mph,29.99 °in,0.0 °in,Mist
+2024-01-26 19:51:00,42 °F,40 °F,92 °%,NNE,5 °mph,0 °mph,30.02 °in,0.0 °in,Mist
+2024-01-26 20:51:00,43 °F,40 °F,89 °%,ENE,9 °mph,0 °mph,30.05 °in,0.0 °in,Mist
+2024-01-26 21:51:00,43 °F,40 °F,89 °%,E,3 °mph,0 °mph,30.05 °in,0.0 °in,Mist
+2024-01-26 22:51:00,42 °F,40 °F,92 °%,E,6 °mph,0 °mph,30.06 °in,0.0 °in,Fog
+2024-01-26 23:10:00,42 °F,40 °F,92 °%,E,6 °mph,0 °mph,30.06 °in,0.0 °in,Fog
+2024-01-26 23:25:00,43 °F,40 °F,89 °%,SE,5 °mph,0 °mph,30.06 °in,0.0 °in,Fog
+2024-01-26 23:51:00,43 °F,40 °F,89 °%,E,7 °mph,0 °mph,30.05 °in,0.0 °in,Mist
+2024-01-26 00:32:00,42 °F,40 °F,92 °%,E,6 °mph,0 °mph,30.06 °in,0.0 °in,Mist
+2024-01-26 00:37:00,42 °F,40 °F,92 °%,E,6 °mph,0 °mph,30.07 °in,0.0 °in,Mist
+2024-01-26 00:48:00,43 °F,39 °F,87 °%,E,6 °mph,0 °mph,30.07 °in,0.0 °in,Mist
+2024-01-26 00:51:00,42 °F,40 °F,92 °%,E,6 °mph,0 °mph,30.07 °in,0.0 °in,Mist
+2024-01-27 01:08:00,42 °F,40 °F,92 °%,E,6 °mph,0 °mph,30.07 °in,0.0 °in,Fog
+2024-01-27 01:51:00,42 °F,41 °F,96 °%,CALM,0 °mph,0 °mph,30.07 °in,0.0 °in,Fog
+2024-01-27 02:05:00,43 °F,42 °F,97 °%,CALM,0 °mph,0 °mph,30.07 °in,0.0 °in,Fog
+2024-01-27 02:42:00,42 °F,41 °F,96 °%,CALM,0 °mph,0 °mph,30.07 °in,0.0 °in,Fog
+2024-01-27 02:51:00,43 °F,42 °F,97 °%,CALM,0 °mph,0 °mph,30.08 °in,0.0 °in,Fog
+2024-01-27 03:01:00,43 °F,42 °F,97 °%,CALM,0 °mph,0 °mph,30.08 °in,0.0 °in,Mist
+2024-01-27 03:33:00,42 °F,39 °F,89 °%,NE,7 °mph,0 °mph,30.09 °in,0.0 °in,Mist
+2024-01-27 03:47:00,43 °F,39 °F,87 °%,NE,8 °mph,0 °mph,30.09 °in,0.0 °in,Mist
+2024-01-27 03:51:00,42 °F,39 °F,89 °%,NE,9 °mph,0 °mph,30.09 °in,0.0 °in,Fog
+2024-01-27 04:51:00,41 °F,39 °F,93 °%,ENE,5 °mph,0 °mph,30.09 °in,0.0 °in,Fog
+2024-01-27 05:40:00,41 °F,39 °F,93 °%,ENE,7 °mph,0 °mph,30.10 °in,0.0 °in,Fog
+2024-01-27 05:48:00,41 °F,39 °F,93 °%,ENE,6 °mph,0 °mph,30.10 °in,0.0 °in,Mist
+2024-01-27 05:51:00,42 °F,39 °F,89 °%,ENE,6 °mph,0 °mph,30.11 °in,0.0 °in,Mist
+2024-01-27 06:06:00,42 °F,40 °F,92 °%,E,5 °mph,0 °mph,30.11 °in,0.0 °in,Cloudy
+2024-01-27 06:21:00,42 °F,39 °F,89 °%,ENE,7 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-27 06:44:00,41 °F,39 °F,93 °%,NE,5 °mph,0 °mph,30.12 °in,0.0 °in,Mist
+2024-01-27 06:48:00,41 °F,39 °F,93 °%,NE,6 °mph,0 °mph,30.13 °in,0.0 °in,Mist
+2024-01-27 06:51:00,41 °F,39 °F,93 °%,NE,6 °mph,0 °mph,30.13 °in,0.0 °in,Mist
+2024-01-27 07:48:00,41 °F,39 °F,93 °%,ENE,3 °mph,0 °mph,30.15 °in,0.0 °in,Cloudy
+2024-01-27 07:51:00,41 °F,39 °F,93 °%,ENE,3 °mph,0 °mph,30.15 °in,0.0 °in,Cloudy
+2024-01-27 08:40:00,42 °F,39 °F,89 °%,NE,6 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 08:51:00,42 °F,39 °F,89 °%,ENE,7 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 09:13:00,41 °F,39 °F,93 °%,ENE,7 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-27 09:51:00,42 °F,39 °F,89 °%,ENE,7 °mph,0 °mph,30.20 °in,0.0 °in,Cloudy
+2024-01-27 10:51:00,43 °F,40 °F,89 °%,ENE,7 °mph,0 °mph,30.20 °in,0.0 °in,Mostly Cloudy
+2024-01-27 11:27:00,44 °F,40 °F,85 °%,ENE,6 °mph,0 °mph,30.21 °in,0.0 °in,Mostly Cloudy
+2024-01-27 11:51:00,44 °F,39 °F,82 °%,ENE,7 °mph,0 °mph,30.21 °in,0.0 °in,Mostly Cloudy
+2024-01-27 12:51:00,45 °F,37 °F,74 °%,ENE,7 °mph,0 °mph,30.19 °in,0.0 °in,Mostly Cloudy
+2024-01-27 13:46:00,45 °F,37 °F,76 °%,ENE,6 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 13:51:00,44 °F,36 °F,73 °%,ENE,7 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 14:51:00,45 °F,37 °F,74 °%,ENE,5 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 15:51:00,45 °F,36 °F,71 °%,ENE,5 °mph,0 °mph,30.18 °in,0.0 °in,Mostly Cloudy
+2024-01-27 16:51:00,47 °F,37 °F,68 °%,CALM,0 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-27 17:51:00,45 °F,36 °F,71 °%,ENE,5 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 18:51:00,45 °F,35 °F,68 °%,N,6 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 19:51:00,44 °F,35 °F,71 °%,ENE,7 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-27 20:14:00,42 °F,35 °F,76 °%,NE,9 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-27 20:38:00,43 °F,36 °F,76 °%,ENE,7 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-27 20:51:00,43 °F,36 °F,76 °%,ENE,7 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 21:51:00,43 °F,35 °F,74 °%,ENE,5 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 22:02:00,42 °F,35 °F,76 °%,ENE,5 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 22:38:00,42 °F,36 °F,79 °%,SSE,6 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 22:51:00,43 °F,37 °F,80 °%,ESE,8 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-27 23:51:00,43 °F,37 °F,80 °%,SSE,7 °mph,0 °mph,30.16 °in,0.0 °in,Cloudy
+2024-01-27 00:51:00,43 °F,36 °F,76 °%,ESE,6 °mph,0 °mph,30.14 °in,0.0 °in,Cloudy
+2024-01-28 01:51:00,42 °F,35 °F,76 °%,SE,7 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-28 02:51:00,42 °F,35 °F,76 °%,ESE,9 °mph,0 °mph,30.10 °in,0.0 °in,Light Rain
+2024-01-28 03:46:00,41 °F,36 °F,81 °%,E,9 °mph,0 °mph,30.05 °in,0.0 °in,Light Rain
+2024-01-28 03:51:00,41 °F,35 °F,79 °%,ENE,9 °mph,0 °mph,30.05 °in,0.0 °in,Light Rain
+2024-01-28 04:51:00,40 °F,36 °F,86 °%,ENE,14 °mph,0 °mph,30.00 °in,0.1 °in,Rain
+2024-01-28 05:51:00,40 °F,36 °F,86 °%,NE,7 °mph,0 °mph,30.02 °in,0.1 °in,Rain
+2024-01-28 06:51:00,39 °F,36 °F,89 °%,ENE,8 °mph,0 °mph,29.98 °in,0.1 °in,Light Rain
+2024-01-28 07:51:00,40 °F,36 °F,86 °%,E,10 °mph,0 °mph,29.96 °in,0.1 °in,Rain
+2024-01-28 08:51:00,40 °F,36 °F,86 °%,ENE,8 °mph,0 °mph,29.94 °in,0.1 °in,Light Rain
+2024-01-28 09:51:00,39 °F,36 °F,89 °%,ENE,12 °mph,0 °mph,29.90 °in,0.1 °in,Rain
+2024-01-28 10:51:00,40 °F,36 °F,86 °%,NE,13 °mph,0 °mph,29.84 °in,0.1 °in,Light Rain
+2024-01-28 11:51:00,41 °F,36 °F,82 °%,NE,22 °mph,30 °mph,29.80 °in,0.0 °in,Cloudy / Windy
+2024-01-28 12:51:00,39 °F,35 °F,86 °%,NE,20 °mph,0 °mph,29.75 °in,0.0 °in,Light Rain
+2024-01-28 13:51:00,40 °F,36 °F,86 °%,NE,24 °mph,0 °mph,29.71 °in,0.0 °in,Light Rain / Windy
+2024-01-28 14:19:00,39 °F,35 °F,86 °%,ENE,29 °mph,35 °mph,29.69 °in,0.0 °in,Light Rain / Windy
+2024-01-28 14:51:00,39 °F,35 °F,86 °%,NE,24 °mph,33 °mph,29.66 °in,0.0 °in,Light Rain / Windy
+2024-01-28 15:51:00,39 °F,35 °F,86 °%,NE,23 °mph,0 °mph,29.65 °in,0.0 °in,Light Rain / Windy
+2024-01-28 16:51:00,39 °F,35 °F,86 °%,NE,16 °mph,0 °mph,29.64 °in,0.0 °in,Light Rain
+2024-01-28 17:51:00,39 °F,35 °F,86 °%,N,14 °mph,21 °mph,29.64 °in,0.0 °in,Light Rain
+2024-01-28 18:51:00,39 °F,35 °F,86 °%,N,9 °mph,18 °mph,29.63 °in,0.0 °in,Light Rain
+2024-01-28 19:51:00,38 °F,34 °F,86 °%,N,13 °mph,25 °mph,29.63 °in,0.0 °in,Light Rain
+2024-01-28 20:51:00,38 °F,34 °F,86 °%,N,13 °mph,0 °mph,29.62 °in,0.0 °in,Light Rain
+2024-01-28 21:51:00,38 °F,34 °F,86 °%,N,9 °mph,0 °mph,29.61 °in,0.0 °in,Light Rain
+2024-01-28 22:51:00,38 °F,34 °F,86 °%,N,12 °mph,0 °mph,29.61 °in,0.0 °in,Light Rain
+2024-01-28 23:51:00,38 °F,34 °F,86 °%,N,10 °mph,0 °mph,29.61 °in,0.0 °in,Light Rain
+2024-01-28 00:51:00,38 °F,34 °F,86 °%,N,10 °mph,0 °mph,29.61 °in,0.0 °in,Light Rain
+2024-01-29 01:51:00,37 °F,33 °F,86 °%,N,12 °mph,0 °mph,29.62 °in,0.0 °in,Light Rain
+2024-01-29 02:51:00,37 °F,33 °F,86 °%,N,14 °mph,0 °mph,29.63 °in,0.0 °in,Light Rain
+2024-01-29 03:48:00,37 °F,32 °F,81 °%,N,14 °mph,0 °mph,29.64 °in,0.0 °in,Light Rain
+2024-01-29 03:51:00,37 °F,32 °F,82 °%,N,12 °mph,0 °mph,29.64 °in,0.0 °in,Light Rain
+2024-01-29 04:51:00,37 °F,32 °F,82 °%,N,8 °mph,0 °mph,29.66 °in,0.0 °in,Light Rain
+2024-01-29 05:43:00,38 °F,32 °F,79 °%,N,12 °mph,0 °mph,29.67 °in,0.0 °in,Cloudy
+2024-01-29 05:51:00,38 °F,31 °F,76 °%,N,16 °mph,23 °mph,29.67 °in,0.0 °in,Cloudy
+2024-01-29 06:51:00,37 °F,30 °F,76 °%,NNW,12 °mph,0 °mph,29.69 °in,0.0 °in,Light Rain
+2024-01-29 07:51:00,37 °F,30 °F,76 °%,N,12 °mph,0 °mph,29.72 °in,0.0 °in,Cloudy
+2024-01-29 08:51:00,37 °F,30 °F,76 °%,NNW,15 °mph,21 °mph,29.75 °in,0.0 °in,Cloudy
+2024-01-29 09:51:00,37 °F,30 °F,76 °%,N,12 °mph,22 °mph,29.77 °in,0.0 °in,Cloudy
+2024-01-29 10:51:00,37 °F,30 °F,76 °%,NNW,13 °mph,0 °mph,29.80 °in,0.0 °in,Cloudy
+2024-01-29 11:51:00,38 °F,30 °F,73 °%,NNW,15 °mph,0 °mph,29.82 °in,0.0 °in,Cloudy
+2024-01-29 12:51:00,38 °F,29 °F,70 °%,N,17 °mph,22 °mph,29.82 °in,0.0 °in,Cloudy
+2024-01-29 13:41:00,38 °F,29 °F,70 °%,N,14 °mph,0 °mph,29.83 °in,0.0 °in,Cloudy
+2024-01-29 13:51:00,38 °F,29 °F,70 °%,N,12 °mph,0 °mph,29.83 °in,0.0 °in,Cloudy
+2024-01-29 14:51:00,38 °F,29 °F,70 °%,N,9 °mph,20 °mph,29.83 °in,0.0 °in,Cloudy
+2024-01-29 15:26:00,39 °F,29 °F,67 °%,N,10 °mph,0 °mph,29.85 °in,0.0 °in,Cloudy
+2024-01-29 15:51:00,38 °F,28 °F,68 °%,N,12 °mph,0 °mph,29.85 °in,0.0 °in,Cloudy
+2024-01-29 16:51:00,38 °F,27 °F,65 °%,N,15 °mph,0 °mph,29.89 °in,0.0 °in,Cloudy
+2024-01-29 17:51:00,37 °F,27 °F,67 °%,N,14 °mph,0 °mph,29.92 °in,0.0 °in,Cloudy
+2024-01-29 18:51:00,37 °F,27 °F,67 °%,N,9 °mph,0 °mph,29.95 °in,0.0 °in,Cloudy
+2024-01-29 19:51:00,37 °F,26 °F,65 °%,NNE,10 °mph,0 °mph,29.99 °in,0.0 °in,Cloudy
+2024-01-29 20:51:00,37 °F,25 °F,62 °%,N,9 °mph,0 °mph,30.02 °in,0.0 °in,Cloudy
+2024-01-29 21:51:00,37 °F,26 °F,65 °%,N,10 °mph,0 °mph,30.04 °in,0.0 °in,Cloudy
+2024-01-29 22:51:00,37 °F,26 °F,65 °%,N,10 °mph,0 °mph,30.06 °in,0.0 °in,Cloudy
+2024-01-29 23:51:00,36 °F,26 °F,67 °%,NNE,13 °mph,0 °mph,30.08 °in,0.0 °in,Cloudy
+2024-01-29 00:51:00,36 °F,25 °F,64 °%,N,10 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-30 01:51:00,36 °F,25 °F,64 °%,NNE,7 °mph,0 °mph,30.10 °in,0.0 °in,Cloudy
+2024-01-30 02:51:00,36 °F,23 °F,59 °%,N,12 °mph,0 °mph,30.10 °in,0.0 °in,Cloudy
+2024-01-30 03:51:00,36 °F,23 °F,59 °%,N,12 °mph,0 °mph,30.11 °in,0.0 °in,Cloudy
+2024-01-30 04:51:00,35 °F,23 °F,61 °%,N,8 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-30 05:51:00,35 °F,23 °F,61 °%,N,7 °mph,0 °mph,30.13 °in,0.0 °in,Cloudy
+2024-01-30 06:51:00,35 °F,23 °F,61 °%,NNE,7 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-30 07:51:00,35 °F,22 °F,59 °%,NE,7 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-30 08:51:00,36 °F,22 °F,57 °%,NE,5 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-30 09:51:00,36 °F,21 °F,55 °%,NE,7 °mph,0 °mph,30.20 °in,0.0 °in,Cloudy
+2024-01-30 10:51:00,37 °F,22 °F,54 °%,ENE,9 °mph,0 °mph,30.21 °in,0.0 °in,Cloudy
+2024-01-30 11:51:00,37 °F,23 °F,57 °%,E,9 °mph,0 °mph,30.21 °in,0.0 °in,Cloudy
+2024-01-30 12:51:00,37 °F,24 °F,59 °%,ENE,8 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-30 13:05:00,37 °F,24 °F,59 °%,ENE,9 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-30 13:51:00,36 °F,24 °F,62 °%,NE,7 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-30 14:05:00,36 °F,25 °F,64 °%,NE,7 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-30 14:51:00,37 °F,23 °F,57 °%,ESE,7 °mph,0 °mph,30.18 °in,0.0 °in,Cloudy
+2024-01-30 15:51:00,38 °F,22 °F,53 °%,SE,8 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-30 16:51:00,38 °F,21 °F,51 °%,SE,7 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-30 17:51:00,38 °F,22 °F,53 °%,SE,9 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-30 18:51:00,37 °F,23 °F,57 °%,SE,8 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-30 19:42:00,37 °F,26 °F,65 °%,ESE,9 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-30 19:51:00,37 °F,26 °F,65 °%,ESE,14 °mph,0 °mph,30.17 °in,0.0 °in,Cloudy
+2024-01-30 20:51:00,36 °F,27 °F,70 °%,SE,12 °mph,0 °mph,30.19 °in,0.0 °in,Cloudy
+2024-01-30 20:59:00,36 °F,28 °F,73 °%,ESE,10 °mph,0 °mph,30.19 °in,0.0 °in,Light Snow
+2024-01-30 21:51:00,35 °F,29 °F,78 °%,ESE,12 °mph,0 °mph,30.18 °in,0.0 °in,Light Snow
+2024-01-30 22:27:00,35 °F,29 °F,78 °%,ESE,10 °mph,0 °mph,30.17 °in,0.0 °in,Light Snow
+2024-01-30 22:51:00,35 °F,29 °F,78 °%,SE,12 °mph,0 °mph,30.17 °in,0.0 °in,Light Snow
+2024-01-30 23:18:00,35 °F,29 °F,78 °%,ESE,8 °mph,0 °mph,30.17 °in,0.0 °in,Light Snow
+2024-01-30 23:51:00,35 °F,29 °F,78 °%,SE,13 °mph,0 °mph,30.16 °in,0.0 °in,Light Snow
+2024-01-30 00:51:00,35 °F,28 °F,76 °%,SE,10 °mph,0 °mph,30.16 °in,0.0 °in,Light Snow
+2024-01-31 01:51:00,35 °F,27 °F,72 °%,SE,12 °mph,0 °mph,30.14 °in,0.0 °in,Light Snow
+2024-01-31 02:51:00,35 °F,28 °F,76 °%,SE,9 °mph,0 °mph,30.15 °in,0.0 °in,Light Snow
+2024-01-31 03:28:00,34 °F,28 °F,79 °%,E,7 °mph,0 °mph,30.15 °in,0.0 °in,Light Snow
+2024-01-31 03:51:00,34 °F,29 °F,82 °%,ESE,8 °mph,0 °mph,30.14 °in,0.0 °in,Light Snow
+2024-01-31 04:41:00,34 °F,29 °F,82 °%,E,9 °mph,0 °mph,30.13 °in,0.0 °in,Light Snow
+2024-01-31 04:51:00,34 °F,29 °F,82 °%,E,12 °mph,0 °mph,30.13 °in,0.0 °in,Light Snow
+2024-01-31 05:51:00,34 °F,28 °F,79 °%,E,8 °mph,0 °mph,30.12 °in,0.0 °in,Light Snow
+2024-01-31 06:16:00,35 °F,28 °F,76 °%,E,8 °mph,0 °mph,30.12 °in,0.0 °in,Light Snow
+2024-01-31 06:39:00,35 °F,27 °F,72 °%,E,8 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-31 06:51:00,35 °F,27 °F,72 °%,E,7 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-31 07:07:00,35 °F,27 °F,72 °%,ENE,7 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-31 07:51:00,35 °F,26 °F,70 °%,ENE,7 °mph,0 °mph,30.13 °in,0.0 °in,Cloudy
+2024-01-31 08:32:00,35 °F,26 °F,70 °%,E,8 °mph,0 °mph,30.13 °in,0.0 °in,Cloudy
+2024-01-31 08:51:00,36 °F,27 °F,70 °%,E,7 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-31 09:51:00,36 °F,26 °F,67 °%,VAR,7 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-31 10:51:00,37 °F,26 °F,65 °%,SE,7 °mph,0 °mph,30.11 °in,0.0 °in,Cloudy
+2024-01-31 11:18:00,37 °F,26 °F,65 °%,SE,10 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-31 11:51:00,38 °F,26 °F,62 °%,SE,7 °mph,0 °mph,30.12 °in,0.0 °in,Cloudy
+2024-01-31 12:13:00,38 °F,27 °F,65 °%,SSE,7 °mph,0 °mph,30.11 °in,0.0 °in,Cloudy
+2024-01-31 12:30:00,38 °F,27 °F,65 °%,SE,6 °mph,0 °mph,30.11 °in,0.0 °in,Cloudy
+2024-01-31 12:51:00,38 °F,26 °F,62 °%,SE,7 °mph,0 °mph,30.10 °in,0.0 °in,Cloudy
+2024-01-31 13:51:00,38 °F,27 °F,65 °%,SSE,7 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-31 14:24:00,39 °F,27 °F,62 °%,S,6 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-31 14:31:00,39 °F,27 °F,62 °%,VAR,3 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-31 14:51:00,39 °F,27 °F,62 °%,S,3 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-31 15:51:00,39 °F,27 °F,62 °%,ESE,5 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-31 16:51:00,39 °F,28 °F,65 °%,S,7 °mph,0 °mph,30.09 °in,0.0 °in,Cloudy
+2024-01-31 17:33:00,39 °F,28 °F,65 °%,S,6 °mph,0 °mph,30.08 °in,0.0 °in,Cloudy
+2024-01-31 17:51:00,39 °F,28 °F,65 °%,SSE,8 °mph,0 °mph,30.08 °in,0.0 °in,Cloudy
+2024-01-31 18:51:00,39 °F,28 °F,65 °%,S,8 °mph,0 °mph,30.08 °in,0.0 °in,Cloudy
+2024-01-31 19:51:00,39 °F,28 °F,65 °%,S,8 °mph,0 °mph,30.07 °in,0.0 °in,Cloudy
+2024-01-31 20:19:00,39 °F,28 °F,65 °%,VAR,6 °mph,0 °mph,30.07 °in,0.0 °in,Cloudy
+2024-01-31 20:51:00,40 °F,29 °F,65 °%,CALM,0 °mph,0 °mph,30.06 °in,0.0 °in,Cloudy
+2024-01-31 21:49:00,39 °F,28 °F,65 °%,CALM,0 °mph,0 °mph,30.06 °in,0.0 °in,Cloudy
+2024-01-31 21:51:00,40 °F,29 °F,65 °%,CALM,0 °mph,0 °mph,30.06 °in,0.0 °in,Cloudy
+2024-01-31 22:51:00,39 °F,30 °F,70 °%,NW,5 °mph,0 °mph,30.06 °in,0.0 °in,Mostly Cloudy
+2024-01-31 23:51:00,39 °F,30 °F,70 °%,NW,3 °mph,0 °mph,30.06 °in,0.0 °in,Cloudy
+2024-01-31 00:51:00,40 °F,30 °F,68 °%,NW,5 °mph,0 °mph,30.04 °in,0.0 °in,Cloudy
