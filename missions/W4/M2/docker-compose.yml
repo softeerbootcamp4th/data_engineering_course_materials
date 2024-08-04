@@ -1,0 +1,68 @@
+services:
+  hadoop-namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop2.7.4-java8
+    container_name: hadoop-namenode
+    ports:
+      - "9870:9870"
+    environment:
+      - CLUSTER_NAME=test
+    volumes:
+      - namenode:/hadoop/dfs/name
+
+  hadoop-datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop2.7.4-java8
+    container_name: hadoop-datanode
+    environment:
+      - CLUSTER_NAME=test
+      - CORE_CONF_fs_defaultFS=hdfs://hadoop-namenode:8020
+    volumes:
+      - datanode:/hadoop/dfs/data
+    depends_on:
+      - hadoop-namenode
+
+  spark-master:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile
+    container_name: spark-master
+    environment:
+      - SPARK_ROLE=master
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    depends_on:
+      - hadoop-namenode
+
+  spark-worker:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile
+    container_name: spark-worker
+    environment:
+      - SPARK_ROLE=worker
+    ports:
+      - "8081:8081"
+    depends_on:
+      - spark-master
+
+  spark-notebook:
+    build:
+      context: ./notebook
+      dockerfile: Dockerfile
+    container_name: spark-notebook
+    ports:
+      - "8888:8888"
+    environment:
+      - SPARK_MASTER=spark://spark-master:7077
+      - JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+      - PATH=$PATH:$JAVA_HOME/bin:/opt/conda/bin
+    volumes:
+      - ./notebooks:/home/jovyan/work
+      - ./data:/home/jovyan/data
+      - ./results:/home/jovyan/results
+    depends_on:
+      - spark-master
+
+volumes:
+  namenode:
+  datanode:
