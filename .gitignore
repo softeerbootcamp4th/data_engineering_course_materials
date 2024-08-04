@@ -5,6 +5,7 @@
 *ratings.csv
 *amazon_reviews
 *.tgz
+*NYC_TLC_data
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
