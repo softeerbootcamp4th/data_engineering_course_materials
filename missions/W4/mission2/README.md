@@ -58,7 +58,7 @@ exit
 <img width="539" alt="스크린샷 2024-08-04 오후 6 38 06" src="https://github.com/user-attachments/assets/d0b3c4e2-9b77-4104-ace5-24687ff103b7">
 
 
-## 6. Side Project (Demand Forecast for Wheelchair-Accessible Vehicles)
+## 7. Side Project (Demand Forecast for Wheelchair-Accessible Vehicles)
 - WAV(Wheelchair-Accessible Vehicles)의 수요 예측을 위해, WAV의 수요에 어떤 특징이 있는지 확인하고자 함.
 - 이를 위해, 전체 주행 데이터셋과 WAV 차량을 호출한 주행 데이터셋을 각각 시각화하여 비교함.
 - 시간대별 평균 호출 수, 날짜별 호출량을 평일/주말로 구분하여 시각화 하였다.
