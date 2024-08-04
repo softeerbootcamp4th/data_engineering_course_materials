@@ -75,12 +75,4 @@ RUN chown -R spark:hadoop $SPARK_HOME
 
 RUN echo "export JAVA_HOME="$(jrunscript -e 'java.lang.System.out.println(java.lang.System.getProperty("java.home"));')"" >> $HADOOP_CONF_DIR/hadoop-env.sh
 
-ENV SPARK_NO_DAEMONIZE=true
-
-COPY configs/* $HADOOP_CONF_DIR/
-COPY scripts/* /usr/local/bin/
-RUN chmod +x /usr/local/bin/*.sh
-
-WORKDIR $SPARK_HOME
-
 ENTRYPOINT ["/usr/local/bin/start.sh"]

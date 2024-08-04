@@ -24,7 +24,7 @@ services:
     depends_on:
       - hadoop-master
     ports:
-      - "8081:8081"
+      - "8081:8081" # Spark Worker UI
       - "9864:9864" # HDFS DataNode Web UI
       - "8042:8042" # YARN NodeManager Web UI
     volumes:
@@ -37,7 +37,7 @@ services:
     depends_on:
       - hadoop-master
     ports:
-      - "8082:8081"
+      - "8082:8081" # Spark Worker UI
       - "9865:9864" # HDFS DataNode Web UI
       - "8043:8042" # YARN NodeManager Web UI
     volumes:
