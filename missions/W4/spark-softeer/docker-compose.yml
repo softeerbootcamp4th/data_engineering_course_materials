@@ -1,0 +1,49 @@
+version: "2"
+services:
+  master:
+    build: .
+    hostname: master
+    ports:
+      - 4040:4040
+      - 7077:7077
+      - 8080:8080
+    volumes:
+      - type: bind
+        source: userdata/
+        target: /spark/userdata/
+    command: ./start.sh master
+  connect:
+    depends_on:
+      - master
+    build: .
+    hostname: connect
+    ports:
+      - 15002:15002
+    volumes:
+      - type: bind
+        source: userdata/
+        target: /spark/userdata/
+      - ./org.apache.spark_spark-connect_2.12-3.5.1.jar:/spark/jars/spark-connect_2.12-3.5.1.jar
+    command: ./start.sh connect
+  worker1:
+    depends_on:
+      - master
+    build: .
+    hostname: worker1
+    ports:
+      - 8081:8081
+    volumes:
+      - type: bind
+        source: userdata/
+        target: /spark/userdata/
+    command: ./start.sh worker
+  worker2:
+    depends_on:
+      - master
+    build: .
+    hostname: worker2
+    volumes:
+      - type: bind
+        source: userdata/
+        target: /spark/userdata/
+    command: ./start.sh worker
