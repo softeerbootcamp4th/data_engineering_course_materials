@@ -1,0 +1,51 @@
+services:
+  hadoop-master:
+    image: jnamu/hadoop-node:latest
+    container_name: hadoop-master
+    hostname: hadoop-master
+    ports:
+      - "9870:9870" # HDFS NameNode Web UI
+      - "8020:8020" # HDFS NameNode HDFS API
+      - "8088:8088" # YARN ResourceManager Web UI
+      - "9000:9000" # fs.DefaultFS
+    volumes:
+      - hdfs-master:/opt/hadoop/dfs
+    networks:
+      - hadoop
+
+  hadoop-slave1:
+    image: jnamu/hadoop-node:latest
+    container_name: hadoop-slave1
+    hostname: hadoop-slave1
+    depends_on:
+      - hadoop-master
+    ports:
+      - "9864:9864" # HDFS DataNode Web UI
+      - "8042:8042" # YARN NodeManager Web UI
+    volumes:
+      - hdfs-slave-1:/opt/hadoop/dfs
+    networks:
+      - hadoop
+
+  hadoop-slave2:
+    image: jnamu/hadoop-node:latest
+    container_name: hadoop-slave2
+    hostname: hadoop-slave2
+    depends_on:
+      - hadoop-master
+    ports:
+      - "9865:9864" # HDFS DataNode Web UI
+      - "8043:8042" # YARN NodeManager Web UI
+    volumes:
+      - hdfs-slave-2:/opt/hadoop/dfs
+    networks:
+      - hadoop
+
+networks:
+  hadoop:
+    driver: bridge
+
+volumes:
+  hdfs-master:
+  hdfs-slave-1:
+  hdfs-slave-2:

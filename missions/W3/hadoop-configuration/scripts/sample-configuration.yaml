@@ -1,0 +1,24 @@
+core-site:
+  fs.defaultFS: hdfs://hadoop-master:9000
+  hadoop.tmp.dir: /opt/hadoop/tmp
+  io.file.buffer.size: 131072
+
+hdfs-site:
+  dfs.replication: 2
+  dfs.blocksize: 134217728  # 128 MB
+  dfs.namenode.name.dir: file:///opt/hadoop/dfs/name
+  dfs.datanode.data.dir: file:///opt/hadoop/dfs/datanode
+  dfs.namenode.checkpoint.dir: file:///opt/hadoop/dfs/namesecondary
+
+mapred-site:
+  mapreduce.framework.name: yarn
+  mapreduce.jobhistory.address: hadoop-master:10020
+  mapreduce.task.io.sort.mb: 256
+  mapreduce.application.classpath: $HADOOP_HOME/share/hadoop/mapreduce/*:$HADOOP_HOME/share/hadoop/mapreduce/lib/*
+
+yarn-site:
+  yarn.resourcemanager.address: hadoop-master:8032
+  yarn.nodemanager.resource.memory-mb: 8192
+  yarn.scheduler.minimum-allocation-mb: 1024
+  yarn.resourcemanager.hostname: hadoop-master
+  yarn.nodemanager.aux-services: mapreduce_shuffle
