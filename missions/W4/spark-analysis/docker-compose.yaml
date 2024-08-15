@@ -12,10 +12,10 @@ services:
       - "7777:7777"
       - "9870:9870" # HDFS NameNode Web UI
       - "8020:8020" # HDFS NameNode HDFS API
-      - "8088:8088" # YARN ResourceManager Web UI
+      - "8088:8088" # YARN ResourceManager Web
       - "9000:9000" # fs.DefaultFS
     volumes:
-      - hadoop-master-data:/opt/hadoop/data
+      - spark-analysis_hadoop-master-data:/opt/hadoop/data
 
   hadoop-worker-1:
     image: jnamu/spark-analysis-node:latest
@@ -28,7 +28,7 @@ services:
       - "9864:9864" # HDFS DataNode Web UI
       - "8042:8042" # YARN NodeManager Web UI
     volumes:
-      - hadoop-master-data:/opt/hadoop/data
+      - spark-analysis_hadoop-slave1-data:/opt/hadoop/data
 
   hadoop-worker-2:
     image: jnamu/spark-analysis-node:latest
@@ -41,9 +41,12 @@ services:
       - "9865:9864" # HDFS DataNode Web UI
       - "8043:8042" # YARN NodeManager Web UI
     volumes:
-      - hadoop-master-data:/opt/hadoop/data
+      - spark-analysis_hadoop-slave2-data:/opt/hadoop/data
 
 volumes:
-  hadoop-master-data:
-  hadoop-slave1-data:
-  hadoop-slave2-data:
+  spark-analysis_hadoop-master-data:
+    external: true
+  spark-analysis_hadoop-slave1-data:
+    external: true
+  spark-analysis_hadoop-slave2-data:
+    external: true
