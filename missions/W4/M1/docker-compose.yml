@@ -1,0 +1,42 @@
+version: '3'
+services:
+  spark-master:
+    image: spark
+    container_name: spark-master
+    hostname: spark-master
+    ports:
+      - 8080:8080
+    volumes:
+      - spark-master-data:/usr/local/spark/data
+    environment:
+      - NODE_TYPE=master
+  
+  spark-worker1:
+    image: spark
+    container_name: spark-worker1
+    hostname: spark-worker1
+    ports:
+      - 8081:8081
+    volumes:
+      - spark-worker1-data:/usr/local/spark/data
+    depends_on:
+      - spark-master
+    environment:
+      - NODE_TYPE=worker
+
+  spark-worker2:
+    image: spark
+    container_name: spark-worker2
+    hostname: spark-worker2
+    ports:
+      - 8082:8081
+    volumes:
+      - spark-worker2-data:/usr/local/spark/data
+    depends_on:
+      - spark-master
+    environment:
+      - NODE_TYPE=worker
+volumes:
+  spark-master-data:
+  spark-worker1-data:
+  spark-worker2-data:
