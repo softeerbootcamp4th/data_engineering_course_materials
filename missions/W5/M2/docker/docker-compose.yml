@@ -13,6 +13,9 @@ services:
       - "10005:8088"
       - "10006:8888"
       - "10007:4040"
+      - 10012:8030
+      - 10013:8031
+      - 10014:8033
     volumes:
       - spark-master-data:/usr/local/spark/data
     environment:
@@ -26,6 +29,7 @@ services:
     ports:
       - 10008:8081
       - 10009:9864
+      - 10015:8042
     volumes:
       - spark-worker1-data:/usr/local/spark/data
     depends_on:
@@ -41,6 +45,7 @@ services:
     ports:
       - 10010:8081
       - 10011:9864
+      - 10016:8042
     volumes:
       - spark-worker2-data:/usr/local/spark/data
     depends_on:
