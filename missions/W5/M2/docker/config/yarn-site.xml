@@ -7,6 +7,6 @@
     <!-- ResourceManager 주소 설정 -->
     <property>
         <name>yarn.resourcemanager.hostname</name>
-        <value>resourcemanager</value>
+        <value>spark-master</value>
     </property>
 </configuration>
