@@ -12,7 +12,10 @@ case $NODE_TYPE in
 
         # Hadoop Datanode 실행
         $HADOOP_HOME/bin/hdfs --daemon start namenode
-
+        
+        # Hadoop resourcemanager 실행
+        $HADOOP_HOME/bin/yarn --daemon start resourcemanager
+        
         # Keep the shell open
         tail -f /dev/null
         ;;
@@ -25,6 +28,9 @@ case $NODE_TYPE in
 
         # Hadoop Datanode 실행
         $HADOOP_HOME/bin/hdfs --daemon start datanode
+
+        # Hadoop nodemanager 실행
+        $HADOOP_HOME/bin/yarn --daemon start nodemanager
 
         # Keep the shell open
         tail -f /dev/null
