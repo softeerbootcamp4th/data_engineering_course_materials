@@ -14,7 +14,7 @@
 
 # 1. Build Hadoop Base Image
 ```bash
-(local)% docker build -t hadoop-base -f Dockerfile.base hadoop-base .
+(local)% docker build -t hadoop-base -f Dockerfile.base .
 ```
 
 # 2. Build Hadoop Cluster Image
